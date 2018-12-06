@@ -1,0 +1,97 @@
+{include file="public/header"}
+<!-- Swiper -->
+<div class="swiper-container">
+    <div class="swiper-wrapper">
+        {foreach $detail.detail_img as $img}
+        <div class="swiper-slide"><img src="{$img}"/></div>
+        {/foreach}
+        <!--<div class="swiper-slide"><img src="images/tu_d.png"/></div>-->
+        <!--<div class="swiper-slide"><img src="images/tu_d.png"/></div>-->
+    </div>
+    <!-- Add Pagination -->
+    <div class="swiper-pagination"></div>
+</div>
+
+<div class="reser">
+    <div class="reser1 disrow disju-sb bgfff pdlr30 dinnerr1" id="{$detail.id}">
+        <div class="reser1-1 fs28 c3 reser1-11">
+            <div class="reser1-3 fs28 c3">{$detail.title}</div>
+            <div class="reser1-4 fs26 hong">￥{$detail.price | fmtPrice}</div>
+        </div>
+        <div class="filling-m2 disrow disju-c">
+            <div class="filling-m211 minus" {if $detail.cart_num==0}style="display:none"{/if}><img src="__IMAGES__/icon_jians_54x54.png"/></div>
+            <div class="dinnerr1-7 fs32 c3 tc" {if $detail.cart_num==0}style="display:none"{/if}>{if $detail.cart_num==0}0{else/}{$detail.cart_num}{/if}
+            </div>
+            <div class="filling-m21 add"><img src="__IMAGES__/icon_jia_54x54.png"/></div>
+            <i class="price" style="display: none;">{$detail.price}</i>
+        </div>
+    </div>
+   <!--  <div class="reser2">
+        <div class="reser-con fs28 c6">
+            <div class="reser-con1 fs30 c3">菜品描述</div>
+            {:html($detail.intro)} -->
+            <!--<img src="images/tu_d.png"/>-->
+            <!--<img src="images/tu_d.png"/>-->
+            <!--白灼基围虾是一道色香味俱全的地方名菜，属于粤菜系。由基围虾和柠檬为主要原材料做成的菜肴，营养丰富，且其肉质松软，易消化。-->
+            <!--在粤菜里，灼，是传统的一种烹饪技法，它可以在不改变食材本味的前提在，使食材达到爽、嫩、滑的境界。“白灼”也是突出粤菜清淡的手法之一。灼的标准定义为：以煮滚的水或汤，将生的食物烫熟。-->
+      <!--   </div>
+    </div> -->
+
+</div>
+
+<!--<div class="diandi"></div>-->
+<!--<div class="dinner-bo posif bgfff disrow">-->
+    <!--<div class="dinner-bo1 fs34 hong posir"><img id="end" class="gocart" src="__IMAGES__/icon_diancan_jj.png"/>￥<span id="totalpriceshow">0</span>元-->
+        <!--<span class="posia dinner-sp1 fs20 cf tc" id="totalcountshow">0</span></div>-->
+    <!--<div class="right dinner-bo2"><a id="btnselect" class="disable tc fs28 cf" href="order_goods.html">立即下单</a></div>-->
+<!--</div>-->
+
+<!--&lt;!&ndash;cart&ndash;&gt;-->
+<!--<div class="mask guanbi"></div>-->
+<!--<div class="cart">-->
+    <!--<div class="cart-top disrow disju-sb pdlr30">-->
+        <!--<div class="cart-top1 guanbi"><img src="__IMAGES__/icon_chax_jj.png"/></div>-->
+        <!--<div class="cart-top2 fs26 c6"><img src="__IMAGES__/icon_sscc_jj.png"/>清空购物车</div>-->
+    <!--</div>-->
+    <!--<div class="cart-con0">-->
+        <!--<div class="cart-con pdlr30">-->
+            <!--<div class="cart-con1 disrow">-->
+                <!--<div class="cart-con2 fs26 c3 fw7">鹅肝酱蒸娃娃菜</div>-->
+                <!--<div class="cart-con3 fs26 hong">￥{$detail.price | fmtPrice}</div>-->
+                <!--<div class="dinnerr1-5 disrow disju-c">-->
+                    <!--<div class="dinnerr1-6 minus"><img src="__IMAGES__/icon_jians_jj.png"/></div>-->
+                    <!--<div class="dinnerr1-7 fs32 c3 tc">{$detail.cart_num}-->
+                    <!--</div>-->
+                    <!--<div class="dinnerr1-8 add"><img src="__IMAGES__/icon_jia_jj.png"/></div>-->
+                    <!--<i class="price" style="display: none;">{$detail.price}</i>-->
+                <!--</div>-->
+            <!--</div>-->
+        <!--</div>-->
+        <!--&lt;!&ndash;购物车没有数据显示&ndash;&gt;-->
+        <!--&lt;!&ndash;<h3 class="cart-h31 fs28 c3 tc">购物车空空如也！</h3>&ndash;&gt;-->
+    <!--</div>-->
+<!--</div>-->
+
+<script src="__PLUGS__/fly.js"></script>
+<script src="__JS__/goods.js"></script>
+<!-- Swiper JS -->
+<script src="__PLUGS__/swiper.min.js"></script>
+
+<!-- Initialize Swiper -->
+<script>
+    var swiper = new Swiper('.swiper-container', {
+        slidesPerView: 1,
+        spaceBetween: 30,
+        loop: true,
+        autoplay: {
+            delay: 3000,
+            stopOnLastSlide: false,
+            disableOnInteraction: true,
+        },
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+    });
+</script>
+{include file="public/footer"}

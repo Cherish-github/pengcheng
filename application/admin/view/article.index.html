@@ -1,0 +1,133 @@
+{extend name='extra@admin/content'}
+
+        {block name="button"}
+        <div class="nowrap pull-right" style="margin-top:10px">
+            <button data-modal='{:url("$classuri/add")}' data-title="添加文章" class='layui-btn layui-btn-small'><i
+                    class='fa fa-plus'></i> 添加文章
+            </button>
+            <button data-update data-field='delete' data-action='{:url("$classuri/del")}'
+                    class='layui-btn layui-btn-small layui-btn-danger'><i class='fa fa-remove'></i> 删除文章
+            </button>
+        </div>
+        {/block}
+
+        {block name="content"}
+
+        <!-- 表单搜索 开始 -->
+        <form class="animated form-search" action="__SELF__" onsubmit="return false" method="get">
+
+            <div class="row">
+                <div class="col-xs-3">
+                    <div class="form-group">
+                        <select class="form-control" name="teacher" id="">
+                            <option value="">全部</option>
+                            {foreach $teachers as $teacher}
+                                <option {if $Think.get.teacher eq $teacher.id}selected{/if} value="{$teacher.id}">{$teacher.name}</option>
+                            {/foreach}
+                        </select>
+                    </div>
+                </div>
+
+                <div class="col-xs-1">
+                    <div class="form-group">
+                        <button type="submit" class="btn btn-sm btn-white"><i class="fa fa-search"></i> 搜索</button>
+                    </div>
+                </div>
+            </div>
+        </form>
+        <!-- 表单搜索 结束 -->
+
+        <form onsubmit="return false;" data-auto="" method="POST">
+            <input type="hidden" value="resort" name="action"/>
+            <table class="table table-hover">
+                <thead>
+                <tr>
+                    <th class='list-table-check-td'>
+                        <input data-none-auto="" data-check-target='.list-check-box' type='checkbox'/>
+                    </th>
+                    <th class='list-table-sort-td'>
+                        <button type="submit" class="layui-btn layui-btn-normal layui-btn-mini">排 序</button>
+                    </th>
+                    <th class='text-center'>文章标题</th>
+                    <th class='text-center'>类型</th>
+                    <th class='text-center'>发布者</th>
+                    <th class='text-center'>发布时间</th>
+                    <th class='text-center'>推荐</th>
+                    <th class='text-center'>热门</th>
+                    <th class='text-center'>是否显示</th>
+                    <th class='text-center'>点击量</th>
+                    <th class='text-center'>操作</th>
+                </tr>
+                </thead>
+                <tbody>
+                {foreach $list as $key=>$vo}
+                <tr>
+                    <td class='list-table-check-td'>
+                        <input class="list-check-box" value='{$vo.id}' type='checkbox'/>
+                    </td>
+                    <td class='list-table-sort-td'>
+                        <input name="_{$vo.id}" value="{$vo.sort}" class="list-sort-input"/>
+                    </td>
+                    <td class='text-center'>{$vo.title}</td>
+                    <td class='text-center'>{if $vo.type==0}单图{elseif $vo.type==1}多图{else}视频{/if}</td>
+                    <td class='text-center'>{$vo.name}</td>
+                    <td class='text-center'>{$vo.created_time}</td>
+                    <td class='text-center'>
+                        {if $vo.is_best eq 0 and auth("$classuri/update")}
+                        <span class="text-explode">|</span>
+                        <a data-update="{$vo.id}" data-field='is_best' data-value='1' data-action='{:url("$classuri/update")}'
+                           href="javascript:void(0)">
+                            <i class="fa fa-close" style="font-size: 1.5rem;"></i></a>
+                        {elseif auth("$classuri/update")}
+                        <span class="text-explode">|</span>
+                        <a data-update="{$vo.id}" data-field='is_best' data-value='0' data-action='{:url("$classuri/update")}'
+                           href="javascript:void(0)"><i class="fa fa-check" style="font-size: 1.5rem;"></i></a>
+                        {/if}
+                    </td>
+                    <td class='text-center'>
+                        {if $vo.is_hot eq 0 and auth("$classuri/update")}
+                        <span class="text-explode">|</span>
+                        <a data-update="{$vo.id}" data-field='is_hot' data-value='1' data-action='{:url("$classuri/update")}'
+                           href="javascript:void(0)">
+                            <i class="fa fa-close" style="font-size: 1.5rem;"></i></a>
+                        {elseif auth("$classuri/update")}
+                        <span class="text-explode">|</span>
+                        <a data-update="{$vo.id}" data-field='is_hot' data-value='0' data-action='{:url("$classuri/update")}'
+                           href="javascript:void(0)"><i class="fa fa-check" style="font-size: 1.5rem;"></i></a>
+                        {/if}
+                    </td>
+                    <td class='text-center'>
+                        {if $vo.is_show eq 1 and auth("$classuri/update")}
+                        <span class="text-explode">|</span>
+                        <a data-update="{$vo.id}" data-field='is_show' data-value='0' data-action='{:url("$classuri/update")}'
+                           href="javascript:void(0)">
+                            <i class="fa fa-check" style="font-size: 1.5rem;"></i>
+                            </a>
+                        {elseif auth("$classuri/update")}
+                        <span class="text-explode">|</span>
+                        <a data-update="{$vo.id}" data-field='is_show' data-value='1' data-action='{:url("$classuri/update")}'
+                           href="javascript:void(0)"><i class="fa fa-close" style="font-size: 1.5rem;"></i></a>
+                        {/if}
+                    </td>
+                    <td class="text-center">
+                        {$vo.click_num}
+                    </td>
+                    <td class='text-center nowrap'>
+                        {if auth("$classuri/edit")}
+                        <span class="text-explode">|</span>
+                        <a data-open='{:url("$classuri/edit")}?id={$vo.id}' href="javascript:void(0)">编辑</a>
+                        {/if}
+
+                        {if auth("$classuri/del")}
+                        <span class="text-explode">|</span>
+                        <a data-update="{$vo.id}" data-field='delete' data-action='{:url("$classuri/del")}'
+                           href="javascript:void(0)">删除</a>
+                        {/if}
+                    </td>
+                </tr>
+                {/foreach}
+                </tbody>
+            </table>
+            {if isset($page)}<p>{$page}</p>{/if}
+        </form>
+        {/block}

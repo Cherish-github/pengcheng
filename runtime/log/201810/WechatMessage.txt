@@ -1,0 +1,105 @@
+Array
+(
+    [errcode] => 0
+    [errmsg] => ok
+    [msgid] => 4.9618185679099E+17
+)
+
+Array
+(
+    [0] => Array
+        (
+            [openid] => otuUIuA7qA9FFwjBc4wid98ioLq4
+            [pay_money] => 0.01
+            [pay_time] => 2018-10-10 18:33:23
+            [remark] => 
+            [order_no] => 20181008184252888598
+            [group_concat("g.`title`")] => g.`title`
+        )
+
+)
+
+Array
+(
+    [0] => Array
+        (
+            [openid] => otuUIuA7qA9FFwjBc4wid98ioLq4
+            [pay_money] => 0.01
+            [pay_time] => 2018-10-10 18:35:19
+            [remark] => 
+            [order_no] => 20181008184400527423
+            [group_concat("g.title")] => g.title
+        )
+
+)
+
+Array
+(
+    [0] => Array
+        (
+            [openid] => otuUIuA7qA9FFwjBc4wid98ioLq4
+            [pay_money] => 0.01
+            [pay_time] => 2018-10-10 18:25:20
+            [remark] => 
+            [order_no] => 20181008184602114447
+            [group_concat("g.title")] => g.title
+        )
+
+)
+
+Array
+(
+    [errcode] => 0
+    [errmsg] => ok
+    [msgid] => 4.970721768689E+17
+)
+
+Array
+(
+    [errcode] => 0
+    [errmsg] => ok
+    [msgid] => 4.9708295168388E+17
+)
+
+Array
+(
+    [errcode] => 0
+    [errmsg] => ok
+    [msgid] => 4.9709748947676E+17
+)
+
+Array
+(
+    [errcode] => 0
+    [errmsg] => ok
+    [msgid] => 4.9710019874582E+17
+)
+
+Array
+(
+    [errcode] => 0
+    [errmsg] => ok
+    [msgid] => 4.9710192916465E+17
+)
+
+Array
+(
+    [errcode] => 0
+    [errmsg] => ok
+    [msgid] => 4.9710728581063E+17
+)
+
+Array
+(
+    [errcode] => 0
+    [errmsg] => ok
+    [msgid] => 4.9710994008397E+17
+)
+
+Array
+(
+    [errcode] => 0
+    [errmsg] => ok
+    [msgid] => 5.0289643733262E+17
+)
+

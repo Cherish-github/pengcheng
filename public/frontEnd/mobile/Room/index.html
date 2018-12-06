@@ -1,0 +1,105 @@
+{include file="public/header"}
+<!-- Swiper -->
+<div class="swiper-container">
+    <div class="swiper-wrapper">
+        {foreach $banners as $banner}
+        <div class="swiper-slide"><img src="{$banner}"/></div>
+        {/foreach}
+    </div>
+    <!-- Add Pagination -->
+    <div class="swiper-pagination"></div>
+</div>
+
+<div class="reser">
+    <div class="reser1 disrow disju-sb bgfff">
+        <div class="reser1-1 fs28 c3">
+            <img src="__IMAGES__/icon_ssjiuidian_my.png"/>深圳市鹏城商务酒店
+        </div>
+        <div class="reser1-2">
+            <a href="tel:{$phone}"><img src="__IMAGES__/icon_dianhua.png"/></a>
+        </div>
+    </div>
+    <div class="reser2">
+        {foreach $rooms as $room}
+        <div class="reser21 disrow disju-sb">
+            <div class="reser21-l disrow ">
+                <div class="reser21-l1">
+                    <a href="{:Url('Room/detail')}?id={$room.id}"><img src="{$room.thumb}"/></a>
+                </div>
+                <div class="reser21-l2">
+                    <p class="fs26 c3">{$room.title}</p>
+                    <p class="fs26 hong">￥{$room.price | fmtPrice}</p>
+                </div>
+            </div>
+            <div class="reser21-r">
+                <a class="fs26 cf tc" {if $room.left_num <= 0}style="background: #c5c4c4;"
+                {else/}href="{:Url('index/order/room')}?id={$room.id}"{/if}>预订</a>
+            </div>
+        </div>
+        {/foreach}
+        <!-- <div class="reser21 disrow disju-sb">
+            <div class="reser21-l disrow ">
+                <div class="reser21-l1">
+                    <a href="{:Url('Room/detail')}"><img src="__IMAGES__/tu_f.png"/></a>
+                </div>
+                <div class="reser21-l2">
+                    <p class="fs26 c3">标准单人房-A楼</p>
+                    <p class="fs26 hong">￥168</p>
+                </div>
+            </div>
+            <div class="reser21-r">
+                <a href="{:Url('Room/detail')}" class="fs26 cf tc">预订</a>
+            </div>
+        </div>
+        <div class="reser21 disrow disju-sb">
+            <div class="reser21-l disrow ">
+                <div class="reser21-l1">
+                    <a href="{:Url('Room/detail')}"><img src="__IMAGES__/tu_f.png"/></a>
+                </div>
+                <div class="reser21-l2">
+                    <p class="fs26 c3">标准单人房-A楼</p>
+                    <p class="fs26 hong">￥168</p>
+                </div>
+            </div>
+            <div class="reser21-r">
+                <a href="{:Url('Room/detail')}" class="fs26 cf tc">预订</a>
+            </div>
+        </div>
+        <div class="reser21 disrow disju-sb">
+            <div class="reser21-l disrow ">
+                <div class="reser21-l1">
+                    <a href="{:Url('Room/detail')}"><img src="__IMAGES__/tu_f.png"/></a>
+                </div>
+                <div class="reser21-l2">
+                    <p class="fs26 c3">标准单人房-A楼</p>
+                    <p class="fs26 hong">￥168</p>
+                </div>
+            </div>
+            <div class="reser21-r">
+                <a href="{:Url('Room/detail')}" class="fs26 cf tc">预订</a>
+            </div>
+        </div> -->
+    </div>
+</div>
+
+{include file="public/footernav"}
+{include file="public/footer"}
+<!-- Swiper JS -->
+<script src="__PLUGS__/swiper.min.js"></script>
+<!-- Initialize Swiper -->
+<script>
+    var swiper = new Swiper('.swiper-container', {
+        slidesPerView: 1,
+        spaceBetween: 30,
+        loop: true,
+        autoplay: {
+            delay: 2000,
+            stopOnLastSlide: false,
+            disableOnInteraction: true,
+        },
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+    });
+</script>

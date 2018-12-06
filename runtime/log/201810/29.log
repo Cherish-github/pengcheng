@@ -1,0 +1,37 @@
+---------------------------------------------------------------
+[ 2018-10-29T09:27:25+08:00 ] 120.92.72.96 GET /
+[ info ] wx.p-city.cn/ [运行时间：0.087874s][吞吐率：11.38req/s] [内存消耗：3,103.52kb] [文件加载：55]
+[ info ] [ LANG ] D:\Program Files\web\pengcheng\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => '',
+  'content-length' => '0',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2486.0 Safari/537.36 Edge/13.10586',
+  'host' => 'wx.p-city.cn',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => '*/*',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ BEHAVIOR ] Run hook\AccessAuth @action_begin [ RunTime:0.000471s ]
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\Program Files\web\pengcheng\application\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\Program Files\web\pengcheng\public/frontEnd/pc/index\index.html [ array (
+  0 => 'classuri',
+  1 => 'speaking',
+  2 => 'desc',
+  3 => 'contact',
+  4 => 'banners',
+  5 => 'title',
+) ]
+[ info ] [ BEHAVIOR ] Run hook\FilterView @view_filter [ RunTime:0.000769s ]
+[ info ] [ LOG ] INIT File

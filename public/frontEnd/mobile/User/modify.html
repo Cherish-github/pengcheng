@@ -1,0 +1,16 @@
+{include file="public/header"}
+    <div class="filling0">
+        <div class="filling-top bgfff">
+            <div class="filling-m3 disrow disju-sb">
+                <div class="filling-m31 fs28 c3 fw7">联系人</div>
+                <div class="filling-m32 fs28 c9"><input type="text" name="username" placeholder="请输入联系人" value="{$userInfo.name}" maxlength="10"></div>
+            </div>
+            <div class="filling-m4 disrow disju-sb">
+                <div class="filling-m31 fs28 c3 fw7">手机号</div>
+                <div class="filling-m32 fs28 c9"><input type="number" name="phone" placeholder="请输入手机号码" value="{$userInfo.phone}" pattern="/^1[35678]\d{9}$/" maxlength="11"></div>
+            </div>
+        </div>
+        <div class="info-btn tc"><span>保存信息</span></div>
+    </div>
+{include file="public/footer"}
+<script src="__JS__/modifyUser.js"></script>

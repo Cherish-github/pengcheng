@@ -1,0 +1,31 @@
+<footer>
+    <div class="diandi"></div>
+    <div class="t-footer">
+        <a href="{:Url('Index/index')}" class="foot-a">
+            <img class="foot-a-img Index" src="__IMAGES__/icon_souye_o.png" />
+            <!--<img class="foot-a-img" src="__IMAGES__/icon_Index.png" />-->
+            <span class="foot-sp">首页</span>
+        </a>
+        <a href="{:Url('Room/index')}" class="foot-a">
+            <img class="foot-a-img Room" src="__IMAGES__/icon_dingfang_o.png" />
+            <!--<img class="foot-a-img" src="__IMAGES__/icon_Room.png" />-->
+            <span class="foot-sp ">订房</span>
+        </a>
+        <a href="{:Url('Goods/index')}" class="foot-a">
+            <img class="foot-a-img Goods" src="__IMAGES__/icon_dingcan_o.png" />
+            <!--<img class="foot-a-img" src="__IMAGES__/icon_Goods.png" />-->
+            <span class="foot-sp ">订餐</span>
+        </a>
+        <a href="{:Url('User/index')}" class="foot-a">
+            <img class="foot-a-img User" src="__IMAGES__/icon_my_o.png" />
+            <!--<img class="foot-a-img" src="__IMAGES__/icon_User.png" />-->
+            <span class="foot-sp ">我的</span>
+        </a>
+    </div>
+
+    <script type="text/javascript">
+        var controller = '{:request()->controller()}';
+        $('.'+controller).attr('src','__IMAGES__/icon_'+controller+'.png');
+        $('.'+controller).siblings('span').addClass('footon');
+    </script>
+</footer>

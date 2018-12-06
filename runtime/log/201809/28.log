@@ -1,0 +1,445 @@
+---------------------------------------------------------------
+[ 2018-09-28T09:11:46+08:00 ] 80.82.70.187 GET /cache/global/img/gs.gif
+[ info ] www.baidu.com/cache/global/img/gs.gif [运行时间：0.031756s][吞吐率：31.49req/s] [内存消耗：1,786.90kb] [文件加载：39]
+[ info ] [ LANG ] D:\Program Files\web\pengcheng\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'cache',
+    1 => 'global',
+    2 => 'img',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => '',
+  'content-length' => '0',
+  'x-original-url' => '/cache/global/img/gs.gif',
+  'user-agent' => 'Mozilla',
+  'if-modified-since' => 'Thu, 19 Apr 2012 09:51:20 GMT',
+  'host' => 'www.baidu.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-28T19:23:01+08:00 ] 80.82.70.187 GET /cache/global/img/gs.gif
+[ info ] www.baidu.com/cache/global/img/gs.gif [运行时间：0.033255s][吞吐率：30.07req/s] [内存消耗：1,786.91kb] [文件加载：39]
+[ info ] [ LANG ] D:\Program Files\web\pengcheng\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'cache',
+    1 => 'global',
+    2 => 'img',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => '',
+  'content-length' => '0',
+  'x-original-url' => '/cache/global/img/gs.gif',
+  'user-agent' => 'Mozilla',
+  'if-modified-since' => 'Thu, 19 Apr 2012 09:51:20 GMT',
+  'host' => 'www.baidu.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-28T19:31:20+08:00 ] 119.137.53.125 GET /
+[ info ] 122.114.216.78:8910/ [运行时间：0.134998s][吞吐率：7.41req/s] [内存消耗：3,106.27kb] [文件加载：55]
+[ info ] [ LANG ] D:\Program Files\web\pengcheng\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => '',
+  'content-length' => '0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36',
+  'host' => '122.114.216.78:8910',
+  'cookie' => 'pma_navi_width=200; pma_lang=zh_CN; pma_mcrypt_iv=CISrehrZznw%3D; pmaUser-1=Ls17V3aGmbA%3D; PHPSESSID=dbvgl94op035eksqlerk01qph4; rows=20; pmaPass-1=lw5fmj9ii4SXv3P7BVly4Q%3D%3D; menu-style=full; phpMyAdmin=dbvgl94op035eksqlerk01qph4',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run hook\AccessAuth @action_begin [ RunTime:0.000938s ]
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\Program Files\web\pengcheng\application\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\Program Files\web\pengcheng\public/frontEnd/pc/index\index.html [ array (
+  0 => 'classuri',
+  1 => 'speaking',
+  2 => 'desc',
+  3 => 'contact',
+  4 => 'banners',
+  5 => 'title',
+) ]
+[ info ] [ BEHAVIOR ] Run hook\FilterView @view_filter [ RunTime:0.001148s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-28T19:31:26+08:00 ] 119.137.53.125 GET /admin.html
+[ info ] 122.114.216.78:8910/admin.html [运行时间：0.035473s][吞吐率：28.19req/s] [内存消耗：2,332.55kb] [文件加载：51]
+[ info ] [ LANG ] D:\Program Files\web\pengcheng\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => '',
+  'content-length' => '0',
+  'x-original-url' => '/admin.html',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36',
+  'host' => '122.114.216.78:8910',
+  'cookie' => 'pma_navi_width=200; pma_lang=zh_CN; pma_mcrypt_iv=CISrehrZznw%3D; pmaUser-1=Ls17V3aGmbA%3D; PHPSESSID=dbvgl94op035eksqlerk01qph4; rows=20; pmaPass-1=lw5fmj9ii4SXv3P7BVly4Q%3D%3D; menu-style=full; phpMyAdmin=dbvgl94op035eksqlerk01qph4',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-28T19:31:26+08:00 ] 119.137.53.125 GET /admin/login.html
+[ info ] 122.114.216.78:8910/admin/login.html [运行时间：0.072448s][吞吐率：13.80req/s] [内存消耗：3,225.81kb] [文件加载：57]
+[ info ] [ LANG ] D:\Program Files\web\pengcheng\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'login',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => '',
+  'content-length' => '0',
+  'x-original-url' => '/admin/login.html',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36',
+  'host' => '122.114.216.78:8910',
+  'cookie' => 'pma_navi_width=200; pma_lang=zh_CN; pma_mcrypt_iv=CISrehrZznw%3D; pmaUser-1=Ls17V3aGmbA%3D; PHPSESSID=dbvgl94op035eksqlerk01qph4; rows=20; pmaPass-1=lw5fmj9ii4SXv3P7BVly4Q%3D%3D; menu-style=full; phpMyAdmin=dbvgl94op035eksqlerk01qph4',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run hook\AccessAuth @action_begin [ RunTime:0.000472s ]
+[ info ] [ RUN ] app\admin\controller\Login->index[ D:\Program Files\web\pengcheng\application\admin\controller\Login.php ]
+[ info ] [ VIEW ] D:\Program Files\web\pengcheng\public/../application/admin\view\login.index.html [ array (
+  0 => 'classuri',
+  1 => 'title',
+) ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run hook\FilterView @view_filter [ RunTime:0.000603s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-28T19:31:27+08:00 ] 119.137.53.125 GET /admin/login.html
+[ info ] 122.114.216.78:8910/admin/login.html [运行时间：0.093956s][吞吐率：10.64req/s] [内存消耗：3,226.55kb] [文件加载：57]
+[ info ] [ LANG ] D:\Program Files\web\pengcheng\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'login',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => '',
+  'content-length' => '0',
+  'x-original-url' => '/admin/login.html',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36',
+  'referer' => 'http://122.114.216.78:8910/admin/login.html',
+  'host' => '122.114.216.78:8910',
+  'cookie' => 'pma_navi_width=200; pma_lang=zh_CN; pma_mcrypt_iv=CISrehrZznw%3D; pmaUser-1=Ls17V3aGmbA%3D; PHPSESSID=dbvgl94op035eksqlerk01qph4; rows=20; pmaPass-1=lw5fmj9ii4SXv3P7BVly4Q%3D%3D; menu-style=full; phpMyAdmin=dbvgl94op035eksqlerk01qph4',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run hook\AccessAuth @action_begin [ RunTime:0.000680s ]
+[ info ] [ RUN ] app\admin\controller\Login->index[ D:\Program Files\web\pengcheng\application\admin\controller\Login.php ]
+[ info ] [ VIEW ] D:\Program Files\web\pengcheng\public/../application/admin\view\login.index.html [ array (
+  0 => 'classuri',
+  1 => 'title',
+) ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run hook\FilterView @view_filter [ RunTime:0.000649s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-28T19:39:31+08:00 ] 119.137.53.125 GET /admin/room/index.html?spm=m-87-113
+[ info ] 122.114.216.78:8910/admin/room/index.html?spm=m-87-113 [运行时间：0.048694s][吞吐率：20.54req/s] [内存消耗：2,325.63kb] [文件加载：51]
+[ info ] [ LANG ] D:\Program Files\web\pengcheng\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'room',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => '',
+  'content-length' => '0',
+  'x-original-url' => '/admin/room/index.html?spm=m-87-113',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36',
+  'referer' => 'http://122.114.216.78:8910/admin.html',
+  'host' => '122.114.216.78:8910',
+  'cookie' => 'pma_navi_width=200; pma_lang=zh_CN; pma_mcrypt_iv=CISrehrZznw%3D; pmaUser-1=Ls17V3aGmbA%3D; PHPSESSID=dbvgl94op035eksqlerk01qph4; rows=20; pmaPass-1=lw5fmj9ii4SXv3P7BVly4Q%3D%3D; menu-style=full; phpMyAdmin=dbvgl94op035eksqlerk01qph4',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => '*/*',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+  'spm' => 'm-87-113',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-28T19:39:31+08:00 ] 119.137.53.125 GET /admin/login.html
+[ info ] 122.114.216.78:8910/admin/login.html [运行时间：0.066388s][吞吐率：15.06req/s] [内存消耗：3,226.29kb] [文件加载：57]
+[ info ] [ LANG ] D:\Program Files\web\pengcheng\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'login',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => '',
+  'content-length' => '0',
+  'x-original-url' => '/admin/login.html',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36',
+  'referer' => 'http://122.114.216.78:8910/admin.html',
+  'host' => '122.114.216.78:8910',
+  'cookie' => 'pma_navi_width=200; pma_lang=zh_CN; pma_mcrypt_iv=CISrehrZznw%3D; pmaUser-1=Ls17V3aGmbA%3D; PHPSESSID=dbvgl94op035eksqlerk01qph4; rows=20; pmaPass-1=lw5fmj9ii4SXv3P7BVly4Q%3D%3D; menu-style=full; phpMyAdmin=dbvgl94op035eksqlerk01qph4',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run hook\AccessAuth @action_begin [ RunTime:0.000500s ]
+[ info ] [ RUN ] app\admin\controller\Login->index[ D:\Program Files\web\pengcheng\application\admin\controller\Login.php ]
+[ info ] [ VIEW ] D:\Program Files\web\pengcheng\public/../application/admin\view\login.index.html [ array (
+  0 => 'classuri',
+  1 => 'title',
+) ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run hook\FilterView @view_filter [ RunTime:0.000931s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-28T19:43:36+08:00 ] 119.137.53.125 POST /admin/login.html?spm=
+[ info ] 122.114.216.78:8910/admin/login.html?spm= [运行时间：0.408572s][吞吐率：2.45req/s] [内存消耗：3,431.98kb] [文件加载：64]
+[ info ] [ LANG ] D:\Program Files\web\pengcheng\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'login',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'content-length' => '50',
+  'x-original-url' => '/admin/login.html?spm=',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://122.114.216.78:8910',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36',
+  'referer' => 'http://122.114.216.78:8910/admin/login.html',
+  'host' => '122.114.216.78:8910',
+  'cookie' => 'pma_navi_width=200; pma_lang=zh_CN; pma_mcrypt_iv=CISrehrZznw%3D; pmaUser-1=Ls17V3aGmbA%3D; PHPSESSID=dbvgl94op035eksqlerk01qph4; rows=20; pmaPass-1=lw5fmj9ii4SXv3P7BVly4Q%3D%3D; menu-style=full; phpMyAdmin=dbvgl94op035eksqlerk01qph4',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => '*/*',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+  'spm' => '',
+  'username' => 'admin',
+  'password' => '123456',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run hook\AccessAuth @action_begin [ RunTime:0.000587s ]
+[ info ] [ RUN ] app\admin\controller\Login->index[ D:\Program Files\web\pengcheng\application\admin\controller\Login.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-28T19:43:36+08:00 ] 119.137.53.125 GET /admin.html
+[ info ] 122.114.216.78:8910/admin.html [运行时间：0.123401s][吞吐率：8.10req/s] [内存消耗：3,544.41kb] [文件加载：63]
+[ info ] [ LANG ] D:\Program Files\web\pengcheng\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => '',
+  'content-length' => '0',
+  'x-original-url' => '/admin.html',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36',
+  'referer' => 'http://122.114.216.78:8910/admin/login.html',
+  'host' => '122.114.216.78:8910',
+  'cookie' => 'pma_navi_width=200; pma_lang=zh_CN; pma_mcrypt_iv=CISrehrZznw%3D; pmaUser-1=Ls17V3aGmbA%3D; PHPSESSID=dbvgl94op035eksqlerk01qph4; rows=20; pmaPass-1=lw5fmj9ii4SXv3P7BVly4Q%3D%3D; menu-style=full; phpMyAdmin=dbvgl94op035eksqlerk01qph4',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run hook\AccessAuth @action_begin [ RunTime:0.002046s ]
+[ info ] [ RUN ] app\admin\controller\Index->index[ D:\Program Files\web\pengcheng\application\admin\controller\Index.php ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\Program Files\web\pengcheng\public/../application/admin\view\index.index.html [ array (
+  0 => 'classuri',
+  1 => 'title',
+  2 => 'menus',
+) ]
+[ info ] [ BEHAVIOR ] Run hook\FilterView @view_filter [ RunTime:0.000839s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-28T19:43:37+08:00 ] 119.137.53.125 GET /admin/room/index.html?spm=m-87-113
+[ info ] 122.114.216.78:8910/admin/room/index.html?spm=m-87-113 [运行时间：0.122299s][吞吐率：8.18req/s] [内存消耗：3,496.90kb] [文件加载：63]
+[ info ] [ LANG ] D:\Program Files\web\pengcheng\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'room',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => '',
+  'content-length' => '0',
+  'x-original-url' => '/admin/room/index.html?spm=m-87-113',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36',
+  'referer' => 'http://122.114.216.78:8910/admin.html',
+  'host' => '122.114.216.78:8910',
+  'cookie' => 'pma_navi_width=200; pma_lang=zh_CN; pma_mcrypt_iv=CISrehrZznw%3D; pmaUser-1=Ls17V3aGmbA%3D; PHPSESSID=dbvgl94op035eksqlerk01qph4; rows=20; pmaPass-1=lw5fmj9ii4SXv3P7BVly4Q%3D%3D; menu-style=full; phpMyAdmin=dbvgl94op035eksqlerk01qph4',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => '*/*',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+  'spm' => 'm-87-113',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run hook\AccessAuth @action_begin [ RunTime:0.002027s ]
+[ info ] [ RUN ] app\admin\controller\Room->index[ D:\Program Files\web\pengcheng\application\admin\controller\Room.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\Program Files\web\pengcheng\public/../application/admin\view\room.index.html [ array (
+  0 => 'classuri',
+  1 => 'ptypes',
+  2 => 'ftypes',
+  3 => 'title',
+  4 => 'list',
+  5 => 'page',
+) ]
+[ info ] [ BEHAVIOR ] Run hook\FilterView @view_filter [ RunTime:0.000659s ]
+[ info ] [ LOG ] INIT File

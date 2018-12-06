@@ -1,0 +1,63 @@
+---------------------------------------------------------------
+[ 2018-09-18T11:41:18+08:00 ] 119.137.54.103 GET /admin/goods/add.html?spm=m-87-141&open_type=modal
+[ error ] [8]未定义数组索引: detail_img[D:\Program Files\web\pengcheng\runtime\temp\c00d7fccf9dada35b93513e503ffadab.php:101]
+---------------------------------------------------------------
+[ 2018-09-18T11:41:26+08:00 ] 119.137.54.103 GET /admin/goods/add.html?spm=m-87-141&open_type=modal
+[ error ] [8]未定义数组索引: detail_img[D:\Program Files\web\pengcheng\runtime\temp\c00d7fccf9dada35b93513e503ffadab.php:101]
+---------------------------------------------------------------
+[ 2018-09-18T11:41:45+08:00 ] 119.137.54.103 GET /admin/room/add.html?spm=m-87-113&open_type=modal
+[ error ] [8]未定义数组索引: detail_img[D:\Program Files\web\pengcheng\runtime\temp\ba93e142c7ec8bc469bd96d18b08a1cc.php:103]
+---------------------------------------------------------------
+[ 2018-09-18T11:46:52+08:00 ] 119.137.54.103 GET /admin/room/add.html?spm=m-87-113&open_type=modal
+[ error ] [8]未定义数组索引: detail_img[D:\Program Files\web\pengcheng\runtime\temp\ba93e142c7ec8bc469bd96d18b08a1cc.php:103]
+---------------------------------------------------------------
+[ 2018-09-18T11:48:30+08:00 ] 119.137.54.103 GET /admin/room/add.html?spm=m-87-113&open_type=modal
+[ error ] [8]未定义数组索引: detail_img[D:\Program Files\web\pengcheng\runtime\temp\ba93e142c7ec8bc469bd96d18b08a1cc.php:110]
+---------------------------------------------------------------
+[ 2018-09-18T17:07:55+08:00 ] 119.137.55.73 GET /index/dinner/detail.html?id=18
+[ error ] [8]Undefined property: app\index\controller\Dinner::$table[D:\Program Files\web\pengcheng\application\index\controller\Dinner.php:85]
+---------------------------------------------------------------
+[ 2018-09-18T17:08:43+08:00 ] 119.137.55.73 GET /index/dinner/detail.html?id=18
+[ error ] [10501]SQLSTATE[42S22]: Column not found: 1054 Unknown column '' in 'field list'[D:\Program Files\web\pengcheng\thinkphp\library\think\db\Connection.php:388]
+---------------------------------------------------------------
+[ 2018-09-18T17:08:43+08:00 ] 119.137.55.73 GET /index/dinner/detail.html?id=18
+[ error ] [10501]SQLSTATE[42S22]: Column not found: 1054 Unknown column '' in 'field list'[D:\Program Files\web\pengcheng\thinkphp\library\think\db\Connection.php:388]
+---------------------------------------------------------------
+[ 2018-09-18T17:13:03+08:00 ] 119.137.55.73 GET /index/dinner/detail.html?id=18
+[ error ] [10501]SQLSTATE[42S22]: Column not found: 1054 Unknown column 'g.goods_id' in 'where clause'[D:\Program Files\web\pengcheng\thinkphp\library\think\db\Connection.php:388]
+---------------------------------------------------------------
+[ 2018-09-18T17:13:03+08:00 ] 119.137.55.73 GET /index/dinner/detail.html?id=18
+[ error ] [10501]SQLSTATE[42S22]: Column not found: 1054 Unknown column 'g.goods_id' in 'where clause'[D:\Program Files\web\pengcheng\thinkphp\library\think\db\Connection.php:388]
+---------------------------------------------------------------
+[ 2018-09-18T18:08:02+08:00 ] 119.137.55.73 GET /index/dinner/index.html
+[ error ] [10501]SQLSTATE[42S22]: Column not found: 1054 Unknown column 'c.user_id' in 'where clause'[D:\Program Files\web\pengcheng\thinkphp\library\think\db\Connection.php:388]
+---------------------------------------------------------------
+[ 2018-09-18T18:08:23+08:00 ] 119.137.55.73 GET /index/dinner/index.html
+[ error ] [8]未定义数组索引: num[D:\Program Files\web\pengcheng\runtime\temp\cf1f55d13cc866c9d26e34fdf6b34e24.php:41]
+---------------------------------------------------------------
+[ 2018-09-18T18:08:23+08:00 ] 119.137.55.73 GET /index/dinner/index.html
+[ error ] [8]未定义数组索引: num[D:\Program Files\web\pengcheng\runtime\temp\cf1f55d13cc866c9d26e34fdf6b34e24.php:41]
+---------------------------------------------------------------
+[ 2018-09-18T18:11:04+08:00 ] 119.137.55.73 GET /index/dinner/index.html
+[ error ] [8]未定义数组索引: num[D:\Program Files\web\pengcheng\runtime\temp\cf1f55d13cc866c9d26e34fdf6b34e24.php:41]
+---------------------------------------------------------------
+[ 2018-09-18T18:11:04+08:00 ] 119.137.55.73 GET /index/dinner/index.html
+[ error ] [8]未定义数组索引: num[D:\Program Files\web\pengcheng\runtime\temp\cf1f55d13cc866c9d26e34fdf6b34e24.php:41]
+---------------------------------------------------------------
+[ 2018-09-18T18:36:43+08:00 ] 119.137.55.73 GET /index/dinner/index.html
+[ error ] [8]未定义变量: cart_num[D:\Program Files\web\pengcheng\runtime\temp\cf1f55d13cc866c9d26e34fdf6b34e24.php:148]
+---------------------------------------------------------------
+[ 2018-09-18T18:36:43+08:00 ] 119.137.55.73 GET /index/dinner/index.html
+[ error ] [8]未定义变量: cart_num[D:\Program Files\web\pengcheng\runtime\temp\cf1f55d13cc866c9d26e34fdf6b34e24.php:148]
+---------------------------------------------------------------
+[ 2018-09-18T18:43:11+08:00 ] 119.137.55.73 GET /index/dinner/index.html
+[ error ] [4]语法错误: unexpected '<'[D:\Program Files\web\pengcheng\runtime\temp\cf1f55d13cc866c9d26e34fdf6b34e24.php:25]
+---------------------------------------------------------------
+[ 2018-09-18T18:43:11+08:00 ] 119.137.55.73 GET /index/dinner/index.html
+[ error ] [4]语法错误: unexpected '<'[D:\Program Files\web\pengcheng\runtime\temp\cf1f55d13cc866c9d26e34fdf6b34e24.php:25]
+---------------------------------------------------------------
+[ 2018-09-18T18:46:19+08:00 ] 119.137.55.73 GET /index/dinner/index.html
+[ error ] [8]未定义数组索引: num[D:\Program Files\web\pengcheng\runtime\temp\cf1f55d13cc866c9d26e34fdf6b34e24.php:40]
+---------------------------------------------------------------
+[ 2018-09-18T18:46:19+08:00 ] 119.137.55.73 GET /index/dinner/index.html
+[ error ] [8]未定义数组索引: num[D:\Program Files\web\pengcheng\runtime\temp\cf1f55d13cc866c9d26e34fdf6b34e24.php:40]

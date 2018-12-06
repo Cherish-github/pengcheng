@@ -1,0 +1,60 @@
+---------------------------------------------------------------
+[ 2018-10-08T10:30:58+08:00 ] 61.151.178.197 GET /index/room/index.html
+[ error ] [0]模板文件不存在:D:\Program Files\web\pengcheng\public/frontEnd/pc/room\index.html[D:\Program Files\web\pengcheng\thinkphp\library\think\view\driver\Think.php:80]
+---------------------------------------------------------------
+[ 2018-10-08T10:30:59+08:00 ] 101.91.60.11 GET /index/room/index.html
+[ error ] [0]模板文件不存在:D:\Program Files\web\pengcheng\public/frontEnd/pc/room\index.html[D:\Program Files\web\pengcheng\thinkphp\library\think\view\driver\Think.php:80]
+---------------------------------------------------------------
+[ 2018-10-08T10:31:19+08:00 ] 61.151.178.163 GET /index/user/index.html
+[ error ] [0]模板文件不存在:D:\Program Files\web\pengcheng\public/frontEnd/pc/user\index.html[D:\Program Files\web\pengcheng\thinkphp\library\think\view\driver\Think.php:80]
+---------------------------------------------------------------
+[ 2018-10-08T10:31:20+08:00 ] 101.91.60.11 GET /index/user/index.html
+[ error ] [0]模板文件不存在:D:\Program Files\web\pengcheng\public/frontEnd/pc/user\index.html[D:\Program Files\web\pengcheng\thinkphp\library\think\view\driver\Think.php:80]
+---------------------------------------------------------------
+[ 2018-10-08T10:32:10+08:00 ] 101.89.29.97 GET /index/user/goodsorder.html
+[ error ] [0]模板文件不存在:D:\Program Files\web\pengcheng\public/frontEnd/pc/user\goods_order.html[D:\Program Files\web\pengcheng\thinkphp\library\think\view\driver\Think.php:80]
+---------------------------------------------------------------
+[ 2018-10-08T10:32:11+08:00 ] 101.89.239.120 GET /index/user/goodsorder.html
+[ error ] [0]模板文件不存在:D:\Program Files\web\pengcheng\public/frontEnd/pc/user\goods_order.html[D:\Program Files\web\pengcheng\thinkphp\library\think\view\driver\Think.php:80]
+---------------------------------------------------------------
+[ 2018-10-08T10:32:15+08:00 ] 61.151.178.163 GET /index/user/coupon.html
+[ error ] [0]模板文件不存在:D:\Program Files\web\pengcheng\public/frontEnd/pc/user\coupon.html[D:\Program Files\web\pengcheng\thinkphp\library\think\view\driver\Think.php:80]
+---------------------------------------------------------------
+[ 2018-10-08T10:32:15+08:00 ] 61.151.179.84 GET /index/user/coupon.html
+[ error ] [0]模板文件不存在:D:\Program Files\web\pengcheng\public/frontEnd/pc/user\coupon.html[D:\Program Files\web\pengcheng\thinkphp\library\think\view\driver\Think.php:80]
+---------------------------------------------------------------
+[ 2018-10-08T10:32:24+08:00 ] 61.151.178.197 GET /index/index/member.html
+[ error ] [0]模板文件不存在:D:\Program Files\web\pengcheng\public/frontEnd/pc/index\member.html[D:\Program Files\web\pengcheng\thinkphp\library\think\view\driver\Think.php:80]
+---------------------------------------------------------------
+[ 2018-10-08T10:32:24+08:00 ] 61.151.178.177 GET /index/index/member.html
+[ error ] [0]模板文件不存在:D:\Program Files\web\pengcheng\public/frontEnd/pc/index\member.html[D:\Program Files\web\pengcheng\thinkphp\library\think\view\driver\Think.php:80]
+---------------------------------------------------------------
+[ 2018-10-08T15:21:38+08:00 ] 119.137.53.249 GET /index/index/index.html?code=071y3gpi27Rg6I0kWHni2lzfpi2y3gpG&state=
+[ error ] [1]Class 'app\index\Controller\logicUser' not found[D:\Program Files\web\pengcheng\application\index\controller\Common.php:37]
+---------------------------------------------------------------
+[ 2018-10-08T15:27:02+08:00 ] 119.137.53.249 GET /index/index/index.html?code=001zNkzL1lPIf51rbWAL1gYazL1zNkzU&state=
+[ error ] [1]Class 'app\index\Controller\logicUser' not found[D:\Program Files\web\pengcheng\application\index\controller\Common.php:37]
+---------------------------------------------------------------
+[ 2018-10-08T15:27:48+08:00 ] 119.137.53.249 GET /index/index/index.html?code=021Bp2Xe0LgGhA1gHYUe0nmMWe0Bp2XW&state=
+[ error ] [8]未定义数组索引: avatarurl[D:\Program Files\web\pengcheng\application\index\logic\User.php:25]
+---------------------------------------------------------------
+[ 2018-10-08T15:28:55+08:00 ] 119.137.53.249 GET /index/index/index.html?code=011RzEFO1C5hb21TXHEO1Fo4GO1RzEFD&state=
+[ error ] [0]数据表字段不存在:[gender][D:\Program Files\web\pengcheng\thinkphp\library\think\db\Builder.php:109]
+---------------------------------------------------------------
+[ 2018-10-08T16:03:19+08:00 ] 119.137.53.249 POST /api/roomorder/submitOrder
+[ error ] [1]Class 'app\api\controller\Validate' not found[D:\Program Files\web\pengcheng\application\api\controller\Roomorder.php:170]
+---------------------------------------------------------------
+[ 2018-10-08T16:04:11+08:00 ] 119.137.53.249 POST /api/roomorder/submitOrder
+[ error ] [2]preg_match(): No ending delimiter '/' found[D:\Program Files\web\pengcheng\thinkphp\library\think\Validate.php:1199]
+---------------------------------------------------------------
+[ 2018-10-08T16:05:04+08:00 ] 119.137.53.249 POST /api/roomorder/submitOrder
+[ error ] [10501]SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'id' in where clause is ambiguous[D:\Program Files\web\pengcheng\thinkphp\library\think\db\Connection.php:388]
+---------------------------------------------------------------
+[ 2018-10-08T18:41:05+08:00 ] 119.137.53.249 POST /api/goodsorder/submitOrder
+[ error ] [8]未定义数组下标: 1[D:\Program Files\web\pengcheng\thinkphp\library\think\Validate.php:1027]
+---------------------------------------------------------------
+[ 2018-10-08T18:41:45+08:00 ] 119.137.53.249 POST /api/goodsorder/submitOrder
+[ error ] [8]未定义数组下标: 1[D:\Program Files\web\pengcheng\thinkphp\library\think\Validate.php:1027]
+---------------------------------------------------------------
+[ 2018-10-08T18:51:55+08:00 ] 61.151.178.164 GET /index/user/goodsorder.html
+[ error ] [0]模板文件不存在:D:\Program Files\web\pengcheng\public/frontEnd/pc/user\goods_order.html[D:\Program Files\web\pengcheng\thinkphp\library\think\view\driver\Think.php:80]

@@ -1,0 +1,9 @@
+---------------------------------------------------------------
+[ 2018-10-29T09:27:25+08:00 ] 120.92.72.96 GET /
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002238s ] mysql:host=122.114.216.78;port=3306;dbname=pengcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `web_content` [ RunTime:0.010683s ]
+[ sql ] [ SQL ] SELECT `content` FROM `web_content` WHERE  `call_id` IN (1,2) [ RunTime:0.000982s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `web_contact` [ RunTime:0.012707s ]
+[ sql ] [ SQL ] SELECT `phone` FROM `web_contact` [ RunTime:0.006669s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `app_banner` [ RunTime:0.008532s ]
+[ sql ] [ SQL ] SELECT `filename`,`title` FROM `app_banner` WHERE  `type` = 1 ORDER BY `sort` [ RunTime:0.000668s ]

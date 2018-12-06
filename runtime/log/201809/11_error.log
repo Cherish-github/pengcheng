@@ -1,0 +1,24 @@
+---------------------------------------------------------------
+[ 2018-09-11T06:54:13+08:00 ] 119.137.55.180 GET /index/dinner/index.html
+[ error ] [0]模板文件不存在:D:\Program Files\web\pengcheng\public/frontEnd/pc/dinner\index.html[D:\Program Files\web\pengcheng\thinkphp\library\think\view\driver\Think.php:80]
+---------------------------------------------------------------
+[ 2018-09-11T06:57:37+08:00 ] 119.137.55.180 GET /index/dinner/index.html
+[ error ] [0]模板文件不存在:D:\Program Files\web\pengcheng\public/frontEnd/pc/dinner\index.html[D:\Program Files\web\pengcheng\thinkphp\library\think\view\driver\Think.php:80]
+---------------------------------------------------------------
+[ 2018-09-11T09:42:15+08:00 ] 119.137.55.180 POST /admin/plugs/delfile.html
+[ error ] [2]unlink(): http does not allow unlinking[D:\Program Files\web\pengcheng\application\admin\controller\Plugs.php:206]
+---------------------------------------------------------------
+[ 2018-09-11T10:39:46+08:00 ] 119.137.55.180 GET /admin/room/edit.html?id=20&spm=m-87-113&open_type=modal
+[ error ] [8]Array to string conversion[D:\Program Files\web\pengcheng\runtime\temp\ba93e142c7ec8bc469bd96d18b08a1cc.php:94]
+---------------------------------------------------------------
+[ 2018-09-11T10:40:36+08:00 ] 119.137.55.180 GET /admin/room/edit.html?id=20&spm=m-87-113&open_type=modal
+[ error ] [8]Array to string conversion[D:\Program Files\web\pengcheng\runtime\temp\ba93e142c7ec8bc469bd96d18b08a1cc.php:94]
+---------------------------------------------------------------
+[ 2018-09-11T11:45:26+08:00 ] 101.227.139.164 GET /index/user/index.html
+[ error ] [0]模板文件不存在:D:\Program Files\web\pengcheng\public/frontEnd/pc/user\index.html[D:\Program Files\web\pengcheng\thinkphp\library\think\view\driver\Think.php:80]
+---------------------------------------------------------------
+[ 2018-09-11T11:45:29+08:00 ] 101.91.60.11 GET /index/dinner/index.html
+[ error ] [0]模板文件不存在:D:\Program Files\web\pengcheng\public/frontEnd/pc/dinner\index.html[D:\Program Files\web\pengcheng\thinkphp\library\think\view\driver\Think.php:80]
+---------------------------------------------------------------
+[ 2018-09-11T15:24:14+08:00 ] 119.137.53.223 GET /admin/membercard/index.html?spm=m-87-146
+[ error ] [8]未定义数组索引: call_id[D:\Program Files\web\pengcheng\runtime\temp\06c0e1fa5f248a94e2aec0595ab81a54.php:55]

@@ -1,0 +1,282 @@
+body, dl, dd, ul, ol, h1, h2, h3, h4, h5, h6, pre, form, input, textarea, p, hr, thead, tbody, tfoot, th, td {
+    margin: 0;
+    padding: 0;
+}
+
+ul, ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+html {
+    -ms-text-size-adjust: none;
+    -webkit-text-size-adjust: none;
+    text-size-adjust: none;
+}
+
+body {
+    line-height: 1.5;
+    font-size: 14px;
+}
+
+body, button, input, select, textarea {
+    font-family: 'helvetica neue', tahoma, 'hiragino sans gb', stheiti, 'wenquanyi micro hei', \5FAE\8F6F\96C5\9ED1, \5B8B\4F53, sans-serif;
+}
+
+b, strong {
+    font-weight: bold;
+}
+
+i, em {
+    font-style: normal;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+table th, table td {
+    border: 1px solid #ddd;
+    padding: 5px;
+}
+
+table th {
+    font-weight: inherit;
+    border-bottom-width: 2px;
+    border-bottom-color: #ccc;
+}
+
+img {
+    border: 0 none;
+    width: auto \9;
+    max-width: 100%;
+    vertical-align: top;
+    height: auto;
+}
+
+button, input, select, textarea {
+    font-family: inherit;
+    font-size: 100%;
+    margin: 0;
+    vertical-align: baseline;
+}
+
+button, html input[type="button"], input[type="reset"], input[type="submit"] {
+    -webkit-appearance: button;
+    cursor: pointer;
+}
+
+button[disabled], input[disabled] {
+    cursor: default;
+}
+
+input[type="checkbox"], input[type="radio"] {
+    box-sizing: border-box;
+    padding: 0;
+}
+
+input[type="search"] {
+    -webkit-appearance: textfield;
+    -moz-box-sizing: content-box;
+    -webkit-box-sizing: content-box;
+    box-sizing: content-box;
+}
+
+input[type="search"]::-webkit-search-decoration {
+    -webkit-appearance: none;
+}
+
+input:focus {
+    outline: none;
+}
+
+select[size], select[multiple], select[size][multiple] {
+    border: 1px solid #AAA;
+    padding: 0;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary {
+    display: block;
+}
+
+audio, canvas, video, progress {
+    display: inline-block;
+}
+
+body {
+    background: #faf5f6;
+}
+
+input::-webkit-input-speech-button {
+    display: none
+}
+
+button, input, textarea {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+input[type=button], input[type=text], input[type=password] {
+    -webkit-appearance: none;
+    outline: none
+}
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+.clearfix:after {
+    clear: both;
+    display: table;
+    content: "";
+}
+
+.diandi {
+    height: 1rem;
+    width: 100%;
+}
+
+.posia {
+    position: absolute;
+}
+
+.posir {
+    position: relative;
+}
+
+.posif {
+    position: fixed;
+}
+
+.ovh {
+    overflow: hidden;
+}
+
+.tc {
+    text-align: center;
+}
+
+.disrow {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.disco {
+    display: flex;
+    flex-flow: column wrap;
+}
+
+.disju-c {
+    justify-content: center
+}
+
+.disju-sb {
+    justify-content: space-between
+}
+
+.disju-sa {
+    justify-content: space-around;
+}
+
+.bgfff {
+    background: #fff;
+}
+
+.cf {
+    color: #fff;
+}
+
+.hong {
+    color: #eb2c41;
+}
+
+.c3 {
+    color: #333;
+}
+
+.c6 {
+    color: #666;
+}
+
+.c9 {
+    color: #999;
+}
+
+.fw7 {
+    font-weight: 700;
+}
+
+.fs20 {
+    font-size: .2rem;
+}
+
+.fs22 {
+    font-size: .22rem;
+}
+
+.fs24 {
+    font-size: .24rem;
+}
+
+.fs26 {
+    font-size: .26rem;
+}
+
+.fs28 {
+    font-size: .28rem;
+}
+
+.fs30 {
+    font-size: .3rem;
+}
+
+.fs32 {
+    font-size: .32rem;
+}
+
+.fs34 {
+    font-size: .34rem;
+}
+
+.fs36 {
+    font-size: .36rem;
+}
+
+.fs49 {
+    font-size: .49rem;
+}
+
+.pd30 {
+    padding: .3rem;
+}
+
+.pdlr30 {
+    padding: 0 .3rem;
+}
+
+.mt40 {
+    margin-top: .4rem;
+}
+
+.mb10 {
+    margin-bottom: .1rem;
+}
+
+.mb30 {
+    margin-bottom: .3rem;
+}
+
+.mt30 {
+    margin-top: .3rem;
+}

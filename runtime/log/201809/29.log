@@ -1,0 +1,400 @@
+---------------------------------------------------------------
+[ 2018-09-29T05:32:31+08:00 ] 80.82.70.187 GET /cache/global/img/gs.gif
+[ info ] www.baidu.com/cache/global/img/gs.gif [运行时间：0.033425s][吞吐率：29.92req/s] [内存消耗：1,786.90kb] [文件加载：39]
+[ info ] [ LANG ] D:\Program Files\web\pengcheng\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'cache',
+    1 => 'global',
+    2 => 'img',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => '',
+  'content-length' => '0',
+  'x-original-url' => '/cache/global/img/gs.gif',
+  'user-agent' => 'Mozilla',
+  'if-modified-since' => 'Thu, 19 Apr 2012 09:51:20 GMT',
+  'host' => 'www.baidu.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-29T11:47:24+08:00 ] 175.42.2.169 GET /
+[ info ] www.baidu.com/ [运行时间：0.133586s][吞吐率：7.49req/s] [内存消耗：3,103.10kb] [文件加载：55]
+[ info ] [ LANG ] D:\Program Files\web\pengcheng\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => '',
+  'content-length' => '0',
+  'user-agent' => 'python-requests/2.6.0 CPython/2.7.5 Linux/3.10.0-693.11.1.el7.x86_64',
+  'host' => 'www.baidu.com',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => '*/*',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run hook\AccessAuth @action_begin [ RunTime:0.000832s ]
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\Program Files\web\pengcheng\application\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\Program Files\web\pengcheng\public/frontEnd/pc/index\index.html [ array (
+  0 => 'classuri',
+  1 => 'speaking',
+  2 => 'desc',
+  3 => 'contact',
+  4 => 'banners',
+  5 => 'title',
+) ]
+[ info ] [ BEHAVIOR ] Run hook\FilterView @view_filter [ RunTime:0.000875s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-29T11:47:24+08:00 ] 175.42.2.169 GET /
+[ info ] www.123cha.com/ [运行时间：0.096241s][吞吐率：10.39req/s] [内存消耗：3,102.93kb] [文件加载：55]
+[ info ] [ LANG ] D:\Program Files\web\pengcheng\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => '',
+  'content-length' => '0',
+  'user-agent' => 'python-requests/2.6.0 CPython/2.7.5 Linux/3.10.0-693.11.1.el7.x86_64',
+  'host' => 'www.123cha.com',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => '*/*',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run hook\AccessAuth @action_begin [ RunTime:0.000632s ]
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\Program Files\web\pengcheng\application\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\Program Files\web\pengcheng\public/frontEnd/pc/index\index.html [ array (
+  0 => 'classuri',
+  1 => 'speaking',
+  2 => 'desc',
+  3 => 'contact',
+  4 => 'banners',
+  5 => 'title',
+) ]
+[ info ] [ BEHAVIOR ] Run hook\FilterView @view_filter [ RunTime:0.000921s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-29T11:47:31+08:00 ] 175.42.2.169 GET /
+[ info ] www.minghui.org/ [运行时间：0.104892s][吞吐率：9.53req/s] [内存消耗：3,103.48kb] [文件加载：55]
+[ info ] [ LANG ] D:\Program Files\web\pengcheng\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => '',
+  'content-length' => '0',
+  'user-agent' => 'python-requests/2.6.0 CPython/2.7.5 Linux/3.10.0-693.11.1.el7.x86_64',
+  'host' => 'www.minghui.org',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => '*/*',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run hook\AccessAuth @action_begin [ RunTime:0.000510s ]
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\Program Files\web\pengcheng\application\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\Program Files\web\pengcheng\public/frontEnd/pc/index\index.html [ array (
+  0 => 'classuri',
+  1 => 'speaking',
+  2 => 'desc',
+  3 => 'contact',
+  4 => 'banners',
+  5 => 'title',
+) ]
+[ info ] [ BEHAVIOR ] Run hook\FilterView @view_filter [ RunTime:0.000713s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-29T11:47:31+08:00 ] 175.42.2.169 GET /
+[ info ] www.epochtimes.com/ [运行时间：0.101939s][吞吐率：9.81req/s] [内存消耗：3,103.10kb] [文件加载：55]
+[ info ] [ LANG ] D:\Program Files\web\pengcheng\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => '',
+  'content-length' => '0',
+  'user-agent' => 'python-requests/2.6.0 CPython/2.7.5 Linux/3.10.0-693.11.1.el7.x86_64',
+  'host' => 'www.epochtimes.com',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => '*/*',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run hook\AccessAuth @action_begin [ RunTime:0.000477s ]
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\Program Files\web\pengcheng\application\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\Program Files\web\pengcheng\public/frontEnd/pc/index\index.html [ array (
+  0 => 'classuri',
+  1 => 'speaking',
+  2 => 'desc',
+  3 => 'contact',
+  4 => 'banners',
+  5 => 'title',
+) ]
+[ info ] [ BEHAVIOR ] Run hook\FilterView @view_filter [ RunTime:0.000943s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-29T11:47:31+08:00 ] 175.42.2.169 GET /
+[ info ] www.rfa.org/ [运行时间：0.109187s][吞吐率：9.16req/s] [内存消耗：3,103.04kb] [文件加载：55]
+[ info ] [ LANG ] D:\Program Files\web\pengcheng\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => '',
+  'content-length' => '0',
+  'user-agent' => 'python-requests/2.6.0 CPython/2.7.5 Linux/3.10.0-693.11.1.el7.x86_64',
+  'host' => 'www.rfa.org',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => '*/*',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run hook\AccessAuth @action_begin [ RunTime:0.000786s ]
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\Program Files\web\pengcheng\application\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\Program Files\web\pengcheng\public/frontEnd/pc/index\index.html [ array (
+  0 => 'classuri',
+  1 => 'speaking',
+  2 => 'desc',
+  3 => 'contact',
+  4 => 'banners',
+  5 => 'title',
+) ]
+[ info ] [ BEHAVIOR ] Run hook\FilterView @view_filter [ RunTime:0.001156s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-29T11:47:31+08:00 ] 175.42.2.169 GET /
+[ info ] www.boxun.com/ [运行时间：0.161453s][吞吐率：6.19req/s] [内存消耗：3,103.10kb] [文件加载：55]
+[ info ] [ LANG ] D:\Program Files\web\pengcheng\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => '',
+  'content-length' => '0',
+  'user-agent' => 'python-requests/2.6.0 CPython/2.7.5 Linux/3.10.0-693.11.1.el7.x86_64',
+  'host' => 'www.boxun.com',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => '*/*',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run hook\AccessAuth @action_begin [ RunTime:0.003278s ]
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\Program Files\web\pengcheng\application\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\Program Files\web\pengcheng\public/frontEnd/pc/index\index.html [ array (
+  0 => 'classuri',
+  1 => 'speaking',
+  2 => 'desc',
+  3 => 'contact',
+  4 => 'banners',
+  5 => 'title',
+) ]
+[ info ] [ BEHAVIOR ] Run hook\FilterView @view_filter [ RunTime:0.001238s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-29T11:47:31+08:00 ] 175.42.2.169 GET /
+[ info ] www.bing.com/ [运行时间：0.106989s][吞吐率：9.35req/s] [内存消耗：3,103.08kb] [文件加载：55]
+[ info ] [ LANG ] D:\Program Files\web\pengcheng\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => '',
+  'content-length' => '0',
+  'user-agent' => 'python-requests/2.6.0 CPython/2.7.5 Linux/3.10.0-693.11.1.el7.x86_64',
+  'host' => 'www.bing.com',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => '*/*',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run hook\AccessAuth @action_begin [ RunTime:0.000607s ]
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\Program Files\web\pengcheng\application\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\Program Files\web\pengcheng\public/frontEnd/pc/index\index.html [ array (
+  0 => 'classuri',
+  1 => 'speaking',
+  2 => 'desc',
+  3 => 'contact',
+  4 => 'banners',
+  5 => 'title',
+) ]
+[ info ] [ BEHAVIOR ] Run hook\FilterView @view_filter [ RunTime:0.000851s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-29T11:47:31+08:00 ] 175.42.2.169 GET /
+[ info ] wujieliulan.com/ [运行时间：0.103154s][吞吐率：9.69req/s] [内存消耗：3,102.95kb] [文件加载：55]
+[ info ] [ LANG ] D:\Program Files\web\pengcheng\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => '',
+  'content-length' => '0',
+  'user-agent' => 'python-requests/2.6.0 CPython/2.7.5 Linux/3.10.0-693.11.1.el7.x86_64',
+  'host' => 'wujieliulan.com',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => '*/*',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run hook\AccessAuth @action_begin [ RunTime:0.000616s ]
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\Program Files\web\pengcheng\application\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\Program Files\web\pengcheng\public/frontEnd/pc/index\index.html [ array (
+  0 => 'classuri',
+  1 => 'speaking',
+  2 => 'desc',
+  3 => 'contact',
+  4 => 'banners',
+  5 => 'title',
+) ]
+[ info ] [ BEHAVIOR ] Run hook\FilterView @view_filter [ RunTime:0.001061s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-29T15:45:54+08:00 ] 80.82.70.187 GET /cache/global/img/gs.gif
+[ info ] www.baidu.com/cache/global/img/gs.gif [运行时间：0.045710s][吞吐率：21.88req/s] [内存消耗：1,786.91kb] [文件加载：39]
+[ info ] [ LANG ] D:\Program Files\web\pengcheng\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'cache',
+    1 => 'global',
+    2 => 'img',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => '',
+  'content-length' => '0',
+  'x-original-url' => '/cache/global/img/gs.gif',
+  'user-agent' => 'Mozilla',
+  'if-modified-since' => 'Thu, 19 Apr 2012 09:51:20 GMT',
+  'host' => 'www.baidu.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File

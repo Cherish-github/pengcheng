@@ -1,0 +1,60 @@
+Array
+(
+    [appid] => wx75e3e6e9c127d509
+    [bank_type] => CFT
+    [cash_fee] => 1
+    [fee_type] => CNY
+    [is_subscribe] => Y
+    [mch_id] => 1238127002
+    [nonce_str] => 0f5l9eb9bi6sfm94zawmdl8kxmkfxdg9
+    [openid] => otuUIuA7qA9FFwjBc4wid98ioLq4
+    [out_trade_no] => 20181101143323261279
+    [result_code] => SUCCESS
+    [return_code] => SUCCESS
+    [sign] => 06F2761A3BEC6DA5B19A2EFD2655E298
+    [time_end] => 20181101143411
+    [total_fee] => 1
+    [trade_type] => JSAPI
+    [transaction_id] => 4200000231201811011464444373
+)
+
+Array
+(
+    [appid] => wx75e3e6e9c127d509
+    [bank_type] => CFT
+    [cash_fee] => 1
+    [fee_type] => CNY
+    [is_subscribe] => Y
+    [mch_id] => 1238127002
+    [nonce_str] => cdu3oddc21oqyvo1vgm3sxl5qjf2cle0
+    [openid] => otuUIuA7qA9FFwjBc4wid98ioLq4
+    [out_trade_no] => 20181101143719155535
+    [result_code] => SUCCESS
+    [return_code] => SUCCESS
+    [sign] => 50C3836673A70D597630CC336168F742
+    [time_end] => 20181101143806
+    [total_fee] => 1
+    [trade_type] => JSAPI
+    [transaction_id] => 4200000223201811018677876055
+)
+
+Array
+(
+    [appid] => wx75e3e6e9c127d509
+    [bank_type] => CFT
+    [cash_fee] => 1
+    [fee_type] => CNY
+    [is_subscribe] => Y
+    [mch_id] => 1238127002
+    [nonce_str] => fi71pusp3yg1osqracg4wa0dh0mu1qiz
+    [openid] => otuUIuA7qA9FFwjBc4wid98ioLq4
+    [out_trade_no] => 20181102104158573181
+    [result_code] => SUCCESS
+    [return_code] => SUCCESS
+    [sign] => E14B428D124DCF6BEDAD4AD2FC598A32
+    [time_end] => 20181102104246
+    [total_fee] => 1
+    [trade_type] => JSAPI
+    [transaction_id] => 4200000226201811024479453543
+)
+

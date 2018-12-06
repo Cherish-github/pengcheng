@@ -1,0 +1,136 @@
+{block name='style'}
+<style>
+.icon{
+    border:none;
+    font-size: 2rem;
+}
+.layui-form-item .layui-input-inline{
+    width: 200px;
+}
+</style>
+{/block}
+<form class="layui-form layui-box" style='padding:25px 30px 20px 0;height: 550px;' action="__SELF__" data-auto="true" method="post">
+    <div class="layui-form-item">
+        <label class="layui-form-label">购买人</label>
+        <div class="layui-input-inline">
+            <input type="text"  value='{$buyer|default=""}' disabled  class="layui-input">
+        </div>
+    </div>
+
+    <div class="layui-form-item">
+        <label class="layui-form-label">下单时间</label>
+        <div class="layui-input-inline">
+            <input type="text"  value='{$vo.created_time|default=""}' disabled  class="layui-input">
+        </div>
+    </div>
+
+    <div class="layui-form-item">
+        <label class="layui-form-label">订单总额</label>
+        <div class="layui-input-inline">
+            <input type="text"  value='{$vo.amount|default=""}' disabled  class="layui-input">
+        </div>
+
+        <label class="layui-form-label">优惠金额</label>
+        <div class="layui-input-inline">
+            <input type="text"  value='{$vo.coupon_price|default=""}'  disabled class="layui-input">
+        </div>
+    </div>
+
+    <div class="layui-form-item">
+        <label class="layui-form-label">订单号</label>
+        <div class="layui-input-inline">
+            <input type="text"  value='{$vo.order_no|default=""}' disabled  class="layui-input">
+        </div>
+
+        <label class="layui-form-label">交易单号</label>
+        <div class="layui-input-inline">
+            <input type="text"  value='{$vo.out_trade_no|default=""}'  disabled class="layui-input">
+        </div>
+    </div>
+
+    <div class="layui-form-item">
+        <label class="layui-form-label">联系人</label>
+        <div class="layui-input-inline">
+            <input type="text"  value='{$vo.name|default=""}' class="layui-input">
+        </div>
+
+        <label class="layui-form-label">手机号</label>
+        <div class="layui-input-inline">
+            <input type="text"  value='{$vo.phone|default=""}' class="layui-input">
+        </div>
+    </div>
+
+    <div class="layui-form-item">
+        <label class="layui-form-label">入住日期</label>
+        <div class="layui-input-inline">
+            <input type="text" value='{$vo.start_date|default=""}' id="start_date" class="layui-input">
+        </div>
+
+        <label class="layui-form-label">离店日期</label>
+        <div class="layui-input-inline">
+            <input type="text" value='{$vo.left_date|default=""}' id="left_date" class="layui-input">
+        </div>
+    </div>
+
+    <div class="layui-form-item">
+        <label class="layui-form-label">交易状态</label>
+        <div class="layui-input-inline">
+            {if $vo.status < 1}
+            <input type="text" class="layui-input" value="{$vo.status | roomOrderStatus}" disabled readonly>
+            {else/}
+            <select name="status" class="form-control">
+                {for start="1" end="4"}
+                <option value="{$i}" {if $vo.status==$i}selected{/if}>{$i | roomOrderStatus}</option>
+                {/for}
+            </select>
+            {/if}
+        </div>
+
+        <label class="layui-form-label">实付金额</label>
+        <div class="layui-input-inline">
+            <input type="text"  value='{$vo.pay_money|default=""}'  disabled class="layui-input">
+        </div>
+    </div>
+
+    <table class="table table-hover" style="width:90%;margin-left: 5%">
+        <thead>
+        <tr>
+            <th class='text-center'>房间名称</th>
+            <th class='text-center'>单价</th>
+            <th class='text-center'>数量</th>
+        </tr>
+        </thead>
+        <tbody>
+        {foreach $roomList as $key=>$v}
+        <tr>
+            <td class='text-center'>{$v.title}</td>
+            <td class='text-center'>￥{$v.price}</td>
+            <td class='text-center'>{$v.num}</td>
+        </tr>
+        {/foreach}
+        </tbody>
+    </table>
+
+    <div class="hr-line-dashed"></div>
+    <div class="layui-form-item text-center">
+        {if isset($vo['id'])}<input type='hidden' value='{$vo.id}' name='id'/>{/if}
+        <button class="layui-btn" type='submit' lay-submit lay-filter="subForm">保存数据</button>
+        <button class="layui-btn layui-btn-danger" type='button' data-confirm="确定要取消编辑吗？" data-close>取消编辑</button>
+    </div>
+</form>
+{block name='script'}
+<script>
+    form.render();
+    layui.use('laydate', function(){
+        var laydate1 = layui.laydate;
+        var laydate2 = layui.laydate;
+        //执行一个laydate实例
+        laydate1.render({
+            elem: '#start_date' //指定元素
+        });
+        laydate2.render({
+            elem: '#left_date' //指定元素
+        });
+    });
+</script>
+{/block}

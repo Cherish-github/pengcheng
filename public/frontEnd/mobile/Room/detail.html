@@ -1,0 +1,59 @@
+{include file="public/header"}
+<!-- Swiper -->
+<div class="swiper-container">
+    <div class="swiper-wrapper">
+        {foreach $detail.detail_img as $img}
+        <div class="swiper-slide"><img src="{$img}"/></div>
+        {/foreach}
+        <!--<div class="swiper-slide"><img src="__IMAGES__/tu_d.png"/></div>-->
+        <!--<div class="swiper-slide"><img src="__IMAGES__/tu_e.png"/></div>-->
+    </div>
+    <!-- Add Pagination -->
+    <div class="swiper-pagination"></div>
+</div>
+
+<div class="reser">
+    <div class="reser1 disrow disju-sb bgfff">
+        <div class="reser1-1 fs28 c3">
+            <img src="__IMAGES__/icon_ssjiuidian_my.png"/>{$detail.title}
+        </div>
+        <div class="reser1-2 fs26 hong">
+            ￥{$detail.price | fmtPrice}
+        </div>
+    </div>
+    <div class="reser2">
+        <div class="reser-con fs28 c6">
+            <div class="reser-con1 fs30 c3">房间描述</div>
+           <!--  <img src="__IMAGES__/tu_e.png"/>
+            <img src="__IMAGES__/tu_e.png"/> -->
+            {:html($detail.intro)}
+            <!-- 客房内应配有与酒店星级标准相应的客用设施，如：梳妆台（或写字台）、衣柜、床（软床垫）、座椅、沙发、床头控制柜等配套家具；每间客房设有单独卫生间，卫生间内一般配有坐式便器、梳洗台（装有洗面盆、梳妆镜）、冷热水设施（包括配有喷头的浴缸、浴帘）；每间客房都具有能够保证或调节温度的分体空调或中央空调；每间房间都配有电话，可直拨或通过总机挂通国内或国际长途电话；每间客房都配有电视机和音响设备；每间客房内都配有一定数量的文化用品，如信纸、信封、明信片、城市地图、针线包、酒店指南；每间客房内还配有一定数量的卫生用品，如牙刷、牙膏、肥皂、洗发水、润发露或护发素、浴帽、擦鞋器（纸）等。 -->
+        </div>
+    </div>
+    <div class="reser3 tc">
+        <a class="fs28 cf" {if $detail.left_num <= 0}style="background: #c5c4c4;box-shadow: none;"
+        {else/}href="{:Url('index/order/room')}?id={$detail.id}"{/if}>预订
+        </a>
+    </div>
+</div>
+
+{include file="public/footer"}
+<!-- Swiper JS -->
+<script src="__PLUGS__/swiper.min.js"></script>
+<!-- Initialize Swiper -->
+<script>
+    var swiper = new Swiper('.swiper-container', {
+        slidesPerView: 1,
+        spaceBetween: 30,
+        loop: true,
+        autoplay: {
+            delay: 3000,
+            stopOnLastSlide: false,
+            disableOnInteraction: true,
+        },
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+    });
+</script>

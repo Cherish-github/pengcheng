@@ -1,0 +1,48 @@
+---------------------------------------------------------------
+[ 2018-09-06T09:54:55+08:00 ] 0.0.0.0 GET /admin/order/index.html?spm=m-87-137
+[ error ] [8]未定义数组索引: amount[E:\wamp64\www\pengcheng\runtime\temp\ce61b4950a10147b7c55ac5e88dd8f47.php:117]
+---------------------------------------------------------------
+[ 2018-09-06T10:33:02+08:00 ] 0.0.0.0 GET /admin/users/index.html?spm=m-87-133
+[ error ] [8]未定义数组索引: gender[E:\wamp64\www\pengcheng\runtime\temp\a61454a85373f7a33c691a9c4dd97ebd.php:65]
+---------------------------------------------------------------
+[ 2018-09-06T10:48:13+08:00 ] 0.0.0.0 GET /admin/roomorder/index.html?spm=m-87-137
+[ error ] [10501]SQLSTATE[42S02]: Base table or view not found: 1146 Table 'pengcheng.app_order' doesn't exist[E:\wamp64\www\pengcheng\thinkphp\library\think\db\Connection.php:388]
+---------------------------------------------------------------
+[ 2018-09-06T10:48:22+08:00 ] 0.0.0.0 GET /admin/roomorder/index.html?spm=m-87-137
+[ error ] [10501]SQLSTATE[42S02]: Base table or view not found: 1146 Table 'pengcheng.app_order' doesn't exist[E:\wamp64\www\pengcheng\thinkphp\library\think\db\Connection.php:388]
+---------------------------------------------------------------
+[ 2018-09-06T10:48:30+08:00 ] 0.0.0.0 GET /admin/roomorder/index.html?spm=m-87-137
+[ error ] [10501]SQLSTATE[42S02]: Base table or view not found: 1146 Table 'pengcheng.app_order' doesn't exist[E:\wamp64\www\pengcheng\thinkphp\library\think\db\Connection.php:388]
+---------------------------------------------------------------
+[ 2018-09-06T10:49:19+08:00 ] 0.0.0.0 GET /admin/roomorder/index.html?spm=m-87-137
+[ error ] [10501]SQLSTATE[42S22]: Column not found: 1054 Unknown column 'r.type' in 'field list'[E:\wamp64\www\pengcheng\thinkphp\library\think\db\Connection.php:388]
+---------------------------------------------------------------
+[ 2018-09-06T10:51:45+08:00 ] 0.0.0.0 GET /admin/roomorder/edit.html?id=8&spm=m-87-137&open_type=modal
+[ error ] [8]未定义数组索引: type[E:\wamp64\www\pengcheng\runtime\temp\ea079eb2a75083a8d69d477e21d149a3.php:62]
+---------------------------------------------------------------
+[ 2018-09-06T13:47:04+08:00 ] 0.0.0.0 GET /admin/goodsorder/index.html?spm=m-87-144
+[ error ] [10501]SQLSTATE[42000]: Syntax error or access violation: 1055 Expression #17 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'pengcheng.u.nickname' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by[E:\wamp64\www\pengcheng\thinkphp\library\think\db\Connection.php:388]
+---------------------------------------------------------------
+[ 2018-09-06T13:47:54+08:00 ] 0.0.0.0 GET /admin/goodsorder/index.html?spm=m-87-144
+[ error ] [10501]SQLSTATE[42000]: Syntax error or access violation: 1055 Expression #17 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'pengcheng.u.nickname' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by[E:\wamp64\www\pengcheng\thinkphp\library\think\db\Connection.php:388]
+---------------------------------------------------------------
+[ 2018-09-06T13:48:43+08:00 ] 0.0.0.0 GET /admin/goodsorder/index.html?spm=m-87-144
+[ error ] [10501]SQLSTATE[42000]: Syntax error or access violation: 1055 Expression #17 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'pengcheng.u.nickname' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by[E:\wamp64\www\pengcheng\thinkphp\library\think\db\Connection.php:388]
+---------------------------------------------------------------
+[ 2018-09-06T13:51:23+08:00 ] 0.0.0.0 GET /admin/goodsorder/index.html?spm=m-87-144
+[ error ] [10501]SQLSTATE[42000]: Syntax error or access violation: 1055 Expression #17 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'pengcheng.u.nickname' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by[E:\wamp64\www\pengcheng\thinkphp\library\think\db\Connection.php:388]
+---------------------------------------------------------------
+[ 2018-09-06T13:54:43+08:00 ] 0.0.0.0 GET /admin/goodsorder/index.html?spm=m-87-144
+[ error ] [10501]SQLSTATE[42000]: Syntax error or access violation: 1055 Expression #17 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'pengcheng.u.nickname' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by[E:\wamp64\www\pengcheng\thinkphp\library\think\db\Connection.php:388]
+---------------------------------------------------------------
+[ 2018-09-06T14:37:51+08:00 ] 0.0.0.0 GET /admin/coupon/index.html?spm=m-87-145
+[ error ] [1]Call to undefined method app\admin\controller\Coupon::title()[E:\wamp64\www\pengcheng\application\admin\controller\Coupon.php:20]
+---------------------------------------------------------------
+[ 2018-09-06T14:46:03+08:00 ] 0.0.0.0 GET /admin/coupon/index.html?spm=m-87-145
+[ error ] [8]未定义数组索引: filename[E:\wamp64\www\pengcheng\runtime\temp\91ab8dc84d4ee35092dd861ad14f310e.php:45]
+---------------------------------------------------------------
+[ 2018-09-06T15:40:19+08:00 ] 0.0.0.0 GET /admin/goodsorder/edit.html?id=5&spm=m-87-144&open_type=modal
+[ error ] [8]未定义数组下标: 3[E:\wamp64\www\pengcheng\application\admin\common.php:48]
+---------------------------------------------------------------
+[ 2018-09-06T18:01:43+08:00 ] 0.0.0.0 GET /admin/users/index.html?spm=m-87-133
+[ error ] [8]未定义数组索引: user_id[E:\wamp64\www\pengcheng\runtime\temp\a61454a85373f7a33c691a9c4dd97ebd.php:71]

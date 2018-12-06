@@ -1,0 +1,9 @@
+---------------------------------------------------------------
+[ 2018-09-08T09:12:37+08:00 ] 0.0.0.0 GET /admin/goodsorder/order_export.html?order_no=&title=&created_time=&meal_date=
+[ error ] [8]未定义数组索引: type[E:\wamp64\www\pengcheng\application\admin\controller\Goodsorder.php:188]
+---------------------------------------------------------------
+[ 2018-09-08T11:38:15+08:00 ] 127.0.0.1 GET /api/roomorder/getList
+[ error ] [8]未定义数组索引: pay_money[E:\wamp64\www\pengcheng\application\api\controller\Roomorder.php:57]
+---------------------------------------------------------------
+[ 2018-09-08T11:39:44+08:00 ] 127.0.0.1 GET /api/goodsorder/getList
+[ error ] [8]未定义数组索引: left_date[E:\wamp64\www\pengcheng\application\api\controller\Goodsorder.php:60]

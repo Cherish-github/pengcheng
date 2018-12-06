@@ -1,0 +1,63 @@
+---------------------------------------------------------------
+[ 2018-10-11T08:58:27+08:00 ] 119.137.54.184 GET /api/goodsorder/test
+[ error ] [10501]SQLSTATE[42S22]: Column not found: 1054 Unknown column 'g.title' in 'field list'[D:\Program Files\web\pengcheng\thinkphp\library\think\db\Connection.php:388]
+---------------------------------------------------------------
+[ 2018-10-11T09:01:19+08:00 ] 101.226.103.71 POST /index/Wechatnotify/goods.html
+[ error ] [8]未定义数组索引: openid[D:\Program Files\web\pengcheng\application\index\controller\Wechatnotify.php:150]
+---------------------------------------------------------------
+[ 2018-10-11T09:01:35+08:00 ] 101.226.103.62 POST /index/Wechatnotify/goods.html
+[ error ] [8]未定义数组索引: openid[D:\Program Files\web\pengcheng\application\index\controller\Wechatnotify.php:150]
+---------------------------------------------------------------
+[ 2018-10-11T09:01:50+08:00 ] 101.226.103.71 POST /index/Wechatnotify/goods.html
+[ error ] [8]未定义数组索引: openid[D:\Program Files\web\pengcheng\application\index\controller\Wechatnotify.php:150]
+---------------------------------------------------------------
+[ 2018-10-11T09:02:21+08:00 ] 101.226.103.69 POST /index/Wechatnotify/goods.html
+[ error ] [8]未定义数组索引: openid[D:\Program Files\web\pengcheng\application\index\controller\Wechatnotify.php:150]
+---------------------------------------------------------------
+[ 2018-10-11T09:03:02+08:00 ] 101.226.103.71 POST /index/Wechatnotify/goods.html
+[ error ] [8]未定义数组索引: openid[D:\Program Files\web\pengcheng\application\index\controller\Wechatnotify.php:150]
+---------------------------------------------------------------
+[ 2018-10-11T09:03:18+08:00 ] 58.251.80.45 POST /index/Wechatnotify/goods.html
+[ error ] [8]未定义数组索引: openid[D:\Program Files\web\pengcheng\application\index\controller\Wechatnotify.php:150]
+---------------------------------------------------------------
+[ 2018-10-11T09:03:34+08:00 ] 101.226.103.71 POST /index/Wechatnotify/goods.html
+[ error ] [8]未定义数组索引: openid[D:\Program Files\web\pengcheng\application\index\controller\Wechatnotify.php:150]
+---------------------------------------------------------------
+[ 2018-10-11T09:04:05+08:00 ] 183.3.234.57 POST /index/Wechatnotify/goods.html
+[ error ] [8]未定义数组索引: openid[D:\Program Files\web\pengcheng\application\index\controller\Wechatnotify.php:150]
+---------------------------------------------------------------
+[ 2018-10-11T09:05:22+08:00 ] 183.3.234.50 POST /index/Wechatnotify/goods.html
+[ error ] [8]未定义数组索引: openid[D:\Program Files\web\pengcheng\application\index\controller\Wechatnotify.php:150]
+---------------------------------------------------------------
+[ 2018-10-11T09:07:06+08:00 ] 101.226.103.62 POST /index/Wechatnotify/goods.html
+[ error ] [8]未定义数组索引: openid[D:\Program Files\web\pengcheng\application\index\controller\Wechatnotify.php:150]
+---------------------------------------------------------------
+[ 2018-10-11T09:08:21+08:00 ] 183.3.234.60 POST /index/Wechatnotify/goods.html
+[ error ] [8]未定义数组索引: openid[D:\Program Files\web\pengcheng\application\index\controller\Wechatnotify.php:150]
+---------------------------------------------------------------
+[ 2018-10-11T09:08:37+08:00 ] 183.3.234.63 POST /index/Wechatnotify/goods.html
+[ error ] [8]未定义数组索引: openid[D:\Program Files\web\pengcheng\application\index\controller\Wechatnotify.php:150]
+---------------------------------------------------------------
+[ 2018-10-11T09:08:53+08:00 ] 101.226.103.70 POST /index/Wechatnotify/goods.html
+[ error ] [8]未定义数组索引: openid[D:\Program Files\web\pengcheng\application\index\controller\Wechatnotify.php:150]
+---------------------------------------------------------------
+[ 2018-10-11T09:09:24+08:00 ] 58.251.80.45 POST /index/Wechatnotify/goods.html
+[ error ] [8]未定义数组索引: openid[D:\Program Files\web\pengcheng\application\index\controller\Wechatnotify.php:150]
+---------------------------------------------------------------
+[ 2018-10-11T09:11:01+08:00 ] 101.226.103.71 POST /index/Wechatnotify/goods.html
+[ error ] [8]未定义数组索引: openid[D:\Program Files\web\pengcheng\application\index\controller\Wechatnotify.php:111]
+---------------------------------------------------------------
+[ 2018-10-11T09:11:15+08:00 ] 101.226.103.71 POST /index/Wechatnotify/goods.html
+[ error ] [8]未定义数组索引: openid[D:\Program Files\web\pengcheng\application\index\controller\Wechatnotify.php:111]
+---------------------------------------------------------------
+[ 2018-10-11T09:11:31+08:00 ] 183.3.234.50 POST /index/Wechatnotify/goods.html
+[ error ] [8]未定义数组索引: openid[D:\Program Files\web\pengcheng\application\index\controller\Wechatnotify.php:111]
+---------------------------------------------------------------
+[ 2018-10-11T09:12:02+08:00 ] 101.226.103.71 POST /index/Wechatnotify/goods.html
+[ error ] [8]未定义数组索引: openid[D:\Program Files\web\pengcheng\application\index\controller\Wechatnotify.php:111]
+---------------------------------------------------------------
+[ 2018-10-11T09:12:25+08:00 ] 140.207.54.74 POST /index/Wechatnotify/goods.html
+[ error ] [8]未定义数组索引: openid[D:\Program Files\web\pengcheng\application\index\controller\Wechatnotify.php:111]
+---------------------------------------------------------------
+[ 2018-10-11T09:15:03+08:00 ] 101.226.103.71 POST /index/Wechatnotify/goods.html
+[ error ] [8]未定义数组索引: openid[D:\Program Files\web\pengcheng\application\index\controller\Wechatnotify.php:111]

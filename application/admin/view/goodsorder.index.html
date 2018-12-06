@@ -1,0 +1,164 @@
+{extend name='extra@admin/content'}
+{block name="button"}
+<div class="nowrap pull-right" style="margin-top:10px">
+    <button data-update data-field='delete' data-action='{:url("$classuri/del")}'
+            class='layui-btn layui-btn-small layui-btn-danger'><i class='fa fa-remove'></i> 删除订单
+    </button>
+</div>
+{/block}
+        {block name="content"}
+<!-- 表单搜索 开始 -->
+<form class="animated form-search" action="__SELF__" onsubmit="return false" method="get">
+
+    <div class="row">
+        <div class="col-xs-2">
+            <div class="form-group">
+                <input type="text" name="title" value="{$Think.get.title|default=''}" placeholder="商品名称" class="input-sm form-control">
+            </div>
+        </div>
+
+        <div class="col-xs-3">
+            <div class="form-group">
+                <input type="text" name="order_no" value="{$Think.get.order_no|default=''}" placeholder="订单号" class="input-sm form-control">
+            </div>
+        </div>
+
+        <div class="col-xs-2">
+            <div class="form-group">
+                <input type="text" name="created_time" autocomplete="off" value="{$Think.get.created_time|default=''}" id="created_time" placeholder="下单时间" class="input-sm form-control">
+            </div>
+        </div>
+
+        <div class="col-xs-2">
+            <div class="form-group">
+                <input type="text" name="meal_date" value="{$Think.get.meal_date|default=''}" autocomplete="off" id="meal_date" placeholder="用餐日期" class="input-sm form-control">
+            </div>
+        </div>
+
+        <div class="col-xs-2">
+            <div class="form-group">
+                <select class="form-control" name="status">
+                    <option value="" {if is_null($Think.get.status)}selected{/if}>全部</option>
+                    {for start="-1" end="3"}
+                    <option value="{$i}" {if $Think.get.status!='' && $Think.get.status==$i}selected{/if}>{:goodsOrderStatus($i)}</option>
+                    {/for}
+                </select>
+            </div>
+        </div>
+
+        <div class="col-xs-1">
+            <div class="form-group">
+                <button type="submit" class="btn btn-sm btn-white"><i class="fa fa-search"></i> 搜索</button>
+            </div>
+        </div>
+
+        <div class="nowrap pull-right" style="margin-top:10px">
+            <button data-title="excel导出" type="button" class='layui-btn layui-btn-small' onclick="export_order()" >
+                <i class='fa'></i> excel导出
+            </button>
+        </div>
+    </div>
+</form>
+<!-- 表单搜索 结束 -->
+{if $list}
+        <form onsubmit="return false;" data-auto="" method="POST">
+            <input type="hidden" value="resort" name="action"/>
+
+            <table class="table table-hover">
+                <thead>
+                <tr>
+                    <th class='list-table-check-td'>
+                        <input data-none-auto="" data-check-target='.list-check-box' type='checkbox'/>
+                    </th>
+                    <th class='text-center'>用户</th>
+                    <th class='text-center'>商品名称</th>
+                    <th class='text-center'>数量</th>
+                    <th class='text-center'>订单号</th>
+                    <th class='text-center'>订单总额</th>
+                    <th class='text-center'>实付金额</th>
+                    <th class='text-center'>用餐时间</th>
+                    <th class='text-center'>用餐人数</th>
+                    <th class="text-center">交易状态</th>
+                    <th class="text-center">下单时间</th>
+                    <th class='text-center'>操作</th>
+                </tr>
+                </thead>
+                <tbody>
+                {foreach $list as $key=>$vo}
+                <tr>
+                    <td class='list-table-check-td'>
+                        <input class="list-check-box" value='{$vo.id}' type='checkbox'/>
+                    </td>
+                    <td class='text-center'>
+                        {$vo.nickname}
+                        <img width="40" data-tips-image height="40" style="border-radius:50%" src="{$vo.avatarurl}">
+                    </td>
+                    <td class='text-center'>{$vo.title}</td>
+                    <td class='text-center'>{$vo.num}</td>
+                    <td class='text-center'>{$vo.order_no}</td>
+                    <td class='text-center'>{$vo.amount}</td>
+                    <td class='text-center'>{$vo.pay_money}</td>
+                    <td class='text-center'>{$vo.meal_date} {$vo.meal_time}</td>
+                    <td class='text-center'>{$vo.meal_people}</td>
+                    <td class="text-center">{$vo.status | goodsOrderStatus}</td>
+                    <td class="text-center">{$vo.created_time}</td>
+                    <td class='text-center nowrap'>
+                        {if auth("$classuri/edit")}
+                        <span class="text-explode">|</span>
+                        <a data-modal='{:url("$classuri/edit")}?id={$vo.id}' data-title="详情" href="javascript:void(0)">详情</a>
+                        {/if}
+                        {if $vo.status==1}
+                        <span class="text-explode">|</span>
+                        <a data-update='{$vo.id}' data-field='changeStatus' data-action='{:url("$classuri/finishOrder")}' href="javascript:void(0)" style="color: #5fc306;">完成</a>
+                        {/if}
+                        {if auth("$classuri/del")}
+                        <span class="text-explode">|</span>
+                        <a data-update="{$vo.id}" data-field='delete' data-action='{:url("$classuri/del")}'
+                           href="javascript:void(0)">删除</a>
+                        {/if}
+                    </td>
+                </tr>
+                {/foreach}
+                </tbody>
+            </table>
+            {if isset($page)}<p>{$page}</p>{/if}
+        </form>
+        {else}
+            <p class="layui-elem-quote">您的列表暂时没有任何记录！</p>
+        {/if}
+        {/block}
+{block name='script'}
+<script type="text/javascript">
+    layui.use('laydate', function(){
+        var laydate = layui.laydate;
+        //执行一个laydate实例
+        laydate.render({
+            elem: '#created_time' ,//指定元素
+        });
+
+        var laydate2 = layui.laydate;
+        //执行一个laydate实例
+        laydate2.render({
+            elem: '#meal_date' ,//指定元素
+        });
+    });
+
+    function export_order(){
+        var order_no = $('input[name=order_no]').val();
+        var title = $('input[name=title]').val();
+        var created_time = $('input[name=created_time]').val();
+        var meal_date = $('input[name=meal_date]').val();
+        var status = $('select[name=status]').val();
+        $.post('/admin/goodsorder/canExport',{'order_no':order_no,'title':title,'created_time':created_time,'meal_date':meal_date,'status':status},function(data){
+            if(data.code == 1){
+                location.href = '{:url("$classuri/order_export")}?order_no='+order_no+'&title='+title+'&created_time='+created_time+'&meal_date='+meal_date+'&status='+status;
+            }else{
+                layui.use('layer', function(){
+                    var layer = layui.layer;
+                    layer.msg('没有订单数据',{icon:2})
+                });
+            }
+        },'json');
+    }
+</script>
+{/block}

@@ -1,0 +1,116 @@
+{include file="public/header"}
+<div class="indabout1">
+    <img src="__IMAGES__/bg_shouye.jpg"/>
+</div>
+<!--nav-->
+<div class="main posir">
+
+    <div class="indabout bgfff mt-40">
+        <h3 class="indabout-h31 fw7">酒店简介</h3>
+
+        <div class="indabout2 c6">
+            {:html($speaking)}
+            <!--鹏城酒店成立于2009年，位于深圳市龙华区观澜大道75号，距离亚洲最大的观澜高尔夫球场仅10分钟车程；距离深圳北站仅15分钟车程；距离深圳宝安国际机场仅20分钟车程；驱车前往机荷高速公路出入口只需3分钟车程，与观澜汽车总站近在咫尺。鹏城酒店成立于2009年，位于深圳市龙华区观澜大道75号，距离亚洲最大的观澜高尔夫球场仅10分钟车程；距离深圳北站仅15分钟车程；距离深圳宝安国际机场仅20分钟车程；驱车前往机荷高速公路出入口只需3分钟车程，与观澜汽车总站近在咫尺。-->
+        </div>
+        <div class="indabout3"><span>展开</span></div>
+    </div>
+    <div class="indabout bgfff">
+        <h3 class="indabout-h31 fw7">总经理致辞</h3>
+        <div class="indabout2 indabout2on c6">
+            {:html($desc)}
+            <!--作为服务型企业，我们视宾客为亲人，竭诚为您提供快捷、舒适、专业、标准的服务体验；作为学习型企业，我们视员工为资本，为员工提供系统的培训和施展才华的舞台；作为生命型企业，我们视企业文化为生命，传承和发展置信企业文化，实施“外树品牌，内创口碑”的品牌战略，不断形成可持续的品牌和文化影响力。-->
+        </div>
+    </div>
+    <div class="indaboutss bgfff">
+        <h3 class="indabout4-h31 fw7">联系方式</h3>
+        <div class="indabout4 c6">
+            <div class="disrow">
+                <div class="disco">
+                    <div class="indabout41 disrow">
+                        <div class="indabout41-sp1"></div>
+                        <div class="c6 fs24 ">{$contact[0]}&nbsp;&nbsp;&nbsp;{$contact[1]}</div>
+                    </div>
+                    <div class="indabout41 disrow">
+                        <div class="indabout41-sp2"></div>
+                        <div class="c6 fs24 ">{$contact[3]}</div>
+                    </div>
+                </div>
+                <a href="tel:{$contact[0]}" class="indabout43 disco disju-c tc">
+                    <div class="indabout43-img1"><img src="__IMAGES__/icon_dianhuada.png"/></div>
+                    <div class="indabnout43-p1 fs20 hong">电话</div>
+                </a>
+            </div>
+            <div class="indabout42">
+                <div class="disrow">
+                    <div class="indabout44 disrow">
+                        <div class="indabout41-sp3"></div>
+                        <div class="c3 fs26">{$contact[2]}</div>
+                    </div>
+                    <div class="indabout43 disco disju-c tc">
+                        <div class="indabout43-img1"><img src="__IMAGES__/icon_dituqy.png"/></div>
+                        <div class="indabnout43-p1 fs20 hong">地图</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Swiper -->
+<div class="newstop">
+    <div class="swiper-container news">
+        <div class="swiper-wrapper">
+            {foreach $banners as $banner}
+            <div class="swiper-slide posir disco">
+
+                <div class="ovh posir newsimg">
+                    <img src="{$banner.filename}"/>
+                </div>
+                <div class="newsnav bgfff">{$banner.title}</div>
+            </div>
+            {/foreach}
+            <!--<div class="swiper-slide posir disco">-->
+
+                <!--<div class="ovh posir newsimg">-->
+                    <!--<img src="__IMAGES__/tu_e.png"/>-->
+                <!--</div>-->
+                <!--<div class="newsnav bgfff">龙华观澜片区首家购物中心</div>-->
+            <!--</div>-->
+            <!--<div class="swiper-slide posir disco">-->
+
+                <!--<div class="ovh posir newsimg">-->
+                    <!--<img src="__IMAGES__/tu_e.png"/>-->
+                <!--</div>-->
+                <!--<div class="newsnav bgfff">龙华观澜片区首家购物中心</div>-->
+            <!--</div>-->
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+    </div>
+</div>
+
+{include file="public/footernav"}
+{include file="public/footer"}
+
+<!-- Swiper JS -->
+<script src="__PLUGS__/swiper.min.js"></script>
+
+<!-- Initialize Swiper -->
+<script>
+    var swiper = new Swiper('.news', {
+        slidesPerView: 1,
+        spaceBetween: 30,
+        loop: true,
+        autoplay: {
+            delay: 2000,
+            stopOnLastSlide: false,
+            disableOnInteraction: true,
+        },
+        pagination: {
+            el: '.news .swiper-pagination',
+            clickable: true,
+        },
+    });
+</script>
+
+

@@ -1,0 +1,97 @@
+{extend name='extra@admin/content'}
+{block name="button"}
+<div class="nowrap pull-right" style="margin-top:10px">
+    <button data-modal='{:url("$classuri/add")}' data-title="添加活动" class='layui-btn layui-btn-small'><i
+            class='fa fa-plus'></i> 添加活动
+    </button>
+    <button data-update data-field='delete' data-action='{:url("$classuri/del")}'
+            class='layui-btn layui-btn-small layui-btn-danger'><i class='fa fa-remove'></i> 删除活动
+    </button>
+</div>
+{/block}
+{block name="content"}
+<!-- 表单搜索 开始 -->
+<form class="animated form-search" action="__SELF__" onsubmit="return false" method="get">
+    <div class="row">
+        <div class="col-xs-4">
+            <div class="form-group">
+                <select class="form-control" name="type" id="c_type">
+                    <option value="">活动类型</option>
+                    <option value="0" {if $Think.get.type!==null && $Think.get.type==0}selected{/if}>普通课程</option>
+                    <option value="1" {if $Think.get.type==1}selected{/if}>限时特价</option>
+                    <option value="2" {if $Think.get.type==2}selected{/if}>低价试听</option>
+                    <option value="3" {if $Think.get.type==3}selected{/if}>好友砍价</option>
+                </select>
+            </div>
+        </div>
+        <div class="col-xs-1">
+            <div class="form-group">
+                <button type="submit" class="btn btn-sm btn-white"><i class="fa fa-search"></i> 搜索</button>
+            </div>
+        </div>
+    </div>
+</form>
+<!-- 表单搜索 结束 -->
+<form onsubmit="return false;" data-auto="" method="POST">
+    <input type="hidden" value="resort" name="action"/>
+    <table class="table table-hover">
+        <thead>
+        <tr>
+            <th class='list-table-check-td'>
+                <input data-none-auto="" data-check-target='.list-check-box' type='checkbox'/>
+            </th>
+            <th class='list-table-sort-td'>
+                <button type="submit" class="layui-btn layui-btn-normal layui-btn-mini">排序</button>
+            </th>
+            <th class='text-center'>标题</th>
+            <th class="text-center">缩略图</th>
+            <th class='text-center'>活动类型</th>
+            <th class='text-center'>活动价/最低价</th>
+            <!--<th class='text-center'>可参与人数</th>-->
+            <th class="text-center">浏览人数</th>
+            <th class="text-center">预约人数</th>
+            <th class="text-center">报名人数</th>
+            <th class="text-center">砍价人数</th>
+            <th class='text-center'>开始时间<br>结束时间</th>
+            <th class='text-center'>创建时间</th>
+            <th class='text-center'>操作</th>
+        </tr>
+        </thead>
+        <tbody>
+        {foreach $list as $key=>$vo}
+        <tr>
+            <td class='list-table-check-td'>
+                <input class="list-check-box" value='{$vo.id}' type='checkbox'/>
+            </td>
+            <td class='list-table-sort-td'>
+                <input name="_{$vo.id}" value="{$vo.sort}" class="list-sort-input"/>
+            </td>
+            <td class='text-center'>{$vo.title}</td>
+            <td class="text-center"><img src="{$vo.thumb}" style="height:78.75px;width:172.5px;" data-tips-image=""></td>
+            <td class="text-center">{:coursePromType($vo.type)}</td>
+            <td class='text-center'>{$vo.discount_price}</td>
+            <!--<td class='text-center'>{$vo.join_num}</td>-->
+            <td class='text-center'>{$vo.view_num}</td>
+            <td class='text-center'>{$vo.appoint_num}</td>
+            <td class='text-center'>{$vo.apply_num}</td>
+            <td class='text-center'>{if $vo.type==3}{$vo.cut_num}{else/}<i style="color: #bdb3b3;">无</i>{/if}</td>
+            <td class='text-center'>{$vo.start_time}<br>至<br>{$vo.end_time}</td>
+            <td class='text-center'>{$vo.created_time}</td>
+            <td class='text-center nowrap'>
+                {if auth("$classuri/edit")}
+                <span class="text-explode">|</span>
+                <a data-modal='{:url("$classuri/edit")}?id={$vo.id}' href="javascript:void(0)">编辑</a>
+                {/if}
+                {if auth("$classuri/del")}
+                <span class="text-explode">|</span>
+                <a data-update="{$vo.id}" data-field='delete' data-action='{:url("$classuri/del")}'
+                   href="javascript:void(0)">删除</a>
+                {/if}
+            </td>
+        </tr>
+        {/foreach}
+        </tbody>
+    </table>
+    {if isset($page)}<p>{$page}</p>{/if}
+</form>
+{/block}

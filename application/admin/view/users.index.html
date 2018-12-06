@@ -1,0 +1,62 @@
+{extend name='extra@admin/content'}
+{block name="content"}
+
+<!-- 表单搜索 开始 -->
+<form class="animated form-search" action="__SELF__" onsubmit="return false" method="get">
+
+    <div class="row">
+        <div class="col-xs-3">
+            <div class="form-group">
+                <input type="text" name="nickname" value="{$Think.get.nickname|default=''}" placeholder="用户名" class="input-sm form-control">
+            </div>
+        </div>
+
+        <div class="col-xs-3">
+            <div class="form-group">
+                <input type="text" name="phone" value="{$Think.get.phone|default=''}" placeholder="手机号" class="input-sm form-control">
+            </div>
+        </div>
+
+        <div class="col-xs-1">
+            <div class="form-group">
+                <button type="submit" class="btn btn-sm btn-white"><i class="fa fa-search"></i> 搜索</button>
+            </div>
+        </div>
+    </div>
+</form>
+<!-- 表单搜索 结束 -->
+
+<form onsubmit="return false;" data-auto="" method="POST">
+    <input type="hidden" value="resort" name="action"/>
+    <table class="table table-hover">
+        <thead>
+            <tr>
+                <th class='text-center'>昵称</th>
+                <th class='text-left'>头像</th>
+                <th class='text-center'>姓名</th>
+                <th class='text-center'>手机号</th>
+                <th class="text-center">操作</th>
+            </tr>
+        </thead>
+        <tbody>
+            {foreach $list as $key=>$vo}
+            <tr>
+                <td class='text-center'>{$vo.nickname}</td>
+                <td class='text-left'><img src="{$vo.avatarurl}" style="width: 50px;height:50px;border-radius: 50%" alt=""></td>
+                <td class='text-center'>{if $vo.name}{$vo.name}{else}<span style='color:#ccc'>未填写</span>{/if}</td>
+                <td class='text-center'>{$vo.phone|default="<span style='color:#ccc'>未设置</span>"}</td>
+                <td class='text-center nowrap'>
+                    <span class="text-explode">|</span>
+                    <a data-open="{:url('admin/roomorder/index')}?openid={$vo.openid}" href="javascript:void(0)">订房记录</a>
+                    <span class="text-explode">|</span>
+                    <a data-open="{:url('admin/goodsorder/index')}?openid={$vo.openid}" href="javascript:void(0)">订餐记录</a>
+                    <span class="text-explode">|</span>
+                    <a data-modal="{:url('admin/users/coupon')}?user_id={$vo.id}" data-title="优惠券列表" href="javascript:void(0)">优惠券列表</a>
+                </td>
+            </tr>
+            {/foreach}
+        </tbody>
+    </table>
+    {if isset($page)}<p>{$page}</p>{/if}
+</form>
+{/block}

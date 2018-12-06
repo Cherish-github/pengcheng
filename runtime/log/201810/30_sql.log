@@ -1,0 +1,23 @@
+---------------------------------------------------------------
+[ 2018-10-30T14:21:18+08:00 ] 119.137.55.41 GET /admin/login.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002259s ] mysql:host=122.114.216.78;port=3306;dbname=pengcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_config` [ RunTime:0.020695s ]
+[ sql ] [ SQL ] SELECT * FROM `system_config` [ RunTime:0.000619s ]
+---------------------------------------------------------------
+[ 2018-10-30T14:23:00+08:00 ] 119.137.55.41 GET /
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012815s ] mysql:host=122.114.216.78;port=3306;dbname=pengcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_config` [ RunTime:0.007284s ]
+[ sql ] [ SQL ] SELECT * FROM `system_config` [ RunTime:0.000527s ]
+---------------------------------------------------------------
+[ 2018-10-30T14:23:04+08:00 ] 119.137.55.41 GET /index/index/index.html?code=001731kt0JVmXc188Kkt0JKWjt0731ku&state=
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001566s ] mysql:host=122.114.216.78;port=3306;dbname=pengcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_config` [ RunTime:0.012168s ]
+[ sql ] [ SQL ] SELECT * FROM `system_config` [ RunTime:0.000592s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `app_user` [ RunTime:0.020671s ]
+[ sql ] [ SQL ] SELECT * FROM `app_user` WHERE  `openid` = 'otuUIuA7qA9FFwjBc4wid98ioLq4' LIMIT 1 [ RunTime:0.000700s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `web_content` [ RunTime:0.010426s ]
+[ sql ] [ SQL ] SELECT `content` FROM `web_content` WHERE  `call_id` IN (1,2) [ RunTime:0.000672s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `web_contact` [ RunTime:0.019044s ]
+[ sql ] [ SQL ] SELECT `phone` FROM `web_contact` [ RunTime:0.000487s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `app_banner` [ RunTime:0.011552s ]
+[ sql ] [ SQL ] SELECT `filename`,`title` FROM `app_banner` WHERE  `type` = 1 ORDER BY `sort` [ RunTime:0.000777s ]

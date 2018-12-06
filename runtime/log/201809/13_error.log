@@ -1,0 +1,78 @@
+---------------------------------------------------------------
+[ 2018-09-13T10:38:28+08:00 ] 119.137.54.152 GET /index/user/roomOrderDetail?id=4
+[ error ] [10501]SQLSTATE[42S22]: Column not found: 1054 Unknown column 'o.order_no' in 'field list'[D:\Program Files\web\pengcheng\thinkphp\library\think\db\Connection.php:388]
+---------------------------------------------------------------
+[ 2018-09-13T10:38:28+08:00 ] 119.137.54.152 GET /index/user/roomOrderDetail?id=4
+[ error ] [10501]SQLSTATE[42S22]: Column not found: 1054 Unknown column 'o.order_no' in 'field list'[D:\Program Files\web\pengcheng\thinkphp\library\think\db\Connection.php:388]
+---------------------------------------------------------------
+[ 2018-09-13T10:49:44+08:00 ] 119.137.54.152 GET /index/user/roomOrderDetail?id=1
+[ error ] [4]语法错误: unexpected 'room_id' (T_STRING)[D:\Program Files\web\pengcheng\runtime\temp\8f9e36eaa59aba96a5d7ca3e400cba54.php:119]
+---------------------------------------------------------------
+[ 2018-09-13T10:51:05+08:00 ] 119.137.54.152 GET /index/user/roomOrderDetail?id=1
+[ error ] [4]语法错误: unexpected 'room_id' (T_STRING)[D:\Program Files\web\pengcheng\runtime\temp\8f9e36eaa59aba96a5d7ca3e400cba54.php:119]
+---------------------------------------------------------------
+[ 2018-09-13T17:47:31+08:00 ] 119.137.54.152 GET /index/dinner/index.html
+[ error ] [10501]SQLSTATE[42S02]: Base table or view not found: 1146 Table 'pengcheng.app_cart' doesn't exist[D:\Program Files\web\pengcheng\thinkphp\library\think\db\Connection.php:388]
+---------------------------------------------------------------
+[ 2018-09-13T17:47:31+08:00 ] 119.137.54.152 GET /index/dinner/index.html
+[ error ] [10501]SQLSTATE[42S02]: Base table or view not found: 1146 Table 'pengcheng.app_cart' doesn't exist[D:\Program Files\web\pengcheng\thinkphp\library\think\db\Connection.php:388]
+---------------------------------------------------------------
+[ 2018-09-13T17:48:54+08:00 ] 119.137.54.152 GET /index/dinner/index.html
+[ error ] [10501]SQLSTATE[42S02]: Base table or view not found: 1146 Table 'pengcheng.app_cart' doesn't exist[D:\Program Files\web\pengcheng\thinkphp\library\think\db\Connection.php:388]
+---------------------------------------------------------------
+[ 2018-09-13T17:48:54+08:00 ] 119.137.54.152 GET /index/dinner/index.html
+[ error ] [10501]SQLSTATE[42S02]: Base table or view not found: 1146 Table 'pengcheng.app_cart' doesn't exist[D:\Program Files\web\pengcheng\thinkphp\library\think\db\Connection.php:388]
+---------------------------------------------------------------
+[ 2018-09-13T17:49:20+08:00 ] 119.137.54.152 GET /index/dinner/index.html
+[ error ] [8]未定义数组索引: num[D:\Program Files\web\pengcheng\runtime\temp\cf1f55d13cc866c9d26e34fdf6b34e24.php:41]
+---------------------------------------------------------------
+[ 2018-09-13T17:49:20+08:00 ] 119.137.54.152 GET /index/dinner/index.html
+[ error ] [8]未定义数组索引: num[D:\Program Files\web\pengcheng\runtime\temp\cf1f55d13cc866c9d26e34fdf6b34e24.php:41]
+---------------------------------------------------------------
+[ 2018-09-13T17:59:39+08:00 ] 119.137.54.152 GET /index/dinner/index.html
+[ error ] [8]未定义数组索引: id[D:\Program Files\web\pengcheng\application\index\controller\Dinner.php:62]
+---------------------------------------------------------------
+[ 2018-09-13T17:59:39+08:00 ] 119.137.54.152 GET /index/dinner/index.html
+[ error ] [8]未定义数组索引: id[D:\Program Files\web\pengcheng\application\index\controller\Dinner.php:62]
+---------------------------------------------------------------
+[ 2018-09-13T18:00:15+08:00 ] 119.137.54.152 GET /index/dinner/index.html
+[ error ] [8]未定义数组索引: id[D:\Program Files\web\pengcheng\application\index\controller\Dinner.php:62]
+---------------------------------------------------------------
+[ 2018-09-13T18:00:16+08:00 ] 119.137.54.152 GET /index/dinner/index.html
+[ error ] [8]未定义数组索引: id[D:\Program Files\web\pengcheng\application\index\controller\Dinner.php:62]
+---------------------------------------------------------------
+[ 2018-09-13T18:01:44+08:00 ] 119.137.54.152 GET /index/dinner/index.html
+[ error ] [8]未定义数组索引: id[D:\Program Files\web\pengcheng\application\index\controller\Dinner.php:63]
+---------------------------------------------------------------
+[ 2018-09-13T18:01:44+08:00 ] 119.137.54.152 GET /index/dinner/index.html
+[ error ] [8]未定义数组索引: id[D:\Program Files\web\pengcheng\application\index\controller\Dinner.php:63]
+---------------------------------------------------------------
+[ 2018-09-13T18:02:07+08:00 ] 119.137.54.152 GET /index/dinner/index.html
+[ error ] [8]未定义数组索引: id[D:\Program Files\web\pengcheng\application\index\controller\Dinner.php:63]
+---------------------------------------------------------------
+[ 2018-09-13T18:02:07+08:00 ] 119.137.54.152 GET /index/dinner/index.html
+[ error ] [8]未定义数组索引: id[D:\Program Files\web\pengcheng\application\index\controller\Dinner.php:63]
+---------------------------------------------------------------
+[ 2018-09-13T18:02:08+08:00 ] 119.137.54.152 GET /index/dinner/index.html
+[ error ] [8]未定义数组索引: id[D:\Program Files\web\pengcheng\application\index\controller\Dinner.php:63]
+---------------------------------------------------------------
+[ 2018-09-13T18:02:09+08:00 ] 119.137.54.152 GET /index/dinner/index.html
+[ error ] [8]未定义数组索引: id[D:\Program Files\web\pengcheng\application\index\controller\Dinner.php:63]
+---------------------------------------------------------------
+[ 2018-09-13T18:02:37+08:00 ] 119.137.54.152 GET /index/dinner/index.html
+[ error ] [8]未定义数组索引: id[D:\Program Files\web\pengcheng\application\index\controller\Dinner.php:64]
+---------------------------------------------------------------
+[ 2018-09-13T18:02:37+08:00 ] 119.137.54.152 GET /index/dinner/index.html
+[ error ] [8]未定义数组索引: id[D:\Program Files\web\pengcheng\application\index\controller\Dinner.php:64]
+---------------------------------------------------------------
+[ 2018-09-13T18:03:04+08:00 ] 119.137.54.152 GET /index/dinner/index.html
+[ error ] [8]未定义数组索引: num[D:\Program Files\web\pengcheng\runtime\temp\cf1f55d13cc866c9d26e34fdf6b34e24.php:41]
+---------------------------------------------------------------
+[ 2018-09-13T18:03:04+08:00 ] 119.137.54.152 GET /index/dinner/index.html
+[ error ] [8]未定义数组索引: num[D:\Program Files\web\pengcheng\runtime\temp\cf1f55d13cc866c9d26e34fdf6b34e24.php:41]
+---------------------------------------------------------------
+[ 2018-09-13T18:06:39+08:00 ] 119.137.54.152 GET /index/dinner/index.html
+[ error ] [8]未定义数组索引: num[D:\Program Files\web\pengcheng\runtime\temp\cf1f55d13cc866c9d26e34fdf6b34e24.php:25]
+---------------------------------------------------------------
+[ 2018-09-13T18:06:39+08:00 ] 119.137.54.152 GET /index/dinner/index.html
+[ error ] [8]未定义数组索引: num[D:\Program Files\web\pengcheng\runtime\temp\cf1f55d13cc866c9d26e34fdf6b34e24.php:25]

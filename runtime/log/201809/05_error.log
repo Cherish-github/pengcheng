@@ -1,0 +1,55 @@
+---------------------------------------------------------------
+[ 2018-09-05T14:36:47+08:00 ] 0.0.0.0 GET /admin/login.html
+[ error ] [2002]SQLSTATE[HY000] [2002] ”…”⁄¡¨Ω”∑Ω‘⁄“ª∂Œ ±º‰∫Û√ª”–’˝»∑¥∏¥ªÚ¡¨Ω”µƒ÷˜ª˙√ª”–∑¥”¶£¨¡¨Ω”≥¢ ‘ ß∞‹°£
+[E:\wamp64\www\pengcheng\thinkphp\library\think\db\Connection.php:293]
+---------------------------------------------------------------
+[ 2018-09-05T14:40:29+08:00 ] 0.0.0.0 GET /admin/login.html
+[ error ] [1049]SQLSTATE[HY000] [1049] Unknown database 'hezong'[E:\wamp64\www\pengcheng\thinkphp\library\think\db\Connection.php:293]
+---------------------------------------------------------------
+[ 2018-09-05T14:51:50+08:00 ] 0.0.0.0 GET /admin/content/index.html?spm=m-87-95
+[ error ] [8]Êú™ÂÆö‰πâÊï∞ÁªÑÁ¥¢Âºï: title_zh[E:\wamp64\www\pengcheng\runtime\temp\74fc66dfcc4e7d36aeaed6c9c54d4228.php:50]
+---------------------------------------------------------------
+[ 2018-09-05T15:20:59+08:00 ] 0.0.0.0 GET /admin/contact/edit.html?id=1&spm=m-87-135&open_type=modal
+[ error ] [1]Class 'app\admin\controller\Request' not found[E:\wamp64\www\pengcheng\application\admin\controller\Contact.php:36]
+---------------------------------------------------------------
+[ 2018-09-05T15:21:06+08:00 ] 0.0.0.0 GET /admin/contact/edit.html?id=1&spm=m-87-135&open_type=modal
+[ error ] [1]Class 'app\admin\controller\Request' not found[E:\wamp64\www\pengcheng\application\admin\controller\Contact.php:36]
+---------------------------------------------------------------
+[ 2018-09-05T15:27:28+08:00 ] 0.0.0.0 POST /admin/contact/edit.html?id=1&spm=m-87-135&open_type=modal
+[ error ] [1]Class 'app\admin\controller\Validate' not found[E:\wamp64\www\pengcheng\application\admin\controller\Contact.php:40]
+---------------------------------------------------------------
+[ 2018-09-05T15:37:03+08:00 ] 0.0.0.0 POST /admin/content/add.html?spm=m-87-95&open_type=modal
+[ error ] [10501]SQLSTATE[HY000]: General error: 1364 Field 'created' doesn't have a default value[E:\wamp64\www\pengcheng\thinkphp\library\think\db\Connection.php:456]
+---------------------------------------------------------------
+[ 2018-09-05T15:53:48+08:00 ] 0.0.0.0 GET /admin/room/index.html?spm=m-87-113
+[ error ] [10501]SQLSTATE[42S22]: Column not found: 1054 Unknown column 'c.type_id' in 'on clause'[E:\wamp64\www\pengcheng\thinkphp\library\think\db\Connection.php:388]
+---------------------------------------------------------------
+[ 2018-09-05T15:54:31+08:00 ] 0.0.0.0 GET /admin/room/index.html?spm=m-87-113
+[ error ] [10501]SQLSTATE[42S02]: Base table or view not found: 1051 Unknown table 'c'[E:\wamp64\www\pengcheng\thinkphp\library\think\db\Connection.php:388]
+---------------------------------------------------------------
+[ 2018-09-05T15:54:44+08:00 ] 0.0.0.0 GET /admin/room/index.html?spm=m-87-113
+[ error ] [0]Ê®°ÊùøÊñá‰ª∂‰∏çÂ≠òÂú®:E:\wamp64\www\pengcheng\public/../application/admin\view\room.index.html[E:\wamp64\www\pengcheng\thinkphp\library\think\view\driver\Think.php:80]
+---------------------------------------------------------------
+[ 2018-09-05T15:55:42+08:00 ] 0.0.0.0 GET /admin/room/index.html?spm=m-87-113
+[ error ] [8]Êú™ÂÆö‰πâÊï∞ÁªÑÁ¥¢Âºï: is_best[E:\wamp64\www\pengcheng\runtime\temp\e08c3b925e89c67998d08ece3d129a32.php:100]
+---------------------------------------------------------------
+[ 2018-09-05T17:20:59+08:00 ] 0.0.0.0 GET /admin/goods/index.html?spm=m-87-141
+[ error ] [10501]SQLSTATE[42S02]: Base table or view not found: 1146 Table 'pengcheng.app_good_type' doesn't exist[E:\wamp64\www\pengcheng\thinkphp\library\think\db\Connection.php:388]
+---------------------------------------------------------------
+[ 2018-09-05T17:21:13+08:00 ] 0.0.0.0 GET /admin/goods/index.html?spm=m-87-141
+[ error ] [10501]SQLSTATE[42S22]: Column not found: 1054 Unknown column 'r.type_id' in 'on clause'[E:\wamp64\www\pengcheng\thinkphp\library\think\db\Connection.php:388]
+---------------------------------------------------------------
+[ 2018-09-05T17:28:31+08:00 ] 0.0.0.0 GET /admin/order/index.html?spm=m-87-137
+[ error ] [8]Êú™ÂÆö‰πâÊï∞ÁªÑÁ¥¢Âºï: amount[E:\wamp64\www\pengcheng\runtime\temp\ce61b4950a10147b7c55ac5e88dd8f47.php:117]
+---------------------------------------------------------------
+[ 2018-09-05T17:47:35+08:00 ] 0.0.0.0 GET /admin/roompeopletype/index.html?spm=m-87-117
+[ error ] [0]Ê®°ÊùøÊñá‰ª∂‰∏çÂ≠òÂú®:E:\wamp64\www\pengcheng\public/../application/admin\view\roompeopletype.index.html[E:\wamp64\www\pengcheng\thinkphp\library\think\view\driver\Think.php:80]
+---------------------------------------------------------------
+[ 2018-09-05T17:54:43+08:00 ] 0.0.0.0 GET /admin/room/index.html?spm=m-87-113
+[ error ] [10501]SQLSTATE[42S02]: Base table or view not found: 1146 Table 'pengcheng.app_room_type' doesn't exist[E:\wamp64\www\pengcheng\thinkphp\library\think\db\Connection.php:388]
+---------------------------------------------------------------
+[ 2018-09-05T18:16:49+08:00 ] 0.0.0.0 POST /admin/room/edit.html?id=20&spm=m-87-113&open_type=modal
+[ error ] [0]Êï∞ÊçÆË°®Â≠óÊÆµ‰∏çÂ≠òÂú®:[type_id][E:\wamp64\www\pengcheng\thinkphp\library\think\db\Builder.php:109]
+---------------------------------------------------------------
+[ 2018-09-05T18:32:36+08:00 ] 0.0.0.0 GET /admin/room/index.html?spm=m-87-113
+[ error ] [10501]SQLSTATE[42S22]: Column not found: 1054 Unknown column 'is_show' in 'where clause'[E:\wamp64\www\pengcheng\thinkphp\library\think\db\Connection.php:388]

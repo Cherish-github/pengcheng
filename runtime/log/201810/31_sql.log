@@ -1,0 +1,895 @@
+---------------------------------------------------------------
+[ 2018-10-31T14:02:22+08:00 ] 119.137.55.41 GET /admin/login.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002566s ] mysql:host=122.114.216.78;port=3306;dbname=pengcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_config` [ RunTime:0.023747s ]
+[ sql ] [ SQL ] SELECT * FROM `system_config` [ RunTime:0.000645s ]
+---------------------------------------------------------------
+[ 2018-10-31T14:02:36+08:00 ] 119.137.55.41 POST /admin/login.html?spm=
+[ sql ] [ DB ] CONNECT:[ UseTime:0.007569s ] mysql:host=122.114.216.78;port=3306;dbname=pengcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_user` [ RunTime:0.182634s ]
+[ sql ] [ SQL ] SELECT * FROM `system_user` WHERE  `username` = 'admin' LIMIT 1 [ RunTime:0.000667s ]
+[ sql ] [ SQL ] UPDATE `system_user`  SET `login_at`=now(),`login_num`=login_num+1  WHERE  `id` = 10000 [ RunTime:0.031475s ]
+[ sql ] [ SQL ] SELECT * FROM `system_user` WHERE  `id` = 10000 LIMIT 1 [ RunTime:0.000812s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_auth` [ RunTime:0.028034s ]
+[ sql ] [ SQL ] SELECT `id` FROM `system_auth` WHERE  `id` IN (10000)  AND `status` = 1 [ RunTime:0.000753s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_auth_node` [ RunTime:0.023834s ]
+[ sql ] [ SQL ] SELECT `node` FROM `system_auth_node` WHERE  `auth` IN (10000) [ RunTime:0.000802s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_log` [ RunTime:0.023928s ]
+[ sql ] [ SQL ] INSERT INTO `system_log` (`ip` , `node` , `username` , `action` , `content`) VALUES ('119.137.55.41' , 'admin/login/index' , 'admin' , '系统管理' , '用户登录系统成功') [ RunTime:0.024455s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_menu` [ RunTime:0.017915s ]
+[ sql ] [ SQL ] SELECT `id`,`pid` FROM `system_menu` WHERE  (  url='@admin' or url='/admin/@admin' ) LIMIT 1 [ RunTime:0.000647s ]
+---------------------------------------------------------------
+[ 2018-10-31T14:02:37+08:00 ] 119.137.55.41 GET /admin.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015663s ] mysql:host=122.114.216.78;port=3306;dbname=pengcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_user` [ RunTime:0.009888s ]
+[ sql ] [ SQL ] SELECT * FROM `system_user` WHERE  `id` = 10000 LIMIT 1 [ RunTime:0.000639s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_auth` [ RunTime:0.009669s ]
+[ sql ] [ SQL ] SELECT `id` FROM `system_auth` WHERE  `id` IN (10000)  AND `status` = 1 [ RunTime:0.000523s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_auth_node` [ RunTime:0.007937s ]
+[ sql ] [ SQL ] SELECT `node` FROM `system_auth_node` WHERE  `auth` IN (10000) [ RunTime:0.000638s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_menu` [ RunTime:0.008012s ]
+[ sql ] [ SQL ] SELECT * FROM `system_menu` WHERE  `status` = 1 ORDER BY sort asc,id asc [ RunTime:0.000845s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_config` [ RunTime:0.010607s ]
+[ sql ] [ SQL ] SELECT * FROM `system_config` [ RunTime:0.000758s ]
+---------------------------------------------------------------
+[ 2018-10-31T14:02:38+08:00 ] 119.137.55.41 GET /admin/room/index.html?spm=m-87-113
+[ sql ] [ DB ] CONNECT:[ UseTime:0.014567s ] mysql:host=122.114.216.78;port=3306;dbname=pengcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `app_room` [ RunTime:0.009971s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `app_room` `r` LEFT JOIN `app_room_people_type` `pt` ON `pt`.`id`=`r`.`people_type_id` LEFT JOIN `app_room_floor_type` `ft` ON `ft`.`id`=`r`.`floor_type_id` LIMIT 1 [ RunTime:0.002822s ]
+[ sql ] [ SQL ] SELECT `r`.*,pt.type p_type,ft.type f_type FROM `app_room` `r` LEFT JOIN `app_room_people_type` `pt` ON `pt`.`id`=`r`.`people_type_id` LEFT JOIN `app_room_floor_type` `ft` ON `ft`.`id`=`r`.`floor_type_id` ORDER BY sort asc,id desc LIMIT 0,15 [ RunTime:0.000805s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `app_room_people_type` [ RunTime:0.008491s ]
+[ sql ] [ SQL ] SELECT `id`,`type` FROM `app_room_people_type` [ RunTime:0.000520s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `app_room_floor_type` [ RunTime:0.010521s ]
+[ sql ] [ SQL ] SELECT `id`,`type` FROM `app_room_floor_type` [ RunTime:0.000444s ]
+---------------------------------------------------------------
+[ 2018-10-31T14:02:43+08:00 ] 119.137.55.41 GET /admin/index/main.html?spm=m-2-3
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001623s ] mysql:host=122.114.216.78;port=3306;dbname=pengcheng;charset=utf8mb4
+[ sql ] [ SQL ] select version() as ver [ RunTime:0.000384s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_config` [ RunTime:0.010311s ]
+[ sql ] [ SQL ] SELECT * FROM `system_config` [ RunTime:0.000561s ]
+---------------------------------------------------------------
+[ 2018-10-31T14:02:45+08:00 ] 119.137.55.41 GET /wechat/config/index.html?spm=m-2-63
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003064s ] mysql:host=122.114.216.78;port=3306;dbname=pengcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_config` [ RunTime:0.007912s ]
+[ sql ] [ SQL ] SELECT * FROM `system_config` [ RunTime:0.000611s ]
+---------------------------------------------------------------
+[ 2018-10-31T14:02:51+08:00 ] 119.137.55.41 GET /wechat/config/pay.html?spm=m-2-64
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011153s ] mysql:host=122.114.216.78;port=3306;dbname=pengcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_config` [ RunTime:0.008162s ]
+[ sql ] [ SQL ] SELECT * FROM `system_config` [ RunTime:0.000614s ]
+---------------------------------------------------------------
+[ 2018-10-31T14:02:55+08:00 ] 119.137.55.41 GET /wechat/config/index.html?spm=m-2-63
+[ sql ] [ DB ] CONNECT:[ UseTime:0.013737s ] mysql:host=122.114.216.78;port=3306;dbname=pengcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_config` [ RunTime:0.009126s ]
+[ sql ] [ SQL ] SELECT * FROM `system_config` [ RunTime:0.000703s ]
+---------------------------------------------------------------
+[ 2018-10-31T14:02:57+08:00 ] 119.137.55.41 POST /wechat/config/index.html?spm=m-2-63
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001664s ] mysql:host=122.114.216.78;port=3306;dbname=pengcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_config` [ RunTime:0.009074s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `system_config` WHERE  `name` = 'wechat_appid' LIMIT 1 [ RunTime:0.000568s ]
+[ sql ] [ SQL ] UPDATE `system_config`  SET `name`='wechat_appid',`value`='wx75e3e6e9c127d509'  WHERE  `name` = 'wechat_appid' [ RunTime:0.022870s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `system_config` WHERE  `name` = 'wechat_appsecret' LIMIT 1 [ RunTime:0.000583s ]
+[ sql ] [ SQL ] UPDATE `system_config`  SET `name`='wechat_appsecret',`value`='6759cabd64f4657d9abc230e6452951d'  WHERE  `name` = 'wechat_appsecret' [ RunTime:0.018707s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `system_config` WHERE  `name` = 'wechat_token' LIMIT 1 [ RunTime:0.000583s ]
+[ sql ] [ SQL ] UPDATE `system_config`  SET `name`='wechat_token',`value`='1CLMgmlEHJ42AALjdfic'  WHERE  `name` = 'wechat_token' [ RunTime:0.018203s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `system_config` WHERE  `name` = 'wechat_encodingaeskey' LIMIT 1 [ RunTime:0.000640s ]
+[ sql ] [ SQL ] UPDATE `system_config`  SET `name`='wechat_encodingaeskey',`value`='wwePhUPzxkbCaltBNRYGDHHDqgvedXHwkjVpdJpIubB'  WHERE  `name` = 'wechat_encodingaeskey' [ RunTime:0.019291s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_log` [ RunTime:0.008933s ]
+[ sql ] [ SQL ] INSERT INTO `system_log` (`ip` , `node` , `username` , `action` , `content`) VALUES ('119.137.55.41' , 'wechat/config/index' , 'admin' , '微信管理' , '修改微信接口参数成功') [ RunTime:0.018690s ]
+---------------------------------------------------------------
+[ 2018-10-31T14:02:59+08:00 ] 119.137.55.41 GET /wechat/config/index.html?spm=m-2-63
+[ sql ] [ DB ] CONNECT:[ UseTime:0.008789s ] mysql:host=122.114.216.78;port=3306;dbname=pengcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_config` [ RunTime:0.009705s ]
+[ sql ] [ SQL ] SELECT * FROM `system_config` [ RunTime:0.000593s ]
+---------------------------------------------------------------
+[ 2018-10-31T14:03:03+08:00 ] 119.137.55.41 GET /admin/menu/index.html?spm=m-2-21
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012077s ] mysql:host=122.114.216.78;port=3306;dbname=pengcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_menu` [ RunTime:0.008003s ]
+[ sql ] [ SQL ] SELECT * FROM `system_menu` ORDER BY sort asc,id asc [ RunTime:0.000875s ]
+---------------------------------------------------------------
+[ 2018-10-31T14:03:07+08:00 ] 119.137.55.41 GET /admin/auth/index.html?spm=m-2-19
+[ sql ] [ DB ] CONNECT:[ UseTime:0.005878s ] mysql:host=122.114.216.78;port=3306;dbname=pengcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_auth` [ RunTime:0.011045s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `system_auth` LIMIT 1 [ RunTime:0.000629s ]
+[ sql ] [ SQL ] SELECT * FROM `system_auth` ORDER BY sort asc LIMIT 0,20 [ RunTime:0.000580s ]
+---------------------------------------------------------------
+[ 2018-10-31T14:03:09+08:00 ] 119.137.55.41 GET /admin/config/index.html?spm=m-2-5
+[ sql ] [ DB ] CONNECT:[ UseTime:0.006181s ] mysql:host=122.114.216.78;port=3306;dbname=pengcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_config` [ RunTime:0.010443s ]
+[ sql ] [ SQL ] SELECT * FROM `system_config` [ RunTime:0.000659s ]
+---------------------------------------------------------------
+[ 2018-10-31T14:03:11+08:00 ] 119.137.55.41 GET /admin/index/main.html?spm=m-2-3
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012235s ] mysql:host=122.114.216.78;port=3306;dbname=pengcheng;charset=utf8mb4
+[ sql ] [ SQL ] select version() as ver [ RunTime:0.000351s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_config` [ RunTime:0.009445s ]
+[ sql ] [ SQL ] SELECT * FROM `system_config` [ RunTime:0.000654s ]
+---------------------------------------------------------------
+[ 2018-10-31T14:03:12+08:00 ] 119.137.55.41 GET /admin/config/index.html?spm=m-2-5
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011102s ] mysql:host=122.114.216.78;port=3306;dbname=pengcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_config` [ RunTime:0.010457s ]
+[ sql ] [ SQL ] SELECT * FROM `system_config` [ RunTime:0.000643s ]
+---------------------------------------------------------------
+[ 2018-10-31T14:03:16+08:00 ] 119.137.55.41 GET /admin/index/main.html?spm=m-2-3
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010284s ] mysql:host=122.114.216.78;port=3306;dbname=pengcheng;charset=utf8mb4
+[ sql ] [ SQL ] select version() as ver [ RunTime:0.000340s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_config` [ RunTime:0.008374s ]
+[ sql ] [ SQL ] SELECT * FROM `system_config` [ RunTime:0.000590s ]
+---------------------------------------------------------------
+[ 2018-10-31T14:03:22+08:00 ] 101.89.19.149 GET /admin/login.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.007274s ] mysql:host=122.114.216.78;port=3306;dbname=pengcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_config` [ RunTime:0.009466s ]
+[ sql ] [ SQL ] SELECT * FROM `system_config` [ RunTime:0.000639s ]
+---------------------------------------------------------------
+[ 2018-10-31T14:03:38+08:00 ] 101.91.60.11 GET /admin/login.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003949s ] mysql:host=122.114.216.78;port=3306;dbname=pengcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_config` [ RunTime:0.009660s ]
+[ sql ] [ SQL ] SELECT * FROM `system_config` [ RunTime:0.000748s ]
+---------------------------------------------------------------
+[ 2018-10-31T14:03:39+08:00 ] 101.91.60.107 GET /admin/login.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015239s ] mysql:host=122.114.216.78;port=3306;dbname=pengcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_config` [ RunTime:0.007287s ]
+[ sql ] [ SQL ] SELECT * FROM `system_config` [ RunTime:0.000544s ]
+---------------------------------------------------------------
+[ 2018-10-31T14:03:43+08:00 ] 61.151.178.165 GET /admin/login.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012016s ] mysql:host=122.114.216.78;port=3306;dbname=pengcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_config` [ RunTime:0.008878s ]
+[ sql ] [ SQL ] SELECT * FROM `system_config` [ RunTime:0.000656s ]
+---------------------------------------------------------------
+[ 2018-10-31T14:03:45+08:00 ] 61.151.207.141 GET /admin/login.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015720s ] mysql:host=122.114.216.78;port=3306;dbname=pengcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_config` [ RunTime:0.008562s ]
+[ sql ] [ SQL ] SELECT * FROM `system_config` [ RunTime:0.000692s ]
+---------------------------------------------------------------
+[ 2018-10-31T14:03:51+08:00 ] 101.89.239.216 GET /admin/login.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002365s ] mysql:host=122.114.216.78;port=3306;dbname=pengcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_config` [ RunTime:0.008730s ]
+[ sql ] [ SQL ] SELECT * FROM `system_config` [ RunTime:0.000541s ]
+---------------------------------------------------------------
+[ 2018-10-31T14:03:59+08:00 ] 119.137.55.41 GET /
+[ sql ] [ DB ] CONNECT:[ UseTime:0.009701s ] mysql:host=122.114.216.78;port=3306;dbname=pengcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `web_content` [ RunTime:0.010098s ]
+[ sql ] [ SQL ] SELECT `content` FROM `web_content` WHERE  `call_id` IN (1,2) [ RunTime:0.000541s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `web_contact` [ RunTime:0.016469s ]
+[ sql ] [ SQL ] SELECT `phone` FROM `web_contact` [ RunTime:0.000499s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `app_banner` [ RunTime:0.010709s ]
+[ sql ] [ SQL ] SELECT `filename`,`title` FROM `app_banner` WHERE  `type` = 1 ORDER BY `sort` [ RunTime:0.000577s ]
+---------------------------------------------------------------
+[ 2018-10-31T14:04:03+08:00 ] 101.89.239.216 GET /admin/login.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.013109s ] mysql:host=122.114.216.78;port=3306;dbname=pengcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_config` [ RunTime:0.011788s ]
+[ sql ] [ SQL ] SELECT * FROM `system_config` [ RunTime:0.000692s ]
+---------------------------------------------------------------
+[ 2018-10-31T14:04:09+08:00 ] 61.151.178.166 GET /admin/login.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.007577s ] mysql:host=122.114.216.78;port=3306;dbname=pengcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_config` [ RunTime:0.011831s ]
+[ sql ] [ SQL ] SELECT * FROM `system_config` [ RunTime:0.000699s ]
+---------------------------------------------------------------
+[ 2018-10-31T14:04:11+08:00 ] 61.151.178.163 GET /admin/login.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.014962s ] mysql:host=122.114.216.78;port=3306;dbname=pengcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_config` [ RunTime:0.010964s ]
+[ sql ] [ SQL ] SELECT * FROM `system_config` [ RunTime:0.000786s ]
+---------------------------------------------------------------
+[ 2018-10-31T14:04:27+08:00 ] 119.137.55.41 GET /
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003231s ] mysql:host=122.114.216.78;port=3306;dbname=pengcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_config` [ RunTime:0.012014s ]
+[ sql ] [ SQL ] SELECT * FROM `system_config` [ RunTime:0.000696s ]
+---------------------------------------------------------------
+[ 2018-10-31T14:04:29+08:00 ] 119.137.55.41 GET /index/index/index.html?code=081yQjJj0owpQm1ABkLj03VeJj0yQjJZ&state=
+[ sql ] [ DB ] CONNECT:[ UseTime:0.006315s ] mysql:host=122.114.216.78;port=3306;dbname=pengcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_config` [ RunTime:0.008483s ]
+[ sql ] [ SQL ] SELECT * FROM `system_config` [ RunTime:0.000625s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `app_user` [ RunTime:0.023584s ]
+[ sql ] [ SQL ] SELECT * FROM `app_user` WHERE  `openid` = 'otuUIuGxiMh439ADZ4M00mYQpoHA' LIMIT 1 [ RunTime:0.000672s ]
+[ sql ] [ SQL ] INSERT INTO `app_user` (`nickname` , `openid` , `avatarurl` , `unionid`) VALUES ('Zhy' , 'otuUIuGxiMh439ADZ4M00mYQpoHA' , 'http://thirdwx.qlogo.cn/mmopen/vi_32/SLCmiagSSc75zxgF2InvaqthCAoiaicxsLVkwiafq0t4EJQvSAnhEIGJmEFpicK5j0ZAcQoHeaVWicqeible76oibjpcibA/132' , '') [ RunTime:0.032059s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `web_content` [ RunTime:0.008895s ]
+[ sql ] [ SQL ] SELECT `content` FROM `web_content` WHERE  `call_id` IN (1,2) [ RunTime:0.000504s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `web_contact` [ RunTime:0.009665s ]
+[ sql ] [ SQL ] SELECT `phone` FROM `web_contact` [ RunTime:0.000404s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `app_banner` [ RunTime:0.008409s ]
+[ sql ] [ SQL ] SELECT `filename`,`title` FROM `app_banner` WHERE  `type` = 1 ORDER BY `sort` [ RunTime:0.000713s ]
+---------------------------------------------------------------
+[ 2018-10-31T14:04:36+08:00 ] 119.137.55.41 GET /index/room/index.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001744s ] mysql:host=122.114.216.78;port=3306;dbname=pengcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `app_banner` [ RunTime:0.007546s ]
+[ sql ] [ SQL ] SELECT `filename` FROM `app_banner` WHERE  `type` = 2 ORDER BY `sort` [ RunTime:0.000589s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `web_contact` [ RunTime:0.007542s ]
+[ sql ] [ SQL ] SELECT * FROM `web_contact` WHERE  `call_id` = 1 LIMIT 1 [ RunTime:0.000651s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `app_room` [ RunTime:0.009767s ]
+[ sql ] [ SQL ] SELECT `r`.`id`,`r`.`price`,`r`.`thumb`,`r`.`num`,pt.type pt_type,ft.type ft_type FROM `app_room` `r` LEFT JOIN `app_room_people_type` `pt` ON `pt`.`id`=`r`.`people_type_id` LEFT JOIN `app_room_floor_type` `ft` ON `ft`.`id`=`r`.`floor_type_id` WHERE  `r`.`is_show` = 1 [ RunTime:0.000829s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `app_room_order` [ RunTime:0.021672s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `app_room_order` `o` LEFT JOIN `app_order_room` `r` ON `r`.`order_id`=`o`.`id` WHERE  `o`.`status` IN (1,2)  AND `r`.`room_id` = 18 LIMIT 1 [ RunTime:0.008543s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `app_room_order` `o` LEFT JOIN `app_order_room` `r` ON `r`.`order_id`=`o`.`id` WHERE  `o`.`status` IN (1,2)  AND `r`.`room_id` = 19 LIMIT 1 [ RunTime:0.000471s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `app_room_order` `o` LEFT JOIN `app_order_room` `r` ON `r`.`order_id`=`o`.`id` WHERE  `o`.`status` IN (1,2)  AND `r`.`room_id` = 20 LIMIT 1 [ RunTime:0.000380s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `app_room_order` `o` LEFT JOIN `app_order_room` `r` ON `r`.`order_id`=`o`.`id` WHERE  `o`.`status` IN (1,2)  AND `r`.`room_id` = 21 LIMIT 1 [ RunTime:0.000415s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `app_room_order` `o` LEFT JOIN `app_order_room` `r` ON `r`.`order_id`=`o`.`id` WHERE  `o`.`status` IN (1,2)  AND `r`.`room_id` = 22 LIMIT 1 [ RunTime:0.000357s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `app_room_order` `o` LEFT JOIN `app_order_room` `r` ON `r`.`order_id`=`o`.`id` WHERE  `o`.`status` IN (1,2)  AND `r`.`room_id` = 23 LIMIT 1 [ RunTime:0.000357s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `app_room_order` `o` LEFT JOIN `app_order_room` `r` ON `r`.`order_id`=`o`.`id` WHERE  `o`.`status` IN (1,2)  AND `r`.`room_id` = 25 LIMIT 1 [ RunTime:0.000501s ]
+---------------------------------------------------------------
+[ 2018-10-31T14:04:55+08:00 ] 101.91.60.110 GET /
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003981s ] mysql:host=122.114.216.78;port=3306;dbname=pengcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_config` [ RunTime:0.008721s ]
+[ sql ] [ SQL ] SELECT * FROM `system_config` [ RunTime:0.000715s ]
+---------------------------------------------------------------
+[ 2018-10-31T14:05:35+08:00 ] 61.151.178.177 GET /index/room/index.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.009100s ] mysql:host=122.114.216.78;port=3306;dbname=pengcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `app_banner` [ RunTime:0.009744s ]
+[ sql ] [ SQL ] SELECT `filename` FROM `app_banner` WHERE  `type` = 2 ORDER BY `sort` [ RunTime:0.000487s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `web_contact` [ RunTime:0.008421s ]
+[ sql ] [ SQL ] SELECT * FROM `web_contact` WHERE  `call_id` = 1 LIMIT 1 [ RunTime:0.000461s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `app_room` [ RunTime:0.008189s ]
+[ sql ] [ SQL ] SELECT `r`.`id`,`r`.`price`,`r`.`thumb`,`r`.`num`,pt.type pt_type,ft.type ft_type FROM `app_room` `r` LEFT JOIN `app_room_people_type` `pt` ON `pt`.`id`=`r`.`people_type_id` LEFT JOIN `app_room_floor_type` `ft` ON `ft`.`id`=`r`.`floor_type_id` WHERE  `r`.`is_show` = 1 [ RunTime:0.000613s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `app_room_order` [ RunTime:0.007874s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `app_room_order` `o` LEFT JOIN `app_order_room` `r` ON `r`.`order_id`=`o`.`id` WHERE  `o`.`status` IN (1,2)  AND `r`.`room_id` = 18 LIMIT 1 [ RunTime:0.000557s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `app_room_order` `o` LEFT JOIN `app_order_room` `r` ON `r`.`order_id`=`o`.`id` WHERE  `o`.`status` IN (1,2)  AND `r`.`room_id` = 19 LIMIT 1 [ RunTime:0.000518s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `app_room_order` `o` LEFT JOIN `app_order_room` `r` ON `r`.`order_id`=`o`.`id` WHERE  `o`.`status` IN (1,2)  AND `r`.`room_id` = 20 LIMIT 1 [ RunTime:0.000517s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `app_room_order` `o` LEFT JOIN `app_order_room` `r` ON `r`.`order_id`=`o`.`id` WHERE  `o`.`status` IN (1,2)  AND `r`.`room_id` = 21 LIMIT 1 [ RunTime:0.000453s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `app_room_order` `o` LEFT JOIN `app_order_room` `r` ON `r`.`order_id`=`o`.`id` WHERE  `o`.`status` IN (1,2)  AND `r`.`room_id` = 22 LIMIT 1 [ RunTime:0.000460s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `app_room_order` `o` LEFT JOIN `app_order_room` `r` ON `r`.`order_id`=`o`.`id` WHERE  `o`.`status` IN (1,2)  AND `r`.`room_id` = 23 LIMIT 1 [ RunTime:0.000445s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `app_room_order` `o` LEFT JOIN `app_order_room` `r` ON `r`.`order_id`=`o`.`id` WHERE  `o`.`status` IN (1,2)  AND `r`.`room_id` = 25 LIMIT 1 [ RunTime:0.000451s ]
+---------------------------------------------------------------
+[ 2018-10-31T14:05:36+08:00 ] 119.137.55.41 GET /index/room/index.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.009183s ] mysql:host=122.114.216.78;port=3306;dbname=pengcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `app_banner` [ RunTime:0.010425s ]
+[ sql ] [ SQL ] SELECT `filename` FROM `app_banner` WHERE  `type` = 2 ORDER BY `sort` [ RunTime:0.000575s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `web_contact` [ RunTime:0.009643s ]
+[ sql ] [ SQL ] SELECT * FROM `web_contact` WHERE  `call_id` = 1 LIMIT 1 [ RunTime:0.000599s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `app_room` [ RunTime:0.009131s ]
+[ sql ] [ SQL ] SELECT `r`.`id`,`r`.`price`,`r`.`thumb`,`r`.`num`,pt.type pt_type,ft.type ft_type FROM `app_room` `r` LEFT JOIN `app_room_people_type` `pt` ON `pt`.`id`=`r`.`people_type_id` LEFT JOIN `app_room_floor_type` `ft` ON `ft`.`id`=`r`.`floor_type_id` WHERE  `r`.`is_show` = 1 [ RunTime:0.000901s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `app_room_order` [ RunTime:0.008848s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `app_room_order` `o` LEFT JOIN `app_order_room` `r` ON `r`.`order_id`=`o`.`id` WHERE  `o`.`status` IN (1,2)  AND `r`.`room_id` = 18 LIMIT 1 [ RunTime:0.000631s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `app_room_order` `o` LEFT JOIN `app_order_room` `r` ON `r`.`order_id`=`o`.`id` WHERE  `o`.`status` IN (1,2)  AND `r`.`room_id` = 19 LIMIT 1 [ RunTime:0.000450s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `app_room_order` `o` LEFT JOIN `app_order_room` `r` ON `r`.`order_id`=`o`.`id` WHERE  `o`.`status` IN (1,2)  AND `r`.`room_id` = 20 LIMIT 1 [ RunTime:0.000802s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `app_room_order` `o` LEFT JOIN `app_order_room` `r` ON `r`.`order_id`=`o`.`id` WHERE  `o`.`status` IN (1,2)  AND `r`.`room_id` = 21 LIMIT 1 [ RunTime:0.000392s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `app_room_order` `o` LEFT JOIN `app_order_room` `r` ON `r`.`order_id`=`o`.`id` WHERE  `o`.`status` IN (1,2)  AND `r`.`room_id` = 22 LIMIT 1 [ RunTime:0.000411s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `app_room_order` `o` LEFT JOIN `app_order_room` `r` ON `r`.`order_id`=`o`.`id` WHERE  `o`.`status` IN (1,2)  AND `r`.`room_id` = 23 LIMIT 1 [ RunTime:0.000397s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `app_room_order` `o` LEFT JOIN `app_order_room` `r` ON `r`.`order_id`=`o`.`id` WHERE  `o`.`status` IN (1,2)  AND `r`.`room_id` = 25 LIMIT 1 [ RunTime:0.000382s ]
+---------------------------------------------------------------
+[ 2018-10-31T14:05:38+08:00 ] 119.137.55.41 GET /index/goods/index.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.007044s ] mysql:host=122.114.216.78;port=3306;dbname=pengcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `app_goods_type` [ RunTime:0.009937s ]
+[ sql ] [ SQL ] SELECT `id`,`type` FROM `app_goods_type` WHERE  `is_show` = 1 ORDER BY `sort` [ RunTime:0.000850s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `app_goods` [ RunTime:0.011148s ]
+[ sql ] [ SQL ] SELECT `id`,`title`,`price`,`thumb` FROM `app_goods` WHERE  `is_recommend` = 1 [ RunTime:0.000723s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `app_goods_cart` [ RunTime:0.026809s ]
+[ sql ] [ SQL ] SELECT SUM(c.num) AS tp_sum FROM `app_goods_cart` `c` LEFT JOIN `app_goods` `g` ON `c`.`goods_id`=`g`.`id` LEFT JOIN `app_goods_type` `t` ON `g`.`type_id`=`t`.`id` WHERE  `t`.`id` = 8  AND `c`.`user_id` = '13' LIMIT 1 [ RunTime:0.000703s ]
+[ sql ] [ SQL ] SELECT `g`.`title`,`g`.`id`,`g`.`price`,`c`.`num` FROM `app_goods_cart` `c` LEFT JOIN `app_goods` `g` ON `c`.`goods_id`=`g`.`id` LEFT JOIN `app_goods_type` `t` ON `g`.`type_id`=`t`.`id` WHERE  `t`.`id` = 8  AND `c`.`user_id` = '13' [ RunTime:0.000535s ]
+[ sql ] [ SQL ] SELECT `g`.`id`,`g`.`title`,`g`.`price`,`g`.`thumb` FROM `app_goods` `g` LEFT JOIN `app_goods_type` `t` ON `g`.`type_id`=`t`.`id` WHERE  `t`.`id` = 8 [ RunTime:0.000408s ]
+[ sql ] [ SQL ] SELECT SUM(c.num) AS tp_sum FROM `app_goods_cart` `c` LEFT JOIN `app_goods` `g` ON `c`.`goods_id`=`g`.`id` LEFT JOIN `app_goods_type` `t` ON `g`.`type_id`=`t`.`id` WHERE  `t`.`id` = 7  AND `c`.`user_id` = '13' LIMIT 1 [ RunTime:0.000451s ]
+[ sql ] [ SQL ] SELECT `g`.`title`,`g`.`id`,`g`.`price`,`c`.`num` FROM `app_goods_cart` `c` LEFT JOIN `app_goods` `g` ON `c`.`goods_id`=`g`.`id` LEFT JOIN `app_goods_type` `t` ON `g`.`type_id`=`t`.`id` WHERE  `t`.`id` = 7  AND `c`.`user_id` = '13' [ RunTime:0.000520s ]
+[ sql ] [ SQL ] SELECT `g`.`id`,`g`.`title`,`g`.`price`,`g`.`thumb` FROM `app_goods` `g` LEFT JOIN `app_goods_type` `t` ON `g`.`type_id`=`t`.`id` WHERE  `t`.`id` = 7 [ RunTime:0.000575s ]
+[ sql ] [ SQL ] SELECT SUM(c.num) AS tp_sum FROM `app_goods_cart` `c` LEFT JOIN `app_goods` `g` ON `c`.`goods_id`=`g`.`id` LEFT JOIN `app_goods_type` `t` ON `g`.`type_id`=`t`.`id` WHERE  `t`.`id` = 10  AND `c`.`user_id` = '13' LIMIT 1 [ RunTime:0.000486s ]
+[ sql ] [ SQL ] SELECT `g`.`title`,`g`.`id`,`g`.`price`,`c`.`num` FROM `app_goods_cart` `c` LEFT JOIN `app_goods` `g` ON `c`.`goods_id`=`g`.`id` LEFT JOIN `app_goods_type` `t` ON `g`.`type_id`=`t`.`id` WHERE  `t`.`id` = 10  AND `c`.`user_id` = '13' [ RunTime:0.000483s ]
+[ sql ] [ SQL ] SELECT `g`.`id`,`g`.`title`,`g`.`price`,`g`.`thumb` FROM `app_goods` `g` LEFT JOIN `app_goods_type` `t` ON `g`.`type_id`=`t`.`id` WHERE  `t`.`id` = 10 [ RunTime:0.000427s ]
+[ sql ] [ SQL ] SELECT SUM(c.num) AS tp_sum FROM `app_goods_cart` `c` LEFT JOIN `app_goods` `g` ON `c`.`goods_id`=`g`.`id` LEFT JOIN `app_goods_type` `t` ON `g`.`type_id`=`t`.`id` WHERE  `t`.`id` = 11  AND `c`.`user_id` = '13' LIMIT 1 [ RunTime:0.000453s ]
+[ sql ] [ SQL ] SELECT `g`.`title`,`g`.`id`,`g`.`price`,`c`.`num` FROM `app_goods_cart` `c` LEFT JOIN `app_goods` `g` ON `c`.`goods_id`=`g`.`id` LEFT JOIN `app_goods_type` `t` ON `g`.`type_id`=`t`.`id` WHERE  `t`.`id` = 11  AND `c`.`user_id` = '13' [ RunTime:0.000511s ]
+[ sql ] [ SQL ] SELECT `g`.`id`,`g`.`title`,`g`.`price`,`g`.`thumb` FROM `app_goods` `g` LEFT JOIN `app_goods_type` `t` ON `g`.`type_id`=`t`.`id` WHERE  `t`.`id` = 11 [ RunTime:0.000490s ]
+[ sql ] [ SQL ] SELECT SUM(c.num) AS tp_sum FROM `app_goods_cart` `c` LEFT JOIN `app_goods` `g` ON `c`.`goods_id`=`g`.`id` LEFT JOIN `app_goods_type` `t` ON `g`.`type_id`=`t`.`id` WHERE  `t`.`id` = 12  AND `c`.`user_id` = '13' LIMIT 1 [ RunTime:0.000483s ]
+[ sql ] [ SQL ] SELECT `g`.`title`,`g`.`id`,`g`.`price`,`c`.`num` FROM `app_goods_cart` `c` LEFT JOIN `app_goods` `g` ON `c`.`goods_id`=`g`.`id` LEFT JOIN `app_goods_type` `t` ON `g`.`type_id`=`t`.`id` WHERE  `t`.`id` = 12  AND `c`.`user_id` = '13' [ RunTime:0.000423s ]
+[ sql ] [ SQL ] SELECT `g`.`id`,`g`.`title`,`g`.`price`,`g`.`thumb` FROM `app_goods` `g` LEFT JOIN `app_goods_type` `t` ON `g`.`type_id`=`t`.`id` WHERE  `t`.`id` = 12 [ RunTime:0.000358s ]
+[ sql ] [ SQL ] SELECT SUM(c.num) AS tp_sum FROM `app_goods_cart` `c` LEFT JOIN `app_goods` `g` ON `c`.`goods_id`=`g`.`id` LEFT JOIN `app_goods_type` `t` ON `g`.`type_id`=`t`.`id` WHERE  `t`.`id` = 13  AND `c`.`user_id` = '13' LIMIT 1 [ RunTime:0.000593s ]
+[ sql ] [ SQL ] SELECT `g`.`title`,`g`.`id`,`g`.`price`,`c`.`num` FROM `app_goods_cart` `c` LEFT JOIN `app_goods` `g` ON `c`.`goods_id`=`g`.`id` LEFT JOIN `app_goods_type` `t` ON `g`.`type_id`=`t`.`id` WHERE  `t`.`id` = 13  AND `c`.`user_id` = '13' [ RunTime:0.000570s ]
+[ sql ] [ SQL ] SELECT `g`.`id`,`g`.`title`,`g`.`price`,`g`.`thumb` FROM `app_goods` `g` LEFT JOIN `app_goods_type` `t` ON `g`.`type_id`=`t`.`id` WHERE  `t`.`id` = 13 [ RunTime:0.000537s ]
+[ sql ] [ SQL ] SELECT SUM(c.num) AS tp_sum FROM `app_goods_cart` `c` LEFT JOIN `app_goods` `g` ON `c`.`goods_id`=`g`.`id` LEFT JOIN `app_goods_type` `t` ON `g`.`type_id`=`t`.`id` WHERE  `t`.`id` = 14  AND `c`.`user_id` = '13' LIMIT 1 [ RunTime:0.000577s ]
+[ sql ] [ SQL ] SELECT `g`.`title`,`g`.`id`,`g`.`price`,`c`.`num` FROM `app_goods_cart` `c` LEFT JOIN `app_goods` `g` ON `c`.`goods_id`=`g`.`id` LEFT JOIN `app_goods_type` `t` ON `g`.`type_id`=`t`.`id` WHERE  `t`.`id` = 14  AND `c`.`user_id` = '13' [ RunTime:0.000501s ]
+[ sql ] [ SQL ] SELECT `g`.`id`,`g`.`title`,`g`.`price`,`g`.`thumb` FROM `app_goods` `g` LEFT JOIN `app_goods_type` `t` ON `g`.`type_id`=`t`.`id` WHERE  `t`.`id` = 14 [ RunTime:0.000425s ]
+[ sql ] [ SQL ] SELECT `num` FROM `app_goods_cart` WHERE  `user_id` = 13  AND `goods_id` = 19 LIMIT 1 [ RunTime:0.000366s ]
+[ sql ] [ SQL ] SELECT `num` FROM `app_goods_cart` WHERE  `user_id` = 13  AND `goods_id` = 21 LIMIT 1 [ RunTime:0.000337s ]
+[ sql ] [ SQL ] SELECT `num` FROM `app_goods_cart` WHERE  `user_id` = 13  AND `goods_id` = 22 LIMIT 1 [ RunTime:0.000403s ]
+[ sql ] [ SQL ] SELECT `num` FROM `app_goods_cart` WHERE  `user_id` = 13  AND `goods_id` = 23 LIMIT 1 [ RunTime:0.000368s ]
+[ sql ] [ SQL ] SELECT `num` FROM `app_goods_cart` WHERE  `user_id` = 13  AND `goods_id` = 20 LIMIT 1 [ RunTime:0.000394s ]
+[ sql ] [ SQL ] SELECT `num` FROM `app_goods_cart` WHERE  `user_id` = 13  AND `goods_id` = 18 LIMIT 1 [ RunTime:0.000625s ]
+[ sql ] [ SQL ] SELECT `num` FROM `app_goods_cart` WHERE  `user_id` = 13  AND `goods_id` = 24 LIMIT 1 [ RunTime:0.000461s ]
+---------------------------------------------------------------
+[ 2018-10-31T14:06:03+08:00 ] 119.137.55.41 GET /index/goods/index.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003440s ] mysql:host=122.114.216.78;port=3306;dbname=pengcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `app_goods_type` [ RunTime:0.007601s ]
+[ sql ] [ SQL ] SELECT `id`,`type` FROM `app_goods_type` WHERE  `is_show` = 1 ORDER BY `sort` [ RunTime:0.000551s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `app_goods` [ RunTime:0.012318s ]
+[ sql ] [ SQL ] SELECT `id`,`title`,`price`,`thumb` FROM `app_goods` WHERE  `is_recommend` = 1 [ RunTime:0.000601s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `app_goods_cart` [ RunTime:0.011340s ]
+[ sql ] [ SQL ] SELECT SUM(c.num) AS tp_sum FROM `app_goods_cart` `c` LEFT JOIN `app_goods` `g` ON `c`.`goods_id`=`g`.`id` LEFT JOIN `app_goods_type` `t` ON `g`.`type_id`=`t`.`id` WHERE  `t`.`id` = 8  AND `c`.`user_id` = '13' LIMIT 1 [ RunTime:0.000811s ]
+[ sql ] [ SQL ] SELECT `g`.`title`,`g`.`id`,`g`.`price`,`c`.`num` FROM `app_goods_cart` `c` LEFT JOIN `app_goods` `g` ON `c`.`goods_id`=`g`.`id` LEFT JOIN `app_goods_type` `t` ON `g`.`type_id`=`t`.`id` WHERE  `t`.`id` = 8  AND `c`.`user_id` = '13' [ RunTime:0.000578s ]
+[ sql ] [ SQL ] SELECT `g`.`id`,`g`.`title`,`g`.`price`,`g`.`thumb` FROM `app_goods` `g` LEFT JOIN `app_goods_type` `t` ON `g`.`type_id`=`t`.`id` WHERE  `t`.`id` = 8 [ RunTime:0.000531s ]
+[ sql ] [ SQL ] SELECT SUM(c.num) AS tp_sum FROM `app_goods_cart` `c` LEFT JOIN `app_goods` `g` ON `c`.`goods_id`=`g`.`id` LEFT JOIN `app_goods_type` `t` ON `g`.`type_id`=`t`.`id` WHERE  `t`.`id` = 7  AND `c`.`user_id` = '13' LIMIT 1 [ RunTime:0.000614s ]
+[ sql ] [ SQL ] SELECT `g`.`title`,`g`.`id`,`g`.`price`,`c`.`num` FROM `app_goods_cart` `c` LEFT JOIN `app_goods` `g` ON `c`.`goods_id`=`g`.`id` LEFT JOIN `app_goods_type` `t` ON `g`.`type_id`=`t`.`id` WHERE  `t`.`id` = 7  AND `c`.`user_id` = '13' [ RunTime:0.000610s ]
+[ sql ] [ SQL ] SELECT `g`.`id`,`g`.`title`,`g`.`price`,`g`.`thumb` FROM `app_goods` `g` LEFT JOIN `app_goods_type` `t` ON `g`.`type_id`=`t`.`id` WHERE  `t`.`id` = 7 [ RunTime:0.000522s ]
+[ sql ] [ SQL ] SELECT SUM(c.num) AS tp_sum FROM `app_goods_cart` `c` LEFT JOIN `app_goods` `g` ON `c`.`goods_id`=`g`.`id` LEFT JOIN `app_goods_type` `t` ON `g`.`type_id`=`t`.`id` WHERE  `t`.`id` = 10  AND `c`.`user_id` = '13' LIMIT 1 [ RunTime:0.000547s ]
+[ sql ] [ SQL ] SELECT `g`.`title`,`g`.`id`,`g`.`price`,`c`.`num` FROM `app_goods_cart` `c` LEFT JOIN `app_goods` `g` ON `c`.`goods_id`=`g`.`id` LEFT JOIN `app_goods_type` `t` ON `g`.`type_id`=`t`.`id` WHERE  `t`.`id` = 10  AND `c`.`user_id` = '13' [ RunTime:0.000539s ]
+[ sql ] [ SQL ] SELECT `g`.`id`,`g`.`title`,`g`.`price`,`g`.`thumb` FROM `app_goods` `g` LEFT JOIN `app_goods_type` `t` ON `g`.`type_id`=`t`.`id` WHERE  `t`.`id` = 10 [ RunTime:0.000454s ]
+[ sql ] [ SQL ] SELECT SUM(c.num) AS tp_sum FROM `app_goods_cart` `c` LEFT JOIN `app_goods` `g` ON `c`.`goods_id`=`g`.`id` LEFT JOIN `app_goods_type` `t` ON `g`.`type_id`=`t`.`id` WHERE  `t`.`id` = 11  AND `c`.`user_id` = '13' LIMIT 1 [ RunTime:0.000571s ]
+[ sql ] [ SQL ] SELECT `g`.`title`,`g`.`id`,`g`.`price`,`c`.`num` FROM `app_goods_cart` `c` LEFT JOIN `app_goods` `g` ON `c`.`goods_id`=`g`.`id` LEFT JOIN `app_goods_type` `t` ON `g`.`type_id`=`t`.`id` WHERE  `t`.`id` = 11  AND `c`.`user_id` = '13' [ RunTime:0.000629s ]
+[ sql ] [ SQL ] SELECT `g`.`id`,`g`.`title`,`g`.`price`,`g`.`thumb` FROM `app_goods` `g` LEFT JOIN `app_goods_type` `t` ON `g`.`type_id`=`t`.`id` WHERE  `t`.`id` = 11 [ RunTime:0.000521s ]
+[ sql ] [ SQL ] SELECT SUM(c.num) AS tp_sum FROM `app_goods_cart` `c` LEFT JOIN `app_goods` `g` ON `c`.`goods_id`=`g`.`id` LEFT JOIN `app_goods_type` `t` ON `g`.`type_id`=`t`.`id` WHERE  `t`.`id` = 12  AND `c`.`user_id` = '13' LIMIT 1 [ RunTime:0.000492s ]
+[ sql ] [ SQL ] SELECT `g`.`title`,`g`.`id`,`g`.`price`,`c`.`num` FROM `app_goods_cart` `c` LEFT JOIN `app_goods` `g` ON `c`.`goods_id`=`g`.`id` LEFT JOIN `app_goods_type` `t` ON `g`.`type_id`=`t`.`id` WHERE  `t`.`id` = 12  AND `c`.`user_id` = '13' [ RunTime:0.000515s ]
+[ sql ] [ SQL ] SELECT `g`.`id`,`g`.`title`,`g`.`price`,`g`.`thumb` FROM `app_goods` `g` LEFT JOIN `app_goods_type` `t` ON `g`.`type_id`=`t`.`id` WHERE  `t`.`id` = 12 [ RunTime:0.000552s ]
+[ sql ] [ SQL ] SELECT SUM(c.num) AS tp_sum FROM `app_goods_cart` `c` LEFT JOIN `app_goods` `g` ON `c`.`goods_id`=`g`.`id` LEFT JOIN `app_goods_type` `t` ON `g`.`type_id`=`t`.`id` WHERE  `t`.`id` = 13  AND `c`.`user_id` = '13' LIMIT 1 [ RunTime:0.000508s ]
+[ sql ] [ SQL ] SELECT `g`.`title`,`g`.`id`,`g`.`price`,`c`.`num` FROM `app_goods_cart` `c` LEFT JOIN `app_goods` `g` ON `c`.`goods_id`=`g`.`id` LEFT JOIN `app_goods_type` `t` ON `g`.`type_id`=`t`.`id` WHERE  `t`.`id` = 13  AND `c`.`user_id` = '13' [ RunTime:0.000491s ]
+[ sql ] [ SQL ] SELECT `g`.`id`,`g`.`title`,`g`.`price`,`g`.`thumb` FROM `app_goods` `g` LEFT JOIN `app_goods_type` `t` ON `g`.`type_id`=`t`.`id` WHERE  `t`.`id` = 13 [ RunTime:0.000381s ]
+[ sql ] [ SQL ] SELECT SUM(c.num) AS tp_sum FROM `app_goods_cart` `c` LEFT JOIN `app_goods` `g` ON `c`.`goods_id`=`g`.`id` LEFT JOIN `app_goods_type` `t` ON `g`.`type_id`=`t`.`id` WHERE  `t`.`id` = 14  AND `c`.`user_id` = '13' LIMIT 1 [ RunTime:0.000456s ]
+[ sql ] [ SQL ] SELECT `g`.`title`,`g`.`id`,`g`.`price`,`c`.`num` FROM `app_goods_cart` `c` LEFT JOIN `app_goods` `g` ON `c`.`goods_id`=`g`.`id` LEFT JOIN `app_goods_type` `t` ON `g`.`type_id`=`t`.`id` WHERE  `t`.`id` = 14  AND `c`.`user_id` = '13' [ RunTime:0.000418s ]
+[ sql ] [ SQL ] SELECT `g`.`id`,`g`.`title`,`g`.`price`,`g`.`thumb` FROM `app_goods` `g` LEFT JOIN `app_goods_type` `t` ON `g`.`type_id`=`t`.`id` WHERE  `t`.`id` = 14 [ RunTime:0.000458s ]
+[ sql ] [ SQL ] SELECT `num` FROM `app_goods_cart` WHERE  `user_id` = 13  AND `goods_id` = 19 LIMIT 1 [ RunTime:0.000423s ]
+[ sql ] [ SQL ] SELECT `num` FROM `app_goods_cart` WHERE  `user_id` = 13  AND `goods_id` = 21 LIMIT 1 [ RunTime:0.000423s ]
+[ sql ] [ SQL ] SELECT `num` FROM `app_goods_cart` WHERE  `user_id` = 13  AND `goods_id` = 22 LIMIT 1 [ RunTime:0.000411s ]
+[ sql ] [ SQL ] SELECT `num` FROM `app_goods_cart` WHERE  `user_id` = 13  AND `goods_id` = 23 LIMIT 1 [ RunTime:0.000403s ]
+[ sql ] [ SQL ] SELECT `num` FROM `app_goods_cart` WHERE  `user_id` = 13  AND `goods_id` = 20 LIMIT 1 [ RunTime:0.000421s ]
+[ sql ] [ SQL ] SELECT `num` FROM `app_goods_cart` WHERE  `user_id` = 13  AND `goods_id` = 18 LIMIT 1 [ RunTime:0.000401s ]
+[ sql ] [ SQL ] SELECT `num` FROM `app_goods_cart` WHERE  `user_id` = 13  AND `goods_id` = 24 LIMIT 1 [ RunTime:0.000409s ]
+---------------------------------------------------------------
+[ 2018-10-31T14:06:06+08:00 ] 119.137.55.41 GET /index/room/index.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.005499s ] mysql:host=122.114.216.78;port=3306;dbname=pengcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `app_banner` [ RunTime:0.008617s ]
+[ sql ] [ SQL ] SELECT `filename` FROM `app_banner` WHERE  `type` = 2 ORDER BY `sort` [ RunTime:0.000634s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `web_contact` [ RunTime:0.009851s ]
+[ sql ] [ SQL ] SELECT * FROM `web_contact` WHERE  `call_id` = 1 LIMIT 1 [ RunTime:0.000575s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `app_room` [ RunTime:0.009367s ]
+[ sql ] [ SQL ] SELECT `r`.`id`,`r`.`price`,`r`.`thumb`,`r`.`num`,pt.type pt_type,ft.type ft_type FROM `app_room` `r` LEFT JOIN `app_room_people_type` `pt` ON `pt`.`id`=`r`.`people_type_id` LEFT JOIN `app_room_floor_type` `ft` ON `ft`.`id`=`r`.`floor_type_id` WHERE  `r`.`is_show` = 1 [ RunTime:0.000883s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `app_room_order` [ RunTime:0.007267s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `app_room_order` `o` LEFT JOIN `app_order_room` `r` ON `r`.`order_id`=`o`.`id` WHERE  `o`.`status` IN (1,2)  AND `r`.`room_id` = 18 LIMIT 1 [ RunTime:0.000551s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `app_room_order` `o` LEFT JOIN `app_order_room` `r` ON `r`.`order_id`=`o`.`id` WHERE  `o`.`status` IN (1,2)  AND `r`.`room_id` = 19 LIMIT 1 [ RunTime:0.000454s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `app_room_order` `o` LEFT JOIN `app_order_room` `r` ON `r`.`order_id`=`o`.`id` WHERE  `o`.`status` IN (1,2)  AND `r`.`room_id` = 20 LIMIT 1 [ RunTime:0.000459s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `app_room_order` `o` LEFT JOIN `app_order_room` `r` ON `r`.`order_id`=`o`.`id` WHERE  `o`.`status` IN (1,2)  AND `r`.`room_id` = 21 LIMIT 1 [ RunTime:0.000633s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `app_room_order` `o` LEFT JOIN `app_order_room` `r` ON `r`.`order_id`=`o`.`id` WHERE  `o`.`status` IN (1,2)  AND `r`.`room_id` = 22 LIMIT 1 [ RunTime:0.000904s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `app_room_order` `o` LEFT JOIN `app_order_room` `r` ON `r`.`order_id`=`o`.`id` WHERE  `o`.`status` IN (1,2)  AND `r`.`room_id` = 23 LIMIT 1 [ RunTime:0.000456s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `app_room_order` `o` LEFT JOIN `app_order_room` `r` ON `r`.`order_id`=`o`.`id` WHERE  `o`.`status` IN (1,2)  AND `r`.`room_id` = 25 LIMIT 1 [ RunTime:0.000370s ]
+---------------------------------------------------------------
+[ 2018-10-31T14:06:08+08:00 ] 119.137.55.41 GET /index/room/index.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001419s ] mysql:host=122.114.216.78;port=3306;dbname=pengcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `app_banner` [ RunTime:0.009228s ]
+[ sql ] [ SQL ] SELECT `filename` FROM `app_banner` WHERE  `type` = 2 ORDER BY `sort` [ RunTime:0.002037s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `web_contact` [ RunTime:0.008960s ]
+[ sql ] [ SQL ] SELECT * FROM `web_contact` WHERE  `call_id` = 1 LIMIT 1 [ RunTime:0.000750s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `app_room` [ RunTime:0.010666s ]
+[ sql ] [ SQL ] SELECT `r`.`id`,`r`.`price`,`r`.`thumb`,`r`.`num`,pt.type pt_type,ft.type ft_type FROM `app_room` `r` LEFT JOIN `app_room_people_type` `pt` ON `pt`.`id`=`r`.`people_type_id` LEFT JOIN `app_room_floor_type` `ft` ON `ft`.`id`=`r`.`floor_type_id` WHERE  `r`.`is_show` = 1 [ RunTime:0.001047s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `app_room_order` [ RunTime:0.008760s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `app_room_order` `o` LEFT JOIN `app_order_room` `r` ON `r`.`order_id`=`o`.`id` WHERE  `o`.`status` IN (1,2)  AND `r`.`room_id` = 18 LIMIT 1 [ RunTime:0.000795s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `app_room_order` `o` LEFT JOIN `app_order_room` `r` ON `r`.`order_id`=`o`.`id` WHERE  `o`.`status` IN (1,2)  AND `r`.`room_id` = 19 LIMIT 1 [ RunTime:0.000552s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `app_room_order` `o` LEFT JOIN `app_order_room` `r` ON `r`.`order_id`=`o`.`id` WHERE  `o`.`status` IN (1,2)  AND `r`.`room_id` = 20 LIMIT 1 [ RunTime:0.000505s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `app_room_order` `o` LEFT JOIN `app_order_room` `r` ON `r`.`order_id`=`o`.`id` WHERE  `o`.`status` IN (1,2)  AND `r`.`room_id` = 21 LIMIT 1 [ RunTime:0.000629s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `app_room_order` `o` LEFT JOIN `app_order_room` `r` ON `r`.`order_id`=`o`.`id` WHERE  `o`.`status` IN (1,2)  AND `r`.`room_id` = 22 LIMIT 1 [ RunTime:0.002672s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `app_room_order` `o` LEFT JOIN `app_order_room` `r` ON `r`.`order_id`=`o`.`id` WHERE  `o`.`status` IN (1,2)  AND `r`.`room_id` = 23 LIMIT 1 [ RunTime:0.003196s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `app_room_order` `o` LEFT JOIN `app_order_room` `r` ON `r`.`order_id`=`o`.`id` WHERE  `o`.`status` IN (1,2)  AND `r`.`room_id` = 25 LIMIT 1 [ RunTime:0.000963s ]
+---------------------------------------------------------------
+[ 2018-10-31T14:06:09+08:00 ] 119.137.55.41 GET /index/user/index.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003908s ] mysql:host=122.114.216.78;port=3306;dbname=pengcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `app_user` [ RunTime:0.009217s ]
+[ sql ] [ SQL ] SELECT `nickname`,`avatarurl` FROM `app_user` WHERE  `id` = 13 LIMIT 1 [ RunTime:0.000651s ]
+---------------------------------------------------------------
+[ 2018-10-31T14:06:24+08:00 ] 61.129.6.227 GET /index/room/index.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002630s ] mysql:host=122.114.216.78;port=3306;dbname=pengcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `app_banner` [ RunTime:0.008645s ]
+[ sql ] [ SQL ] SELECT `filename` FROM `app_banner` WHERE  `type` = 2 ORDER BY `sort` [ RunTime:0.000584s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `web_contact` [ RunTime:0.008432s ]
+[ sql ] [ SQL ] SELECT * FROM `web_contact` WHERE  `call_id` = 1 LIMIT 1 [ RunTime:0.000531s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `app_room` [ RunTime:0.009160s ]
+[ sql ] [ SQL ] SELECT `r`.`id`,`r`.`price`,`r`.`thumb`,`r`.`num`,pt.type pt_type,ft.type ft_type FROM `app_room` `r` LEFT JOIN `app_room_people_type` `pt` ON `pt`.`id`=`r`.`people_type_id` LEFT JOIN `app_room_floor_type` `ft` ON `ft`.`id`=`r`.`floor_type_id` WHERE  `r`.`is_show` = 1 [ RunTime:0.000702s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `app_room_order` [ RunTime:0.008634s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `app_room_order` `o` LEFT JOIN `app_order_room` `r` ON `r`.`order_id`=`o`.`id` WHERE  `o`.`status` IN (1,2)  AND `r`.`room_id` = 18 LIMIT 1 [ RunTime:0.000551s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `app_room_order` `o` LEFT JOIN `app_order_room` `r` ON `r`.`order_id`=`o`.`id` WHERE  `o`.`status` IN (1,2)  AND `r`.`room_id` = 19 LIMIT 1 [ RunTime:0.000412s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `app_room_order` `o` LEFT JOIN `app_order_room` `r` ON `r`.`order_id`=`o`.`id` WHERE  `o`.`status` IN (1,2)  AND `r`.`room_id` = 20 LIMIT 1 [ RunTime:0.000402s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `app_room_order` `o` LEFT JOIN `app_order_room` `r` ON `r`.`order_id`=`o`.`id` WHERE  `o`.`status` IN (1,2)  AND `r`.`room_id` = 21 LIMIT 1 [ RunTime:0.000355s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `app_room_order` `o` LEFT JOIN `app_order_room` `r` ON `r`.`order_id`=`o`.`id` WHERE  `o`.`status` IN (1,2)  AND `r`.`room_id` = 22 LIMIT 1 [ RunTime:0.000390s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `app_room_order` `o` LEFT JOIN `app_order_room` `r` ON `r`.`order_id`=`o`.`id` WHERE  `o`.`status` IN (1,2)  AND `r`.`room_id` = 23 LIMIT 1 [ RunTime:0.000405s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `app_room_order` `o` LEFT JOIN `app_order_room` `r` ON `r`.`order_id`=`o`.`id` WHERE  `o`.`status` IN (1,2)  AND `r`.`room_id` = 25 LIMIT 1 [ RunTime:0.000472s ]
+---------------------------------------------------------------
+[ 2018-10-31T14:06:39+08:00 ] 119.137.55.41 GET /api/roomorder/getList?status=0&page=1
+[ sql ] [ DB ] CONNECT:[ UseTime:0.006026s ] mysql:host=122.114.216.78;port=3306;dbname=pengcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `app_room_order` [ RunTime:0.010103s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `app_room_order` `o` LEFT JOIN `app_order_room` `r` ON `r`.`order_id`=`o`.`id` WHERE  `o`.`openid` = 'otuUIuGxiMh439ADZ4M00mYQpoHA'  AND `deleted` = 0  AND `o`.`status` = 0 LIMIT 1 [ RunTime:0.000660s ]
+[ sql ] [ SQL ] SELECT `o`.`id`,`o`.`order_no`,`o`.`start_date`,`o`.`left_date`,`o`.`status`,`o`.`amount`,`o`.`coupon_price`,`o`.`pay_money`,`r`.`title`,`r`.`num` FROM `app_room_order` `o` LEFT JOIN `app_order_room` `r` ON `r`.`order_id`=`o`.`id` WHERE  `o`.`openid` = 'otuUIuGxiMh439ADZ4M00mYQpoHA'  AND `deleted` = 0  AND `o`.`status` = 0 ORDER BY o.id desc LIMIT 0,2 [ RunTime:0.000835s ]
+---------------------------------------------------------------
+[ 2018-10-31T14:07:08+08:00 ] 61.151.207.186 GET /index/user/index.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012874s ] mysql:host=122.114.216.78;port=3306;dbname=pengcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `app_user` [ RunTime:0.007985s ]
+[ sql ] [ SQL ] SELECT `nickname`,`avatarurl` FROM `app_user` WHERE  `id` IS NULL LIMIT 1 [ RunTime:0.000413s ]
+---------------------------------------------------------------
+[ 2018-10-31T14:07:27+08:00 ] 119.137.55.41 GET /api/roomorder/getList?status=0&page=1
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001470s ] mysql:host=122.114.216.78;port=3306;dbname=pengcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `app_room_order` [ RunTime:0.010478s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `app_room_order` `o` LEFT JOIN `app_order_room` `r` ON `r`.`order_id`=`o`.`id` WHERE  `o`.`openid` = 'otuUIuGxiMh439ADZ4M00mYQpoHA'  AND `deleted` = 0  AND `o`.`status` = 0 LIMIT 1 [ RunTime:0.000783s ]
+[ sql ] [ SQL ] SELECT `o`.`id`,`o`.`order_no`,`o`.`start_date`,`o`.`left_date`,`o`.`status`,`o`.`amount`,`o`.`coupon_price`,`o`.`pay_money`,`r`.`title`,`r`.`num` FROM `app_room_order` `o` LEFT JOIN `app_order_room` `r` ON `r`.`order_id`=`o`.`id` WHERE  `o`.`openid` = 'otuUIuGxiMh439ADZ4M00mYQpoHA'  AND `deleted` = 0  AND `o`.`status` = 0 ORDER BY o.id desc LIMIT 0,2 [ RunTime:0.001072s ]
+---------------------------------------------------------------
+[ 2018-10-31T14:07:31+08:00 ] 119.137.55.41 GET /index/room/index.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003066s ] mysql:host=122.114.216.78;port=3306;dbname=pengcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `app_banner` [ RunTime:0.009483s ]
+[ sql ] [ SQL ] SELECT `filename` FROM `app_banner` WHERE  `type` = 2 ORDER BY `sort` [ RunTime:0.000568s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `web_contact` [ RunTime:0.007736s ]
+[ sql ] [ SQL ] SELECT * FROM `web_contact` WHERE  `call_id` = 1 LIMIT 1 [ RunTime:0.000549s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `app_room` [ RunTime:0.007202s ]
+[ sql ] [ SQL ] SELECT `r`.`id`,`r`.`price`,`r`.`thumb`,`r`.`num`,pt.type pt_type,ft.type ft_type FROM `app_room` `r` LEFT JOIN `app_room_people_type` `pt` ON `pt`.`id`=`r`.`people_type_id` LEFT JOIN `app_room_floor_type` `ft` ON `ft`.`id`=`r`.`floor_type_id` WHERE  `r`.`is_show` = 1 [ RunTime:0.000673s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `app_room_order` [ RunTime:0.008953s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `app_room_order` `o` LEFT JOIN `app_order_room` `r` ON `r`.`order_id`=`o`.`id` WHERE  `o`.`status` IN (1,2)  AND `r`.`room_id` = 18 LIMIT 1 [ RunTime:0.000607s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `app_room_order` `o` LEFT JOIN `app_order_room` `r` ON `r`.`order_id`=`o`.`id` WHERE  `o`.`status` IN (1,2)  AND `r`.`room_id` = 19 LIMIT 1 [ RunTime:0.000458s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `app_room_order` `o` LEFT JOIN `app_order_room` `r` ON `r`.`order_id`=`o`.`id` WHERE  `o`.`status` IN (1,2)  AND `r`.`room_id` = 20 LIMIT 1 [ RunTime:0.000475s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `app_room_order` `o` LEFT JOIN `app_order_room` `r` ON `r`.`order_id`=`o`.`id` WHERE  `o`.`status` IN (1,2)  AND `r`.`room_id` = 21 LIMIT 1 [ RunTime:0.000458s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `app_room_order` `o` LEFT JOIN `app_order_room` `r` ON `r`.`order_id`=`o`.`id` WHERE  `o`.`status` IN (1,2)  AND `r`.`room_id` = 22 LIMIT 1 [ RunTime:0.000457s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `app_room_order` `o` LEFT JOIN `app_order_room` `r` ON `r`.`order_id`=`o`.`id` WHERE  `o`.`status` IN (1,2)  AND `r`.`room_id` = 23 LIMIT 1 [ RunTime:0.000447s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `app_room_order` `o` LEFT JOIN `app_order_room` `r` ON `r`.`order_id`=`o`.`id` WHERE  `o`.`status` IN (1,2)  AND `r`.`room_id` = 25 LIMIT 1 [ RunTime:0.000481s ]
+---------------------------------------------------------------
+[ 2018-10-31T14:07:34+08:00 ] 119.137.55.41 GET /index/user/index.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010745s ] mysql:host=122.114.216.78;port=3306;dbname=pengcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `app_user` [ RunTime:0.012375s ]
+[ sql ] [ SQL ] SELECT `nickname`,`avatarurl` FROM `app_user` WHERE  `id` = 13 LIMIT 1 [ RunTime:0.000534s ]
+---------------------------------------------------------------
+[ 2018-10-31T14:07:36+08:00 ] 119.137.55.41 GET /api/goodsorder/getList?status=0&page=1
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011317s ] mysql:host=122.114.216.78;port=3306;dbname=pengcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `app_goods_order` [ RunTime:0.019146s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `app_goods_order` WHERE  `openid` = 'otuUIuGxiMh439ADZ4M00mYQpoHA'  AND `deleted` = 0  AND `status` = 0 LIMIT 1 [ RunTime:0.000599s ]
+[ sql ] [ SQL ] SELECT `id`,`order_no`,`meal_date`,DATE_FORMAT(`meal_time`,"%H:%i") as m_time,`amount`,`coupon_price`,`status`,`pay_money` FROM `app_goods_order` WHERE  `openid` = 'otuUIuGxiMh439ADZ4M00mYQpoHA'  AND `deleted` = 0  AND `status` = 0 ORDER BY id desc LIMIT 0,2 [ RunTime:0.000505s ]
+---------------------------------------------------------------
+[ 2018-10-31T14:07:56+08:00 ] 119.137.55.41 GET /api/goodsorder/getList?status=0&page=1
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001308s ] mysql:host=122.114.216.78;port=3306;dbname=pengcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `app_goods_order` [ RunTime:0.010931s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `app_goods_order` WHERE  `openid` = 'otuUIuGxiMh439ADZ4M00mYQpoHA'  AND `deleted` = 0  AND `status` = 0 LIMIT 1 [ RunTime:0.000670s ]
+[ sql ] [ SQL ] SELECT `id`,`order_no`,`meal_date`,DATE_FORMAT(`meal_time`,"%H:%i") as m_time,`amount`,`coupon_price`,`status`,`pay_money` FROM `app_goods_order` WHERE  `openid` = 'otuUIuGxiMh439ADZ4M00mYQpoHA'  AND `deleted` = 0  AND `status` = 0 ORDER BY id desc LIMIT 0,2 [ RunTime:0.000936s ]
+---------------------------------------------------------------
+[ 2018-10-31T14:07:57+08:00 ] 119.137.55.41 GET /api/goodsorder/getList?status=1&page=1
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012454s ] mysql:host=122.114.216.78;port=3306;dbname=pengcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `app_goods_order` [ RunTime:0.011317s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `app_goods_order` WHERE  `openid` = 'otuUIuGxiMh439ADZ4M00mYQpoHA'  AND `deleted` = 0  AND `status` = 1 LIMIT 1 [ RunTime:0.000689s ]
+[ sql ] [ SQL ] SELECT `id`,`order_no`,`meal_date`,DATE_FORMAT(`meal_time`,"%H:%i") as m_time,`amount`,`coupon_price`,`status`,`pay_money` FROM `app_goods_order` WHERE  `openid` = 'otuUIuGxiMh439ADZ4M00mYQpoHA'  AND `deleted` = 0  AND `status` = 1 ORDER BY id desc LIMIT 0,2 [ RunTime:0.000671s ]
+---------------------------------------------------------------
+[ 2018-10-31T14:07:58+08:00 ] 119.137.55.41 GET /api/goodsorder/getList?status=2&page=1
+[ sql ] [ DB ] CONNECT:[ UseTime:0.006405s ] mysql:host=122.114.216.78;port=3306;dbname=pengcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `app_goods_order` [ RunTime:0.008649s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `app_goods_order` WHERE  `openid` = 'otuUIuGxiMh439ADZ4M00mYQpoHA'  AND `deleted` = 0  AND `status` = 2 LIMIT 1 [ RunTime:0.000645s ]
+[ sql ] [ SQL ] SELECT `id`,`order_no`,`meal_date`,DATE_FORMAT(`meal_time`,"%H:%i") as m_time,`amount`,`coupon_price`,`status`,`pay_money` FROM `app_goods_order` WHERE  `openid` = 'otuUIuGxiMh439ADZ4M00mYQpoHA'  AND `deleted` = 0  AND `status` = 2 ORDER BY id desc LIMIT 0,2 [ RunTime:0.000564s ]
+---------------------------------------------------------------
+[ 2018-10-31T14:08:02+08:00 ] 119.137.55.41 GET /index/room/index.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001879s ] mysql:host=122.114.216.78;port=3306;dbname=pengcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `app_banner` [ RunTime:0.008589s ]
+[ sql ] [ SQL ] SELECT `filename` FROM `app_banner` WHERE  `type` = 2 ORDER BY `sort` [ RunTime:0.000485s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `web_contact` [ RunTime:0.009103s ]
+[ sql ] [ SQL ] SELECT * FROM `web_contact` WHERE  `call_id` = 1 LIMIT 1 [ RunTime:0.000538s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `app_room` [ RunTime:0.008365s ]
+[ sql ] [ SQL ] SELECT `r`.`id`,`r`.`price`,`r`.`thumb`,`r`.`num`,pt.type pt_type,ft.type ft_type FROM `app_room` `r` LEFT JOIN `app_room_people_type` `pt` ON `pt`.`id`=`r`.`people_type_id` LEFT JOIN `app_room_floor_type` `ft` ON `ft`.`id`=`r`.`floor_type_id` WHERE  `r`.`is_show` = 1 [ RunTime:0.000719s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `app_room_order` [ RunTime:0.009115s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `app_room_order` `o` LEFT JOIN `app_order_room` `r` ON `r`.`order_id`=`o`.`id` WHERE  `o`.`status` IN (1,2)  AND `r`.`room_id` = 18 LIMIT 1 [ RunTime:0.000569s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `app_room_order` `o` LEFT JOIN `app_order_room` `r` ON `r`.`order_id`=`o`.`id` WHERE  `o`.`status` IN (1,2)  AND `r`.`room_id` = 19 LIMIT 1 [ RunTime:0.000410s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `app_room_order` `o` LEFT JOIN `app_order_room` `r` ON `r`.`order_id`=`o`.`id` WHERE  `o`.`status` IN (1,2)  AND `r`.`room_id` = 20 LIMIT 1 [ RunTime:0.000456s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `app_room_order` `o` LEFT JOIN `app_order_room` `r` ON `r`.`order_id`=`o`.`id` WHERE  `o`.`status` IN (1,2)  AND `r`.`room_id` = 21 LIMIT 1 [ RunTime:0.000371s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `app_room_order` `o` LEFT JOIN `app_order_room` `r` ON `r`.`order_id`=`o`.`id` WHERE  `o`.`status` IN (1,2)  AND `r`.`room_id` = 22 LIMIT 1 [ RunTime:0.000353s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `app_room_order` `o` LEFT JOIN `app_order_room` `r` ON `r`.`order_id`=`o`.`id` WHERE  `o`.`status` IN (1,2)  AND `r`.`room_id` = 23 LIMIT 1 [ RunTime:0.000375s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `app_room_order` `o` LEFT JOIN `app_order_room` `r` ON `r`.`order_id`=`o`.`id` WHERE  `o`.`status` IN (1,2)  AND `r`.`room_id` = 25 LIMIT 1 [ RunTime:0.000356s ]
+---------------------------------------------------------------
+[ 2018-10-31T14:08:03+08:00 ] 119.137.55.41 GET /index/user/index.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004348s ] mysql:host=122.114.216.78;port=3306;dbname=pengcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `app_user` [ RunTime:0.007535s ]
+[ sql ] [ SQL ] SELECT `nickname`,`avatarurl` FROM `app_user` WHERE  `id` = 13 LIMIT 1 [ RunTime:0.000521s ]
+---------------------------------------------------------------
+[ 2018-10-31T14:08:24+08:00 ] 119.137.55.41 GET /index/user/index.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012785s ] mysql:host=122.114.216.78;port=3306;dbname=pengcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `app_user` [ RunTime:0.008844s ]
+[ sql ] [ SQL ] SELECT `nickname`,`avatarurl` FROM `app_user` WHERE  `id` = 13 LIMIT 1 [ RunTime:0.000586s ]
+---------------------------------------------------------------
+[ 2018-10-31T14:08:28+08:00 ] 119.137.55.41 GET /index/user/modify.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.009712s ] mysql:host=122.114.216.78;port=3306;dbname=pengcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `app_user` [ RunTime:0.008573s ]
+[ sql ] [ SQL ] SELECT `name`,`phone` FROM `app_user` WHERE  `id` = 13 LIMIT 1 [ RunTime:0.000550s ]
+---------------------------------------------------------------
+[ 2018-10-31T14:08:39+08:00 ] 119.137.55.41 GET /index/goods/index.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.008471s ] mysql:host=122.114.216.78;port=3306;dbname=pengcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `app_goods_type` [ RunTime:0.009820s ]
+[ sql ] [ SQL ] SELECT `id`,`type` FROM `app_goods_type` WHERE  `is_show` = 1 ORDER BY `sort` [ RunTime:0.000512s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `app_goods` [ RunTime:0.009491s ]
+[ sql ] [ SQL ] SELECT `id`,`title`,`price`,`thumb` FROM `app_goods` WHERE  `is_recommend` = 1 [ RunTime:0.000689s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `app_goods_cart` [ RunTime:0.007789s ]
+[ sql ] [ SQL ] SELECT SUM(c.num) AS tp_sum FROM `app_goods_cart` `c` LEFT JOIN `app_goods` `g` ON `c`.`goods_id`=`g`.`id` LEFT JOIN `app_goods_type` `t` ON `g`.`type_id`=`t`.`id` WHERE  `t`.`id` = 8  AND `c`.`user_id` = '13' LIMIT 1 [ RunTime:0.000852s ]
+[ sql ] [ SQL ] SELECT `g`.`title`,`g`.`id`,`g`.`price`,`c`.`num` FROM `app_goods_cart` `c` LEFT JOIN `app_goods` `g` ON `c`.`goods_id`=`g`.`id` LEFT JOIN `app_goods_type` `t` ON `g`.`type_id`=`t`.`id` WHERE  `t`.`id` = 8  AND `c`.`user_id` = '13' [ RunTime:0.000566s ]
+[ sql ] [ SQL ] SELECT `g`.`id`,`g`.`title`,`g`.`price`,`g`.`thumb` FROM `app_goods` `g` LEFT JOIN `app_goods_type` `t` ON `g`.`type_id`=`t`.`id` WHERE  `t`.`id` = 8 [ RunTime:0.000437s ]
+[ sql ] [ SQL ] SELECT SUM(c.num) AS tp_sum FROM `app_goods_cart` `c` LEFT JOIN `app_goods` `g` ON `c`.`goods_id`=`g`.`id` LEFT JOIN `app_goods_type` `t` ON `g`.`type_id`=`t`.`id` WHERE  `t`.`id` = 7  AND `c`.`user_id` = '13' LIMIT 1 [ RunTime:0.000454s ]
+[ sql ] [ SQL ] SELECT `g`.`title`,`g`.`id`,`g`.`price`,`c`.`num` FROM `app_goods_cart` `c` LEFT JOIN `app_goods` `g` ON `c`.`goods_id`=`g`.`id` LEFT JOIN `app_goods_type` `t` ON `g`.`type_id`=`t`.`id` WHERE  `t`.`id` = 7  AND `c`.`user_id` = '13' [ RunTime:0.000427s ]
+[ sql ] [ SQL ] SELECT `g`.`id`,`g`.`title`,`g`.`price`,`g`.`thumb` FROM `app_goods` `g` LEFT JOIN `app_goods_type` `t` ON `g`.`type_id`=`t`.`id` WHERE  `t`.`id` = 7 [ RunTime:0.000442s ]
+[ sql ] [ SQL ] SELECT SUM(c.num) AS tp_sum FROM `app_goods_cart` `c` LEFT JOIN `app_goods` `g` ON `c`.`goods_id`=`g`.`id` LEFT JOIN `app_goods_type` `t` ON `g`.`type_id`=`t`.`id` WHERE  `t`.`id` = 10  AND `c`.`user_id` = '13' LIMIT 1 [ RunTime:0.000735s ]
+[ sql ] [ SQL ] SELECT `g`.`title`,`g`.`id`,`g`.`price`,`c`.`num` FROM `app_goods_cart` `c` LEFT JOIN `app_goods` `g` ON `c`.`goods_id`=`g`.`id` LEFT JOIN `app_goods_type` `t` ON `g`.`type_id`=`t`.`id` WHERE  `t`.`id` = 10  AND `c`.`user_id` = '13' [ RunTime:0.000425s ]
+[ sql ] [ SQL ] SELECT `g`.`id`,`g`.`title`,`g`.`price`,`g`.`thumb` FROM `app_goods` `g` LEFT JOIN `app_goods_type` `t` ON `g`.`type_id`=`t`.`id` WHERE  `t`.`id` = 10 [ RunTime:0.000391s ]
+[ sql ] [ SQL ] SELECT SUM(c.num) AS tp_sum FROM `app_goods_cart` `c` LEFT JOIN `app_goods` `g` ON `c`.`goods_id`=`g`.`id` LEFT JOIN `app_goods_type` `t` ON `g`.`type_id`=`t`.`id` WHERE  `t`.`id` = 11  AND `c`.`user_id` = '13' LIMIT 1 [ RunTime:0.000546s ]
+[ sql ] [ SQL ] SELECT `g`.`title`,`g`.`id`,`g`.`price`,`c`.`num` FROM `app_goods_cart` `c` LEFT JOIN `app_goods` `g` ON `c`.`goods_id`=`g`.`id` LEFT JOIN `app_goods_type` `t` ON `g`.`type_id`=`t`.`id` WHERE  `t`.`id` = 11  AND `c`.`user_id` = '13' [ RunTime:0.000518s ]
+[ sql ] [ SQL ] SELECT `g`.`id`,`g`.`title`,`g`.`price`,`g`.`thumb` FROM `app_goods` `g` LEFT JOIN `app_goods_type` `t` ON `g`.`type_id`=`t`.`id` WHERE  `t`.`id` = 11 [ RunTime:0.000389s ]
+[ sql ] [ SQL ] SELECT SUM(c.num) AS tp_sum FROM `app_goods_cart` `c` LEFT JOIN `app_goods` `g` ON `c`.`goods_id`=`g`.`id` LEFT JOIN `app_goods_type` `t` ON `g`.`type_id`=`t`.`id` WHERE  `t`.`id` = 12  AND `c`.`user_id` = '13' LIMIT 1 [ RunTime:0.000383s ]
+[ sql ] [ SQL ] SELECT `g`.`title`,`g`.`id`,`g`.`price`,`c`.`num` FROM `app_goods_cart` `c` LEFT JOIN `app_goods` `g` ON `c`.`goods_id`=`g`.`id` LEFT JOIN `app_goods_type` `t` ON `g`.`type_id`=`t`.`id` WHERE  `t`.`id` = 12  AND `c`.`user_id` = '13' [ RunTime:0.000430s ]
+[ sql ] [ SQL ] SELECT `g`.`id`,`g`.`title`,`g`.`price`,`g`.`thumb` FROM `app_goods` `g` LEFT JOIN `app_goods_type` `t` ON `g`.`type_id`=`t`.`id` WHERE  `t`.`id` = 12 [ RunTime:0.000424s ]
+[ sql ] [ SQL ] SELECT SUM(c.num) AS tp_sum FROM `app_goods_cart` `c` LEFT JOIN `app_goods` `g` ON `c`.`goods_id`=`g`.`id` LEFT JOIN `app_goods_type` `t` ON `g`.`type_id`=`t`.`id` WHERE  `t`.`id` = 13  AND `c`.`user_id` = '13' LIMIT 1 [ RunTime:0.000542s ]
+[ sql ] [ SQL ] SELECT `g`.`title`,`g`.`id`,`g`.`price`,`c`.`num` FROM `app_goods_cart` `c` LEFT JOIN `app_goods` `g` ON `c`.`goods_id`=`g`.`id` LEFT JOIN `app_goods_type` `t` ON `g`.`type_id`=`t`.`id` WHERE  `t`.`id` = 13  AND `c`.`user_id` = '13' [ RunTime:0.000599s ]
+[ sql ] [ SQL ] SELECT `g`.`id`,`g`.`title`,`g`.`price`,`g`.`thumb` FROM `app_goods` `g` LEFT JOIN `app_goods_type` `t` ON `g`.`type_id`=`t`.`id` WHERE  `t`.`id` = 13 [ RunTime:0.000612s ]
+[ sql ] [ SQL ] SELECT SUM(c.num) AS tp_sum FROM `app_goods_cart` `c` LEFT JOIN `app_goods` `g` ON `c`.`goods_id`=`g`.`id` LEFT JOIN `app_goods_type` `t` ON `g`.`type_id`=`t`.`id` WHERE  `t`.`id` = 14  AND `c`.`user_id` = '13' LIMIT 1 [ RunTime:0.000548s ]
+[ sql ] [ SQL ] SELECT `g`.`title`,`g`.`id`,`g`.`price`,`c`.`num` FROM `app_goods_cart` `c` LEFT JOIN `app_goods` `g` ON `c`.`goods_id`=`g`.`id` LEFT JOIN `app_goods_type` `t` ON `g`.`type_id`=`t`.`id` WHERE  `t`.`id` = 14  AND `c`.`user_id` = '13' [ RunTime:0.000588s ]
+[ sql ] [ SQL ] SELECT `g`.`id`,`g`.`title`,`g`.`price`,`g`.`thumb` FROM `app_goods` `g` LEFT JOIN `app_goods_type` `t` ON `g`.`type_id`=`t`.`id` WHERE  `t`.`id` = 14 [ RunTime:0.000429s ]
+[ sql ] [ SQL ] SELECT `num` FROM `app_goods_cart` WHERE  `user_id` = 13  AND `goods_id` = 19 LIMIT 1 [ RunTime:0.000377s ]
+[ sql ] [ SQL ] SELECT `num` FROM `app_goods_cart` WHERE  `user_id` = 13  AND `goods_id` = 21 LIMIT 1 [ RunTime:0.000330s ]
+[ sql ] [ SQL ] SELECT `num` FROM `app_goods_cart` WHERE  `user_id` = 13  AND `goods_id` = 22 LIMIT 1 [ RunTime:0.000471s ]
+[ sql ] [ SQL ] SELECT `num` FROM `app_goods_cart` WHERE  `user_id` = 13  AND `goods_id` = 23 LIMIT 1 [ RunTime:0.000327s ]
+[ sql ] [ SQL ] SELECT `num` FROM `app_goods_cart` WHERE  `user_id` = 13  AND `goods_id` = 20 LIMIT 1 [ RunTime:0.000316s ]
+[ sql ] [ SQL ] SELECT `num` FROM `app_goods_cart` WHERE  `user_id` = 13  AND `goods_id` = 18 LIMIT 1 [ RunTime:0.000423s ]
+[ sql ] [ SQL ] SELECT `num` FROM `app_goods_cart` WHERE  `user_id` = 13  AND `goods_id` = 24 LIMIT 1 [ RunTime:0.000353s ]
+---------------------------------------------------------------
+[ 2018-10-31T14:08:42+08:00 ] 119.137.55.41 GET /index/room/index.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.006010s ] mysql:host=122.114.216.78;port=3306;dbname=pengcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `app_banner` [ RunTime:0.007869s ]
+[ sql ] [ SQL ] SELECT `filename` FROM `app_banner` WHERE  `type` = 2 ORDER BY `sort` [ RunTime:0.000579s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `web_contact` [ RunTime:0.009321s ]
+[ sql ] [ SQL ] SELECT * FROM `web_contact` WHERE  `call_id` = 1 LIMIT 1 [ RunTime:0.000587s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `app_room` [ RunTime:0.008651s ]
+[ sql ] [ SQL ] SELECT `r`.`id`,`r`.`price`,`r`.`thumb`,`r`.`num`,pt.type pt_type,ft.type ft_type FROM `app_room` `r` LEFT JOIN `app_room_people_type` `pt` ON `pt`.`id`=`r`.`people_type_id` LEFT JOIN `app_room_floor_type` `ft` ON `ft`.`id`=`r`.`floor_type_id` WHERE  `r`.`is_show` = 1 [ RunTime:0.000764s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `app_room_order` [ RunTime:0.008682s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `app_room_order` `o` LEFT JOIN `app_order_room` `r` ON `r`.`order_id`=`o`.`id` WHERE  `o`.`status` IN (1,2)  AND `r`.`room_id` = 18 LIMIT 1 [ RunTime:0.000612s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `app_room_order` `o` LEFT JOIN `app_order_room` `r` ON `r`.`order_id`=`o`.`id` WHERE  `o`.`status` IN (1,2)  AND `r`.`room_id` = 19 LIMIT 1 [ RunTime:0.000454s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `app_room_order` `o` LEFT JOIN `app_order_room` `r` ON `r`.`order_id`=`o`.`id` WHERE  `o`.`status` IN (1,2)  AND `r`.`room_id` = 20 LIMIT 1 [ RunTime:0.000451s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `app_room_order` `o` LEFT JOIN `app_order_room` `r` ON `r`.`order_id`=`o`.`id` WHERE  `o`.`status` IN (1,2)  AND `r`.`room_id` = 21 LIMIT 1 [ RunTime:0.000484s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `app_room_order` `o` LEFT JOIN `app_order_room` `r` ON `r`.`order_id`=`o`.`id` WHERE  `o`.`status` IN (1,2)  AND `r`.`room_id` = 22 LIMIT 1 [ RunTime:0.000478s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `app_room_order` `o` LEFT JOIN `app_order_room` `r` ON `r`.`order_id`=`o`.`id` WHERE  `o`.`status` IN (1,2)  AND `r`.`room_id` = 23 LIMIT 1 [ RunTime:0.000477s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `app_room_order` `o` LEFT JOIN `app_order_room` `r` ON `r`.`order_id`=`o`.`id` WHERE  `o`.`status` IN (1,2)  AND `r`.`room_id` = 25 LIMIT 1 [ RunTime:0.000442s ]
+---------------------------------------------------------------
+[ 2018-10-31T14:08:45+08:00 ] 119.137.55.41 GET /index/index/index.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.007162s ] mysql:host=122.114.216.78;port=3306;dbname=pengcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `web_content` [ RunTime:0.011523s ]
+[ sql ] [ SQL ] SELECT `content` FROM `web_content` WHERE  `call_id` IN (1,2) [ RunTime:0.000553s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `web_contact` [ RunTime:0.009355s ]
+[ sql ] [ SQL ] SELECT `phone` FROM `web_contact` [ RunTime:0.000367s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `app_banner` [ RunTime:0.009847s ]
+[ sql ] [ SQL ] SELECT `filename`,`title` FROM `app_banner` WHERE  `type` = 1 ORDER BY `sort` [ RunTime:0.000545s ]
+---------------------------------------------------------------
+[ 2018-10-31T14:09:27+08:00 ] 101.89.19.149 GET /index/user/modify.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.014837s ] mysql:host=122.114.216.78;port=3306;dbname=pengcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `app_user` [ RunTime:0.009230s ]
+[ sql ] [ SQL ] SELECT `name`,`phone` FROM `app_user` WHERE  `id` IS NULL LIMIT 1 [ RunTime:0.000433s ]
+---------------------------------------------------------------
+[ 2018-10-31T14:09:45+08:00 ] 119.137.55.11 GET /index/index/index.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.007202s ] mysql:host=122.114.216.78;port=3306;dbname=pengcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `web_content` [ RunTime:0.008879s ]
+[ sql ] [ SQL ] SELECT `content` FROM `web_content` WHERE  `call_id` IN (1,2) [ RunTime:0.000512s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `web_contact` [ RunTime:0.011061s ]
+[ sql ] [ SQL ] SELECT `phone` FROM `web_contact` [ RunTime:0.000436s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `app_banner` [ RunTime:0.008216s ]
+[ sql ] [ SQL ] SELECT `filename`,`title` FROM `app_banner` WHERE  `type` = 1 ORDER BY `sort` [ RunTime:0.000654s ]
+---------------------------------------------------------------
+[ 2018-10-31T14:09:45+08:00 ] 101.89.29.78 GET /index/index/index.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011156s ] mysql:host=122.114.216.78;port=3306;dbname=pengcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `web_content` [ RunTime:0.009570s ]
+[ sql ] [ SQL ] SELECT `content` FROM `web_content` WHERE  `call_id` IN (1,2) [ RunTime:0.000629s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `web_contact` [ RunTime:0.010938s ]
+[ sql ] [ SQL ] SELECT `phone` FROM `web_contact` [ RunTime:0.000541s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `app_banner` [ RunTime:0.009911s ]
+[ sql ] [ SQL ] SELECT `filename`,`title` FROM `app_banner` WHERE  `type` = 1 ORDER BY `sort` [ RunTime:0.000885s ]
+---------------------------------------------------------------
+[ 2018-10-31T14:09:52+08:00 ] 119.137.55.11 GET /index/room/index.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.014032s ] mysql:host=122.114.216.78;port=3306;dbname=pengcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `app_banner` [ RunTime:0.009078s ]
+[ sql ] [ SQL ] SELECT `filename` FROM `app_banner` WHERE  `type` = 2 ORDER BY `sort` [ RunTime:0.000609s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `web_contact` [ RunTime:0.009312s ]
+[ sql ] [ SQL ] SELECT * FROM `web_contact` WHERE  `call_id` = 1 LIMIT 1 [ RunTime:0.000563s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `app_room` [ RunTime:0.008454s ]
+[ sql ] [ SQL ] SELECT `r`.`id`,`r`.`price`,`r`.`thumb`,`r`.`num`,pt.type pt_type,ft.type ft_type FROM `app_room` `r` LEFT JOIN `app_room_people_type` `pt` ON `pt`.`id`=`r`.`people_type_id` LEFT JOIN `app_room_floor_type` `ft` ON `ft`.`id`=`r`.`floor_type_id` WHERE  `r`.`is_show` = 1 [ RunTime:0.001093s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `app_room_order` [ RunTime:0.007713s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `app_room_order` `o` LEFT JOIN `app_order_room` `r` ON `r`.`order_id`=`o`.`id` WHERE  `o`.`status` IN (1,2)  AND `r`.`room_id` = 18 LIMIT 1 [ RunTime:0.000648s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `app_room_order` `o` LEFT JOIN `app_order_room` `r` ON `r`.`order_id`=`o`.`id` WHERE  `o`.`status` IN (1,2)  AND `r`.`room_id` = 19 LIMIT 1 [ RunTime:0.000486s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `app_room_order` `o` LEFT JOIN `app_order_room` `r` ON `r`.`order_id`=`o`.`id` WHERE  `o`.`status` IN (1,2)  AND `r`.`room_id` = 20 LIMIT 1 [ RunTime:0.000545s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `app_room_order` `o` LEFT JOIN `app_order_room` `r` ON `r`.`order_id`=`o`.`id` WHERE  `o`.`status` IN (1,2)  AND `r`.`room_id` = 21 LIMIT 1 [ RunTime:0.000554s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `app_room_order` `o` LEFT JOIN `app_order_room` `r` ON `r`.`order_id`=`o`.`id` WHERE  `o`.`status` IN (1,2)  AND `r`.`room_id` = 22 LIMIT 1 [ RunTime:0.000613s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `app_room_order` `o` LEFT JOIN `app_order_room` `r` ON `r`.`order_id`=`o`.`id` WHERE  `o`.`status` IN (1,2)  AND `r`.`room_id` = 23 LIMIT 1 [ RunTime:0.000458s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `app_room_order` `o` LEFT JOIN `app_order_room` `r` ON `r`.`order_id`=`o`.`id` WHERE  `o`.`status` IN (1,2)  AND `r`.`room_id` = 25 LIMIT 1 [ RunTime:0.000999s ]
+---------------------------------------------------------------
+[ 2018-10-31T14:09:55+08:00 ] 119.137.55.11 GET /index/goods/index.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.014447s ] mysql:host=122.114.216.78;port=3306;dbname=pengcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `app_goods_type` [ RunTime:0.008736s ]
+[ sql ] [ SQL ] SELECT `id`,`type` FROM `app_goods_type` WHERE  `is_show` = 1 ORDER BY `sort` [ RunTime:0.000645s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `app_goods` [ RunTime:0.008903s ]
+[ sql ] [ SQL ] SELECT `id`,`title`,`price`,`thumb` FROM `app_goods` WHERE  `is_recommend` = 1 [ RunTime:0.000673s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `app_goods_cart` [ RunTime:0.009276s ]
+[ sql ] [ SQL ] SELECT SUM(c.num) AS tp_sum FROM `app_goods_cart` `c` LEFT JOIN `app_goods` `g` ON `c`.`goods_id`=`g`.`id` LEFT JOIN `app_goods_type` `t` ON `g`.`type_id`=`t`.`id` WHERE  `t`.`id` = 8  AND `c`.`user_id` = '13' LIMIT 1 [ RunTime:0.000843s ]
+[ sql ] [ SQL ] SELECT `g`.`title`,`g`.`id`,`g`.`price`,`c`.`num` FROM `app_goods_cart` `c` LEFT JOIN `app_goods` `g` ON `c`.`goods_id`=`g`.`id` LEFT JOIN `app_goods_type` `t` ON `g`.`type_id`=`t`.`id` WHERE  `t`.`id` = 8  AND `c`.`user_id` = '13' [ RunTime:0.000574s ]
+[ sql ] [ SQL ] SELECT `g`.`id`,`g`.`title`,`g`.`price`,`g`.`thumb` FROM `app_goods` `g` LEFT JOIN `app_goods_type` `t` ON `g`.`type_id`=`t`.`id` WHERE  `t`.`id` = 8 [ RunTime:0.000488s ]
+[ sql ] [ SQL ] SELECT SUM(c.num) AS tp_sum FROM `app_goods_cart` `c` LEFT JOIN `app_goods` `g` ON `c`.`goods_id`=`g`.`id` LEFT JOIN `app_goods_type` `t` ON `g`.`type_id`=`t`.`id` WHERE  `t`.`id` = 7  AND `c`.`user_id` = '13' LIMIT 1 [ RunTime:0.000533s ]
+[ sql ] [ SQL ] SELECT `g`.`title`,`g`.`id`,`g`.`price`,`c`.`num` FROM `app_goods_cart` `c` LEFT JOIN `app_goods` `g` ON `c`.`goods_id`=`g`.`id` LEFT JOIN `app_goods_type` `t` ON `g`.`type_id`=`t`.`id` WHERE  `t`.`id` = 7  AND `c`.`user_id` = '13' [ RunTime:0.000532s ]
+[ sql ] [ SQL ] SELECT `g`.`id`,`g`.`title`,`g`.`price`,`g`.`thumb` FROM `app_goods` `g` LEFT JOIN `app_goods_type` `t` ON `g`.`type_id`=`t`.`id` WHERE  `t`.`id` = 7 [ RunTime:0.000460s ]
+[ sql ] [ SQL ] SELECT SUM(c.num) AS tp_sum FROM `app_goods_cart` `c` LEFT JOIN `app_goods` `g` ON `c`.`goods_id`=`g`.`id` LEFT JOIN `app_goods_type` `t` ON `g`.`type_id`=`t`.`id` WHERE  `t`.`id` = 10  AND `c`.`user_id` = '13' LIMIT 1 [ RunTime:0.000615s ]
+[ sql ] [ SQL ] SELECT `g`.`title`,`g`.`id`,`g`.`price`,`c`.`num` FROM `app_goods_cart` `c` LEFT JOIN `app_goods` `g` ON `c`.`goods_id`=`g`.`id` LEFT JOIN `app_goods_type` `t` ON `g`.`type_id`=`t`.`id` WHERE  `t`.`id` = 10  AND `c`.`user_id` = '13' [ RunTime:0.000534s ]
+[ sql ] [ SQL ] SELECT `g`.`id`,`g`.`title`,`g`.`price`,`g`.`thumb` FROM `app_goods` `g` LEFT JOIN `app_goods_type` `t` ON `g`.`type_id`=`t`.`id` WHERE  `t`.`id` = 10 [ RunTime:0.000428s ]
+[ sql ] [ SQL ] SELECT SUM(c.num) AS tp_sum FROM `app_goods_cart` `c` LEFT JOIN `app_goods` `g` ON `c`.`goods_id`=`g`.`id` LEFT JOIN `app_goods_type` `t` ON `g`.`type_id`=`t`.`id` WHERE  `t`.`id` = 11  AND `c`.`user_id` = '13' LIMIT 1 [ RunTime:0.000480s ]
+[ sql ] [ SQL ] SELECT `g`.`title`,`g`.`id`,`g`.`price`,`c`.`num` FROM `app_goods_cart` `c` LEFT JOIN `app_goods` `g` ON `c`.`goods_id`=`g`.`id` LEFT JOIN `app_goods_type` `t` ON `g`.`type_id`=`t`.`id` WHERE  `t`.`id` = 11  AND `c`.`user_id` = '13' [ RunTime:0.000451s ]
+[ sql ] [ SQL ] SELECT `g`.`id`,`g`.`title`,`g`.`price`,`g`.`thumb` FROM `app_goods` `g` LEFT JOIN `app_goods_type` `t` ON `g`.`type_id`=`t`.`id` WHERE  `t`.`id` = 11 [ RunTime:0.000934s ]
+[ sql ] [ SQL ] SELECT SUM(c.num) AS tp_sum FROM `app_goods_cart` `c` LEFT JOIN `app_goods` `g` ON `c`.`goods_id`=`g`.`id` LEFT JOIN `app_goods_type` `t` ON `g`.`type_id`=`t`.`id` WHERE  `t`.`id` = 12  AND `c`.`user_id` = '13' LIMIT 1 [ RunTime:0.000395s ]
+[ sql ] [ SQL ] SELECT `g`.`title`,`g`.`id`,`g`.`price`,`c`.`num` FROM `app_goods_cart` `c` LEFT JOIN `app_goods` `g` ON `c`.`goods_id`=`g`.`id` LEFT JOIN `app_goods_type` `t` ON `g`.`type_id`=`t`.`id` WHERE  `t`.`id` = 12  AND `c`.`user_id` = '13' [ RunTime:0.000399s ]
+[ sql ] [ SQL ] SELECT `g`.`id`,`g`.`title`,`g`.`price`,`g`.`thumb` FROM `app_goods` `g` LEFT JOIN `app_goods_type` `t` ON `g`.`type_id`=`t`.`id` WHERE  `t`.`id` = 12 [ RunTime:0.000395s ]
+[ sql ] [ SQL ] SELECT SUM(c.num) AS tp_sum FROM `app_goods_cart` `c` LEFT JOIN `app_goods` `g` ON `c`.`goods_id`=`g`.`id` LEFT JOIN `app_goods_type` `t` ON `g`.`type_id`=`t`.`id` WHERE  `t`.`id` = 13  AND `c`.`user_id` = '13' LIMIT 1 [ RunTime:0.000503s ]
+[ sql ] [ SQL ] SELECT `g`.`title`,`g`.`id`,`g`.`price`,`c`.`num` FROM `app_goods_cart` `c` LEFT JOIN `app_goods` `g` ON `c`.`goods_id`=`g`.`id` LEFT JOIN `app_goods_type` `t` ON `g`.`type_id`=`t`.`id` WHERE  `t`.`id` = 13  AND `c`.`user_id` = '13' [ RunTime:0.000439s ]
+[ sql ] [ SQL ] SELECT `g`.`id`,`g`.`title`,`g`.`price`,`g`.`thumb` FROM `app_goods` `g` LEFT JOIN `app_goods_type` `t` ON `g`.`type_id`=`t`.`id` WHERE  `t`.`id` = 13 [ RunTime:0.000529s ]
+[ sql ] [ SQL ] SELECT SUM(c.num) AS tp_sum FROM `app_goods_cart` `c` LEFT JOIN `app_goods` `g` ON `c`.`goods_id`=`g`.`id` LEFT JOIN `app_goods_type` `t` ON `g`.`type_id`=`t`.`id` WHERE  `t`.`id` = 14  AND `c`.`user_id` = '13' LIMIT 1 [ RunTime:0.000582s ]
+[ sql ] [ SQL ] SELECT `g`.`title`,`g`.`id`,`g`.`price`,`c`.`num` FROM `app_goods_cart` `c` LEFT JOIN `app_goods` `g` ON `c`.`goods_id`=`g`.`id` LEFT JOIN `app_goods_type` `t` ON `g`.`type_id`=`t`.`id` WHERE  `t`.`id` = 14  AND `c`.`user_id` = '13' [ RunTime:0.000499s ]
+[ sql ] [ SQL ] SELECT `g`.`id`,`g`.`title`,`g`.`price`,`g`.`thumb` FROM `app_goods` `g` LEFT JOIN `app_goods_type` `t` ON `g`.`type_id`=`t`.`id` WHERE  `t`.`id` = 14 [ RunTime:0.000485s ]
+[ sql ] [ SQL ] SELECT `num` FROM `app_goods_cart` WHERE  `user_id` = 13  AND `goods_id` = 19 LIMIT 1 [ RunTime:0.000438s ]
+[ sql ] [ SQL ] SELECT `num` FROM `app_goods_cart` WHERE  `user_id` = 13  AND `goods_id` = 21 LIMIT 1 [ RunTime:0.000396s ]
+[ sql ] [ SQL ] SELECT `num` FROM `app_goods_cart` WHERE  `user_id` = 13  AND `goods_id` = 22 LIMIT 1 [ RunTime:0.000349s ]
+[ sql ] [ SQL ] SELECT `num` FROM `app_goods_cart` WHERE  `user_id` = 13  AND `goods_id` = 23 LIMIT 1 [ RunTime:0.000323s ]
+[ sql ] [ SQL ] SELECT `num` FROM `app_goods_cart` WHERE  `user_id` = 13  AND `goods_id` = 20 LIMIT 1 [ RunTime:0.000438s ]
+[ sql ] [ SQL ] SELECT `num` FROM `app_goods_cart` WHERE  `user_id` = 13  AND `goods_id` = 18 LIMIT 1 [ RunTime:0.000447s ]
+[ sql ] [ SQL ] SELECT `num` FROM `app_goods_cart` WHERE  `user_id` = 13  AND `goods_id` = 24 LIMIT 1 [ RunTime:0.000346s ]
+---------------------------------------------------------------
+[ 2018-10-31T14:09:57+08:00 ] 119.137.55.11 GET /index/user/index.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.007688s ] mysql:host=122.114.216.78;port=3306;dbname=pengcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `app_user` [ RunTime:0.008938s ]
+[ sql ] [ SQL ] SELECT `nickname`,`avatarurl` FROM `app_user` WHERE  `id` = 13 LIMIT 1 [ RunTime:0.000708s ]
+---------------------------------------------------------------
+[ 2018-10-31T14:10:00+08:00 ] 119.137.55.11 GET /index/user/modify.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003416s ] mysql:host=122.114.216.78;port=3306;dbname=pengcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `app_user` [ RunTime:0.010771s ]
+[ sql ] [ SQL ] SELECT `name`,`phone` FROM `app_user` WHERE  `id` = 13 LIMIT 1 [ RunTime:0.000682s ]
+---------------------------------------------------------------
+[ 2018-10-31T14:10:08+08:00 ] 119.137.55.11 GET /index/order/room.html?id=21
+[ sql ] [ DB ] CONNECT:[ UseTime:0.006554s ] mysql:host=122.114.216.78;port=3306;dbname=pengcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `app_room` [ RunTime:0.009675s ]
+[ sql ] [ SQL ] SELECT `r`.`id`,`r`.`price`,`r`.`num`,ft.type ft_type,pt.type pt_type FROM `app_room` `r` LEFT JOIN `app_room_floor_type` `ft` ON `ft`.`id`=`r`.`floor_type_id` LEFT JOIN `app_room_people_type` `pt` ON `pt`.`id`=`r`.`people_type_id` WHERE  `r`.`id` = 21 LIMIT 1 [ RunTime:0.000628s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `app_room_order` [ RunTime:0.009284s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `app_room_order` `o` LEFT JOIN `app_order_room` `r` ON `r`.`order_id`=`o`.`id` WHERE  `o`.`status` IN (1,2)  AND `r`.`room_id` = 21 LIMIT 1 [ RunTime:0.000697s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `web_content` [ RunTime:0.009932s ]
+[ sql ] [ SQL ] SELECT * FROM `web_content` WHERE  `call_id` = 3 LIMIT 1 [ RunTime:0.000547s ]
+[ sql ] [ SQL ] SELECT * FROM `web_content` WHERE  `call_id` = 4 LIMIT 1 [ RunTime:0.000430s ]
+---------------------------------------------------------------
+[ 2018-10-31T14:11:51+08:00 ] 119.137.55.41 GET /index/index/index.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012177s ] mysql:host=122.114.216.78;port=3306;dbname=pengcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_config` [ RunTime:0.010532s ]
+[ sql ] [ SQL ] SELECT * FROM `system_config` [ RunTime:0.000774s ]
+---------------------------------------------------------------
+[ 2018-10-31T14:11:52+08:00 ] 119.137.55.41 GET /index/index/index.html?code=001mWHFj2eNTmG0jMAEj2gqCFj2mWHFU&state=
+[ sql ] [ DB ] CONNECT:[ UseTime:0.017800s ] mysql:host=122.114.216.78;port=3306;dbname=pengcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_config` [ RunTime:0.011529s ]
+[ sql ] [ SQL ] SELECT * FROM `system_config` [ RunTime:0.000862s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `app_user` [ RunTime:0.009904s ]
+[ sql ] [ SQL ] SELECT * FROM `app_user` WHERE  `openid` = 'otuUIuN36mNwW9JGpCtuU3uU7-0w' LIMIT 1 [ RunTime:0.000561s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `web_content` [ RunTime:0.009254s ]
+[ sql ] [ SQL ] SELECT `content` FROM `web_content` WHERE  `call_id` IN (1,2) [ RunTime:0.000481s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `web_contact` [ RunTime:0.008825s ]
+[ sql ] [ SQL ] SELECT `phone` FROM `web_contact` [ RunTime:0.000402s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `app_banner` [ RunTime:0.009702s ]
+[ sql ] [ SQL ] SELECT `filename`,`title` FROM `app_banner` WHERE  `type` = 1 ORDER BY `sort` [ RunTime:0.000544s ]
+---------------------------------------------------------------
+[ 2018-10-31T14:11:59+08:00 ] 119.137.55.41 GET /index/room/index.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003504s ] mysql:host=122.114.216.78;port=3306;dbname=pengcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `app_banner` [ RunTime:0.012832s ]
+[ sql ] [ SQL ] SELECT `filename` FROM `app_banner` WHERE  `type` = 2 ORDER BY `sort` [ RunTime:0.000653s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `web_contact` [ RunTime:0.011028s ]
+[ sql ] [ SQL ] SELECT * FROM `web_contact` WHERE  `call_id` = 1 LIMIT 1 [ RunTime:0.000608s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `app_room` [ RunTime:0.012583s ]
+[ sql ] [ SQL ] SELECT `r`.`id`,`r`.`price`,`r`.`thumb`,`r`.`num`,pt.type pt_type,ft.type ft_type FROM `app_room` `r` LEFT JOIN `app_room_people_type` `pt` ON `pt`.`id`=`r`.`people_type_id` LEFT JOIN `app_room_floor_type` `ft` ON `ft`.`id`=`r`.`floor_type_id` WHERE  `r`.`is_show` = 1 [ RunTime:0.000939s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `app_room_order` [ RunTime:0.009785s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `app_room_order` `o` LEFT JOIN `app_order_room` `r` ON `r`.`order_id`=`o`.`id` WHERE  `o`.`status` IN (1,2)  AND `r`.`room_id` = 18 LIMIT 1 [ RunTime:0.000877s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `app_room_order` `o` LEFT JOIN `app_order_room` `r` ON `r`.`order_id`=`o`.`id` WHERE  `o`.`status` IN (1,2)  AND `r`.`room_id` = 19 LIMIT 1 [ RunTime:0.000516s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `app_room_order` `o` LEFT JOIN `app_order_room` `r` ON `r`.`order_id`=`o`.`id` WHERE  `o`.`status` IN (1,2)  AND `r`.`room_id` = 20 LIMIT 1 [ RunTime:0.001636s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `app_room_order` `o` LEFT JOIN `app_order_room` `r` ON `r`.`order_id`=`o`.`id` WHERE  `o`.`status` IN (1,2)  AND `r`.`room_id` = 21 LIMIT 1 [ RunTime:0.000523s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `app_room_order` `o` LEFT JOIN `app_order_room` `r` ON `r`.`order_id`=`o`.`id` WHERE  `o`.`status` IN (1,2)  AND `r`.`room_id` = 22 LIMIT 1 [ RunTime:0.000501s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `app_room_order` `o` LEFT JOIN `app_order_room` `r` ON `r`.`order_id`=`o`.`id` WHERE  `o`.`status` IN (1,2)  AND `r`.`room_id` = 23 LIMIT 1 [ RunTime:0.000504s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `app_room_order` `o` LEFT JOIN `app_order_room` `r` ON `r`.`order_id`=`o`.`id` WHERE  `o`.`status` IN (1,2)  AND `r`.`room_id` = 25 LIMIT 1 [ RunTime:0.000491s ]
+---------------------------------------------------------------
+[ 2018-10-31T14:12:03+08:00 ] 119.137.55.41 GET /index/goods/index.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002091s ] mysql:host=122.114.216.78;port=3306;dbname=pengcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `app_goods_type` [ RunTime:0.007767s ]
+[ sql ] [ SQL ] SELECT `id`,`type` FROM `app_goods_type` WHERE  `is_show` = 1 ORDER BY `sort` [ RunTime:0.000501s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `app_goods` [ RunTime:0.008962s ]
+[ sql ] [ SQL ] SELECT `id`,`title`,`price`,`thumb` FROM `app_goods` WHERE  `is_recommend` = 1 [ RunTime:0.000555s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `app_goods_cart` [ RunTime:0.008721s ]
+[ sql ] [ SQL ] SELECT SUM(c.num) AS tp_sum FROM `app_goods_cart` `c` LEFT JOIN `app_goods` `g` ON `c`.`goods_id`=`g`.`id` LEFT JOIN `app_goods_type` `t` ON `g`.`type_id`=`t`.`id` WHERE  `t`.`id` = 8  AND `c`.`user_id` = 9 LIMIT 1 [ RunTime:0.000758s ]
+[ sql ] [ SQL ] SELECT `g`.`title`,`g`.`id`,`g`.`price`,`c`.`num` FROM `app_goods_cart` `c` LEFT JOIN `app_goods` `g` ON `c`.`goods_id`=`g`.`id` LEFT JOIN `app_goods_type` `t` ON `g`.`type_id`=`t`.`id` WHERE  `t`.`id` = 8  AND `c`.`user_id` = 9 [ RunTime:0.000610s ]
+[ sql ] [ SQL ] SELECT `g`.`id`,`g`.`title`,`g`.`price`,`g`.`thumb` FROM `app_goods` `g` LEFT JOIN `app_goods_type` `t` ON `g`.`type_id`=`t`.`id` WHERE  `t`.`id` = 8 [ RunTime:0.000491s ]
+[ sql ] [ SQL ] SELECT SUM(c.num) AS tp_sum FROM `app_goods_cart` `c` LEFT JOIN `app_goods` `g` ON `c`.`goods_id`=`g`.`id` LEFT JOIN `app_goods_type` `t` ON `g`.`type_id`=`t`.`id` WHERE  `t`.`id` = 7  AND `c`.`user_id` = 9 LIMIT 1 [ RunTime:0.000527s ]
+[ sql ] [ SQL ] SELECT `g`.`title`,`g`.`id`,`g`.`price`,`c`.`num` FROM `app_goods_cart` `c` LEFT JOIN `app_goods` `g` ON `c`.`goods_id`=`g`.`id` LEFT JOIN `app_goods_type` `t` ON `g`.`type_id`=`t`.`id` WHERE  `t`.`id` = 7  AND `c`.`user_id` = 9 [ RunTime:0.000562s ]
+[ sql ] [ SQL ] SELECT `g`.`id`,`g`.`title`,`g`.`price`,`g`.`thumb` FROM `app_goods` `g` LEFT JOIN `app_goods_type` `t` ON `g`.`type_id`=`t`.`id` WHERE  `t`.`id` = 7 [ RunTime:0.000468s ]
+[ sql ] [ SQL ] SELECT SUM(c.num) AS tp_sum FROM `app_goods_cart` `c` LEFT JOIN `app_goods` `g` ON `c`.`goods_id`=`g`.`id` LEFT JOIN `app_goods_type` `t` ON `g`.`type_id`=`t`.`id` WHERE  `t`.`id` = 10  AND `c`.`user_id` = 9 LIMIT 1 [ RunTime:0.000462s ]
+[ sql ] [ SQL ] SELECT `g`.`title`,`g`.`id`,`g`.`price`,`c`.`num` FROM `app_goods_cart` `c` LEFT JOIN `app_goods` `g` ON `c`.`goods_id`=`g`.`id` LEFT JOIN `app_goods_type` `t` ON `g`.`type_id`=`t`.`id` WHERE  `t`.`id` = 10  AND `c`.`user_id` = 9 [ RunTime:0.000518s ]
+[ sql ] [ SQL ] SELECT `g`.`id`,`g`.`title`,`g`.`price`,`g`.`thumb` FROM `app_goods` `g` LEFT JOIN `app_goods_type` `t` ON `g`.`type_id`=`t`.`id` WHERE  `t`.`id` = 10 [ RunTime:0.000437s ]
+[ sql ] [ SQL ] SELECT SUM(c.num) AS tp_sum FROM `app_goods_cart` `c` LEFT JOIN `app_goods` `g` ON `c`.`goods_id`=`g`.`id` LEFT JOIN `app_goods_type` `t` ON `g`.`type_id`=`t`.`id` WHERE  `t`.`id` = 11  AND `c`.`user_id` = 9 LIMIT 1 [ RunTime:0.000557s ]
+[ sql ] [ SQL ] SELECT `g`.`title`,`g`.`id`,`g`.`price`,`c`.`num` FROM `app_goods_cart` `c` LEFT JOIN `app_goods` `g` ON `c`.`goods_id`=`g`.`id` LEFT JOIN `app_goods_type` `t` ON `g`.`type_id`=`t`.`id` WHERE  `t`.`id` = 11  AND `c`.`user_id` = 9 [ RunTime:0.000522s ]
+[ sql ] [ SQL ] SELECT `g`.`id`,`g`.`title`,`g`.`price`,`g`.`thumb` FROM `app_goods` `g` LEFT JOIN `app_goods_type` `t` ON `g`.`type_id`=`t`.`id` WHERE  `t`.`id` = 11 [ RunTime:0.000506s ]
+[ sql ] [ SQL ] SELECT SUM(c.num) AS tp_sum FROM `app_goods_cart` `c` LEFT JOIN `app_goods` `g` ON `c`.`goods_id`=`g`.`id` LEFT JOIN `app_goods_type` `t` ON `g`.`type_id`=`t`.`id` WHERE  `t`.`id` = 12  AND `c`.`user_id` = 9 LIMIT 1 [ RunTime:0.000528s ]
+[ sql ] [ SQL ] SELECT `g`.`title`,`g`.`id`,`g`.`price`,`c`.`num` FROM `app_goods_cart` `c` LEFT JOIN `app_goods` `g` ON `c`.`goods_id`=`g`.`id` LEFT JOIN `app_goods_type` `t` ON `g`.`type_id`=`t`.`id` WHERE  `t`.`id` = 12  AND `c`.`user_id` = 9 [ RunTime:0.000507s ]
+[ sql ] [ SQL ] SELECT `g`.`id`,`g`.`title`,`g`.`price`,`g`.`thumb` FROM `app_goods` `g` LEFT JOIN `app_goods_type` `t` ON `g`.`type_id`=`t`.`id` WHERE  `t`.`id` = 12 [ RunTime:0.000441s ]
+[ sql ] [ SQL ] SELECT SUM(c.num) AS tp_sum FROM `app_goods_cart` `c` LEFT JOIN `app_goods` `g` ON `c`.`goods_id`=`g`.`id` LEFT JOIN `app_goods_type` `t` ON `g`.`type_id`=`t`.`id` WHERE  `t`.`id` = 13  AND `c`.`user_id` = 9 LIMIT 1 [ RunTime:0.000541s ]
+[ sql ] [ SQL ] SELECT `g`.`title`,`g`.`id`,`g`.`price`,`c`.`num` FROM `app_goods_cart` `c` LEFT JOIN `app_goods` `g` ON `c`.`goods_id`=`g`.`id` LEFT JOIN `app_goods_type` `t` ON `g`.`type_id`=`t`.`id` WHERE  `t`.`id` = 13  AND `c`.`user_id` = 9 [ RunTime:0.000517s ]
+[ sql ] [ SQL ] SELECT `g`.`id`,`g`.`title`,`g`.`price`,`g`.`thumb` FROM `app_goods` `g` LEFT JOIN `app_goods_type` `t` ON `g`.`type_id`=`t`.`id` WHERE  `t`.`id` = 13 [ RunTime:0.000475s ]
+[ sql ] [ SQL ] SELECT SUM(c.num) AS tp_sum FROM `app_goods_cart` `c` LEFT JOIN `app_goods` `g` ON `c`.`goods_id`=`g`.`id` LEFT JOIN `app_goods_type` `t` ON `g`.`type_id`=`t`.`id` WHERE  `t`.`id` = 14  AND `c`.`user_id` = 9 LIMIT 1 [ RunTime:0.000521s ]
+[ sql ] [ SQL ] SELECT `g`.`title`,`g`.`id`,`g`.`price`,`c`.`num` FROM `app_goods_cart` `c` LEFT JOIN `app_goods` `g` ON `c`.`goods_id`=`g`.`id` LEFT JOIN `app_goods_type` `t` ON `g`.`type_id`=`t`.`id` WHERE  `t`.`id` = 14  AND `c`.`user_id` = 9 [ RunTime:0.000529s ]
+[ sql ] [ SQL ] SELECT `g`.`id`,`g`.`title`,`g`.`price`,`g`.`thumb` FROM `app_goods` `g` LEFT JOIN `app_goods_type` `t` ON `g`.`type_id`=`t`.`id` WHERE  `t`.`id` = 14 [ RunTime:0.000474s ]
+[ sql ] [ SQL ] SELECT `num` FROM `app_goods_cart` WHERE  `user_id` = 9  AND `goods_id` = 19 LIMIT 1 [ RunTime:0.000443s ]
+[ sql ] [ SQL ] SELECT `num` FROM `app_goods_cart` WHERE  `user_id` = 9  AND `goods_id` = 21 LIMIT 1 [ RunTime:0.000460s ]
+[ sql ] [ SQL ] SELECT `num` FROM `app_goods_cart` WHERE  `user_id` = 9  AND `goods_id` = 22 LIMIT 1 [ RunTime:0.000416s ]
+[ sql ] [ SQL ] SELECT `num` FROM `app_goods_cart` WHERE  `user_id` = 9  AND `goods_id` = 23 LIMIT 1 [ RunTime:0.000403s ]
+[ sql ] [ SQL ] SELECT `num` FROM `app_goods_cart` WHERE  `user_id` = 9  AND `goods_id` = 20 LIMIT 1 [ RunTime:0.000405s ]
+[ sql ] [ SQL ] SELECT `num` FROM `app_goods_cart` WHERE  `user_id` = 9  AND `goods_id` = 18 LIMIT 1 [ RunTime:0.000406s ]
+[ sql ] [ SQL ] SELECT `num` FROM `app_goods_cart` WHERE  `user_id` = 9  AND `goods_id` = 24 LIMIT 1 [ RunTime:0.000403s ]
+---------------------------------------------------------------
+[ 2018-10-31T14:12:08+08:00 ] 119.137.55.41 GET /index/goods/detail.html?id=18
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001319s ] mysql:host=122.114.216.78;port=3306;dbname=pengcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `app_goods` [ RunTime:0.010929s ]
+[ sql ] [ SQL ] SELECT `id`,`title`,`price`,`detail_img`,`intro` FROM `app_goods` WHERE  `is_show` = 1  AND `id` = 18 LIMIT 1 [ RunTime:0.000676s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `app_goods_cart` [ RunTime:0.010112s ]
+[ sql ] [ SQL ] SELECT * FROM `app_goods_cart` WHERE  `goods_id` = 18  AND `user_id` = 9 LIMIT 1 [ RunTime:0.000588s ]
+---------------------------------------------------------------
+[ 2018-10-31T14:12:11+08:00 ] 119.137.55.41 GET /index/goods/index.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001236s ] mysql:host=122.114.216.78;port=3306;dbname=pengcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `app_goods_type` [ RunTime:0.009498s ]
+[ sql ] [ SQL ] SELECT `id`,`type` FROM `app_goods_type` WHERE  `is_show` = 1 ORDER BY `sort` [ RunTime:0.000626s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `app_goods` [ RunTime:0.009658s ]
+[ sql ] [ SQL ] SELECT `id`,`title`,`price`,`thumb` FROM `app_goods` WHERE  `is_recommend` = 1 [ RunTime:0.000496s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `app_goods_cart` [ RunTime:0.007236s ]
+[ sql ] [ SQL ] SELECT SUM(c.num) AS tp_sum FROM `app_goods_cart` `c` LEFT JOIN `app_goods` `g` ON `c`.`goods_id`=`g`.`id` LEFT JOIN `app_goods_type` `t` ON `g`.`type_id`=`t`.`id` WHERE  `t`.`id` = 8  AND `c`.`user_id` = 9 LIMIT 1 [ RunTime:0.000660s ]
+[ sql ] [ SQL ] SELECT `g`.`title`,`g`.`id`,`g`.`price`,`c`.`num` FROM `app_goods_cart` `c` LEFT JOIN `app_goods` `g` ON `c`.`goods_id`=`g`.`id` LEFT JOIN `app_goods_type` `t` ON `g`.`type_id`=`t`.`id` WHERE  `t`.`id` = 8  AND `c`.`user_id` = 9 [ RunTime:0.000653s ]
+[ sql ] [ SQL ] SELECT `g`.`id`,`g`.`title`,`g`.`price`,`g`.`thumb` FROM `app_goods` `g` LEFT JOIN `app_goods_type` `t` ON `g`.`type_id`=`t`.`id` WHERE  `t`.`id` = 8 [ RunTime:0.000402s ]
+[ sql ] [ SQL ] SELECT SUM(c.num) AS tp_sum FROM `app_goods_cart` `c` LEFT JOIN `app_goods` `g` ON `c`.`goods_id`=`g`.`id` LEFT JOIN `app_goods_type` `t` ON `g`.`type_id`=`t`.`id` WHERE  `t`.`id` = 7  AND `c`.`user_id` = 9 LIMIT 1 [ RunTime:0.000502s ]
+[ sql ] [ SQL ] SELECT `g`.`title`,`g`.`id`,`g`.`price`,`c`.`num` FROM `app_goods_cart` `c` LEFT JOIN `app_goods` `g` ON `c`.`goods_id`=`g`.`id` LEFT JOIN `app_goods_type` `t` ON `g`.`type_id`=`t`.`id` WHERE  `t`.`id` = 7  AND `c`.`user_id` = 9 [ RunTime:0.000491s ]
+[ sql ] [ SQL ] SELECT `g`.`id`,`g`.`title`,`g`.`price`,`g`.`thumb` FROM `app_goods` `g` LEFT JOIN `app_goods_type` `t` ON `g`.`type_id`=`t`.`id` WHERE  `t`.`id` = 7 [ RunTime:0.000425s ]
+[ sql ] [ SQL ] SELECT SUM(c.num) AS tp_sum FROM `app_goods_cart` `c` LEFT JOIN `app_goods` `g` ON `c`.`goods_id`=`g`.`id` LEFT JOIN `app_goods_type` `t` ON `g`.`type_id`=`t`.`id` WHERE  `t`.`id` = 10  AND `c`.`user_id` = 9 LIMIT 1 [ RunTime:0.000415s ]
+[ sql ] [ SQL ] SELECT `g`.`title`,`g`.`id`,`g`.`price`,`c`.`num` FROM `app_goods_cart` `c` LEFT JOIN `app_goods` `g` ON `c`.`goods_id`=`g`.`id` LEFT JOIN `app_goods_type` `t` ON `g`.`type_id`=`t`.`id` WHERE  `t`.`id` = 10  AND `c`.`user_id` = 9 [ RunTime:0.000380s ]
+[ sql ] [ SQL ] SELECT `g`.`id`,`g`.`title`,`g`.`price`,`g`.`thumb` FROM `app_goods` `g` LEFT JOIN `app_goods_type` `t` ON `g`.`type_id`=`t`.`id` WHERE  `t`.`id` = 10 [ RunTime:0.000360s ]
+[ sql ] [ SQL ] SELECT SUM(c.num) AS tp_sum FROM `app_goods_cart` `c` LEFT JOIN `app_goods` `g` ON `c`.`goods_id`=`g`.`id` LEFT JOIN `app_goods_type` `t` ON `g`.`type_id`=`t`.`id` WHERE  `t`.`id` = 11  AND `c`.`user_id` = 9 LIMIT 1 [ RunTime:0.000464s ]
+[ sql ] [ SQL ] SELECT `g`.`title`,`g`.`id`,`g`.`price`,`c`.`num` FROM `app_goods_cart` `c` LEFT JOIN `app_goods` `g` ON `c`.`goods_id`=`g`.`id` LEFT JOIN `app_goods_type` `t` ON `g`.`type_id`=`t`.`id` WHERE  `t`.`id` = 11  AND `c`.`user_id` = 9 [ RunTime:0.000452s ]
+[ sql ] [ SQL ] SELECT `g`.`id`,`g`.`title`,`g`.`price`,`g`.`thumb` FROM `app_goods` `g` LEFT JOIN `app_goods_type` `t` ON `g`.`type_id`=`t`.`id` WHERE  `t`.`id` = 11 [ RunTime:0.000359s ]
+[ sql ] [ SQL ] SELECT SUM(c.num) AS tp_sum FROM `app_goods_cart` `c` LEFT JOIN `app_goods` `g` ON `c`.`goods_id`=`g`.`id` LEFT JOIN `app_goods_type` `t` ON `g`.`type_id`=`t`.`id` WHERE  `t`.`id` = 12  AND `c`.`user_id` = 9 LIMIT 1 [ RunTime:0.000420s ]
+[ sql ] [ SQL ] SELECT `g`.`title`,`g`.`id`,`g`.`price`,`c`.`num` FROM `app_goods_cart` `c` LEFT JOIN `app_goods` `g` ON `c`.`goods_id`=`g`.`id` LEFT JOIN `app_goods_type` `t` ON `g`.`type_id`=`t`.`id` WHERE  `t`.`id` = 12  AND `c`.`user_id` = 9 [ RunTime:0.000425s ]
+[ sql ] [ SQL ] SELECT `g`.`id`,`g`.`title`,`g`.`price`,`g`.`thumb` FROM `app_goods` `g` LEFT JOIN `app_goods_type` `t` ON `g`.`type_id`=`t`.`id` WHERE  `t`.`id` = 12 [ RunTime:0.000354s ]
+[ sql ] [ SQL ] SELECT SUM(c.num) AS tp_sum FROM `app_goods_cart` `c` LEFT JOIN `app_goods` `g` ON `c`.`goods_id`=`g`.`id` LEFT JOIN `app_goods_type` `t` ON `g`.`type_id`=`t`.`id` WHERE  `t`.`id` = 13  AND `c`.`user_id` = 9 LIMIT 1 [ RunTime:0.000398s ]
+[ sql ] [ SQL ] SELECT `g`.`title`,`g`.`id`,`g`.`price`,`c`.`num` FROM `app_goods_cart` `c` LEFT JOIN `app_goods` `g` ON `c`.`goods_id`=`g`.`id` LEFT JOIN `app_goods_type` `t` ON `g`.`type_id`=`t`.`id` WHERE  `t`.`id` = 13  AND `c`.`user_id` = 9 [ RunTime:0.000503s ]
+[ sql ] [ SQL ] SELECT `g`.`id`,`g`.`title`,`g`.`price`,`g`.`thumb` FROM `app_goods` `g` LEFT JOIN `app_goods_type` `t` ON `g`.`type_id`=`t`.`id` WHERE  `t`.`id` = 13 [ RunTime:0.000437s ]
+[ sql ] [ SQL ] SELECT SUM(c.num) AS tp_sum FROM `app_goods_cart` `c` LEFT JOIN `app_goods` `g` ON `c`.`goods_id`=`g`.`id` LEFT JOIN `app_goods_type` `t` ON `g`.`type_id`=`t`.`id` WHERE  `t`.`id` = 14  AND `c`.`user_id` = 9 LIMIT 1 [ RunTime:0.000451s ]
+[ sql ] [ SQL ] SELECT `g`.`title`,`g`.`id`,`g`.`price`,`c`.`num` FROM `app_goods_cart` `c` LEFT JOIN `app_goods` `g` ON `c`.`goods_id`=`g`.`id` LEFT JOIN `app_goods_type` `t` ON `g`.`type_id`=`t`.`id` WHERE  `t`.`id` = 14  AND `c`.`user_id` = 9 [ RunTime:0.000480s ]
+[ sql ] [ SQL ] SELECT `g`.`id`,`g`.`title`,`g`.`price`,`g`.`thumb` FROM `app_goods` `g` LEFT JOIN `app_goods_type` `t` ON `g`.`type_id`=`t`.`id` WHERE  `t`.`id` = 14 [ RunTime:0.000422s ]
+[ sql ] [ SQL ] SELECT `num` FROM `app_goods_cart` WHERE  `user_id` = 9  AND `goods_id` = 19 LIMIT 1 [ RunTime:0.000375s ]
+[ sql ] [ SQL ] SELECT `num` FROM `app_goods_cart` WHERE  `user_id` = 9  AND `goods_id` = 21 LIMIT 1 [ RunTime:0.000417s ]
+[ sql ] [ SQL ] SELECT `num` FROM `app_goods_cart` WHERE  `user_id` = 9  AND `goods_id` = 22 LIMIT 1 [ RunTime:0.000457s ]
+[ sql ] [ SQL ] SELECT `num` FROM `app_goods_cart` WHERE  `user_id` = 9  AND `goods_id` = 23 LIMIT 1 [ RunTime:0.000469s ]
+[ sql ] [ SQL ] SELECT `num` FROM `app_goods_cart` WHERE  `user_id` = 9  AND `goods_id` = 20 LIMIT 1 [ RunTime:0.000380s ]
+[ sql ] [ SQL ] SELECT `num` FROM `app_goods_cart` WHERE  `user_id` = 9  AND `goods_id` = 18 LIMIT 1 [ RunTime:0.000367s ]
+[ sql ] [ SQL ] SELECT `num` FROM `app_goods_cart` WHERE  `user_id` = 9  AND `goods_id` = 24 LIMIT 1 [ RunTime:0.000336s ]
+---------------------------------------------------------------
+[ 2018-10-31T14:12:14+08:00 ] 119.137.55.41 GET /index/user/index.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.006591s ] mysql:host=122.114.216.78;port=3306;dbname=pengcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `app_user` [ RunTime:0.010525s ]
+[ sql ] [ SQL ] SELECT `nickname`,`avatarurl` FROM `app_user` WHERE  `id` = 9 LIMIT 1 [ RunTime:0.000644s ]
+---------------------------------------------------------------
+[ 2018-10-31T14:12:22+08:00 ] 119.137.55.41 GET /api/roomorder/getList?status=0&page=1
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004423s ] mysql:host=122.114.216.78;port=3306;dbname=pengcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `app_room_order` [ RunTime:0.008331s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `app_room_order` `o` LEFT JOIN `app_order_room` `r` ON `r`.`order_id`=`o`.`id` WHERE  `o`.`openid` = 'otuUIuN36mNwW9JGpCtuU3uU7-0w'  AND `deleted` = 0  AND `o`.`status` = 0 LIMIT 1 [ RunTime:0.000684s ]
+[ sql ] [ SQL ] SELECT `o`.`id`,`o`.`order_no`,`o`.`start_date`,`o`.`left_date`,`o`.`status`,`o`.`amount`,`o`.`coupon_price`,`o`.`pay_money`,`r`.`title`,`r`.`num` FROM `app_room_order` `o` LEFT JOIN `app_order_room` `r` ON `r`.`order_id`=`o`.`id` WHERE  `o`.`openid` = 'otuUIuN36mNwW9JGpCtuU3uU7-0w'  AND `deleted` = 0  AND `o`.`status` = 0 ORDER BY o.id desc LIMIT 0,2 [ RunTime:0.000873s ]
+---------------------------------------------------------------
+[ 2018-10-31T14:12:25+08:00 ] 119.137.55.41 GET /api/goodsorder/getList?status=0&page=1
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012317s ] mysql:host=122.114.216.78;port=3306;dbname=pengcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `app_goods_order` [ RunTime:0.010344s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `app_goods_order` WHERE  `openid` = 'otuUIuN36mNwW9JGpCtuU3uU7-0w'  AND `deleted` = 0  AND `status` = 0 LIMIT 1 [ RunTime:0.000622s ]
+[ sql ] [ SQL ] SELECT `id`,`order_no`,`meal_date`,DATE_FORMAT(`meal_time`,"%H:%i") as m_time,`amount`,`coupon_price`,`status`,`pay_money` FROM `app_goods_order` WHERE  `openid` = 'otuUIuN36mNwW9JGpCtuU3uU7-0w'  AND `deleted` = 0  AND `status` = 0 ORDER BY id desc LIMIT 0,2 [ RunTime:0.000571s ]
+---------------------------------------------------------------
+[ 2018-10-31T14:12:36+08:00 ] 119.137.55.41 GET /index/index/index.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002176s ] mysql:host=122.114.216.78;port=3306;dbname=pengcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `web_content` [ RunTime:0.009765s ]
+[ sql ] [ SQL ] SELECT `content` FROM `web_content` WHERE  `call_id` IN (1,2) [ RunTime:0.000589s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `web_contact` [ RunTime:0.008459s ]
+[ sql ] [ SQL ] SELECT `phone` FROM `web_contact` [ RunTime:0.000566s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `app_banner` [ RunTime:0.012450s ]
+[ sql ] [ SQL ] SELECT `filename`,`title` FROM `app_banner` WHERE  `type` = 1 ORDER BY `sort` [ RunTime:0.000624s ]
+---------------------------------------------------------------
+[ 2018-10-31T14:13:08+08:00 ] 61.129.6.203 GET /index/goods/detail.html?id=18
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001155s ] mysql:host=122.114.216.78;port=3306;dbname=pengcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `app_goods` [ RunTime:0.010645s ]
+[ sql ] [ SQL ] SELECT `id`,`title`,`price`,`detail_img`,`intro` FROM `app_goods` WHERE  `is_show` = 1  AND `id` = 18 LIMIT 1 [ RunTime:0.000509s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `app_goods_cart` [ RunTime:0.008212s ]
+[ sql ] [ SQL ] SELECT * FROM `app_goods_cart` WHERE  `goods_id` = 18  AND `user_id` IS NULL LIMIT 1 [ RunTime:0.000532s ]
+---------------------------------------------------------------
+[ 2018-10-31T14:15:27+08:00 ] 119.137.55.41 GET /index/index/index.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002261s ] mysql:host=122.114.216.78;port=3306;dbname=pengcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_config` [ RunTime:0.010114s ]
+[ sql ] [ SQL ] SELECT * FROM `system_config` [ RunTime:0.000782s ]
+---------------------------------------------------------------
+[ 2018-10-31T14:15:29+08:00 ] 119.137.55.41 GET /index/index/index.html?code=071BFe732ky7fX0iiX732A3v732BFe7L&state=
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001454s ] mysql:host=122.114.216.78;port=3306;dbname=pengcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_config` [ RunTime:0.010219s ]
+[ sql ] [ SQL ] SELECT * FROM `system_config` [ RunTime:0.000975s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `app_user` [ RunTime:0.008853s ]
+[ sql ] [ SQL ] SELECT * FROM `app_user` WHERE  `openid` = 'otuUIuN36mNwW9JGpCtuU3uU7-0w' LIMIT 1 [ RunTime:0.000535s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `web_content` [ RunTime:0.010020s ]
+[ sql ] [ SQL ] SELECT `content` FROM `web_content` WHERE  `call_id` IN (1,2) [ RunTime:0.000622s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `web_contact` [ RunTime:0.009088s ]
+[ sql ] [ SQL ] SELECT `phone` FROM `web_contact` [ RunTime:0.000519s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `app_banner` [ RunTime:0.008229s ]
+[ sql ] [ SQL ] SELECT `filename`,`title` FROM `app_banner` WHERE  `type` = 1 ORDER BY `sort` [ RunTime:0.000539s ]
+---------------------------------------------------------------
+[ 2018-10-31T14:15:31+08:00 ] 101.91.60.108 GET /index/index/index.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003303s ] mysql:host=122.114.216.78;port=3306;dbname=pengcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_config` [ RunTime:0.009203s ]
+[ sql ] [ SQL ] SELECT * FROM `system_config` [ RunTime:0.000601s ]
+---------------------------------------------------------------
+[ 2018-10-31T14:15:39+08:00 ] 119.137.55.41 GET /index/goods/index.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001540s ] mysql:host=122.114.216.78;port=3306;dbname=pengcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `app_goods_type` [ RunTime:0.011953s ]
+[ sql ] [ SQL ] SELECT `id`,`type` FROM `app_goods_type` WHERE  `is_show` = 1 ORDER BY `sort` [ RunTime:0.000719s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `app_goods` [ RunTime:0.013125s ]
+[ sql ] [ SQL ] SELECT `id`,`title`,`price`,`thumb` FROM `app_goods` WHERE  `is_recommend` = 1 [ RunTime:0.000872s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `app_goods_cart` [ RunTime:0.012495s ]
+[ sql ] [ SQL ] SELECT SUM(c.num) AS tp_sum FROM `app_goods_cart` `c` LEFT JOIN `app_goods` `g` ON `c`.`goods_id`=`g`.`id` LEFT JOIN `app_goods_type` `t` ON `g`.`type_id`=`t`.`id` WHERE  `t`.`id` = 8  AND `c`.`user_id` = 9 LIMIT 1 [ RunTime:0.001073s ]
+[ sql ] [ SQL ] SELECT `g`.`title`,`g`.`id`,`g`.`price`,`c`.`num` FROM `app_goods_cart` `c` LEFT JOIN `app_goods` `g` ON `c`.`goods_id`=`g`.`id` LEFT JOIN `app_goods_type` `t` ON `g`.`type_id`=`t`.`id` WHERE  `t`.`id` = 8  AND `c`.`user_id` = 9 [ RunTime:0.000811s ]
+[ sql ] [ SQL ] SELECT `g`.`id`,`g`.`title`,`g`.`price`,`g`.`thumb` FROM `app_goods` `g` LEFT JOIN `app_goods_type` `t` ON `g`.`type_id`=`t`.`id` WHERE  `t`.`id` = 8 [ RunTime:0.000745s ]
+[ sql ] [ SQL ] SELECT SUM(c.num) AS tp_sum FROM `app_goods_cart` `c` LEFT JOIN `app_goods` `g` ON `c`.`goods_id`=`g`.`id` LEFT JOIN `app_goods_type` `t` ON `g`.`type_id`=`t`.`id` WHERE  `t`.`id` = 7  AND `c`.`user_id` = 9 LIMIT 1 [ RunTime:0.000762s ]
+[ sql ] [ SQL ] SELECT `g`.`title`,`g`.`id`,`g`.`price`,`c`.`num` FROM `app_goods_cart` `c` LEFT JOIN `app_goods` `g` ON `c`.`goods_id`=`g`.`id` LEFT JOIN `app_goods_type` `t` ON `g`.`type_id`=`t`.`id` WHERE  `t`.`id` = 7  AND `c`.`user_id` = 9 [ RunTime:0.000716s ]
+[ sql ] [ SQL ] SELECT `g`.`id`,`g`.`title`,`g`.`price`,`g`.`thumb` FROM `app_goods` `g` LEFT JOIN `app_goods_type` `t` ON `g`.`type_id`=`t`.`id` WHERE  `t`.`id` = 7 [ RunTime:0.000511s ]
+[ sql ] [ SQL ] SELECT SUM(c.num) AS tp_sum FROM `app_goods_cart` `c` LEFT JOIN `app_goods` `g` ON `c`.`goods_id`=`g`.`id` LEFT JOIN `app_goods_type` `t` ON `g`.`type_id`=`t`.`id` WHERE  `t`.`id` = 10  AND `c`.`user_id` = 9 LIMIT 1 [ RunTime:0.000553s ]
+[ sql ] [ SQL ] SELECT `g`.`title`,`g`.`id`,`g`.`price`,`c`.`num` FROM `app_goods_cart` `c` LEFT JOIN `app_goods` `g` ON `c`.`goods_id`=`g`.`id` LEFT JOIN `app_goods_type` `t` ON `g`.`type_id`=`t`.`id` WHERE  `t`.`id` = 10  AND `c`.`user_id` = 9 [ RunTime:0.000555s ]
+[ sql ] [ SQL ] SELECT `g`.`id`,`g`.`title`,`g`.`price`,`g`.`thumb` FROM `app_goods` `g` LEFT JOIN `app_goods_type` `t` ON `g`.`type_id`=`t`.`id` WHERE  `t`.`id` = 10 [ RunTime:0.000456s ]
+[ sql ] [ SQL ] SELECT SUM(c.num) AS tp_sum FROM `app_goods_cart` `c` LEFT JOIN `app_goods` `g` ON `c`.`goods_id`=`g`.`id` LEFT JOIN `app_goods_type` `t` ON `g`.`type_id`=`t`.`id` WHERE  `t`.`id` = 11  AND `c`.`user_id` = 9 LIMIT 1 [ RunTime:0.000593s ]
+[ sql ] [ SQL ] SELECT `g`.`title`,`g`.`id`,`g`.`price`,`c`.`num` FROM `app_goods_cart` `c` LEFT JOIN `app_goods` `g` ON `c`.`goods_id`=`g`.`id` LEFT JOIN `app_goods_type` `t` ON `g`.`type_id`=`t`.`id` WHERE  `t`.`id` = 11  AND `c`.`user_id` = 9 [ RunTime:0.000617s ]
+[ sql ] [ SQL ] SELECT `g`.`id`,`g`.`title`,`g`.`price`,`g`.`thumb` FROM `app_goods` `g` LEFT JOIN `app_goods_type` `t` ON `g`.`type_id`=`t`.`id` WHERE  `t`.`id` = 11 [ RunTime:0.000539s ]
+[ sql ] [ SQL ] SELECT SUM(c.num) AS tp_sum FROM `app_goods_cart` `c` LEFT JOIN `app_goods` `g` ON `c`.`goods_id`=`g`.`id` LEFT JOIN `app_goods_type` `t` ON `g`.`type_id`=`t`.`id` WHERE  `t`.`id` = 12  AND `c`.`user_id` = 9 LIMIT 1 [ RunTime:0.000532s ]
+[ sql ] [ SQL ] SELECT `g`.`title`,`g`.`id`,`g`.`price`,`c`.`num` FROM `app_goods_cart` `c` LEFT JOIN `app_goods` `g` ON `c`.`goods_id`=`g`.`id` LEFT JOIN `app_goods_type` `t` ON `g`.`type_id`=`t`.`id` WHERE  `t`.`id` = 12  AND `c`.`user_id` = 9 [ RunTime:0.000556s ]
+[ sql ] [ SQL ] SELECT `g`.`id`,`g`.`title`,`g`.`price`,`g`.`thumb` FROM `app_goods` `g` LEFT JOIN `app_goods_type` `t` ON `g`.`type_id`=`t`.`id` WHERE  `t`.`id` = 12 [ RunTime:0.000464s ]
+[ sql ] [ SQL ] SELECT SUM(c.num) AS tp_sum FROM `app_goods_cart` `c` LEFT JOIN `app_goods` `g` ON `c`.`goods_id`=`g`.`id` LEFT JOIN `app_goods_type` `t` ON `g`.`type_id`=`t`.`id` WHERE  `t`.`id` = 13  AND `c`.`user_id` = 9 LIMIT 1 [ RunTime:0.000582s ]
+[ sql ] [ SQL ] SELECT `g`.`title`,`g`.`id`,`g`.`price`,`c`.`num` FROM `app_goods_cart` `c` LEFT JOIN `app_goods` `g` ON `c`.`goods_id`=`g`.`id` LEFT JOIN `app_goods_type` `t` ON `g`.`type_id`=`t`.`id` WHERE  `t`.`id` = 13  AND `c`.`user_id` = 9 [ RunTime:0.000637s ]
+[ sql ] [ SQL ] SELECT `g`.`id`,`g`.`title`,`g`.`price`,`g`.`thumb` FROM `app_goods` `g` LEFT JOIN `app_goods_type` `t` ON `g`.`type_id`=`t`.`id` WHERE  `t`.`id` = 13 [ RunTime:0.000666s ]
+[ sql ] [ SQL ] SELECT SUM(c.num) AS tp_sum FROM `app_goods_cart` `c` LEFT JOIN `app_goods` `g` ON `c`.`goods_id`=`g`.`id` LEFT JOIN `app_goods_type` `t` ON `g`.`type_id`=`t`.`id` WHERE  `t`.`id` = 14  AND `c`.`user_id` = 9 LIMIT 1 [ RunTime:0.000657s ]
+[ sql ] [ SQL ] SELECT `g`.`title`,`g`.`id`,`g`.`price`,`c`.`num` FROM `app_goods_cart` `c` LEFT JOIN `app_goods` `g` ON `c`.`goods_id`=`g`.`id` LEFT JOIN `app_goods_type` `t` ON `g`.`type_id`=`t`.`id` WHERE  `t`.`id` = 14  AND `c`.`user_id` = 9 [ RunTime:0.000539s ]
+[ sql ] [ SQL ] SELECT `g`.`id`,`g`.`title`,`g`.`price`,`g`.`thumb` FROM `app_goods` `g` LEFT JOIN `app_goods_type` `t` ON `g`.`type_id`=`t`.`id` WHERE  `t`.`id` = 14 [ RunTime:0.000442s ]
+[ sql ] [ SQL ] SELECT `num` FROM `app_goods_cart` WHERE  `user_id` = 9  AND `goods_id` = 19 LIMIT 1 [ RunTime:0.000450s ]
+[ sql ] [ SQL ] SELECT `num` FROM `app_goods_cart` WHERE  `user_id` = 9  AND `goods_id` = 21 LIMIT 1 [ RunTime:0.000418s ]
+[ sql ] [ SQL ] SELECT `num` FROM `app_goods_cart` WHERE  `user_id` = 9  AND `goods_id` = 22 LIMIT 1 [ RunTime:0.000364s ]
+[ sql ] [ SQL ] SELECT `num` FROM `app_goods_cart` WHERE  `user_id` = 9  AND `goods_id` = 23 LIMIT 1 [ RunTime:0.000355s ]
+[ sql ] [ SQL ] SELECT `num` FROM `app_goods_cart` WHERE  `user_id` = 9  AND `goods_id` = 20 LIMIT 1 [ RunTime:0.000354s ]
+[ sql ] [ SQL ] SELECT `num` FROM `app_goods_cart` WHERE  `user_id` = 9  AND `goods_id` = 18 LIMIT 1 [ RunTime:0.000373s ]
+[ sql ] [ SQL ] SELECT `num` FROM `app_goods_cart` WHERE  `user_id` = 9  AND `goods_id` = 24 LIMIT 1 [ RunTime:0.000352s ]
+---------------------------------------------------------------
+[ 2018-10-31T14:15:40+08:00 ] 119.137.55.41 GET /index/index/index.html?code=071BFe732ky7fX0iiX732A3v732BFe7L&state=
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002182s ] mysql:host=122.114.216.78;port=3306;dbname=pengcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `web_content` [ RunTime:0.011344s ]
+[ sql ] [ SQL ] SELECT `content` FROM `web_content` WHERE  `call_id` IN (1,2) [ RunTime:0.000736s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `web_contact` [ RunTime:0.011946s ]
+[ sql ] [ SQL ] SELECT `phone` FROM `web_contact` [ RunTime:0.000773s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `app_banner` [ RunTime:0.011537s ]
+[ sql ] [ SQL ] SELECT `filename`,`title` FROM `app_banner` WHERE  `type` = 1 ORDER BY `sort` [ RunTime:0.000574s ]
+---------------------------------------------------------------
+[ 2018-10-31T14:15:41+08:00 ] 119.137.55.41 GET /index/user/index.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.013731s ] mysql:host=122.114.216.78;port=3306;dbname=pengcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `app_user` [ RunTime:0.008561s ]
+[ sql ] [ SQL ] SELECT `nickname`,`avatarurl` FROM `app_user` WHERE  `id` = 9 LIMIT 1 [ RunTime:0.000534s ]
+---------------------------------------------------------------
+[ 2018-10-31T14:28:41+08:00 ] 180.163.220.5 GET /
+[ sql ] [ DB ] CONNECT:[ UseTime:0.013509s ] mysql:host=122.114.216.78;port=3306;dbname=pengcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_config` [ RunTime:0.008394s ]
+[ sql ] [ SQL ] SELECT * FROM `system_config` [ RunTime:0.000765s ]
+---------------------------------------------------------------
+[ 2018-10-31T15:02:17+08:00 ] 113.89.42.152 GET /index/room/index.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002240s ] mysql:host=122.114.216.78;port=3306;dbname=pengcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `app_banner` [ RunTime:0.008344s ]
+[ sql ] [ SQL ] SELECT `filename` FROM `app_banner` WHERE  `type` = 2 ORDER BY `sort` [ RunTime:0.000683s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `web_contact` [ RunTime:0.008606s ]
+[ sql ] [ SQL ] SELECT * FROM `web_contact` WHERE  `call_id` = 1 LIMIT 1 [ RunTime:0.000649s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `app_room` [ RunTime:0.009585s ]
+[ sql ] [ SQL ] SELECT `r`.`id`,`r`.`price`,`r`.`thumb`,`r`.`num`,pt.type pt_type,ft.type ft_type FROM `app_room` `r` LEFT JOIN `app_room_people_type` `pt` ON `pt`.`id`=`r`.`people_type_id` LEFT JOIN `app_room_floor_type` `ft` ON `ft`.`id`=`r`.`floor_type_id` WHERE  `r`.`is_show` = 1 [ RunTime:0.000698s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `app_room_order` [ RunTime:0.008682s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `app_room_order` `o` LEFT JOIN `app_order_room` `r` ON `r`.`order_id`=`o`.`id` WHERE  `o`.`status` IN (1,2)  AND `r`.`room_id` = 18 LIMIT 1 [ RunTime:0.000715s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `app_room_order` `o` LEFT JOIN `app_order_room` `r` ON `r`.`order_id`=`o`.`id` WHERE  `o`.`status` IN (1,2)  AND `r`.`room_id` = 19 LIMIT 1 [ RunTime:0.000495s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `app_room_order` `o` LEFT JOIN `app_order_room` `r` ON `r`.`order_id`=`o`.`id` WHERE  `o`.`status` IN (1,2)  AND `r`.`room_id` = 20 LIMIT 1 [ RunTime:0.000392s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `app_room_order` `o` LEFT JOIN `app_order_room` `r` ON `r`.`order_id`=`o`.`id` WHERE  `o`.`status` IN (1,2)  AND `r`.`room_id` = 21 LIMIT 1 [ RunTime:0.000393s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `app_room_order` `o` LEFT JOIN `app_order_room` `r` ON `r`.`order_id`=`o`.`id` WHERE  `o`.`status` IN (1,2)  AND `r`.`room_id` = 22 LIMIT 1 [ RunTime:0.000398s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `app_room_order` `o` LEFT JOIN `app_order_room` `r` ON `r`.`order_id`=`o`.`id` WHERE  `o`.`status` IN (1,2)  AND `r`.`room_id` = 23 LIMIT 1 [ RunTime:0.000421s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `app_room_order` `o` LEFT JOIN `app_order_room` `r` ON `r`.`order_id`=`o`.`id` WHERE  `o`.`status` IN (1,2)  AND `r`.`room_id` = 25 LIMIT 1 [ RunTime:0.000543s ]
+---------------------------------------------------------------
+[ 2018-10-31T15:02:21+08:00 ] 113.89.42.152 GET /index/index/index.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.006632s ] mysql:host=122.114.216.78;port=3306;dbname=pengcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `web_content` [ RunTime:0.010857s ]
+[ sql ] [ SQL ] SELECT `content` FROM `web_content` WHERE  `call_id` IN (1,2) [ RunTime:0.000568s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `web_contact` [ RunTime:0.008622s ]
+[ sql ] [ SQL ] SELECT `phone` FROM `web_contact` [ RunTime:0.000496s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `app_banner` [ RunTime:0.008114s ]
+[ sql ] [ SQL ] SELECT `filename`,`title` FROM `app_banner` WHERE  `type` = 1 ORDER BY `sort` [ RunTime:0.001115s ]
+---------------------------------------------------------------
+[ 2018-10-31T15:02:25+08:00 ] 113.89.42.152 GET /index/index/index.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.013516s ] mysql:host=122.114.216.78;port=3306;dbname=pengcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `web_content` [ RunTime:0.010285s ]
+[ sql ] [ SQL ] SELECT `content` FROM `web_content` WHERE  `call_id` IN (1,2) [ RunTime:0.000752s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `web_contact` [ RunTime:0.010200s ]
+[ sql ] [ SQL ] SELECT `phone` FROM `web_contact` [ RunTime:0.000510s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `app_banner` [ RunTime:0.008031s ]
+[ sql ] [ SQL ] SELECT `filename`,`title` FROM `app_banner` WHERE  `type` = 1 ORDER BY `sort` [ RunTime:0.000583s ]
+---------------------------------------------------------------
+[ 2018-10-31T16:30:33+08:00 ] 101.199.120.145 GET /
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002315s ] mysql:host=122.114.216.78;port=3306;dbname=pengcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `web_content` [ RunTime:0.011588s ]
+[ sql ] [ SQL ] SELECT `content` FROM `web_content` WHERE  `call_id` IN (1,2) [ RunTime:0.000643s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `web_contact` [ RunTime:0.007946s ]
+[ sql ] [ SQL ] SELECT `phone` FROM `web_contact` [ RunTime:0.007396s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `app_banner` [ RunTime:0.009340s ]
+[ sql ] [ SQL ] SELECT `filename`,`title` FROM `app_banner` WHERE  `type` = 1 ORDER BY `sort` [ RunTime:0.000611s ]

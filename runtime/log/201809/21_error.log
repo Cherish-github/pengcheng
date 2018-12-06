@@ -1,0 +1,12 @@
+---------------------------------------------------------------
+[ 2018-09-21T09:32:14+08:00 ] 61.129.6.72 GET /index/room/index.html
+[ error ] [0]模板文件不存在:D:\Program Files\web\pengcheng\public/frontEnd/pc/room\index.html[D:\Program Files\web\pengcheng\thinkphp\library\think\view\driver\Think.php:80]
+---------------------------------------------------------------
+[ 2018-09-21T09:32:52+08:00 ] 61.129.6.251 GET /index/user/index.html
+[ error ] [0]模板文件不存在:D:\Program Files\web\pengcheng\public/frontEnd/pc/user\index.html[D:\Program Files\web\pengcheng\thinkphp\library\think\view\driver\Think.php:80]
+---------------------------------------------------------------
+[ 2018-09-21T15:14:55+08:00 ] 119.137.55.181 GET /api/cart/add?goods_id=21
+[ error ] [8]未定义数组索引: num[D:\Program Files\web\pengcheng\application\api\controller\Cart.php:57]
+---------------------------------------------------------------
+[ 2018-09-21T15:14:57+08:00 ] 119.137.55.181 GET /api/cart/add?goods_id=21
+[ error ] [8]未定义数组索引: num[D:\Program Files\web\pengcheng\application\api\controller\Cart.php:57]

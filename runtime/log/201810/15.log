@@ -1,0 +1,1223 @@
+---------------------------------------------------------------
+[ 2018-10-15T09:32:27+08:00 ] 223.104.63.46 GET /
+[ info ] wx.p-city.cn/ [运行时间：0.086646s][吞吐率：11.54req/s] [内存消耗：3,255.39kb] [文件加载：56]
+[ info ] [ LANG ] D:\Program Files\web\pengcheng\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => '',
+  'content-length' => '0',
+  'x-forwarded-for-pound' => '223.104.63.46',
+  'x-forwarded-for' => '223.104.63.46',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 8.0; MI 5 Build/OPR1.170623.032; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/57.0.2987.132 MQQBrowser/6.2 TBS/044353 Mobile Safari/537.36 MicroMessenger/6.7.3.1360(0x26070333) NetType/4G Language/zh_CN Process/tools',
+  'host' => 'wx.p-city.cn',
+  'cookie' => 'PHPSESSID=n3rs1lmoov1t1do688947qk2u0',
+  'accept-language' => 'zh-CN,en-US;q=0.8',
+  'accept-encoding' => 'gzip',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,image/wxpic,image/sharpp,image/apng,image/tpg,*/*;q=0.8',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-10-15T09:32:29+08:00 ] 157.255.172.126 GET /
+[ info ] wx.p-city.cn/ [运行时间：0.071788s][吞吐率：13.93req/s] [内存消耗：3,254.09kb] [文件加载：56]
+[ info ] [ LANG ] D:\Program Files\web\pengcheng\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => '',
+  'content-length' => '0',
+  'q-ua' => 'KQB22_GA/220020&KMTT_3/200020&JV2&151920&SunMicrosystemswtk&0&4309&V3',
+  'user-agent' => 'Mozilla/5.0 (Windows; U; Windows NT 5.1; zh-CN; rv:1.9b4) Gecko/2008030317 Firefox/3.0b4',
+  'host' => 'wx.p-city.cn',
+  'accept-encoding' => 'gzip,deflate',
+  'accept-charset' => 'gb2312,iso8859-1,utf-8',
+  'accept' => 'text/vnd.wap.wml,text/html,application/vnd.wap.xhtml+xml,application/xhtml+xml',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-10-15T09:32:29+08:00 ] 112.60.1.64 GET /
+[ info ] wx.p-city.cn/ [运行时间：0.064877s][吞吐率：15.41req/s] [内存消耗：3,254.01kb] [文件加载：56]
+[ info ] [ LANG ] D:\Program Files\web\pengcheng\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => '',
+  'content-length' => '0',
+  'q-ua' => 'KQB22_GA/220020&KMTT_3/200020&JV2&151920&SunMicrosystemswtk&0&4309&V3',
+  'user-agent' => 'Mozilla/5.0 (Windows; U; Windows NT 5.1; zh-CN; rv:1.9b4) Gecko/2008030317 Firefox/3.0b4',
+  'host' => 'wx.p-city.cn',
+  'accept-encoding' => 'gzip,deflate',
+  'accept-charset' => 'gb2312,iso8859-1,utf-8',
+  'accept' => 'text/vnd.wap.wml,text/html,application/vnd.wap.xhtml+xml,application/xhtml+xml',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-10-15T09:32:30+08:00 ] 223.104.63.46 GET /index/index/index.html?code=071oPz2F034Bdl2cZr3F0EMu2F0oPz2t&state=
+[ info ] wx.p-city.cn/index/index/index.html?code=071oPz2F034Bdl2cZr3F0EMu2F0oPz2t&state= [运行时间：1.003967s][吞吐率：1.00req/s] [内存消耗：3,396.11kb] [文件加载：62]
+[ info ] [ LANG ] D:\Program Files\web\pengcheng\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => '',
+  'content-length' => '0',
+  'x-original-url' => '/index/index/index.html?code=071oPz2F034Bdl2cZr3F0EMu2F0oPz2t&state=',
+  'x-forwarded-for-pound' => '223.104.63.46',
+  'x-forwarded-for' => '223.104.63.46',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 8.0; MI 5 Build/OPR1.170623.032; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/57.0.2987.132 MQQBrowser/6.2 TBS/044353 Mobile Safari/537.36 MicroMessenger/6.7.3.1360(0x26070333) NetType/4G Language/zh_CN Process/tools',
+  'host' => 'wx.p-city.cn',
+  'cookie' => 'PHPSESSID=n3rs1lmoov1t1do688947qk2u0',
+  'accept-language' => 'zh-CN,en-US;q=0.8',
+  'accept-encoding' => 'gzip',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,image/wxpic,image/sharpp,image/apng,image/tpg,*/*;q=0.8',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+  'code' => '071oPz2F034Bdl2cZr3F0EMu2F0oPz2t',
+  'state' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run hook\AccessAuth @action_begin [ RunTime:0.001042s ]
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\Program Files\web\pengcheng\application\index\controller\Index.php ]
+[ info ] [ VIEW ] D:\Program Files\web\pengcheng\public/frontEnd/mobile/index\index.html [ array (
+  0 => 'classuri',
+  1 => 'speaking',
+  2 => 'desc',
+  3 => 'contact',
+  4 => 'banners',
+  5 => 'title',
+) ]
+[ info ] [ BEHAVIOR ] Run hook\FilterView @view_filter [ RunTime:0.000813s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-10-15T09:32:31+08:00 ] 112.60.1.124 GET /
+[ info ] wx.p-city.cn/ [运行时间：0.084198s][吞吐率：11.88req/s] [内存消耗：3,254.01kb] [文件加载：56]
+[ info ] [ LANG ] D:\Program Files\web\pengcheng\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => '',
+  'content-length' => '0',
+  'q-ua' => 'KQB22_GA/220020&KMTT_3/200020&JV2&151920&SunMicrosystemswtk&0&4309&V3',
+  'user-agent' => 'Mozilla/5.0 (Windows; U; Windows NT 5.1; zh-CN; rv:1.9b4) Gecko/2008030317 Firefox/3.0b4',
+  'host' => 'wx.p-city.cn',
+  'accept-encoding' => 'gzip,deflate',
+  'accept-charset' => 'gb2312,iso8859-1,utf-8',
+  'accept' => 'text/vnd.wap.wml,text/html,application/vnd.wap.xhtml+xml,application/xhtml+xml',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-10-15T09:32:31+08:00 ] 112.60.1.64 GET /
+[ info ] wx.p-city.cn/ [运行时间：0.085144s][吞吐率：11.74req/s] [内存消耗：3,254.01kb] [文件加载：56]
+[ info ] [ LANG ] D:\Program Files\web\pengcheng\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => '',
+  'content-length' => '0',
+  'q-ua' => 'KQB22_GA/220020&KMTT_3/200020&JV2&151920&SunMicrosystemswtk&0&4309&V3',
+  'user-agent' => 'Mozilla/5.0 (Windows; U; Windows NT 5.1; zh-CN; rv:1.9b4) Gecko/2008030317 Firefox/3.0b4',
+  'host' => 'wx.p-city.cn',
+  'accept-encoding' => 'gzip,deflate',
+  'accept-charset' => 'gb2312,iso8859-1,utf-8',
+  'accept' => 'text/vnd.wap.wml,text/html,application/vnd.wap.xhtml+xml,application/xhtml+xml',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-10-15T09:32:31+08:00 ] 157.255.172.19 GET /
+[ info ] wx.p-city.cn/ [运行时间：0.075434s][吞吐率：13.26req/s] [内存消耗：3,254.01kb] [文件加载：56]
+[ info ] [ LANG ] D:\Program Files\web\pengcheng\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => '',
+  'content-length' => '0',
+  'q-ua' => 'KQB22_GA/220020&KMTT_3/200020&JV2&151920&SunMicrosystemswtk&0&4309&V3',
+  'user-agent' => 'Mozilla/5.0 (Windows; U; Windows NT 5.1; zh-CN; rv:1.9b4) Gecko/2008030317 Firefox/3.0b4',
+  'host' => 'wx.p-city.cn',
+  'accept-encoding' => 'gzip,deflate',
+  'accept-charset' => 'gb2312,iso8859-1,utf-8',
+  'accept' => 'text/vnd.wap.wml,text/html,application/vnd.wap.xhtml+xml,application/xhtml+xml',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-10-15T09:32:31+08:00 ] 58.250.143.191 GET /
+[ info ] wx.p-city.cn/ [运行时间：0.095334s][吞吐率：10.49req/s] [内存消耗：3,254.09kb] [文件加载：56]
+[ info ] [ LANG ] D:\Program Files\web\pengcheng\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => '',
+  'content-length' => '0',
+  'q-ua' => 'KQB22_GA/220020&KMTT_3/200020&JV2&151920&SunMicrosystemswtk&0&4309&V3',
+  'user-agent' => 'Mozilla/5.0 (Windows; U; Windows NT 5.1; zh-CN; rv:1.9b4) Gecko/2008030317 Firefox/3.0b4',
+  'host' => 'wx.p-city.cn',
+  'accept-encoding' => 'gzip,deflate',
+  'accept-charset' => 'gb2312,iso8859-1,utf-8',
+  'accept' => 'text/vnd.wap.wml,text/html,application/vnd.wap.xhtml+xml,application/xhtml+xml',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-10-15T09:32:31+08:00 ] 58.250.143.96 GET /
+[ info ] wx.p-city.cn/ [运行时间：0.082361s][吞吐率：12.14req/s] [内存消耗：3,254.09kb] [文件加载：56]
+[ info ] [ LANG ] D:\Program Files\web\pengcheng\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => '',
+  'content-length' => '0',
+  'q-ua' => 'KQB22_GA/220020&KMTT_3/200020&JV2&151920&SunMicrosystemswtk&0&4309&V3',
+  'user-agent' => 'Mozilla/5.0 (Windows; U; Windows NT 5.1; zh-CN; rv:1.9b4) Gecko/2008030317 Firefox/3.0b4',
+  'host' => 'wx.p-city.cn',
+  'accept-encoding' => 'gzip,deflate',
+  'accept-charset' => 'gb2312,iso8859-1,utf-8',
+  'accept' => 'text/vnd.wap.wml,text/html,application/vnd.wap.xhtml+xml,application/xhtml+xml',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-10-15T09:32:31+08:00 ] 157.255.172.14 GET /
+[ info ] wx.p-city.cn/ [运行时间：0.114854s][吞吐率：8.71req/s] [内存消耗：3,254.09kb] [文件加载：56]
+[ info ] [ LANG ] D:\Program Files\web\pengcheng\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => '',
+  'content-length' => '0',
+  'q-ua' => 'KQB22_GA/220020&KMTT_3/200020&JV2&151920&SunMicrosystemswtk&0&4309&V3',
+  'user-agent' => 'Mozilla/5.0 (Windows; U; Windows NT 5.1; zh-CN; rv:1.9b4) Gecko/2008030317 Firefox/3.0b4',
+  'host' => 'wx.p-city.cn',
+  'accept-encoding' => 'gzip,deflate',
+  'accept-charset' => 'gb2312,iso8859-1,utf-8',
+  'accept' => 'text/vnd.wap.wml,text/html,application/vnd.wap.xhtml+xml,application/xhtml+xml',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-10-15T09:32:31+08:00 ] 112.60.1.79 GET /
+[ info ] wx.p-city.cn/ [运行时间：0.083369s][吞吐率：11.99req/s] [内存消耗：3,254.09kb] [文件加载：56]
+[ info ] [ LANG ] D:\Program Files\web\pengcheng\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => '',
+  'content-length' => '0',
+  'q-ua' => 'KQB22_GA/220020&KMTT_3/200020&JV2&151920&SunMicrosystemswtk&0&4309&V3',
+  'user-agent' => 'Mozilla/5.0 (Windows; U; Windows NT 5.1; zh-CN; rv:1.9b4) Gecko/2008030317 Firefox/3.0b4',
+  'host' => 'wx.p-city.cn',
+  'accept-encoding' => 'gzip,deflate',
+  'accept-charset' => 'gb2312,iso8859-1,utf-8',
+  'accept' => 'text/vnd.wap.wml,text/html,application/vnd.wap.xhtml+xml,application/xhtml+xml',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-10-15T09:32:31+08:00 ] 58.250.137.194 GET /
+[ info ] wx.p-city.cn/ [运行时间：0.082300s][吞吐率：12.15req/s] [内存消耗：3,254.09kb] [文件加载：56]
+[ info ] [ LANG ] D:\Program Files\web\pengcheng\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => '',
+  'content-length' => '0',
+  'q-ua' => 'KQB22_GA/220020&KMTT_3/200020&JV2&151920&SunMicrosystemswtk&0&4309&V3',
+  'user-agent' => 'Mozilla/5.0 (Windows; U; Windows NT 5.1; zh-CN; rv:1.9b4) Gecko/2008030317 Firefox/3.0b4',
+  'host' => 'wx.p-city.cn',
+  'accept-encoding' => 'gzip,deflate',
+  'accept-charset' => 'gb2312,iso8859-1,utf-8',
+  'accept' => 'text/vnd.wap.wml,text/html,application/vnd.wap.xhtml+xml,application/xhtml+xml',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-10-15T09:32:31+08:00 ] 112.60.1.79 GET /
+[ info ] wx.p-city.cn/ [运行时间：0.078402s][吞吐率：12.75req/s] [内存消耗：3,254.09kb] [文件加载：56]
+[ info ] [ LANG ] D:\Program Files\web\pengcheng\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => '',
+  'content-length' => '0',
+  'q-ua' => 'KQB22_GA/220020&KMTT_3/200020&JV2&151920&SunMicrosystemswtk&0&4309&V3',
+  'user-agent' => 'Mozilla/5.0 (Windows; U; Windows NT 5.1; zh-CN; rv:1.9b4) Gecko/2008030317 Firefox/3.0b4',
+  'host' => 'wx.p-city.cn',
+  'accept-encoding' => 'gzip,deflate',
+  'accept-charset' => 'gb2312,iso8859-1,utf-8',
+  'accept' => 'text/vnd.wap.wml,text/html,application/vnd.wap.xhtml+xml,application/xhtml+xml',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-10-15T09:32:31+08:00 ] 112.60.1.97 GET /
+[ info ] wx.p-city.cn/ [运行时间：0.075761s][吞吐率：13.20req/s] [内存消耗：3,254.09kb] [文件加载：56]
+[ info ] [ LANG ] D:\Program Files\web\pengcheng\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => '',
+  'content-length' => '0',
+  'q-ua' => 'KQB22_GA/220020&KMTT_3/200020&JV2&151920&SunMicrosystemswtk&0&4309&V3',
+  'user-agent' => 'Mozilla/5.0 (Windows; U; Windows NT 5.1; zh-CN; rv:1.9b4) Gecko/2008030317 Firefox/3.0b4',
+  'host' => 'wx.p-city.cn',
+  'accept-encoding' => 'gzip,deflate',
+  'accept-charset' => 'gb2312,iso8859-1,utf-8',
+  'accept' => 'text/vnd.wap.wml,text/html,application/vnd.wap.xhtml+xml,application/xhtml+xml',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-10-15T09:32:33+08:00 ] 223.104.63.46 GET /favicon.ico
+[ info ] wx.p-city.cn/favicon.ico [运行时间：0.030009s][吞吐率：33.32req/s] [内存消耗：1,789.67kb] [文件加载：39]
+[ info ] [ LANG ] D:\Program Files\web\pengcheng\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'favicon.ico',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => '',
+  'content-length' => '0',
+  'x-original-url' => '/favicon.ico',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 8.0; MI 5 Build/OPR1.170623.032; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/57.0.2987.132 MQQBrowser/6.2 TBS/044353 Mobile Safari/537.36 MicroMessenger/6.7.3.1360(0x26070333) NetType/4G Language/zh_CN Process/tools',
+  'referer' => 'http://wx.p-city.cn/index/index/index.html?code=071oPz2F034Bdl2cZr3F0EMu2F0oPz2t&state=',
+  'host' => 'wx.p-city.cn',
+  'cookie' => 'PHPSESSID=n3rs1lmoov1t1do688947qk2u0',
+  'accept-language' => 'zh-CN,en-US;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'image/webp,image/wxpic,image/sharpp,image/apng,image/tpg,image/*,*/*;q=0.8',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-10-15T09:32:34+08:00 ] 223.104.63.46 GET /index/goods/index.html
+[ info ] wx.p-city.cn/index/goods/index.html [运行时间：0.135306s][吞吐率：7.39req/s] [内存消耗：3,258.88kb] [文件加载：56]
+[ info ] [ LANG ] D:\Program Files\web\pengcheng\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'goods',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => '',
+  'content-length' => '0',
+  'x-original-url' => '/index/goods/index.html',
+  'x-forwarded-for-pound' => '223.104.63.46',
+  'x-forwarded-for' => '223.104.63.46',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 8.0; MI 5 Build/OPR1.170623.032; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/57.0.2987.132 MQQBrowser/6.2 TBS/044353 Mobile Safari/537.36 MicroMessenger/6.7.3.1360(0x26070333) NetType/4G Language/zh_CN Process/tools',
+  'referer' => 'http://wx.p-city.cn/index/index/index.html?code=071oPz2F034Bdl2cZr3F0EMu2F0oPz2t&state=',
+  'host' => 'wx.p-city.cn',
+  'cookie' => 'PHPSESSID=n3rs1lmoov1t1do688947qk2u0',
+  'accept-language' => 'zh-CN,en-US;q=0.8',
+  'accept-encoding' => 'gzip',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,image/wxpic,image/sharpp,image/apng,image/tpg,*/*;q=0.8',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ BEHAVIOR ] Run hook\AccessAuth @action_begin [ RunTime:0.000645s ]
+[ info ] [ RUN ] app\index\controller\Goods->index[ D:\Program Files\web\pengcheng\application\index\controller\Goods.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\Program Files\web\pengcheng\public/frontEnd/mobile/goods\index.html [ array (
+  0 => 'classuri',
+  1 => 'types',
+  2 => 'goods',
+  3 => 'amount',
+  4 => 'carts',
+  5 => 'cart_num',
+  6 => 'title',
+) ]
+[ info ] [ BEHAVIOR ] Run hook\FilterView @view_filter [ RunTime:0.000880s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-10-15T09:32:38+08:00 ] 223.104.63.46 GET /api/cart/add?goods_id=19
+[ info ] wx.p-city.cn/api/cart/add?goods_id=19 [运行时间：0.126349s][吞吐率：7.91req/s] [内存消耗：3,035.49kb] [文件加载：52]
+[ info ] [ LANG ] D:\Program Files\web\pengcheng\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'cart',
+    2 => 'add',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => '',
+  'content-length' => '0',
+  'x-original-url' => '/api/cart/add?goods_id=19',
+  'x-requested-with' => 'XMLHttpRequest',
+  'x-forwarded-for-pound' => '223.104.63.46',
+  'x-forwarded-for' => '223.104.63.46',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 8.0; MI 5 Build/OPR1.170623.032; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/57.0.2987.132 MQQBrowser/6.2 TBS/044353 Mobile Safari/537.36 MicroMessenger/6.7.3.1360(0x26070333) NetType/4G Language/zh_CN Process/tools',
+  'referer' => 'http://wx.p-city.cn/index/goods/index.html',
+  'host' => 'wx.p-city.cn',
+  'cookie' => 'PHPSESSID=n3rs1lmoov1t1do688947qk2u0',
+  'accept-language' => 'zh-CN,en-US;q=0.8',
+  'accept-encoding' => 'gzip',
+  'accept' => '*/*',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+  'goods_id' => '19',
+)
+[ info ] [ BEHAVIOR ] Run hook\AccessAuth @action_begin [ RunTime:0.004268s ]
+[ info ] [ RUN ] app\api\controller\Cart->add[ D:\Program Files\web\pengcheng\application\api\controller\Cart.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-10-15T09:32:39+08:00 ] 223.104.63.46 GET /api/cart/add?goods_id=22
+[ info ] wx.p-city.cn/api/cart/add?goods_id=22 [运行时间：0.146122s][吞吐率：6.84req/s] [内存消耗：3,035.59kb] [文件加载：52]
+[ info ] [ LANG ] D:\Program Files\web\pengcheng\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'cart',
+    2 => 'add',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => '',
+  'content-length' => '0',
+  'x-original-url' => '/api/cart/add?goods_id=22',
+  'x-requested-with' => 'XMLHttpRequest',
+  'x-forwarded-for-pound' => '223.104.63.46',
+  'x-forwarded-for' => '223.104.63.46',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 8.0; MI 5 Build/OPR1.170623.032; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/57.0.2987.132 MQQBrowser/6.2 TBS/044353 Mobile Safari/537.36 MicroMessenger/6.7.3.1360(0x26070333) NetType/4G Language/zh_CN Process/tools',
+  'referer' => 'http://wx.p-city.cn/index/goods/index.html',
+  'host' => 'wx.p-city.cn',
+  'cookie' => 'PHPSESSID=n3rs1lmoov1t1do688947qk2u0',
+  'accept-language' => 'zh-CN,en-US;q=0.8',
+  'accept-encoding' => 'gzip',
+  'accept' => '*/*',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+  'goods_id' => '22',
+)
+[ info ] [ BEHAVIOR ] Run hook\AccessAuth @action_begin [ RunTime:0.006434s ]
+[ info ] [ RUN ] app\api\controller\Cart->add[ D:\Program Files\web\pengcheng\application\api\controller\Cart.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-10-15T09:32:40+08:00 ] 223.104.63.46 GET /index/order/goods.html
+[ info ] wx.p-city.cn/index/order/goods.html [运行时间：0.069175s][吞吐率：14.46req/s] [内存消耗：3,175.25kb] [文件加载：56]
+[ info ] [ LANG ] D:\Program Files\web\pengcheng\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'order',
+    2 => 'goods',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => '',
+  'content-length' => '0',
+  'x-original-url' => '/index/order/goods.html',
+  'x-forwarded-for-pound' => '223.104.63.46',
+  'x-forwarded-for' => '223.104.63.46',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 8.0; MI 5 Build/OPR1.170623.032; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/57.0.2987.132 MQQBrowser/6.2 TBS/044353 Mobile Safari/537.36 MicroMessenger/6.7.3.1360(0x26070333) NetType/4G Language/zh_CN Process/tools',
+  'referer' => 'http://wx.p-city.cn/index/goods/index.html',
+  'host' => 'wx.p-city.cn',
+  'cookie' => 'PHPSESSID=n3rs1lmoov1t1do688947qk2u0',
+  'accept-language' => 'zh-CN,en-US;q=0.8',
+  'accept-encoding' => 'gzip',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,image/wxpic,image/sharpp,image/apng,image/tpg,*/*;q=0.8',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ BEHAVIOR ] Run hook\AccessAuth @action_begin [ RunTime:0.000673s ]
+[ info ] [ RUN ] app\index\controller\Order->goods[ D:\Program Files\web\pengcheng\application\index\controller\Order.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\Program Files\web\pengcheng\public/frontEnd/mobile/order\goods.html [ array (
+  0 => 'classuri',
+  1 => 'cart_goods',
+  2 => 'amount',
+  3 => 'coupon_price',
+  4 => 'uc_id',
+  5 => 'title',
+) ]
+[ info ] [ BEHAVIOR ] Run hook\FilterView @view_filter [ RunTime:0.000812s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-10-15T09:33:01+08:00 ] 223.104.63.46 GET /index/user/coupon.html?way=1
+[ info ] wx.p-city.cn/index/user/coupon.html?way=1 [运行时间：0.037159s][吞吐率：26.91req/s] [内存消耗：2,189.00kb] [文件加载：49]
+[ info ] [ LANG ] D:\Program Files\web\pengcheng\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'user',
+    2 => 'coupon',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => '',
+  'content-length' => '0',
+  'x-original-url' => '/index/user/coupon.html?way=1',
+  'x-forwarded-for-pound' => '223.104.63.46',
+  'x-forwarded-for' => '223.104.63.46',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 8.0; MI 5 Build/OPR1.170623.032; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/57.0.2987.132 MQQBrowser/6.2 TBS/044353 Mobile Safari/537.36 MicroMessenger/6.7.3.1360(0x26070333) NetType/4G Language/zh_CN Process/tools',
+  'referer' => 'http://wx.p-city.cn/index/order/goods.html',
+  'host' => 'wx.p-city.cn',
+  'cookie' => 'PHPSESSID=n3rs1lmoov1t1do688947qk2u0',
+  'accept-language' => 'zh-CN,en-US;q=0.8',
+  'accept-encoding' => 'gzip',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,image/wxpic,image/sharpp,image/apng,image/tpg,*/*;q=0.8',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+  'way' => '1',
+)
+[ info ] [ BEHAVIOR ] Run hook\AccessAuth @action_begin [ RunTime:0.000668s ]
+[ info ] [ RUN ] app\index\controller\User->coupon[ D:\Program Files\web\pengcheng\application\index\controller\User.php ]
+[ info ] [ VIEW ] D:\Program Files\web\pengcheng\public/frontEnd/mobile/user\coupon.html [ array (
+  0 => 'classuri',
+  1 => 'way',
+  2 => 'title',
+) ]
+[ info ] [ BEHAVIOR ] Run hook\FilterView @view_filter [ RunTime:0.000772s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-10-15T09:33:01+08:00 ] 223.104.63.46 GET /api/user/noGetCoupon
+[ info ] wx.p-city.cn/api/user/noGetCoupon [运行时间：0.120274s][吞吐率：8.31req/s] [内存消耗：3,061.40kb] [文件加载：52]
+[ info ] [ LANG ] D:\Program Files\web\pengcheng\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'user',
+    2 => 'noGetCoupon',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => '',
+  'content-length' => '0',
+  'x-original-url' => '/api/user/noGetCoupon',
+  'x-requested-with' => 'XMLHttpRequest',
+  'x-forwarded-for-pound' => '223.104.63.46',
+  'x-forwarded-for' => '223.104.63.46',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 8.0; MI 5 Build/OPR1.170623.032; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/57.0.2987.132 MQQBrowser/6.2 TBS/044353 Mobile Safari/537.36 MicroMessenger/6.7.3.1360(0x26070333) NetType/4G Language/zh_CN Process/tools',
+  'referer' => 'http://wx.p-city.cn/index/user/coupon.html?way=1',
+  'host' => 'wx.p-city.cn',
+  'cookie' => 'PHPSESSID=n3rs1lmoov1t1do688947qk2u0',
+  'accept-language' => 'zh-CN,en-US;q=0.8',
+  'accept-encoding' => 'gzip',
+  'accept' => '*/*',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ BEHAVIOR ] Run hook\AccessAuth @action_begin [ RunTime:0.006833s ]
+[ info ] [ RUN ] app\api\controller\User->noGetCoupon[ D:\Program Files\web\pengcheng\application\api\controller\User.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-10-15T09:33:02+08:00 ] 223.104.63.46 GET /index/order/goods.html
+[ info ] wx.p-city.cn/index/order/goods.html [运行时间：0.070771s][吞吐率：14.13req/s] [内存消耗：3,175.25kb] [文件加载：56]
+[ info ] [ LANG ] D:\Program Files\web\pengcheng\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'order',
+    2 => 'goods',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => '',
+  'content-length' => '0',
+  'x-original-url' => '/index/order/goods.html',
+  'x-forwarded-for-pound' => '223.104.63.46',
+  'x-forwarded-for' => '223.104.63.46',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 8.0; MI 5 Build/OPR1.170623.032; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/57.0.2987.132 MQQBrowser/6.2 TBS/044353 Mobile Safari/537.36 MicroMessenger/6.7.3.1360(0x26070333) NetType/4G Language/zh_CN Process/tools',
+  'referer' => 'http://wx.p-city.cn/index/goods/index.html',
+  'host' => 'wx.p-city.cn',
+  'cookie' => 'PHPSESSID=n3rs1lmoov1t1do688947qk2u0',
+  'accept-language' => 'zh-CN,en-US;q=0.8',
+  'accept-encoding' => 'gzip',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,image/wxpic,image/sharpp,image/apng,image/tpg,*/*;q=0.8',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ BEHAVIOR ] Run hook\AccessAuth @action_begin [ RunTime:0.000652s ]
+[ info ] [ RUN ] app\index\controller\Order->goods[ D:\Program Files\web\pengcheng\application\index\controller\Order.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\Program Files\web\pengcheng\public/frontEnd/mobile/order\goods.html [ array (
+  0 => 'classuri',
+  1 => 'cart_goods',
+  2 => 'amount',
+  3 => 'coupon_price',
+  4 => 'uc_id',
+  5 => 'title',
+) ]
+[ info ] [ BEHAVIOR ] Run hook\FilterView @view_filter [ RunTime:0.000827s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-10-15T09:33:14+08:00 ] 223.104.63.46 POST /api/goodsorder/submitOrder
+[ info ] wx.p-city.cn/api/goodsorder/submitOrder [运行时间：0.359062s][吞吐率：2.79req/s] [内存消耗：3,193.77kb] [文件加载：55]
+[ info ] [ LANG ] D:\Program Files\web\pengcheng\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'goodsorder',
+    2 => 'submitOrder',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'content-length' => '126',
+  'x-original-url' => '/api/goodsorder/submitOrder',
+  'x-requested-with' => 'XMLHttpRequest',
+  'x-forwarded-for-pound' => '223.104.63.46',
+  'x-forwarded-for' => '223.104.63.46',
+  'origin' => 'http://wx.p-city.cn',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 8.0; MI 5 Build/OPR1.170623.032; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/57.0.2987.132 MQQBrowser/6.2 TBS/044353 Mobile Safari/537.36 MicroMessenger/6.7.3.1360(0x26070333) NetType/4G Language/zh_CN Process/tools',
+  'referer' => 'http://wx.p-city.cn/index/order/goods.html',
+  'host' => 'wx.p-city.cn',
+  'cookie' => 'PHPSESSID=n3rs1lmoov1t1do688947qk2u0',
+  'accept-language' => 'zh-CN,en-US;q=0.8',
+  'accept-encoding' => 'gzip',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+  'date' => '2018-10-01',
+  'time' => '10:33',
+  'username' => '静静',
+  'people' => '1',
+  'phone' => '15022228888',
+  'uc_id' => '0',
+  'remark' => '不要辣',
+)
+[ info ] [ BEHAVIOR ] Run hook\AccessAuth @action_begin [ RunTime:0.004270s ]
+[ info ] [ RUN ] app\api\controller\Goodsorder->submitOrder[ D:\Program Files\web\pengcheng\application\api\controller\Goodsorder.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-10-15T09:33:15+08:00 ] 223.104.63.46 POST /api/goodsorder/pay
+[ info ] wx.p-city.cn/api/goodsorder/pay [运行时间：1.195588s][吞吐率：0.84req/s] [内存消耗：3,400.20kb] [文件加载：57]
+[ info ] [ LANG ] D:\Program Files\web\pengcheng\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'goodsorder',
+    2 => 'pay',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'content-length' => '11',
+  'x-original-url' => '/api/goodsorder/pay',
+  'x-requested-with' => 'XMLHttpRequest',
+  'x-forwarded-for-pound' => '223.104.63.46',
+  'x-forwarded-for' => '223.104.63.46',
+  'origin' => 'http://wx.p-city.cn',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 8.0; MI 5 Build/OPR1.170623.032; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/57.0.2987.132 MQQBrowser/6.2 TBS/044353 Mobile Safari/537.36 MicroMessenger/6.7.3.1360(0x26070333) NetType/4G Language/zh_CN Process/tools',
+  'referer' => 'http://wx.p-city.cn/index/order/goods.html',
+  'host' => 'wx.p-city.cn',
+  'cookie' => 'PHPSESSID=n3rs1lmoov1t1do688947qk2u0',
+  'accept-language' => 'zh-CN,en-US;q=0.8',
+  'accept-encoding' => 'gzip',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+  'order_id' => '23',
+)
+[ info ] [ BEHAVIOR ] Run hook\AccessAuth @action_begin [ RunTime:0.004192s ]
+[ info ] [ RUN ] app\api\controller\Goodsorder->pay[ D:\Program Files\web\pengcheng\application\api\controller\Goodsorder.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-10-15T09:33:24+08:00 ] 101.226.103.71 POST /index/Wechatnotify/goods.html
+[ info ] wx.p-city.cn/index/Wechatnotify/goods.html [运行时间：0.964449s][吞吐率：1.04req/s] [内存消耗：3,356.59kb] [文件加载：55]
+[ info ] [ LANG ] D:\Program Files\web\pengcheng\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Wechatnotify',
+    2 => 'goods',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => 'text/xml',
+  'content-length' => '781',
+  'x-original-url' => '/index/Wechatnotify/goods.html',
+  'user-agent' => 'Mozilla/4.0',
+  'host' => 'wx.p-city.cn',
+  'accept' => '*/*',
+  'pragma' => 'no-cache',
+  'connection' => 'Keep-Alive',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ BEHAVIOR ] Run hook\AccessAuth @action_begin [ RunTime:0.004195s ]
+[ info ] [ RUN ] app\index\controller\Wechatnotify->goods[ D:\Program Files\web\pengcheng\application\index\controller\Wechatnotify.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-10-15T09:33:28+08:00 ] 61.151.178.165 GET /
+[ info ] wx.p-city.cn/ [运行时间：0.074019s][吞吐率：13.51req/s] [内存消耗：3,253.36kb] [文件加载：56]
+[ info ] [ LANG ] D:\Program Files\web\pengcheng\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => '',
+  'content-length' => '0',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 4.4.4; Coolpad Y82-520 Build/KTU84P) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/33.0.0.0 Mobile Safari/537.36 MicroMessenger/6.5.4.1000 NetType/4G Language/zh_CN',
+  'host' => 'wx.p-city.cn',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.6,en;q=0.4',
+  'accept' => '*/*',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-10-15T09:33:36+08:00 ] 61.151.178.165 GET /index/goods/index.html
+[ info ] wx.p-city.cn/index/goods/index.html [运行时间：0.036386s][吞吐率：27.48req/s] [内存消耗：2,201.04kb] [文件加载：50]
+[ info ] [ LANG ] D:\Program Files\web\pengcheng\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'goods',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => '',
+  'content-length' => '0',
+  'x-original-url' => '/index/goods/index.html',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 4.4.4; HUAWEI ALE-CL00 Build/HuaweiALE-CL00; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/53.0.2785.49 Mobile MQQBrowser/6.2 TBS/043024 Safari/537.36 MicroMessenger/6.5.4.1000 NetType/4G Language/zh_CN',
+  'host' => 'wx.p-city.cn',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.6,en;q=0.4',
+  'accept' => '*/*',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ BEHAVIOR ] Run hook\AccessAuth @action_begin [ RunTime:0.000667s ]
+[ info ] [ RUN ] app\index\controller\Goods->index[ D:\Program Files\web\pengcheng\application\index\controller\Goods.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] D:\Program Files\web\pengcheng\public/../application/extra\view\handler.jump.html [ array (
+  0 => 'classuri',
+  1 => 'code',
+  2 => 'msg',
+  3 => 'data',
+  4 => 'url',
+  5 => 'wait',
+) ]
+[ info ] [ BEHAVIOR ] Run hook\FilterView @view_filter [ RunTime:0.000772s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-10-15T09:33:40+08:00 ] 101.91.62.65 GET /index/order/goods.html
+[ info ] wx.p-city.cn/index/order/goods.html [运行时间：0.036831s][吞吐率：27.15req/s] [内存消耗：2,199.79kb] [文件加载：50]
+[ info ] [ LANG ] D:\Program Files\web\pengcheng\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'order',
+    2 => 'goods',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => '',
+  'content-length' => '0',
+  'x-original-url' => '/index/order/goods.html',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.95 Safari/537.36 MicroMessenger/6.5.2.501 NetType/WIFI WindowsWechat QBCore/3.43.27.400 QQBrowser/9.0.2524.400',
+  'host' => 'wx.p-city.cn',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.6,en;q=0.4',
+  'accept' => '*/*',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ BEHAVIOR ] Run hook\AccessAuth @action_begin [ RunTime:0.000669s ]
+[ info ] [ RUN ] app\index\controller\Order->goods[ D:\Program Files\web\pengcheng\application\index\controller\Order.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] D:\Program Files\web\pengcheng\public/../application/extra\view\handler.jump.html [ array (
+  0 => 'classuri',
+  1 => 'code',
+  2 => 'msg',
+  3 => 'data',
+  4 => 'url',
+  5 => 'wait',
+) ]
+[ info ] [ BEHAVIOR ] Run hook\FilterView @view_filter [ RunTime:0.000691s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-10-15T09:35:25+08:00 ] 223.104.63.46 GET /index/user/goodsorder
+[ info ] wx.p-city.cn/index/user/goodsorder [运行时间：0.042168s][吞吐率：23.71req/s] [内存消耗：2,264.73kb] [文件加载：50]
+[ info ] [ LANG ] D:\Program Files\web\pengcheng\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'user',
+    2 => 'goodsorder',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => '',
+  'content-length' => '0',
+  'x-original-url' => '/index/user/goodsorder',
+  'x-forwarded-for-pound' => '223.104.63.46',
+  'x-forwarded-for' => '223.104.63.46',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 8.0; MI 5 Build/OPR1.170623.032; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/57.0.2987.132 MQQBrowser/6.2 TBS/044353 Mobile Safari/537.36 MicroMessenger/6.7.3.1360(0x26070333) NetType/4G Language/zh_CN Process/tools',
+  'referer' => 'http://wx.p-city.cn/index/order/goods.html',
+  'host' => 'wx.p-city.cn',
+  'cookie' => 'PHPSESSID=n3rs1lmoov1t1do688947qk2u0',
+  'accept-language' => 'zh-CN,en-US;q=0.8',
+  'accept-encoding' => 'gzip',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,image/wxpic,image/sharpp,image/apng,image/tpg,*/*;q=0.8',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ BEHAVIOR ] Run hook\AccessAuth @action_begin [ RunTime:0.000620s ]
+[ info ] [ RUN ] app\index\controller\User->goodsOrder[ D:\Program Files\web\pengcheng\application\index\controller\User.php ]
+[ info ] [ VIEW ] D:\Program Files\web\pengcheng\public/frontEnd/mobile/user\goods_order.html [ array (
+  0 => 'classuri',
+  1 => 'title',
+) ]
+[ info ] [ BEHAVIOR ] Run hook\FilterView @view_filter [ RunTime:0.000697s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-10-15T09:35:26+08:00 ] 223.104.63.46 GET /api/goodsorder/getList?status=0&page=1
+[ info ] wx.p-city.cn/api/goodsorder/getList?status=0&page=1 [运行时间：0.070192s][吞吐率：14.25req/s] [内存消耗：3,078.31kb] [文件加载：52]
+[ info ] [ LANG ] D:\Program Files\web\pengcheng\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'goodsorder',
+    2 => 'getList',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => '',
+  'content-length' => '0',
+  'x-original-url' => '/api/goodsorder/getList?status=0&page=1',
+  'x-requested-with' => 'XMLHttpRequest',
+  'x-forwarded-for-pound' => '223.104.63.46',
+  'x-forwarded-for' => '223.104.63.46',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 8.0; MI 5 Build/OPR1.170623.032; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/57.0.2987.132 MQQBrowser/6.2 TBS/044353 Mobile Safari/537.36 MicroMessenger/6.7.3.1360(0x26070333) NetType/4G Language/zh_CN Process/tools',
+  'referer' => 'http://wx.p-city.cn/index/user/goodsorder',
+  'host' => 'wx.p-city.cn',
+  'cookie' => 'PHPSESSID=n3rs1lmoov1t1do688947qk2u0',
+  'accept-language' => 'zh-CN,en-US;q=0.8',
+  'accept-encoding' => 'gzip',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+  'status' => '0',
+  'page' => '1',
+)
+[ info ] [ BEHAVIOR ] Run hook\AccessAuth @action_begin [ RunTime:0.004045s ]
+[ info ] [ RUN ] app\api\controller\Goodsorder->getList[ D:\Program Files\web\pengcheng\application\api\controller\Goodsorder.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-10-15T09:36:26+08:00 ] 61.151.178.236 GET /index/user/goodsorder
+[ info ] wx.p-city.cn/index/user/goodsorder [运行时间：0.038380s][吞吐率：26.06req/s] [内存消耗：2,262.38kb] [文件加载：50]
+[ info ] [ LANG ] D:\Program Files\web\pengcheng\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'user',
+    2 => 'goodsorder',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => '',
+  'content-length' => '0',
+  'x-original-url' => '/index/user/goodsorder',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 10_2_1 like Mac OS X) AppleWebKit/602.4.6 (KHTML, like Gecko) Mobile/14D27 MicroMessenger/6.5.5 NetType/WIFI Language/en',
+  'host' => 'wx.p-city.cn',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.6,en;q=0.4',
+  'accept' => '*/*',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ BEHAVIOR ] Run hook\AccessAuth @action_begin [ RunTime:0.000527s ]
+[ info ] [ RUN ] app\index\controller\User->goodsOrder[ D:\Program Files\web\pengcheng\application\index\controller\User.php ]
+[ info ] [ VIEW ] D:\Program Files\web\pengcheng\public/frontEnd/mobile/user\goods_order.html [ array (
+  0 => 'classuri',
+  1 => 'title',
+) ]
+[ info ] [ BEHAVIOR ] Run hook\FilterView @view_filter [ RunTime:0.000629s ]
+[ info ] [ LOG ] INIT File

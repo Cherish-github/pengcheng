@@ -1,0 +1,117 @@
+{include file="public/header"}
+
+<!--datetime-->
+<link href="__PLUGS__/datetime/date.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="__PLUGS__/datetime/date.js" ></script>
+<script type="text/javascript">
+    $(function(){
+        $('#beginTime').date();
+        $('.kbtn').date({theme:"datetime"});
+    });
+</script>
+
+<div class="filling0">
+    <div class="filling-top bgfff mt40">
+        {foreach $cart_goods as $c}
+        <div class="dinnerr6 disrow disju-sb">
+            <a class="dinnerr6-1"><img src="__IMAGES__/tu_a.png"/></a>
+            <div class="dinnerr6-2">
+                <a><h3 class="fs26 c3">{$c.title}</h3></a>
+                <div class="dinnerr6-3 disrow disju-sb">
+                    <div class="dinnerr6-4 fs26 hong">￥{$c.price | fmtPrice}</div>
+                    <div class="dinnerr6-5 disrow disju-c">
+                        × {$c.num}
+                    </div>
+                </div>
+            </div>
+        </div>
+        {/foreach}
+        <!--<div class="dinnerr6 disrow disju-sb">-->
+            <!--<a href="{:Url('Dinner/detail')}" class="dinnerr6-1"><img src="__IMAGES__/tu_a.png"/></a>-->
+            <!--<div class="dinnerr6-2">-->
+                <!--<a href="{:Url('Dinner/detail')}"><h3 class="fs26 c3">酱卤肘子</h3></a>-->
+                <!--<div class="dinnerr6-3 disrow disju-sb">-->
+                    <!--<div class="dinnerr6-4 fs26 hong">￥168</div>-->
+                    <!--<div class="dinnerr6-5 disrow disju-c">-->
+                        <!--× 1-->
+                    <!--</div>-->
+                <!--</div>-->
+            <!--</div>-->
+        <!--</div>-->
+    </div>
+    <div class="filling-top bgfff mt40">
+        <div class="filling-m3 disrow disju-sb">
+            <div class="filling-m31 fs28 c3 fw7">用餐日期</div>
+            <div class="filling-m32 fs28 c9 disrow" >
+                <div id="endTime" class="filling-m22 kbtn tc">请选择用餐日期</div>
+                <div class="filling-m33"><img src="__IMAGES__/icon_jt.png"/></div>
+            </div>
+        </div>
+        <div class="filling-m3 disrow disju-sb">
+            <div class="filling-m31 fs28 c3 fw7">用餐时间</div>
+            <div class="filling-m32 fs28 c9 disrow">
+                <div id="endTime2" class="filling-m22 kbtn tc">请选择用餐时间</div>
+                <div class="filling-m33"><img src="__IMAGES__/icon_jt.png"/></div>
+            </div>
+        </div>
+        <div class="filling-m4 disrow disju-sb">
+            <div class="filling-m31 fs28 c3 fw7">用餐人数</div>
+            <div class="filling-m32 fs28 c9">
+                <input type="number" name="people" min="1" placeholder="请输入用餐人数">
+            </div>
+        </div>
+    </div>
+
+
+    <div class="filling-top bgfff mt40">
+        <div class="filling-m3 disrow disju-sb">
+            <div class="filling-m31 fs28 c3 fw7">联系人</div>
+            <div class="filling-m32 fs28 c9"><input type="text" name="username" placeholder="请输入预订人真实姓名"></div>
+        </div>
+        <div class="filling-m4 disrow disju-sb">
+            <div class="filling-m31 fs28 c3 fw7">手机号</div>
+            <div class="filling-m32 fs28 c9"><input type="number" name="phone" maxlength="11" placeholder="请输入预订人手机号码"></div>
+        </div>
+    </div>
+    <a href="{:Url('index/user/coupon')}?way=1" class="filling-top bgfff mt40 disrow disju-sb">
+        <div class="filling-m1 fs28 c3 fw7">优惠券</div>
+        <div class="filling-m2 disrow">
+            <!--显示切换-->
+            {if $coupon_price}
+            <div class="filling-m22 fs28 hong tc">{$coupon_price | fmtPrice}元</div>
+            {else}
+            <div class="filling-m22 fs28 c9 tc">暂无优惠券</div>
+            {/if}
+            <div class="filling-m33"><img src="__IMAGES__/icon_jt.png"/></div>
+            <input type="hidden" name="uc_id" value="{$uc_id}">
+        </div>
+    </a>
+    <div class="filling-top bgfff mt40">
+        <div class="filling-m1 fs28 c3 fw7">备注</div>
+        <div class="beizhu fs28 c9">
+            <textarea name="remark" placeholder="请填写您的要求"></textarea>
+        </div>
+    </div>
+    <!--<div class="filling-top5">-->
+        <!--<div class="filling-m5">-->
+            <!--<h3 class="fs28 c6 mb10">退订规则：</h3>-->
+            <!--<p class="fs24 c9">-->
+                <!--&lt;!&ndash;订单下单成功将不可以取消退订；如未能如约入住，将收取全额的房费作为违约费用&ndash;&gt;-->
+
+            <!--</p>-->
+        <!--</div>-->
+        <!--<div class="filling-m5">-->
+            <!--<h3 class="fs28 c6 mb10">温馨提示：</h3>-->
+            <!--<p class="fs24 c9">-->
+                <!--&lt;!&ndash;订单下单成功将不可以取消退订；如未能如约入住，将收取全额的房费作为违约费用&ndash;&gt;-->
+
+            <!--</p>-->
+        <!--</div>-->
+    <!--</div>-->
+    <div class="reser4 tc mt30"><span class="fs28 cf pay">微信支付￥<i>{$amount | fmtPrice}</i></span></div>
+</div>
+
+<!--datetime-->
+<div id="datePlugin"></div>
+{include file="public/footer"}
+<script src="__JS__/goods_order_confirm.js"></script>

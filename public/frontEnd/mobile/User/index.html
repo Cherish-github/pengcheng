@@ -1,0 +1,45 @@
+{include file="public/header"}
+<div class="filling0">
+    <a href="{:Url('User/modify')}" class="user-top disrow disju-sb">
+        <div class="user-top1 fs32 c3 fw7"><img src="{$userInfo.avatarurl}"/>{$userInfo.nickname}</div>
+        <div class="user-top2"><img src="__IMAGES__/icon_jt.png"/></div>
+    </a>
+    <div class="filling-top bgfff mt30">
+        <div class="user1 fs28 c3 tc fw7">订房订单</div>
+        <div class="user2 disrow disju-c">
+            <a href="{:Url('User/roomOrder')}?type=0" class="user21 tc">
+                <div class="user21-1 tc"><img src="__IMAGES__/icon_qbdd_my.png"/></div>
+                <div class="user21-2 fs22 c6">全部订单</div>
+            </a>
+            <div class="user22"></div>
+            <a href="{:Url('User/roomOrder')}?type=1" class="user21 tc">
+                <div class="user21-3 tc"><img src="__IMAGES__/icon_drz_my.png"/></div>
+                <div class="user21-2 fs22 c6">待入住</div>
+            </a>
+        </div>
+    </div>
+    <div class="filling-top bgfff mt40">
+        <a href="{:Url('User/goodsOrder')}" class="disrow disju-sb">
+            <div class="filling-m1 fs28 c3 fw7">订餐订单</div>
+            <div class="filling-m2">
+                <div class="filling-m33"><img src="__IMAGES__/icon_jt.png"/></div>
+            </div>
+        </a>
+        <a href="{:Url('User/coupon')}" class="disrow disju-sb">
+            <div class="filling-m1 fs28 c3 fw7">优惠券</div>
+            <div class="filling-m2">
+                <div class="filling-m33"><img src="__IMAGES__/icon_jt.png"/></div>
+            </div>
+        </a>
+        <a href="{:Url('Index/member')}" class="disrow disju-sb">
+            <div class="filling-m1 fs28 c3 fw7">会员卡</div>
+            <div class="filling-m2">
+                <div class="filling-m33"><img src="__IMAGES__/icon_jt.png"/></div>
+            </div>
+        </a>
+    </div>
+</div>
+
+{include file="public/footernav"}
+{include file="public/footer"}
+

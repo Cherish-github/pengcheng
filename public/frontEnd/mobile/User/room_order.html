@@ -1,0 +1,43 @@
+{include file="public/header"}
+<style>
+    .roomtop1{
+        margin: 0 .33rem;
+    }
+</style>
+<div class="room0 pdlr30">
+    <div class="roomtop disrow">
+        <div class="roomtop1 {if $type==0}roomon{/if}" data-type="0">待付款</div>
+        <div class="roomtop1 {if $type==1}roomon{/if}" data-type="1">待入住</div>
+        <div class="roomtop1" data-type="2">待离店</div>
+        <div class="roomtop1" data-type="3">已完成</div>
+    </div>
+    <div class="roomcon">
+        <!--<div class="roomcon1 mt40">-->
+            <!--<div class="roomcon1-1 disrow disju-sb">-->
+                <!--<div class="roomcon1-2 fs28 c3 fw7">订单号  4420180829584</div>-->
+                <!--&lt;!&ndash;待付款、待入住、已完成&ndash;&gt;-->
+                <!--<div class="roomcon1-2 fs28 hong fw7">待付款</div>-->
+            <!--</div>-->
+            <!--<div class="roomcon1-3 disrow disju-sb">-->
+                <!--<div class="roomcon1-4 fs28 c3"><img src="__IMAGES__/icon_df_ckdd.png"/>标准单人间-A楼</div>-->
+                <!--<div class="roomcon1-8 fs28 c6">1间</div>-->
+            <!--</div>-->
+            <!--<div class="roomcon1-5 disrow disju-sb">-->
+                <!--<div class="roomcon1-4 fs28 c6">-->
+                    <!--<img src="__IMAGES__/icon_rili.png"/>入住:<span>2018-08-29</span> 离店:<span>2018-08-30</span></div>-->
+                <!--<div class="roomcon1-8 fs28 c6">共1晚</div>-->
+            <!--</div>-->
+            <!--<div class="roomcon1-6 disrow disju-sb">-->
+                <!--<div class="roomcon1-2 fs36 hong fw7">￥139   </div>-->
+                <!--<div class="disrow">-->
+                    <!--<div class="roomcon1-7 fs24 cf tc">去付款</div>-->
+                    <!--<div class="roomcon1-9 fs24 c9 tc">删除订单</div>-->
+                    <!--<div class="roomcon1-9 fs24 c9 tc">再订一次</div>-->
+                <!--</div>-->
+            <!--</div>-->
+        <!--</div>-->
+    </div>
+</div>
+{include file="public/footer"}
+<script src="__JS__/room_order.js"></script>
+

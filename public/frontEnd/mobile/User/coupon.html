@@ -1,0 +1,53 @@
+{include file="public/header"}
+<div class="coutop">
+    <ul class="clearfix">
+        <li><span class="on" data-type="1">待领取</span></li>
+        <li><span data-type="2">待使用</span></li>
+        <li><span data-type="3">已使用</span></li>
+        <li><span data-type="4">已过期</span></li>
+    </ul>
+</div>
+<div class="coucon">
+    <!--<div class="coucon1 disrow">-->
+        <!--<div class="coucon11 fs28 hong tc">￥<span class="fs49 fw7">20</span></div>-->
+        <!--<div class="coucon12">-->
+            <!--<div class="coucon12-1 fs28 c3">鹏城酒店专享</div>-->
+            <!--<div class="coucon12-1 fs24 c6">有效期：2018-11-31</div>-->
+        <!--</div>-->
+        <!--<div class="coucon13"><span class="coucon-sp1 fs24 cf tc">领取</span></div>-->
+    <!--</div>-->
+    <!--<div class="coucon1 disrow">-->
+        <!--<div class="coucon11 fs28 hong tc">￥<span class="fs49 fw7">20</span></div>-->
+        <!--<div class="coucon12">-->
+            <!--<div class="coucon12-1 fs28 c3">鹏城酒店专享</div>-->
+            <!--<div class="coucon12-1 fs24 c6">有效期：2018-11-31</div>-->
+        <!--</div>-->
+        <!--<div class="coucon13"><span class="coucon-sp1 fs24 cf tc">去使用</span></div>-->
+    <!--</div>-->
+    <!--<div class="coucon1 disrow">-->
+        <!--<div class="coucon11 fs28 hong tc">￥<span class="fs49 fw7">20</span></div>-->
+        <!--<div class="coucon12">-->
+            <!--<div class="coucon12-1 fs28 c3">鹏城酒店专享</div>-->
+            <!--<div class="coucon12-1 fs24 c6">有效期：2018-11-31</div>-->
+        <!--</div>-->
+        <!--<div class="coucon13"><span class="coucon-sp2 fs24 cf tc">已使用</span></div>-->
+    <!--</div>-->
+    <!--<div class="coucon1 disrow">-->
+        <!--<div class="coucon11 fs28 hong tc">￥<span class="fs49 fw7">20</span></div>-->
+        <!--<div class="coucon12">-->
+            <!--<div class="coucon12-1 fs28 c3">鹏城酒店专享</div>-->
+            <!--<div class="coucon12-1 fs24 c6">有效期：2018-11-31</div>-->
+        <!--</div>-->
+        <!--<div class="coucon13"><span class="coucon-sp2 fs24 cf tc">已过期</span></div>-->
+    <!--</div>-->
+</div>
+
+{include file="public/footer"}
+<script>
+    var way = {$way};
+    {if $way==2}
+    var room_id = {$room_id};
+    {/if}
+</script>
+<script src="__JS__/coupon.js?{:time()}"></script>
+

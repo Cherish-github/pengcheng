@@ -1,0 +1,12 @@
+---------------------------------------------------------------
+[ 2018-09-07T10:33:43+08:00 ] 127.0.0.1 GET /api/room/getList
+[ error ] [10501]SQLSTATE[42S22]: Column not found: 1054 Unknown column 'pt.title' in 'field list'[E:\wamp64\www\pengcheng\thinkphp\library\think\db\Connection.php:388]
+---------------------------------------------------------------
+[ 2018-09-07T14:41:42+08:00 ] 127.0.0.1 GET /api/user/couponList
+[ error ] [10501]SQLSTATE[42S22]: Column not found: 1054 Unknown column 'c.created_time' in 'order clause'[E:\wamp64\www\pengcheng\thinkphp\library\think\db\Connection.php:388]
+---------------------------------------------------------------
+[ 2018-09-07T15:55:13+08:00 ] 127.0.0.1 GET /api/roomorder/getList
+[ error ] [10501]SQLSTATE[42S02]: Base table or view not found: 1146 Table 'pengcheng.app_order_course' doesn't exist[E:\wamp64\www\pengcheng\thinkphp\library\think\db\Connection.php:388]
+---------------------------------------------------------------
+[ 2018-09-07T18:59:16+08:00 ] 0.0.0.0 GET /admin/roomorder/order_export.html?order_no=&title=&created_time=&start_date=
+[ error ] [1]Call to undefined function app\admin\controller\orderStatus()[E:\wamp64\www\pengcheng\application\admin\controller\Roomorder.php:208]

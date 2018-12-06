@@ -1,0 +1,63 @@
+---------------------------------------------------------------
+[ 2018-09-27T10:47:02+08:00 ] 119.137.54.178 GET /
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002409s ] mysql:host=122.114.216.78;port=3306;dbname=pengcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `web_content` [ RunTime:0.013124s ]
+[ sql ] [ SQL ] SELECT `content` FROM `web_content` WHERE  `call_id` IN (1,2) [ RunTime:0.000577s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `web_contact` [ RunTime:0.021066s ]
+[ sql ] [ SQL ] SELECT `phone` FROM `web_contact` [ RunTime:0.000466s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `app_banner` [ RunTime:0.012046s ]
+[ sql ] [ SQL ] SELECT `filename`,`title` FROM `app_banner` WHERE  `type` = 1 ORDER BY `sort` [ RunTime:0.000540s ]
+---------------------------------------------------------------
+[ 2018-09-27T10:52:50+08:00 ] 119.137.54.178 GET /admin/login.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002629s ] mysql:host=122.114.216.78;port=3306;dbname=pengcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_config` [ RunTime:0.025007s ]
+[ sql ] [ SQL ] SELECT * FROM `system_config` [ RunTime:0.000671s ]
+---------------------------------------------------------------
+[ 2018-09-27T10:53:03+08:00 ] 119.137.54.178 POST /admin/login.html?spm=
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011802s ] mysql:host=122.114.216.78;port=3306;dbname=pengcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_user` [ RunTime:0.026547s ]
+[ sql ] [ SQL ] SELECT * FROM `system_user` WHERE  `username` = 'admin' LIMIT 1 [ RunTime:0.000763s ]
+[ sql ] [ SQL ] UPDATE `system_user`  SET `login_at`=now(),`login_num`=login_num+1  WHERE  `id` = 10000 [ RunTime:0.023238s ]
+[ sql ] [ SQL ] SELECT * FROM `system_user` WHERE  `id` = 10000 LIMIT 1 [ RunTime:0.000632s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_auth` [ RunTime:0.023579s ]
+[ sql ] [ SQL ] SELECT `id` FROM `system_auth` WHERE  `id` IN (10000)  AND `status` = 1 [ RunTime:0.000610s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_auth_node` [ RunTime:0.021502s ]
+[ sql ] [ SQL ] SELECT `node` FROM `system_auth_node` WHERE  `auth` IN (10000) [ RunTime:0.000566s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_log` [ RunTime:0.017924s ]
+[ sql ] [ SQL ] INSERT INTO `system_log` (`ip` , `node` , `username` , `action` , `content`) VALUES ('119.137.54.178' , 'admin/login/index' , 'admin' , '系统管理' , '用户登录系统成功') [ RunTime:0.022797s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_menu` [ RunTime:0.019503s ]
+[ sql ] [ SQL ] SELECT `id`,`pid` FROM `system_menu` WHERE  (  url='@admin' or url='/admin/@admin' ) LIMIT 1 [ RunTime:0.000532s ]
+---------------------------------------------------------------
+[ 2018-09-27T10:53:03+08:00 ] 119.137.54.178 GET /admin.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.007108s ] mysql:host=122.114.216.78;port=3306;dbname=pengcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_user` [ RunTime:0.010422s ]
+[ sql ] [ SQL ] SELECT * FROM `system_user` WHERE  `id` = 10000 LIMIT 1 [ RunTime:0.000566s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_auth` [ RunTime:0.010857s ]
+[ sql ] [ SQL ] SELECT `id` FROM `system_auth` WHERE  `id` IN (10000)  AND `status` = 1 [ RunTime:0.000509s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_auth_node` [ RunTime:0.009742s ]
+[ sql ] [ SQL ] SELECT `node` FROM `system_auth_node` WHERE  `auth` IN (10000) [ RunTime:0.000544s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_menu` [ RunTime:0.009490s ]
+[ sql ] [ SQL ] SELECT * FROM `system_menu` WHERE  `status` = 1 ORDER BY sort asc,id asc [ RunTime:0.000743s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_config` [ RunTime:0.010376s ]
+[ sql ] [ SQL ] SELECT * FROM `system_config` [ RunTime:0.000561s ]
+---------------------------------------------------------------
+[ 2018-09-27T10:53:04+08:00 ] 119.137.54.178 GET /admin/room/index.html?spm=m-87-113
+[ sql ] [ DB ] CONNECT:[ UseTime:0.006833s ] mysql:host=122.114.216.78;port=3306;dbname=pengcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `app_room` [ RunTime:0.013438s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `app_room` `r` LEFT JOIN `app_room_people_type` `pt` ON `pt`.`id`=`r`.`people_type_id` LEFT JOIN `app_room_floor_type` `ft` ON `ft`.`id`=`r`.`floor_type_id` LIMIT 1 [ RunTime:0.003426s ]
+[ sql ] [ SQL ] SELECT `r`.*,pt.type p_type,ft.type f_type FROM `app_room` `r` LEFT JOIN `app_room_people_type` `pt` ON `pt`.`id`=`r`.`people_type_id` LEFT JOIN `app_room_floor_type` `ft` ON `ft`.`id`=`r`.`floor_type_id` ORDER BY sort asc,id desc LIMIT 0,20 [ RunTime:0.001098s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `app_room_people_type` [ RunTime:0.012267s ]
+[ sql ] [ SQL ] SELECT `id`,`type` FROM `app_room_people_type` [ RunTime:0.000433s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `app_room_floor_type` [ RunTime:0.010769s ]
+[ sql ] [ SQL ] SELECT `id`,`type` FROM `app_room_floor_type` [ RunTime:0.000370s ]
+---------------------------------------------------------------
+[ 2018-09-27T10:53:07+08:00 ] 119.137.54.178 GET /admin/index/main.html?spm=m-2-3
+[ sql ] [ DB ] CONNECT:[ UseTime:0.014624s ] mysql:host=122.114.216.78;port=3306;dbname=pengcheng;charset=utf8mb4
+[ sql ] [ SQL ] select version() as ver [ RunTime:0.000425s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_config` [ RunTime:0.012180s ]
+[ sql ] [ SQL ] SELECT * FROM `system_config` [ RunTime:0.000673s ]
+---------------------------------------------------------------
+[ 2018-09-27T10:53:17+08:00 ] 119.137.54.178 GET /admin/config/index.html?spm=m-2-5
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004273s ] mysql:host=122.114.216.78;port=3306;dbname=pengcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_config` [ RunTime:0.010683s ]
+[ sql ] [ SQL ] SELECT * FROM `system_config` [ RunTime:0.000538s ]

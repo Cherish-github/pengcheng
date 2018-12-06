@@ -1,0 +1,55 @@
+{extend name='extra@admin/content'}
+
+{block name="button"}
+
+<div class="nowrap pull-right" style="margin-top:10px">
+    <button data-modal='{:url("$classuri/add")}' data-title="添加优惠券" class='layui-btn layui-btn-small'><i
+            class='fa fa-plus'></i> 添加优惠券
+    </button>
+</div>
+{/block}
+
+{block name="content"}
+{if $list}
+
+<form onsubmit="return false;" data-auto="" method="POST">
+    <input type="hidden" value="resort" name="action"/>
+
+    <table class="table table-hover">
+        <thead>
+        <tr>
+            <th class='text-center'>标题</th>
+            <th class='text-center'>优惠金额</th>
+            <th class='text-center'>失效日期</th>
+            <th class='text-center'>添加日期</th>
+            <th class='text-center'>操作</th>
+        </tr>
+        </thead>
+        <tbody>
+        {foreach $list as $key=>$vo}
+        <tr>
+            <td class='text-center'>{$vo.title}</td>
+            <td class='text-center'>{$vo.cut_price | fmtPrice}</td>
+            <td class='text-center'>{$vo.deadline_date}</td>
+            <td class='text-center'>{$vo.created_time}</td>
+            <td class='text-center nowrap'>
+                {if auth("$classuri/edit")}
+                <span class="text-explode">|</span>
+                <a data-modal='{:url("$classuri/edit")}?id={$vo.id}' href="javascript:void(0)">修改</a>
+                {/if}
+                {if auth("$classuri/del")}
+                <span class="text-explode">|</span>
+                <a data-update="{$vo.id}" data-field='delete' data-action='{:url("$classuri/del")}'
+                   href="javascript:void(0)">删除</a>
+                {/if}
+            </td>
+        </tr>
+        {/foreach}
+        </tbody>
+    </table>
+    {if isset($page)}<p>{$page}</p>{/if}
+</form>
+{else}
+<p class="layui-elem-quote">您的列表暂时没有任何记录！</p>
+{/if}
+{/block}

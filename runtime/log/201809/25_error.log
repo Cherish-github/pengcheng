@@ -1,0 +1,18 @@
+---------------------------------------------------------------
+[ 2018-09-25T10:04:45+08:00 ] 119.137.53.19 POST /admin/goods/edit.html?id=24&spm=m-87-141&open_type=modal
+[ error ] [10501]SQLSTATE[22001]: String data, right truncated: 1406 Data too long for column 'detail_img' at row 1[D:\Program Files\web\pengcheng\thinkphp\library\think\db\Connection.php:456]
+---------------------------------------------------------------
+[ 2018-09-25T10:06:08+08:00 ] 119.137.53.19 POST /admin/goods/edit.html?id=24&spm=m-87-141&open_type=modal
+[ error ] [4]语法错误: unexpected '$imgs' (T_VARIABLE)[D:\Program Files\web\pengcheng\application\admin\controller\Goods.php:73]
+---------------------------------------------------------------
+[ 2018-09-25T10:23:37+08:00 ] 119.137.53.19 GET /admin/roomorder/index.html?openid=oRdsI0ZV9g39sUx6gM0Qp-AWFm7k&spm=m-87-137
+[ error ] [10501]SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'openid' in where clause is ambiguous[D:\Program Files\web\pengcheng\thinkphp\library\think\db\Connection.php:388]
+---------------------------------------------------------------
+[ 2018-09-25T10:36:07+08:00 ] 119.137.53.19 GET /admin/goodsorder/index.html?openid=oRdsI0ZV9g39sUx6gM0Qp-AWFm7k&spm=m-87-144
+[ error ] [10501]SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'openid' in where clause is ambiguous[D:\Program Files\web\pengcheng\thinkphp\library\think\db\Connection.php:388]
+---------------------------------------------------------------
+[ 2018-09-25T14:15:49+08:00 ] 119.137.53.19 GET /admin/coupon/index.html?spm=m-87-145
+[ error ] [8]未定义数组索引: created_time[D:\Program Files\web\pengcheng\runtime\temp\290a9ff63a078bfda5dc07a8164ccf73.php:46]
+---------------------------------------------------------------
+[ 2018-09-25T14:16:00+08:00 ] 119.137.53.19 GET /admin/coupon/index.html?spm=m-87-145
+[ error ] [8]未定义数组索引: create_time[D:\Program Files\web\pengcheng\runtime\temp\290a9ff63a078bfda5dc07a8164ccf73.php:46]

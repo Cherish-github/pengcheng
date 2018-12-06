@@ -1,0 +1,112 @@
+---------------------------------------------------------------
+[ 2018-09-14T11:22:31+08:00 ] 119.137.54.152 GET /
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002257s ] mysql:host=122.114.216.78;port=3306;dbname=pengcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `web_content` [ RunTime:0.011779s ]
+[ sql ] [ SQL ] SELECT `content` FROM `web_content` WHERE  `call_id` IN (1,2) [ RunTime:0.000609s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `web_contact` [ RunTime:0.011281s ]
+[ sql ] [ SQL ] SELECT `phone` FROM `web_contact` [ RunTime:0.006282s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `app_banner` [ RunTime:0.011426s ]
+[ sql ] [ SQL ] SELECT `filename`,`title` FROM `app_banner` WHERE  `type` = 1 ORDER BY `sort` [ RunTime:0.000592s ]
+---------------------------------------------------------------
+[ 2018-09-14T11:22:37+08:00 ] 119.137.54.152 GET /
+[ sql ] [ DB ] CONNECT:[ UseTime:0.005765s ] mysql:host=122.114.216.78;port=3306;dbname=pengcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `web_content` [ RunTime:0.011496s ]
+[ sql ] [ SQL ] SELECT `content` FROM `web_content` WHERE  `call_id` IN (1,2) [ RunTime:0.000509s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `web_contact` [ RunTime:0.010238s ]
+[ sql ] [ SQL ] SELECT `phone` FROM `web_contact` [ RunTime:0.000359s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `app_banner` [ RunTime:0.010910s ]
+[ sql ] [ SQL ] SELECT `filename`,`title` FROM `app_banner` WHERE  `type` = 1 ORDER BY `sort` [ RunTime:0.000446s ]
+---------------------------------------------------------------
+[ 2018-09-14T11:22:38+08:00 ] 119.137.54.152 GET /
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015013s ] mysql:host=122.114.216.78;port=3306;dbname=pengcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `web_content` [ RunTime:0.011983s ]
+[ sql ] [ SQL ] SELECT `content` FROM `web_content` WHERE  `call_id` IN (1,2) [ RunTime:0.000527s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `web_contact` [ RunTime:0.010994s ]
+[ sql ] [ SQL ] SELECT `phone` FROM `web_contact` [ RunTime:0.000472s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `app_banner` [ RunTime:0.011622s ]
+[ sql ] [ SQL ] SELECT `filename`,`title` FROM `app_banner` WHERE  `type` = 1 ORDER BY `sort` [ RunTime:0.000603s ]
+---------------------------------------------------------------
+[ 2018-09-14T11:22:38+08:00 ] 119.137.54.152 GET /
+[ sql ] [ DB ] CONNECT:[ UseTime:0.008054s ] mysql:host=122.114.216.78;port=3306;dbname=pengcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `web_content` [ RunTime:0.013087s ]
+[ sql ] [ SQL ] SELECT `content` FROM `web_content` WHERE  `call_id` IN (1,2) [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `web_contact` [ RunTime:0.011165s ]
+[ sql ] [ SQL ] SELECT `phone` FROM `web_contact` [ RunTime:0.000481s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `app_banner` [ RunTime:0.010695s ]
+[ sql ] [ SQL ] SELECT `filename`,`title` FROM `app_banner` WHERE  `type` = 1 ORDER BY `sort` [ RunTime:0.000534s ]
+---------------------------------------------------------------
+[ 2018-09-14T11:22:38+08:00 ] 119.137.54.152 GET /
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004249s ] mysql:host=122.114.216.78;port=3306;dbname=pengcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `web_content` [ RunTime:0.011096s ]
+[ sql ] [ SQL ] SELECT `content` FROM `web_content` WHERE  `call_id` IN (1,2) [ RunTime:0.000568s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `web_contact` [ RunTime:0.012166s ]
+[ sql ] [ SQL ] SELECT `phone` FROM `web_contact` [ RunTime:0.001469s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `app_banner` [ RunTime:0.018183s ]
+[ sql ] [ SQL ] SELECT `filename`,`title` FROM `app_banner` WHERE  `type` = 1 ORDER BY `sort` [ RunTime:0.000602s ]
+---------------------------------------------------------------
+[ 2018-09-14T11:23:30+08:00 ] 101.91.60.108 GET /
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010579s ] mysql:host=122.114.216.78;port=3306;dbname=pengcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `web_content` [ RunTime:0.011671s ]
+[ sql ] [ SQL ] SELECT `content` FROM `web_content` WHERE  `call_id` IN (1,2) [ RunTime:0.000522s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `web_contact` [ RunTime:0.010696s ]
+[ sql ] [ SQL ] SELECT `phone` FROM `web_contact` [ RunTime:0.000479s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `app_banner` [ RunTime:0.012271s ]
+[ sql ] [ SQL ] SELECT `filename`,`title` FROM `app_banner` WHERE  `type` = 1 ORDER BY `sort` [ RunTime:0.000588s ]
+---------------------------------------------------------------
+[ 2018-09-14T11:43:07+08:00 ] 119.137.52.86 GET /index/room/index.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003143s ] mysql:host=122.114.216.78;port=3306;dbname=pengcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `app_banner` [ RunTime:0.011399s ]
+[ sql ] [ SQL ] SELECT `filename` FROM `app_banner` WHERE  `type` = 2 ORDER BY `sort` [ RunTime:0.000685s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `app_room` [ RunTime:0.011340s ]
+[ sql ] [ SQL ] SELECT `r`.`id`,`r`.`price`,`r`.`thumb`,`r`.`num`,pt.type pt_type,ft.type ft_type FROM `app_room` `r` LEFT JOIN `app_room_people_type` `pt` ON `pt`.`id`=`r`.`people_type_id` LEFT JOIN `app_room_floor_type` `ft` ON `ft`.`id`=`r`.`floor_type_id` WHERE  `r`.`is_show` = 1 [ RunTime:0.000683s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `app_room_order` [ RunTime:0.010887s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `app_room_order` `o` LEFT JOIN `app_order_room` `r` ON `r`.`order_id`=`o`.`id` WHERE  `o`.`status` IN (1,2)  AND `r`.`room_id` = 18  AND `o`.`openid` = 'oRdsI0ZV9g39sUx6gM0Qp-AWFm7k' LIMIT 1 [ RunTime:0.011213s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `app_room_order` `o` LEFT JOIN `app_order_room` `r` ON `r`.`order_id`=`o`.`id` WHERE  `o`.`status` IN (1,2)  AND `r`.`room_id` = 19  AND `o`.`openid` = 'oRdsI0ZV9g39sUx6gM0Qp-AWFm7k' LIMIT 1 [ RunTime:0.000656s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `app_room_order` `o` LEFT JOIN `app_order_room` `r` ON `r`.`order_id`=`o`.`id` WHERE  `o`.`status` IN (1,2)  AND `r`.`room_id` = 20  AND `o`.`openid` = 'oRdsI0ZV9g39sUx6gM0Qp-AWFm7k' LIMIT 1 [ RunTime:0.000466s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `app_room_order` `o` LEFT JOIN `app_order_room` `r` ON `r`.`order_id`=`o`.`id` WHERE  `o`.`status` IN (1,2)  AND `r`.`room_id` = 21  AND `o`.`openid` = 'oRdsI0ZV9g39sUx6gM0Qp-AWFm7k' LIMIT 1 [ RunTime:0.000449s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `app_room_order` `o` LEFT JOIN `app_order_room` `r` ON `r`.`order_id`=`o`.`id` WHERE  `o`.`status` IN (1,2)  AND `r`.`room_id` = 22  AND `o`.`openid` = 'oRdsI0ZV9g39sUx6gM0Qp-AWFm7k' LIMIT 1 [ RunTime:0.000390s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `app_room_order` `o` LEFT JOIN `app_order_room` `r` ON `r`.`order_id`=`o`.`id` WHERE  `o`.`status` IN (1,2)  AND `r`.`room_id` = 23  AND `o`.`openid` = 'oRdsI0ZV9g39sUx6gM0Qp-AWFm7k' LIMIT 1 [ RunTime:0.000429s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `app_room_order` `o` LEFT JOIN `app_order_room` `r` ON `r`.`order_id`=`o`.`id` WHERE  `o`.`status` IN (1,2)  AND `r`.`room_id` = 25  AND `o`.`openid` = 'oRdsI0ZV9g39sUx6gM0Qp-AWFm7k' LIMIT 1 [ RunTime:0.000404s ]
+---------------------------------------------------------------
+[ 2018-09-14T11:43:18+08:00 ] 119.137.52.86 GET /index/room/detail.html?id=18
+[ sql ] [ DB ] CONNECT:[ UseTime:0.007297s ] mysql:host=122.114.216.78;port=3306;dbname=pengcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `app_room` [ RunTime:0.011382s ]
+[ sql ] [ SQL ] SELECT `r`.`id`,`r`.`price`,`r`.`detail_img`,`r`.`intro`,`r`.`num`,pt.type pt_type,ft.type ft_type FROM `app_room` `r` LEFT JOIN `app_room_people_type` `pt` ON `pt`.`id`=`r`.`people_type_id` LEFT JOIN `app_room_floor_type` `ft` ON `ft`.`id`=`r`.`floor_type_id` WHERE  `r`.`is_show` = 1  AND `r`.`id` = 18 LIMIT 1 [ RunTime:0.000727s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `app_room_order` [ RunTime:0.012442s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `app_room_order` `o` LEFT JOIN `app_order_room` `r` ON `r`.`order_id`=`o`.`id` WHERE  `o`.`status` IN (1,2)  AND `r`.`room_id` = 18  AND `o`.`openid` = 'oRdsI0ZV9g39sUx6gM0Qp-AWFm7k' LIMIT 1 [ RunTime:0.000770s ]
+---------------------------------------------------------------
+[ 2018-09-14T11:43:22+08:00 ] 119.137.52.86 GET /index/room/detail.html?id=18
+[ sql ] [ DB ] CONNECT:[ UseTime:0.009878s ] mysql:host=122.114.216.78;port=3306;dbname=pengcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `app_room` [ RunTime:0.013186s ]
+[ sql ] [ SQL ] SELECT `r`.`id`,`r`.`price`,`r`.`detail_img`,`r`.`intro`,`r`.`num`,pt.type pt_type,ft.type ft_type FROM `app_room` `r` LEFT JOIN `app_room_people_type` `pt` ON `pt`.`id`=`r`.`people_type_id` LEFT JOIN `app_room_floor_type` `ft` ON `ft`.`id`=`r`.`floor_type_id` WHERE  `r`.`is_show` = 1  AND `r`.`id` = 18 LIMIT 1 [ RunTime:0.000655s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `app_room_order` [ RunTime:0.010758s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `app_room_order` `o` LEFT JOIN `app_order_room` `r` ON `r`.`order_id`=`o`.`id` WHERE  `o`.`status` IN (1,2)  AND `r`.`room_id` = 18  AND `o`.`openid` = 'oRdsI0ZV9g39sUx6gM0Qp-AWFm7k' LIMIT 1 [ RunTime:0.000577s ]
+---------------------------------------------------------------
+[ 2018-09-14T11:44:07+08:00 ] 101.91.60.104 GET /index/room/index.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.014465s ] mysql:host=122.114.216.78;port=3306;dbname=pengcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `app_banner` [ RunTime:0.012599s ]
+[ sql ] [ SQL ] SELECT `filename` FROM `app_banner` WHERE  `type` = 2 ORDER BY `sort` [ RunTime:0.000523s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `app_room` [ RunTime:0.012047s ]
+[ sql ] [ SQL ] SELECT `r`.`id`,`r`.`price`,`r`.`thumb`,`r`.`num`,pt.type pt_type,ft.type ft_type FROM `app_room` `r` LEFT JOIN `app_room_people_type` `pt` ON `pt`.`id`=`r`.`people_type_id` LEFT JOIN `app_room_floor_type` `ft` ON `ft`.`id`=`r`.`floor_type_id` WHERE  `r`.`is_show` = 1 [ RunTime:0.000743s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `app_room_order` [ RunTime:0.012027s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `app_room_order` `o` LEFT JOIN `app_order_room` `r` ON `r`.`order_id`=`o`.`id` WHERE  `o`.`status` IN (1,2)  AND `r`.`room_id` = 18  AND `o`.`openid` IS NULL LIMIT 1 [ RunTime:0.000547s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `app_room_order` `o` LEFT JOIN `app_order_room` `r` ON `r`.`order_id`=`o`.`id` WHERE  `o`.`status` IN (1,2)  AND `r`.`room_id` = 19  AND `o`.`openid` IS NULL LIMIT 1 [ RunTime:0.000439s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `app_room_order` `o` LEFT JOIN `app_order_room` `r` ON `r`.`order_id`=`o`.`id` WHERE  `o`.`status` IN (1,2)  AND `r`.`room_id` = 20  AND `o`.`openid` IS NULL LIMIT 1 [ RunTime:0.000311s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `app_room_order` `o` LEFT JOIN `app_order_room` `r` ON `r`.`order_id`=`o`.`id` WHERE  `o`.`status` IN (1,2)  AND `r`.`room_id` = 21  AND `o`.`openid` IS NULL LIMIT 1 [ RunTime:0.000311s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `app_room_order` `o` LEFT JOIN `app_order_room` `r` ON `r`.`order_id`=`o`.`id` WHERE  `o`.`status` IN (1,2)  AND `r`.`room_id` = 22  AND `o`.`openid` IS NULL LIMIT 1 [ RunTime:0.000312s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `app_room_order` `o` LEFT JOIN `app_order_room` `r` ON `r`.`order_id`=`o`.`id` WHERE  `o`.`status` IN (1,2)  AND `r`.`room_id` = 23  AND `o`.`openid` IS NULL LIMIT 1 [ RunTime:0.000291s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `app_room_order` `o` LEFT JOIN `app_order_room` `r` ON `r`.`order_id`=`o`.`id` WHERE  `o`.`status` IN (1,2)  AND `r`.`room_id` = 25  AND `o`.`openid` IS NULL LIMIT 1 [ RunTime:0.000429s ]
+---------------------------------------------------------------
+[ 2018-09-14T11:48:20+08:00 ] 101.89.239.232 GET /index/room/detail.html?id=18
+[ sql ] [ DB ] CONNECT:[ UseTime:0.005229s ] mysql:host=122.114.216.78;port=3306;dbname=pengcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `app_room` [ RunTime:0.015436s ]
+[ sql ] [ SQL ] SELECT `r`.`id`,`r`.`price`,`r`.`detail_img`,`r`.`intro`,`r`.`num`,pt.type pt_type,ft.type ft_type FROM `app_room` `r` LEFT JOIN `app_room_people_type` `pt` ON `pt`.`id`=`r`.`people_type_id` LEFT JOIN `app_room_floor_type` `ft` ON `ft`.`id`=`r`.`floor_type_id` WHERE  `r`.`is_show` = 1  AND `r`.`id` = 18 LIMIT 1 [ RunTime:0.000752s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `app_room_order` [ RunTime:0.014263s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `app_room_order` `o` LEFT JOIN `app_order_room` `r` ON `r`.`order_id`=`o`.`id` WHERE  `o`.`status` IN (1,2)  AND `r`.`room_id` = 18  AND `o`.`openid` IS NULL LIMIT 1 [ RunTime:0.000499s ]
+---------------------------------------------------------------
+[ 2018-09-14T15:25:55+08:00 ] 119.137.52.86 GET /index/room/detail.html?id=18
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002234s ] mysql:host=122.114.216.78;port=3306;dbname=pengcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `app_room` [ RunTime:0.011277s ]
+[ sql ] [ SQL ] SELECT `r`.`id`,`r`.`price`,`r`.`detail_img`,`r`.`intro`,`r`.`num`,pt.type pt_type,ft.type ft_type FROM `app_room` `r` LEFT JOIN `app_room_people_type` `pt` ON `pt`.`id`=`r`.`people_type_id` LEFT JOIN `app_room_floor_type` `ft` ON `ft`.`id`=`r`.`floor_type_id` WHERE  `r`.`is_show` = 1  AND `r`.`id` = 18 LIMIT 1 [ RunTime:0.000891s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `app_room_order` [ RunTime:0.010627s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `app_room_order` `o` LEFT JOIN `app_order_room` `r` ON `r`.`order_id`=`o`.`id` WHERE  `o`.`status` IN (1,2)  AND `r`.`room_id` = 18  AND `o`.`openid` IS NULL LIMIT 1 [ RunTime:0.000453s ]

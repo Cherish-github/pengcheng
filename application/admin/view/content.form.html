@@ -1,0 +1,44 @@
+<!--<script src="__PUBLIC__/static/plugs/ueditor/ueditor.js"></script>-->
+<form class="layui-form layui-box" style='padding:25px 30px 20px 0;height:600px' action="__SELF__" data-auto="true" method="post">
+
+    <div class="layui-form-item">
+        <label class="layui-form-label">常态名称</label>
+        <div class="layui-input-block">
+            <input type="text" name="title" value='{$vo.title|default=""}' required="required" title="请输入常态名称" placeholder="请输入常态名称" class="layui-input">
+        </div>
+    </div>
+
+    {if isset($vo.call_id) && $vo.call_id>0}
+    <div class="layui-form-item">
+        <label class="layui-form-label">调用ID</label>
+        <div class="layui-input-block">
+            <input type="number" name="call_id" value='{$vo.call_id|default=""}' size="20" readonly title="" placeholder="不能重复,不要随意修改" class="layui-input">
+        </div>
+        <span style="color: red;">请勿随意改动调用ID</span>
+    </div>
+    {/if}
+
+
+    <div class="layui-form-item">
+        <label for="content" class="layui-form-label">内容详情</label>
+        <div class="layui-input-block">
+            <textarea name="content" id="content" >{$vo.content|default=""}</textarea>
+        </div>
+    </div>
+
+    <div class="hr-line-dashed"></div>
+
+    <div class="layui-form-item text-center">
+        {if isset($vo['id'])}<input type='hidden' value='{$vo.id}' name='id'/>{/if}
+        <button class="layui-btn" type='submit'>保存数据</button>
+        <button class="layui-btn layui-btn-danger" type='button' data-confirm="确定要取消编辑吗？" data-close>取消编辑</button>
+    </div>
+</form>
+<script>
+    require(['ueditor'], function () {
+        /*! 实例富文本编辑器  */
+        var editor;
+        /*! 默认编辑第一篇图文 */
+        editor = window.createEditor('[name="content"]', 'basic');
+    })
+</script>

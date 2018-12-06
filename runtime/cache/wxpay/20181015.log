@@ -1,0 +1,19 @@
+[2018/10/15 09:33:24] MSG - wx75e3e6e9c127d509 - Payment notification signature verification success.array (
+  'appid' => 'wx75e3e6e9c127d509',
+  'bank_type' => 'CFT',
+  'cash_fee' => '1',
+  'fee_type' => 'CNY',
+  'is_subscribe' => 'Y',
+  'mch_id' => '1238127002',
+  'nonce_str' => '5lfz68xwc7b1s1ik7g644ayblm1yy7uf',
+  'openid' => 'otuUIuA7qA9FFwjBc4wid98ioLq4',
+  'out_trade_no' => '20181015093313414895',
+  'result_code' => 'SUCCESS',
+  'return_code' => 'SUCCESS',
+  'sign' => '8104DD23240319E569EA70CD751C84E2',
+  'time_end' => '20181015093352',
+  'total_fee' => '1',
+  'trade_type' => 'JSAPI',
+  'transaction_id' => '4200000174201810151550295707',
+)
+[2018/10/15 09:33:24] MSG - wx75e3e6e9c127d509 - Get New AccessToken Success.

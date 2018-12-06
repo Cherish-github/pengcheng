@@ -1,0 +1,11 @@
+$(function(){
+    $(".indabout3").click(function(){
+        if($(this).siblings(".indabout2").hasClass('indabout2on')){
+            $(this).siblings(".indabout2").removeClass('indabout2on')
+            $(this).children('span').text("展开")
+        }else{
+            $(this).siblings(".indabout2").addClass('indabout2on')
+            $(this).children('span').text("收起")
+        }
+    })
+})

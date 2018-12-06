@@ -1,0 +1,1558 @@
+---------------------------------------------------------------
+[ 2018-10-22T15:26:21+08:00 ] 112.97.63.85 GET /
+[ info ] wx.p-city.cn/ [运行时间：0.093850s][吞吐率：10.66req/s] [内存消耗：3,254.98kb] [文件加载：56]
+[ info ] [ LANG ] D:\Program Files\web\pengcheng\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => '',
+  'content-length' => '0',
+  'x-forwarded-for-pound' => '112.97.63.85',
+  'x-forwarded-for' => '112.97.63.85',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 8.0; BKL-AL00 Build/HUAWEIBKL-AL00; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/57.0.2987.132 MQQBrowser/6.2 TBS/044306 Mobile Safari/537.36 MicroMessenger/6.7.3.1360(0x26070336) NetType/4G Language/zh_CN Process/tools',
+  'host' => 'wx.p-city.cn',
+  'accept-language' => 'zh-CN,zh-CN;q=0.8,en-US;q=0.6',
+  'accept-encoding' => 'gzip',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,image/wxpic,image/sharpp,image/apng,image/tpg,*/*;q=0.8',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-10-22T15:26:23+08:00 ] 112.97.63.85 GET /index/index/index.html?code=021T0TGR1WNXz81wnEJR10lLGR1T0TGx&state=
+[ info ] wx.p-city.cn/index/index/index.html?code=021T0TGR1WNXz81wnEJR10lLGR1T0TGx&state= [运行时间：1.066905s][吞吐率：0.94req/s] [内存消耗：3,396.51kb] [文件加载：62]
+[ info ] [ LANG ] D:\Program Files\web\pengcheng\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => '',
+  'content-length' => '0',
+  'x-original-url' => '/index/index/index.html?code=021T0TGR1WNXz81wnEJR10lLGR1T0TGx&state=',
+  'x-forwarded-for-pound' => '112.97.63.85',
+  'x-forwarded-for' => '112.97.63.85',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 8.0; BKL-AL00 Build/HUAWEIBKL-AL00; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/57.0.2987.132 MQQBrowser/6.2 TBS/044306 Mobile Safari/537.36 MicroMessenger/6.7.3.1360(0x26070336) NetType/4G Language/zh_CN Process/tools',
+  'host' => 'wx.p-city.cn',
+  'cookie' => 'PHPSESSID=a28sr57n696rhpfoloka4bee62',
+  'accept-language' => 'zh-CN,zh-CN;q=0.8,en-US;q=0.6',
+  'accept-encoding' => 'gzip',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,image/wxpic,image/sharpp,image/apng,image/tpg,*/*;q=0.8',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+  'code' => '021T0TGR1WNXz81wnEJR10lLGR1T0TGx',
+  'state' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run hook\AccessAuth @action_begin [ RunTime:0.000899s ]
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\Program Files\web\pengcheng\application\index\controller\Index.php ]
+[ info ] [ VIEW ] D:\Program Files\web\pengcheng\public/frontEnd/mobile/index\index.html [ array (
+  0 => 'classuri',
+  1 => 'speaking',
+  2 => 'desc',
+  3 => 'contact',
+  4 => 'banners',
+  5 => 'title',
+) ]
+[ info ] [ BEHAVIOR ] Run hook\FilterView @view_filter [ RunTime:0.000805s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-10-22T15:26:26+08:00 ] 112.97.59.85 GET /favicon.ico
+[ info ] wx.p-city.cn/favicon.ico [运行时间：0.029225s][吞吐率：34.22req/s] [内存消耗：1,789.98kb] [文件加载：39]
+[ info ] [ LANG ] D:\Program Files\web\pengcheng\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'favicon.ico',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => '',
+  'content-length' => '0',
+  'x-original-url' => '/favicon.ico',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 8.0; BKL-AL00 Build/HUAWEIBKL-AL00; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/57.0.2987.132 MQQBrowser/6.2 TBS/044306 Mobile Safari/537.36 MicroMessenger/6.7.3.1360(0x26070336) NetType/4G Language/zh_CN Process/tools',
+  'referer' => 'http://wx.p-city.cn/index/index/index.html?code=021T0TGR1WNXz81wnEJR10lLGR1T0TGx&state=',
+  'host' => 'wx.p-city.cn',
+  'cookie' => 'PHPSESSID=a28sr57n696rhpfoloka4bee62',
+  'accept-language' => 'zh-CN,zh-CN;q=0.8,en-US;q=0.6',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'image/webp,image/wxpic,image/sharpp,image/apng,image/tpg,image/*,*/*;q=0.8',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-10-22T15:26:43+08:00 ] 112.97.63.85 GET /index/room/index.html
+[ info ] wx.p-city.cn/index/room/index.html [运行时间：0.180879s][吞吐率：5.53req/s] [内存消耗：3,205.30kb] [文件加载：56]
+[ info ] [ LANG ] D:\Program Files\web\pengcheng\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'room',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => '',
+  'content-length' => '0',
+  'x-original-url' => '/index/room/index.html',
+  'x-forwarded-for-pound' => '112.97.63.85',
+  'x-forwarded-for' => '112.97.63.85',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 8.0; BKL-AL00 Build/HUAWEIBKL-AL00; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/57.0.2987.132 MQQBrowser/6.2 TBS/044306 Mobile Safari/537.36 MicroMessenger/6.7.3.1360(0x26070336) NetType/4G Language/zh_CN Process/tools',
+  'referer' => 'http://wx.p-city.cn/index/index/index.html?code=021T0TGR1WNXz81wnEJR10lLGR1T0TGx&state=',
+  'host' => 'wx.p-city.cn',
+  'cookie' => 'PHPSESSID=a28sr57n696rhpfoloka4bee62',
+  'accept-language' => 'zh-CN,zh-CN;q=0.8,en-US;q=0.6',
+  'accept-encoding' => 'gzip',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,image/wxpic,image/sharpp,image/apng,image/tpg,*/*;q=0.8',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ BEHAVIOR ] Run hook\AccessAuth @action_begin [ RunTime:0.000682s ]
+[ info ] [ RUN ] app\index\controller\Room->index[ D:\Program Files\web\pengcheng\application\index\controller\Room.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\Program Files\web\pengcheng\public/frontEnd/mobile/room\index.html [ array (
+  0 => 'classuri',
+  1 => 'banners',
+  2 => 'phone',
+  3 => 'rooms',
+  4 => 'title',
+) ]
+[ info ] [ BEHAVIOR ] Run hook\FilterView @view_filter [ RunTime:0.000827s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-10-22T15:26:44+08:00 ] 112.97.63.85 GET /index/room/index.html
+[ info ] wx.p-city.cn/index/room/index.html [运行时间：0.107465s][吞吐率：9.31req/s] [内存消耗：3,205.28kb] [文件加载：56]
+[ info ] [ LANG ] D:\Program Files\web\pengcheng\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'room',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => '',
+  'content-length' => '0',
+  'x-original-url' => '/index/room/index.html',
+  'x-forwarded-for-pound' => '112.97.63.85',
+  'x-forwarded-for' => '112.97.63.85',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 8.0; BKL-AL00 Build/HUAWEIBKL-AL00; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/57.0.2987.132 MQQBrowser/6.2 TBS/044306 Mobile Safari/537.36 MicroMessenger/6.7.3.1360(0x26070336) NetType/4G Language/zh_CN Process/tools',
+  'referer' => 'http://wx.p-city.cn/index/room/index.html',
+  'host' => 'wx.p-city.cn',
+  'cookie' => 'PHPSESSID=a28sr57n696rhpfoloka4bee62',
+  'accept-language' => 'zh-CN,zh-CN;q=0.8,en-US;q=0.6',
+  'accept-encoding' => 'gzip',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,image/wxpic,image/sharpp,image/apng,image/tpg,*/*;q=0.8',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ BEHAVIOR ] Run hook\AccessAuth @action_begin [ RunTime:0.000655s ]
+[ info ] [ RUN ] app\index\controller\Room->index[ D:\Program Files\web\pengcheng\application\index\controller\Room.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\Program Files\web\pengcheng\public/frontEnd/mobile/room\index.html [ array (
+  0 => 'classuri',
+  1 => 'banners',
+  2 => 'phone',
+  3 => 'rooms',
+  4 => 'title',
+) ]
+[ info ] [ BEHAVIOR ] Run hook\FilterView @view_filter [ RunTime:0.000746s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-10-22T15:26:53+08:00 ] 112.97.63.85 GET /index/room/detail.html?id=18
+[ info ] wx.p-city.cn/index/room/detail.html?id=18 [运行时间：0.110842s][吞吐率：9.02req/s] [内存消耗：3,179.78kb] [文件加载：56]
+[ info ] [ LANG ] D:\Program Files\web\pengcheng\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'room',
+    2 => 'detail',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => '',
+  'content-length' => '0',
+  'x-original-url' => '/index/room/detail.html?id=18',
+  'x-forwarded-for-pound' => '112.97.63.85',
+  'x-forwarded-for' => '112.97.63.85',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 8.0; BKL-AL00 Build/HUAWEIBKL-AL00; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/57.0.2987.132 MQQBrowser/6.2 TBS/044306 Mobile Safari/537.36 MicroMessenger/6.7.3.1360(0x26070336) NetType/4G Language/zh_CN Process/tools',
+  'referer' => 'http://wx.p-city.cn/index/room/index.html',
+  'host' => 'wx.p-city.cn',
+  'cookie' => 'PHPSESSID=a28sr57n696rhpfoloka4bee62',
+  'accept-language' => 'zh-CN,zh-CN;q=0.8,en-US;q=0.6',
+  'accept-encoding' => 'gzip',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,image/wxpic,image/sharpp,image/apng,image/tpg,*/*;q=0.8',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+  'id' => '18',
+)
+[ info ] [ BEHAVIOR ] Run hook\AccessAuth @action_begin [ RunTime:0.000900s ]
+[ info ] [ RUN ] app\index\controller\Room->detail[ D:\Program Files\web\pengcheng\application\index\controller\Room.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\Program Files\web\pengcheng\public/frontEnd/mobile/room\detail.html [ array (
+  0 => 'classuri',
+  1 => 'detail',
+  2 => 'title',
+) ]
+[ info ] [ BEHAVIOR ] Run hook\FilterView @view_filter [ RunTime:0.001668s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-10-22T15:26:58+08:00 ] 112.97.63.85 GET /index/room/index.html
+[ info ] wx.p-city.cn/index/room/index.html [运行时间：0.107494s][吞吐率：9.30req/s] [内存消耗：3,205.28kb] [文件加载：56]
+[ info ] [ LANG ] D:\Program Files\web\pengcheng\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'room',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => '',
+  'content-length' => '0',
+  'x-original-url' => '/index/room/index.html',
+  'x-forwarded-for-pound' => '112.97.63.85',
+  'x-forwarded-for' => '112.97.63.85',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 8.0; BKL-AL00 Build/HUAWEIBKL-AL00; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/57.0.2987.132 MQQBrowser/6.2 TBS/044306 Mobile Safari/537.36 MicroMessenger/6.7.3.1360(0x26070336) NetType/4G Language/zh_CN Process/tools',
+  'referer' => 'http://wx.p-city.cn/index/room/index.html',
+  'host' => 'wx.p-city.cn',
+  'cookie' => 'PHPSESSID=a28sr57n696rhpfoloka4bee62',
+  'accept-language' => 'zh-CN,zh-CN;q=0.8,en-US;q=0.6',
+  'accept-encoding' => 'gzip',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,image/wxpic,image/sharpp,image/apng,image/tpg,*/*;q=0.8',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ BEHAVIOR ] Run hook\AccessAuth @action_begin [ RunTime:0.000618s ]
+[ info ] [ RUN ] app\index\controller\Room->index[ D:\Program Files\web\pengcheng\application\index\controller\Room.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\Program Files\web\pengcheng\public/frontEnd/mobile/room\index.html [ array (
+  0 => 'classuri',
+  1 => 'banners',
+  2 => 'phone',
+  3 => 'rooms',
+  4 => 'title',
+) ]
+[ info ] [ BEHAVIOR ] Run hook\FilterView @view_filter [ RunTime:0.000812s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-10-22T15:26:59+08:00 ] 112.97.63.85 GET /index/index/index.html?code=021T0TGR1WNXz81wnEJR10lLGR1T0TGx&state=
+[ info ] wx.p-city.cn/index/index/index.html?code=021T0TGR1WNXz81wnEJR10lLGR1T0TGx&state= [运行时间：0.089919s][吞吐率：11.12req/s] [内存消耗：3,174.91kb] [文件加载：56]
+[ info ] [ LANG ] D:\Program Files\web\pengcheng\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => '',
+  'content-length' => '0',
+  'x-original-url' => '/index/index/index.html?code=021T0TGR1WNXz81wnEJR10lLGR1T0TGx&state=',
+  'x-forwarded-for-pound' => '112.97.63.85',
+  'x-forwarded-for' => '112.97.63.85',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 8.0; BKL-AL00 Build/HUAWEIBKL-AL00; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/57.0.2987.132 MQQBrowser/6.2 TBS/044306 Mobile Safari/537.36 MicroMessenger/6.7.3.1360(0x26070336) NetType/4G Language/zh_CN Process/tools',
+  'host' => 'wx.p-city.cn',
+  'cookie' => 'PHPSESSID=a28sr57n696rhpfoloka4bee62',
+  'accept-language' => 'zh-CN,zh-CN;q=0.8,en-US;q=0.6',
+  'accept-encoding' => 'gzip',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,image/wxpic,image/sharpp,image/apng,image/tpg,*/*;q=0.8',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+  'code' => '021T0TGR1WNXz81wnEJR10lLGR1T0TGx',
+  'state' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run hook\AccessAuth @action_begin [ RunTime:0.000964s ]
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\Program Files\web\pengcheng\application\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\Program Files\web\pengcheng\public/frontEnd/mobile/index\index.html [ array (
+  0 => 'classuri',
+  1 => 'speaking',
+  2 => 'desc',
+  3 => 'contact',
+  4 => 'banners',
+  5 => 'title',
+) ]
+[ info ] [ BEHAVIOR ] Run hook\FilterView @view_filter [ RunTime:0.000786s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-10-22T15:27:02+08:00 ] 112.97.63.85 GET /index/goods/index.html
+[ info ] wx.p-city.cn/index/goods/index.html [运行时间：0.124664s][吞吐率：8.02req/s] [内存消耗：3,258.63kb] [文件加载：56]
+[ info ] [ LANG ] D:\Program Files\web\pengcheng\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'goods',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => '',
+  'content-length' => '0',
+  'x-original-url' => '/index/goods/index.html',
+  'x-forwarded-for-pound' => '112.97.63.85',
+  'x-forwarded-for' => '112.97.63.85',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 8.0; BKL-AL00 Build/HUAWEIBKL-AL00; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/57.0.2987.132 MQQBrowser/6.2 TBS/044306 Mobile Safari/537.36 MicroMessenger/6.7.3.1360(0x26070336) NetType/4G Language/zh_CN Process/tools',
+  'referer' => 'http://wx.p-city.cn/index/index/index.html?code=021T0TGR1WNXz81wnEJR10lLGR1T0TGx&state=',
+  'host' => 'wx.p-city.cn',
+  'cookie' => 'PHPSESSID=a28sr57n696rhpfoloka4bee62',
+  'accept-language' => 'zh-CN,zh-CN;q=0.8,en-US;q=0.6',
+  'accept-encoding' => 'gzip',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,image/wxpic,image/sharpp,image/apng,image/tpg,*/*;q=0.8',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ BEHAVIOR ] Run hook\AccessAuth @action_begin [ RunTime:0.000646s ]
+[ info ] [ RUN ] app\index\controller\Goods->index[ D:\Program Files\web\pengcheng\application\index\controller\Goods.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\Program Files\web\pengcheng\public/frontEnd/mobile/goods\index.html [ array (
+  0 => 'classuri',
+  1 => 'types',
+  2 => 'goods',
+  3 => 'amount',
+  4 => 'carts',
+  5 => 'cart_num',
+  6 => 'title',
+) ]
+[ info ] [ BEHAVIOR ] Run hook\FilterView @view_filter [ RunTime:0.000854s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-10-22T15:27:10+08:00 ] 112.97.63.85 GET /index/index/index.html?code=021T0TGR1WNXz81wnEJR10lLGR1T0TGx&state=
+[ info ] wx.p-city.cn/index/index/index.html?code=021T0TGR1WNXz81wnEJR10lLGR1T0TGx&state= [运行时间：0.105713s][吞吐率：9.46req/s] [内存消耗：3,174.91kb] [文件加载：56]
+[ info ] [ LANG ] D:\Program Files\web\pengcheng\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => '',
+  'content-length' => '0',
+  'x-original-url' => '/index/index/index.html?code=021T0TGR1WNXz81wnEJR10lLGR1T0TGx&state=',
+  'x-forwarded-for-pound' => '112.97.63.85',
+  'x-forwarded-for' => '112.97.63.85',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 8.0; BKL-AL00 Build/HUAWEIBKL-AL00; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/57.0.2987.132 MQQBrowser/6.2 TBS/044306 Mobile Safari/537.36 MicroMessenger/6.7.3.1360(0x26070336) NetType/4G Language/zh_CN Process/tools',
+  'host' => 'wx.p-city.cn',
+  'cookie' => 'PHPSESSID=a28sr57n696rhpfoloka4bee62',
+  'accept-language' => 'zh-CN,zh-CN;q=0.8,en-US;q=0.6',
+  'accept-encoding' => 'gzip',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,image/wxpic,image/sharpp,image/apng,image/tpg,*/*;q=0.8',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+  'code' => '021T0TGR1WNXz81wnEJR10lLGR1T0TGx',
+  'state' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run hook\AccessAuth @action_begin [ RunTime:0.000700s ]
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\Program Files\web\pengcheng\application\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\Program Files\web\pengcheng\public/frontEnd/mobile/index\index.html [ array (
+  0 => 'classuri',
+  1 => 'speaking',
+  2 => 'desc',
+  3 => 'contact',
+  4 => 'banners',
+  5 => 'title',
+) ]
+[ info ] [ BEHAVIOR ] Run hook\FilterView @view_filter [ RunTime:0.000790s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-10-22T15:27:12+08:00 ] 112.97.63.85 GET /index/user/index.html
+[ info ] wx.p-city.cn/index/user/index.html [运行时间：0.072267s][吞吐率：13.84req/s] [内存消耗：3,168.60kb] [文件加载：56]
+[ info ] [ LANG ] D:\Program Files\web\pengcheng\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'user',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => '',
+  'content-length' => '0',
+  'x-original-url' => '/index/user/index.html',
+  'x-forwarded-for-pound' => '112.97.63.85',
+  'x-forwarded-for' => '112.97.63.85',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 8.0; BKL-AL00 Build/HUAWEIBKL-AL00; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/57.0.2987.132 MQQBrowser/6.2 TBS/044306 Mobile Safari/537.36 MicroMessenger/6.7.3.1360(0x26070336) NetType/4G Language/zh_CN Process/tools',
+  'referer' => 'http://wx.p-city.cn/index/index/index.html?code=021T0TGR1WNXz81wnEJR10lLGR1T0TGx&state=',
+  'host' => 'wx.p-city.cn',
+  'cookie' => 'PHPSESSID=a28sr57n696rhpfoloka4bee62',
+  'accept-language' => 'zh-CN,zh-CN;q=0.8,en-US;q=0.6',
+  'accept-encoding' => 'gzip',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,image/wxpic,image/sharpp,image/apng,image/tpg,*/*;q=0.8',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ BEHAVIOR ] Run hook\AccessAuth @action_begin [ RunTime:0.000643s ]
+[ info ] [ RUN ] app\index\controller\User->index[ D:\Program Files\web\pengcheng\application\index\controller\User.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] D:\Program Files\web\pengcheng\public/frontEnd/mobile/user\index.html [ array (
+  0 => 'classuri',
+  1 => 'userInfo',
+  2 => 'title',
+) ]
+[ info ] [ BEHAVIOR ] Run hook\FilterView @view_filter [ RunTime:0.000827s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-10-22T15:27:14+08:00 ] 112.97.63.85 GET /index/index/index.html
+[ info ] wx.p-city.cn/index/index/index.html [运行时间：0.084648s][吞吐率：11.81req/s] [内存消耗：3,174.68kb] [文件加载：56]
+[ info ] [ LANG ] D:\Program Files\web\pengcheng\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => '',
+  'content-length' => '0',
+  'x-original-url' => '/index/index/index.html',
+  'x-forwarded-for-pound' => '112.97.63.85',
+  'x-forwarded-for' => '112.97.63.85',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 8.0; BKL-AL00 Build/HUAWEIBKL-AL00; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/57.0.2987.132 MQQBrowser/6.2 TBS/044306 Mobile Safari/537.36 MicroMessenger/6.7.3.1360(0x26070336) NetType/4G Language/zh_CN Process/tools',
+  'referer' => 'http://wx.p-city.cn/index/user/index.html',
+  'host' => 'wx.p-city.cn',
+  'cookie' => 'PHPSESSID=a28sr57n696rhpfoloka4bee62',
+  'accept-language' => 'zh-CN,zh-CN;q=0.8,en-US;q=0.6',
+  'accept-encoding' => 'gzip',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,image/wxpic,image/sharpp,image/apng,image/tpg,*/*;q=0.8',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run hook\AccessAuth @action_begin [ RunTime:0.000634s ]
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\Program Files\web\pengcheng\application\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\Program Files\web\pengcheng\public/frontEnd/mobile/index\index.html [ array (
+  0 => 'classuri',
+  1 => 'speaking',
+  2 => 'desc',
+  3 => 'contact',
+  4 => 'banners',
+  5 => 'title',
+) ]
+[ info ] [ BEHAVIOR ] Run hook\FilterView @view_filter [ RunTime:0.000783s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-10-22T15:27:20+08:00 ] 61.129.6.225 GET /
+[ info ] wx.p-city.cn/ [运行时间：0.059078s][吞吐率：16.93req/s] [内存消耗：3,253.43kb] [文件加载：56]
+[ info ] [ LANG ] D:\Program Files\web\pengcheng\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => '',
+  'content-length' => '0',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 4.4.4; HUAWEI ALE-CL00 Build/HuaweiALE-CL00; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/53.0.2785.49 Mobile MQQBrowser/6.2 TBS/043024 Safari/537.36 MicroMessenger/6.5.4.1000 NetType/4G Language/zh_CN',
+  'host' => 'wx.p-city.cn',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.6,en;q=0.4',
+  'accept' => '*/*',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-10-22T15:27:42+08:00 ] 113.89.42.124 GET /
+[ info ] wx.p-city.cn/ [运行时间：0.095761s][吞吐率：10.44req/s] [内存消耗：3,104.51kb] [文件加载：55]
+[ info ] [ LANG ] D:\Program Files\web\pengcheng\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => '',
+  'content-length' => '0',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.95 Safari/537.36 MicroMessenger/6.5.2.501 NetType/WIFI WindowsWechat QBCore/3.43.901.400 QQBrowser/9.0.2524.400',
+  'host' => 'wx.p-city.cn',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-us;q=0.6,en;q=0.5;q=0.4',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ BEHAVIOR ] Run hook\AccessAuth @action_begin [ RunTime:0.000649s ]
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\Program Files\web\pengcheng\application\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\Program Files\web\pengcheng\public/frontEnd/pc/index\index.html [ array (
+  0 => 'classuri',
+  1 => 'speaking',
+  2 => 'desc',
+  3 => 'contact',
+  4 => 'banners',
+  5 => 'title',
+) ]
+[ info ] [ BEHAVIOR ] Run hook\FilterView @view_filter [ RunTime:0.000814s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-10-22T15:27:44+08:00 ] 101.89.29.92 GET /index/room/index.html
+[ info ] wx.p-city.cn/index/room/index.html [运行时间：0.105181s][吞吐率：9.51req/s] [内存消耗：3,203.02kb] [文件加载：56]
+[ info ] [ LANG ] D:\Program Files\web\pengcheng\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'room',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => '',
+  'content-length' => '0',
+  'x-original-url' => '/index/room/index.html',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 5.1.1; SM801 Build/LMY47V; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/53.0.2785.49 Mobile MQQBrowser/6.2 TBS/043024 Safari/537.36 MicroMessenger/6.5.4.1000 NetType/4G Language/zh_CN',
+  'host' => 'wx.p-city.cn',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.6,en;q=0.4',
+  'accept' => '*/*',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ BEHAVIOR ] Run hook\AccessAuth @action_begin [ RunTime:0.000659s ]
+[ info ] [ RUN ] app\index\controller\Room->index[ D:\Program Files\web\pengcheng\application\index\controller\Room.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\Program Files\web\pengcheng\public/frontEnd/mobile/room\index.html [ array (
+  0 => 'classuri',
+  1 => 'banners',
+  2 => 'phone',
+  3 => 'rooms',
+  4 => 'title',
+) ]
+[ info ] [ BEHAVIOR ] Run hook\FilterView @view_filter [ RunTime:0.000809s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-10-22T15:27:48+08:00 ] 113.89.42.124 GET /
+[ info ] wx.p-city.cn/ [运行时间：0.086214s][吞吐率：11.60req/s] [内存消耗：3,104.74kb] [文件加载：55]
+[ info ] [ LANG ] D:\Program Files\web\pengcheng\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => '',
+  'content-length' => '0',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.95 Safari/537.36 MicroMessenger/6.5.2.501 NetType/WIFI WindowsWechat QBCore/3.43.901.400 QQBrowser/9.0.2524.400',
+  'host' => 'wx.p-city.cn',
+  'cookie' => 'PHPSESSID=esllf2hvvagvokpabj6dj7irb5',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-us;q=0.6,en;q=0.5;q=0.4',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ BEHAVIOR ] Run hook\AccessAuth @action_begin [ RunTime:0.000654s ]
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\Program Files\web\pengcheng\application\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\Program Files\web\pengcheng\public/frontEnd/pc/index\index.html [ array (
+  0 => 'classuri',
+  1 => 'speaking',
+  2 => 'desc',
+  3 => 'contact',
+  4 => 'banners',
+  5 => 'title',
+) ]
+[ info ] [ BEHAVIOR ] Run hook\FilterView @view_filter [ RunTime:0.000813s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-10-22T15:27:53+08:00 ] 61.129.6.227 GET /index/room/detail.html?id=18
+[ info ] wx.p-city.cn/index/room/detail.html?id=18 [运行时间：0.091938s][吞吐率：10.88req/s] [内存消耗：3,177.34kb] [文件加载：56]
+[ info ] [ LANG ] D:\Program Files\web\pengcheng\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'room',
+    2 => 'detail',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => '',
+  'content-length' => '0',
+  'x-original-url' => '/index/room/detail.html?id=18',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 10_2_1 like Mac OS X) AppleWebKit/602.4.6 (KHTML, like Gecko) Mobile/14D27 MicroMessenger/6.5.5 NetType/WIFI Language/en',
+  'host' => 'wx.p-city.cn',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.6,en;q=0.4',
+  'accept' => '*/*',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+  'id' => '18',
+)
+[ info ] [ BEHAVIOR ] Run hook\AccessAuth @action_begin [ RunTime:0.000703s ]
+[ info ] [ RUN ] app\index\controller\Room->detail[ D:\Program Files\web\pengcheng\application\index\controller\Room.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\Program Files\web\pengcheng\public/frontEnd/mobile/room\detail.html [ array (
+  0 => 'classuri',
+  1 => 'detail',
+  2 => 'title',
+) ]
+[ info ] [ BEHAVIOR ] Run hook\FilterView @view_filter [ RunTime:0.001039s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-10-22T15:28:02+08:00 ] 101.89.239.230 GET /index/goods/index.html
+[ info ] wx.p-city.cn/index/goods/index.html [运行时间：0.036504s][吞吐率：27.39req/s] [内存消耗：2,200.95kb] [文件加载：50]
+[ info ] [ LANG ] D:\Program Files\web\pengcheng\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'goods',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => '',
+  'content-length' => '0',
+  'x-original-url' => '/index/goods/index.html',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 10_2_1 like Mac OS X) AppleWebKit/602.4.6 (KHTML, like Gecko) Mobile/14D27 MicroMessenger/6.5.5 NetType/WIFI Language/zh_CN',
+  'host' => 'wx.p-city.cn',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.6,en;q=0.4',
+  'accept' => '*/*',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ BEHAVIOR ] Run hook\AccessAuth @action_begin [ RunTime:0.000670s ]
+[ info ] [ RUN ] app\index\controller\Goods->index[ D:\Program Files\web\pengcheng\application\index\controller\Goods.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] D:\Program Files\web\pengcheng\public/../application/extra\view\handler.jump.html [ array (
+  0 => 'classuri',
+  1 => 'code',
+  2 => 'msg',
+  3 => 'data',
+  4 => 'url',
+  5 => 'wait',
+) ]
+[ info ] [ BEHAVIOR ] Run hook\FilterView @view_filter [ RunTime:0.000687s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-10-22T15:28:12+08:00 ] 61.129.6.151 GET /index/user/index.html
+[ info ] wx.p-city.cn/index/user/index.html [运行时间：0.069791s][吞吐率：14.33req/s] [内存消耗：3,163.52kb] [文件加载：56]
+[ info ] [ LANG ] D:\Program Files\web\pengcheng\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'user',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => '',
+  'content-length' => '0',
+  'x-original-url' => '/index/user/index.html',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 10_2_1 like Mac OS X) AppleWebKit/602.4.6 (KHTML, like Gecko) Mobile/14D27 MicroMessenger/6.5.5 NetType/WIFI Language/zh_CN',
+  'host' => 'wx.p-city.cn',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.6,en;q=0.4',
+  'accept' => '*/*',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ BEHAVIOR ] Run hook\AccessAuth @action_begin [ RunTime:0.000674s ]
+[ info ] [ RUN ] app\index\controller\User->index[ D:\Program Files\web\pengcheng\application\index\controller\User.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] D:\Program Files\web\pengcheng\public/frontEnd/mobile/user\index.html [ array (
+  0 => 'classuri',
+  1 => 'userInfo',
+  2 => 'title',
+) ]
+[ info ] [ BEHAVIOR ] Run hook\FilterView @view_filter [ RunTime:0.001020s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-10-22T15:28:14+08:00 ] 101.89.29.97 GET /index/index/index.html
+[ info ] wx.p-city.cn/index/index/index.html [运行时间：0.065384s][吞吐率：15.29req/s] [内存消耗：3,244.34kb] [文件加载：56]
+[ info ] [ LANG ] D:\Program Files\web\pengcheng\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => '',
+  'content-length' => '0',
+  'x-original-url' => '/index/index/index.html',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 6.0.1; OPPO R9s Build/MMB29M) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/37.0.0.0 Mobile MQQBrowser/6.9 TBS/036906 Safari/537.36 MicroMessenger/6.5.4.1000 NetType/4G Language/zh_CN',
+  'host' => 'wx.p-city.cn',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.6,en;q=0.4',
+  'accept' => '*/*',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-10-22T15:30:05+08:00 ] 112.97.63.85 GET /
+[ info ] wx.p-city.cn/ [运行时间：0.093119s][吞吐率：10.74req/s] [内存消耗：3,183.71kb] [文件加载：56]
+[ info ] [ LANG ] D:\Program Files\web\pengcheng\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => '',
+  'content-length' => '0',
+  'x-forwarded-for-pound' => '112.97.63.85',
+  'x-forwarded-for' => '112.97.63.85',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 8.0; BKL-AL00 Build/HUAWEIBKL-AL00; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/57.0.2987.132 MQQBrowser/6.2 TBS/044306 Mobile Safari/537.36 MicroMessenger/6.7.3.1360(0x26070336) NetType/4G Language/zh_CN Process/tools',
+  'host' => 'wx.p-city.cn',
+  'cookie' => 'PHPSESSID=a28sr57n696rhpfoloka4bee62',
+  'accept-language' => 'zh-CN,zh-CN;q=0.8,en-US;q=0.6',
+  'accept-encoding' => 'gzip',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,image/wxpic,image/sharpp,image/apng,image/tpg,*/*;q=0.8',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run hook\AccessAuth @action_begin [ RunTime:0.000582s ]
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\Program Files\web\pengcheng\application\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\Program Files\web\pengcheng\public/frontEnd/mobile/index\index.html [ array (
+  0 => 'classuri',
+  1 => 'speaking',
+  2 => 'desc',
+  3 => 'contact',
+  4 => 'banners',
+  5 => 'title',
+) ]
+[ info ] [ BEHAVIOR ] Run hook\FilterView @view_filter [ RunTime:0.000709s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-10-22T15:30:05+08:00 ] 112.97.59.85 GET /favicon.ico
+[ info ] wx.p-city.cn/favicon.ico [运行时间：0.030223s][吞吐率：33.09req/s] [内存消耗：1,789.65kb] [文件加载：39]
+[ info ] [ LANG ] D:\Program Files\web\pengcheng\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'favicon.ico',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => '',
+  'content-length' => '0',
+  'x-original-url' => '/favicon.ico',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 8.0; BKL-AL00 Build/HUAWEIBKL-AL00; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/57.0.2987.132 MQQBrowser/6.2 TBS/044306 Mobile Safari/537.36 MicroMessenger/6.7.3.1360(0x26070336) NetType/4G Language/zh_CN Process/tools',
+  'referer' => 'http://wx.p-city.cn/',
+  'host' => 'wx.p-city.cn',
+  'cookie' => 'PHPSESSID=a28sr57n696rhpfoloka4bee62',
+  'accept-language' => 'zh-CN,zh-CN;q=0.8,en-US;q=0.6',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'image/webp,image/wxpic,image/sharpp,image/apng,image/tpg,image/*,*/*;q=0.8',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-10-22T15:30:31+08:00 ] 112.97.63.85 GET /index/goods/index.html
+[ info ] wx.p-city.cn/index/goods/index.html [运行时间：0.114918s][吞吐率：8.70req/s] [内存消耗：3,258.54kb] [文件加载：56]
+[ info ] [ LANG ] D:\Program Files\web\pengcheng\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'goods',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => '',
+  'content-length' => '0',
+  'x-original-url' => '/index/goods/index.html',
+  'x-forwarded-for-pound' => '112.97.63.85',
+  'x-forwarded-for' => '112.97.63.85',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 8.0; BKL-AL00 Build/HUAWEIBKL-AL00; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/57.0.2987.132 MQQBrowser/6.2 TBS/044306 Mobile Safari/537.36 MicroMessenger/6.7.3.1360(0x26070336) NetType/4G Language/zh_CN Process/tools',
+  'referer' => 'http://wx.p-city.cn/',
+  'host' => 'wx.p-city.cn',
+  'cookie' => 'PHPSESSID=a28sr57n696rhpfoloka4bee62',
+  'accept-language' => 'zh-CN,zh-CN;q=0.8,en-US;q=0.6',
+  'accept-encoding' => 'gzip',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,image/wxpic,image/sharpp,image/apng,image/tpg,*/*;q=0.8',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ BEHAVIOR ] Run hook\AccessAuth @action_begin [ RunTime:0.000516s ]
+[ info ] [ RUN ] app\index\controller\Goods->index[ D:\Program Files\web\pengcheng\application\index\controller\Goods.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\Program Files\web\pengcheng\public/frontEnd/mobile/goods\index.html [ array (
+  0 => 'classuri',
+  1 => 'types',
+  2 => 'goods',
+  3 => 'amount',
+  4 => 'carts',
+  5 => 'cart_num',
+  6 => 'title',
+) ]
+[ info ] [ BEHAVIOR ] Run hook\FilterView @view_filter [ RunTime:0.000719s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-10-22T15:30:33+08:00 ] 112.97.63.85 GET /
+[ info ] wx.p-city.cn/ [运行时间：0.091496s][吞吐率：10.93req/s] [内存消耗：3,183.71kb] [文件加载：56]
+[ info ] [ LANG ] D:\Program Files\web\pengcheng\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => '',
+  'content-length' => '0',
+  'x-forwarded-for-pound' => '112.97.63.85',
+  'x-forwarded-for' => '112.97.63.85',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 8.0; BKL-AL00 Build/HUAWEIBKL-AL00; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/57.0.2987.132 MQQBrowser/6.2 TBS/044306 Mobile Safari/537.36 MicroMessenger/6.7.3.1360(0x26070336) NetType/4G Language/zh_CN Process/tools',
+  'host' => 'wx.p-city.cn',
+  'cookie' => 'PHPSESSID=a28sr57n696rhpfoloka4bee62',
+  'accept-language' => 'zh-CN,zh-CN;q=0.8,en-US;q=0.6',
+  'accept-encoding' => 'gzip',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,image/wxpic,image/sharpp,image/apng,image/tpg,*/*;q=0.8',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run hook\AccessAuth @action_begin [ RunTime:0.000478s ]
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\Program Files\web\pengcheng\application\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\Program Files\web\pengcheng\public/frontEnd/mobile/index\index.html [ array (
+  0 => 'classuri',
+  1 => 'speaking',
+  2 => 'desc',
+  3 => 'contact',
+  4 => 'banners',
+  5 => 'title',
+) ]
+[ info ] [ BEHAVIOR ] Run hook\FilterView @view_filter [ RunTime:0.000664s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-10-22T15:30:35+08:00 ] 112.97.63.85 GET /index/room/index.html
+[ info ] wx.p-city.cn/index/room/index.html [运行时间：0.113461s][吞吐率：8.81req/s] [内存消耗：3,205.00kb] [文件加载：56]
+[ info ] [ LANG ] D:\Program Files\web\pengcheng\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'room',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => '',
+  'content-length' => '0',
+  'x-original-url' => '/index/room/index.html',
+  'x-forwarded-for-pound' => '112.97.63.85',
+  'x-forwarded-for' => '112.97.63.85',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 8.0; BKL-AL00 Build/HUAWEIBKL-AL00; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/57.0.2987.132 MQQBrowser/6.2 TBS/044306 Mobile Safari/537.36 MicroMessenger/6.7.3.1360(0x26070336) NetType/4G Language/zh_CN Process/tools',
+  'referer' => 'http://wx.p-city.cn/',
+  'host' => 'wx.p-city.cn',
+  'cookie' => 'PHPSESSID=a28sr57n696rhpfoloka4bee62',
+  'accept-language' => 'zh-CN,zh-CN;q=0.8,en-US;q=0.6',
+  'accept-encoding' => 'gzip',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,image/wxpic,image/sharpp,image/apng,image/tpg,*/*;q=0.8',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ BEHAVIOR ] Run hook\AccessAuth @action_begin [ RunTime:0.000495s ]
+[ info ] [ RUN ] app\index\controller\Room->index[ D:\Program Files\web\pengcheng\application\index\controller\Room.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\Program Files\web\pengcheng\public/frontEnd/mobile/room\index.html [ array (
+  0 => 'classuri',
+  1 => 'banners',
+  2 => 'phone',
+  3 => 'rooms',
+  4 => 'title',
+) ]
+[ info ] [ BEHAVIOR ] Run hook\FilterView @view_filter [ RunTime:0.000842s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-10-22T15:31:03+08:00 ] 112.97.63.85 GET /
+[ info ] wx.p-city.cn/ [运行时间：0.095591s][吞吐率：10.46req/s] [内存消耗：3,183.71kb] [文件加载：56]
+[ info ] [ LANG ] D:\Program Files\web\pengcheng\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => '',
+  'content-length' => '0',
+  'x-forwarded-for-pound' => '112.97.63.85',
+  'x-forwarded-for' => '112.97.63.85',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 8.0; BKL-AL00 Build/HUAWEIBKL-AL00; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/57.0.2987.132 MQQBrowser/6.2 TBS/044306 Mobile Safari/537.36 MicroMessenger/6.7.3.1360(0x26070336) NetType/4G Language/zh_CN Process/tools',
+  'host' => 'wx.p-city.cn',
+  'cookie' => 'PHPSESSID=a28sr57n696rhpfoloka4bee62',
+  'accept-language' => 'zh-CN,zh-CN;q=0.8,en-US;q=0.6',
+  'accept-encoding' => 'gzip',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,image/wxpic,image/sharpp,image/apng,image/tpg,*/*;q=0.8',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run hook\AccessAuth @action_begin [ RunTime:0.000488s ]
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\Program Files\web\pengcheng\application\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\Program Files\web\pengcheng\public/frontEnd/mobile/index\index.html [ array (
+  0 => 'classuri',
+  1 => 'speaking',
+  2 => 'desc',
+  3 => 'contact',
+  4 => 'banners',
+  5 => 'title',
+) ]
+[ info ] [ BEHAVIOR ] Run hook\FilterView @view_filter [ RunTime:0.000663s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-10-22T16:09:32+08:00 ] 112.97.63.85 GET /
+[ info ] wx.p-city.cn/ [运行时间：0.069520s][吞吐率：14.38req/s] [内存消耗：3,254.98kb] [文件加载：56]
+[ info ] [ LANG ] D:\Program Files\web\pengcheng\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => '',
+  'content-length' => '0',
+  'x-forwarded-for-pound' => '112.97.63.85',
+  'x-forwarded-for' => '112.97.63.85',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 8.0; BKL-AL00 Build/HUAWEIBKL-AL00; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/57.0.2987.132 MQQBrowser/6.2 TBS/044306 Mobile Safari/537.36 MicroMessenger/6.7.3.1360(0x26070336) NetType/4G Language/zh_CN Process/tools',
+  'host' => 'wx.p-city.cn',
+  'accept-language' => 'zh-CN,zh-CN;q=0.8,en-US;q=0.6',
+  'accept-encoding' => 'gzip',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,image/wxpic,image/sharpp,image/apng,image/tpg,*/*;q=0.8',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-10-22T16:09:34+08:00 ] 112.97.63.85 GET /index/index/index.html?code=081d45OR15VpC81tkKLR17RaOR1d45Od&state=
+[ info ] wx.p-city.cn/index/index/index.html?code=081d45OR15VpC81tkKLR17RaOR1d45Od&state= [运行时间：1.062205s][吞吐率：0.94req/s] [内存消耗：3,396.51kb] [文件加载：62]
+[ info ] [ LANG ] D:\Program Files\web\pengcheng\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => '',
+  'content-length' => '0',
+  'x-original-url' => '/index/index/index.html?code=081d45OR15VpC81tkKLR17RaOR1d45Od&state=',
+  'x-forwarded-for-pound' => '112.97.63.85',
+  'x-forwarded-for' => '112.97.63.85',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 8.0; BKL-AL00 Build/HUAWEIBKL-AL00; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/57.0.2987.132 MQQBrowser/6.2 TBS/044306 Mobile Safari/537.36 MicroMessenger/6.7.3.1360(0x26070336) NetType/4G Language/zh_CN Process/tools',
+  'host' => 'wx.p-city.cn',
+  'cookie' => 'PHPSESSID=h6o7ea9lvi3sqce85bilrdbkv0',
+  'accept-language' => 'zh-CN,zh-CN;q=0.8,en-US;q=0.6',
+  'accept-encoding' => 'gzip',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,image/wxpic,image/sharpp,image/apng,image/tpg,*/*;q=0.8',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+  'code' => '081d45OR15VpC81tkKLR17RaOR1d45Od',
+  'state' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run hook\AccessAuth @action_begin [ RunTime:0.000983s ]
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\Program Files\web\pengcheng\application\index\controller\Index.php ]
+[ info ] [ VIEW ] D:\Program Files\web\pengcheng\public/frontEnd/mobile/index\index.html [ array (
+  0 => 'classuri',
+  1 => 'speaking',
+  2 => 'desc',
+  3 => 'contact',
+  4 => 'banners',
+  5 => 'title',
+) ]
+[ info ] [ BEHAVIOR ] Run hook\FilterView @view_filter [ RunTime:0.001138s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-10-22T16:09:35+08:00 ] 112.97.59.85 GET /favicon.ico
+[ info ] wx.p-city.cn/favicon.ico [运行时间：0.029648s][吞吐率：33.73req/s] [内存消耗：1,789.98kb] [文件加载：39]
+[ info ] [ LANG ] D:\Program Files\web\pengcheng\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'favicon.ico',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => '',
+  'content-length' => '0',
+  'x-original-url' => '/favicon.ico',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 8.0; BKL-AL00 Build/HUAWEIBKL-AL00; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/57.0.2987.132 MQQBrowser/6.2 TBS/044306 Mobile Safari/537.36 MicroMessenger/6.7.3.1360(0x26070336) NetType/4G Language/zh_CN Process/tools',
+  'referer' => 'http://wx.p-city.cn/index/index/index.html?code=081d45OR15VpC81tkKLR17RaOR1d45Od&state=',
+  'host' => 'wx.p-city.cn',
+  'cookie' => 'PHPSESSID=h6o7ea9lvi3sqce85bilrdbkv0',
+  'accept-language' => 'zh-CN,zh-CN;q=0.8,en-US;q=0.6',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'image/webp,image/wxpic,image/sharpp,image/apng,image/tpg,image/*,*/*;q=0.8',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-10-22T16:09:41+08:00 ] 112.97.63.85 GET /index/room/index.html
+[ info ] wx.p-city.cn/index/room/index.html [运行时间：0.124082s][吞吐率：8.06req/s] [内存消耗：3,205.30kb] [文件加载：56]
+[ info ] [ LANG ] D:\Program Files\web\pengcheng\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'room',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => '',
+  'content-length' => '0',
+  'x-original-url' => '/index/room/index.html',
+  'x-forwarded-for-pound' => '112.97.63.85',
+  'x-forwarded-for' => '112.97.63.85',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 8.0; BKL-AL00 Build/HUAWEIBKL-AL00; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/57.0.2987.132 MQQBrowser/6.2 TBS/044306 Mobile Safari/537.36 MicroMessenger/6.7.3.1360(0x26070336) NetType/4G Language/zh_CN Process/tools',
+  'referer' => 'http://wx.p-city.cn/index/index/index.html?code=081d45OR15VpC81tkKLR17RaOR1d45Od&state=',
+  'host' => 'wx.p-city.cn',
+  'cookie' => 'PHPSESSID=h6o7ea9lvi3sqce85bilrdbkv0',
+  'accept-language' => 'zh-CN,zh-CN;q=0.8,en-US;q=0.6',
+  'accept-encoding' => 'gzip',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,image/wxpic,image/sharpp,image/apng,image/tpg,*/*;q=0.8',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ BEHAVIOR ] Run hook\AccessAuth @action_begin [ RunTime:0.000668s ]
+[ info ] [ RUN ] app\index\controller\Room->index[ D:\Program Files\web\pengcheng\application\index\controller\Room.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\Program Files\web\pengcheng\public/frontEnd/mobile/room\index.html [ array (
+  0 => 'classuri',
+  1 => 'banners',
+  2 => 'phone',
+  3 => 'rooms',
+  4 => 'title',
+) ]
+[ info ] [ BEHAVIOR ] Run hook\FilterView @view_filter [ RunTime:0.001089s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-10-22T16:09:45+08:00 ] 112.97.63.85 GET /index/index/index.html?code=081d45OR15VpC81tkKLR17RaOR1d45Od&state=
+[ info ] wx.p-city.cn/index/index/index.html?code=081d45OR15VpC81tkKLR17RaOR1d45Od&state= [运行时间：0.097624s][吞吐率：10.24req/s] [内存消耗：3,174.91kb] [文件加载：56]
+[ info ] [ LANG ] D:\Program Files\web\pengcheng\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => '',
+  'content-length' => '0',
+  'x-original-url' => '/index/index/index.html?code=081d45OR15VpC81tkKLR17RaOR1d45Od&state=',
+  'x-forwarded-for-pound' => '112.97.63.85',
+  'x-forwarded-for' => '112.97.63.85',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 8.0; BKL-AL00 Build/HUAWEIBKL-AL00; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/57.0.2987.132 MQQBrowser/6.2 TBS/044306 Mobile Safari/537.36 MicroMessenger/6.7.3.1360(0x26070336) NetType/4G Language/zh_CN Process/tools',
+  'host' => 'wx.p-city.cn',
+  'cookie' => 'PHPSESSID=h6o7ea9lvi3sqce85bilrdbkv0',
+  'accept-language' => 'zh-CN,zh-CN;q=0.8,en-US;q=0.6',
+  'accept-encoding' => 'gzip',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,image/wxpic,image/sharpp,image/apng,image/tpg,*/*;q=0.8',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+  'code' => '081d45OR15VpC81tkKLR17RaOR1d45Od',
+  'state' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run hook\AccessAuth @action_begin [ RunTime:0.000693s ]
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\Program Files\web\pengcheng\application\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\Program Files\web\pengcheng\public/frontEnd/mobile/index\index.html [ array (
+  0 => 'classuri',
+  1 => 'speaking',
+  2 => 'desc',
+  3 => 'contact',
+  4 => 'banners',
+  5 => 'title',
+) ]
+[ info ] [ BEHAVIOR ] Run hook\FilterView @view_filter [ RunTime:0.000821s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-10-22T16:09:46+08:00 ] 112.97.63.85 GET /index/goods/index.html
+[ info ] wx.p-city.cn/index/goods/index.html [运行时间：0.122416s][吞吐率：8.17req/s] [内存消耗：3,258.63kb] [文件加载：56]
+[ info ] [ LANG ] D:\Program Files\web\pengcheng\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'goods',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => '',
+  'content-length' => '0',
+  'x-original-url' => '/index/goods/index.html',
+  'x-forwarded-for-pound' => '112.97.63.85',
+  'x-forwarded-for' => '112.97.63.85',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 8.0; BKL-AL00 Build/HUAWEIBKL-AL00; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/57.0.2987.132 MQQBrowser/6.2 TBS/044306 Mobile Safari/537.36 MicroMessenger/6.7.3.1360(0x26070336) NetType/4G Language/zh_CN Process/tools',
+  'referer' => 'http://wx.p-city.cn/index/index/index.html?code=081d45OR15VpC81tkKLR17RaOR1d45Od&state=',
+  'host' => 'wx.p-city.cn',
+  'cookie' => 'PHPSESSID=h6o7ea9lvi3sqce85bilrdbkv0',
+  'accept-language' => 'zh-CN,zh-CN;q=0.8,en-US;q=0.6',
+  'accept-encoding' => 'gzip',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,image/wxpic,image/sharpp,image/apng,image/tpg,*/*;q=0.8',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ BEHAVIOR ] Run hook\AccessAuth @action_begin [ RunTime:0.000663s ]
+[ info ] [ RUN ] app\index\controller\Goods->index[ D:\Program Files\web\pengcheng\application\index\controller\Goods.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\Program Files\web\pengcheng\public/frontEnd/mobile/goods\index.html [ array (
+  0 => 'classuri',
+  1 => 'types',
+  2 => 'goods',
+  3 => 'amount',
+  4 => 'carts',
+  5 => 'cart_num',
+  6 => 'title',
+) ]
+[ info ] [ BEHAVIOR ] Run hook\FilterView @view_filter [ RunTime:0.000865s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-10-22T16:09:48+08:00 ] 112.97.63.85 GET /index/index/index.html?code=081d45OR15VpC81tkKLR17RaOR1d45Od&state=
+[ info ] wx.p-city.cn/index/index/index.html?code=081d45OR15VpC81tkKLR17RaOR1d45Od&state= [运行时间：0.093256s][吞吐率：10.72req/s] [内存消耗：3,174.91kb] [文件加载：56]
+[ info ] [ LANG ] D:\Program Files\web\pengcheng\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => '',
+  'content-length' => '0',
+  'x-original-url' => '/index/index/index.html?code=081d45OR15VpC81tkKLR17RaOR1d45Od&state=',
+  'x-forwarded-for-pound' => '112.97.63.85',
+  'x-forwarded-for' => '112.97.63.85',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 8.0; BKL-AL00 Build/HUAWEIBKL-AL00; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/57.0.2987.132 MQQBrowser/6.2 TBS/044306 Mobile Safari/537.36 MicroMessenger/6.7.3.1360(0x26070336) NetType/4G Language/zh_CN Process/tools',
+  'host' => 'wx.p-city.cn',
+  'cookie' => 'PHPSESSID=h6o7ea9lvi3sqce85bilrdbkv0',
+  'accept-language' => 'zh-CN,zh-CN;q=0.8,en-US;q=0.6',
+  'accept-encoding' => 'gzip',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,image/wxpic,image/sharpp,image/apng,image/tpg,*/*;q=0.8',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+  'code' => '081d45OR15VpC81tkKLR17RaOR1d45Od',
+  'state' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run hook\AccessAuth @action_begin [ RunTime:0.000724s ]
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\Program Files\web\pengcheng\application\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\Program Files\web\pengcheng\public/frontEnd/mobile/index\index.html [ array (
+  0 => 'classuri',
+  1 => 'speaking',
+  2 => 'desc',
+  3 => 'contact',
+  4 => 'banners',
+  5 => 'title',
+) ]
+[ info ] [ BEHAVIOR ] Run hook\FilterView @view_filter [ RunTime:0.000814s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-10-22T16:09:50+08:00 ] 112.97.63.85 GET /index/user/index.html
+[ info ] wx.p-city.cn/index/user/index.html [运行时间：0.081669s][吞吐率：12.24req/s] [内存消耗：3,168.60kb] [文件加载：56]
+[ info ] [ LANG ] D:\Program Files\web\pengcheng\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'user',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => '',
+  'content-length' => '0',
+  'x-original-url' => '/index/user/index.html',
+  'x-forwarded-for-pound' => '112.97.63.85',
+  'x-forwarded-for' => '112.97.63.85',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 8.0; BKL-AL00 Build/HUAWEIBKL-AL00; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/57.0.2987.132 MQQBrowser/6.2 TBS/044306 Mobile Safari/537.36 MicroMessenger/6.7.3.1360(0x26070336) NetType/4G Language/zh_CN Process/tools',
+  'referer' => 'http://wx.p-city.cn/index/index/index.html?code=081d45OR15VpC81tkKLR17RaOR1d45Od&state=',
+  'host' => 'wx.p-city.cn',
+  'cookie' => 'PHPSESSID=h6o7ea9lvi3sqce85bilrdbkv0',
+  'accept-language' => 'zh-CN,zh-CN;q=0.8,en-US;q=0.6',
+  'accept-encoding' => 'gzip',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,image/wxpic,image/sharpp,image/apng,image/tpg,*/*;q=0.8',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ BEHAVIOR ] Run hook\AccessAuth @action_begin [ RunTime:0.000979s ]
+[ info ] [ RUN ] app\index\controller\User->index[ D:\Program Files\web\pengcheng\application\index\controller\User.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] D:\Program Files\web\pengcheng\public/frontEnd/mobile/user\index.html [ array (
+  0 => 'classuri',
+  1 => 'userInfo',
+  2 => 'title',
+) ]
+[ info ] [ BEHAVIOR ] Run hook\FilterView @view_filter [ RunTime:0.000889s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-10-22T16:09:50+08:00 ] 112.97.63.85 GET /index/goods/index.html
+[ info ] wx.p-city.cn/index/goods/index.html [运行时间：0.122913s][吞吐率：8.14req/s] [内存消耗：3,258.66kb] [文件加载：56]
+[ info ] [ LANG ] D:\Program Files\web\pengcheng\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'goods',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => '',
+  'content-length' => '0',
+  'x-original-url' => '/index/goods/index.html',
+  'x-forwarded-for-pound' => '112.97.63.85',
+  'x-forwarded-for' => '112.97.63.85',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 8.0; BKL-AL00 Build/HUAWEIBKL-AL00; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/57.0.2987.132 MQQBrowser/6.2 TBS/044306 Mobile Safari/537.36 MicroMessenger/6.7.3.1360(0x26070336) NetType/4G Language/zh_CN Process/tools',
+  'referer' => 'http://wx.p-city.cn/index/user/index.html',
+  'host' => 'wx.p-city.cn',
+  'cookie' => 'PHPSESSID=h6o7ea9lvi3sqce85bilrdbkv0',
+  'accept-language' => 'zh-CN,zh-CN;q=0.8,en-US;q=0.6',
+  'accept-encoding' => 'gzip',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,image/wxpic,image/sharpp,image/apng,image/tpg,*/*;q=0.8',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ BEHAVIOR ] Run hook\AccessAuth @action_begin [ RunTime:0.000907s ]
+[ info ] [ RUN ] app\index\controller\Goods->index[ D:\Program Files\web\pengcheng\application\index\controller\Goods.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\Program Files\web\pengcheng\public/frontEnd/mobile/goods\index.html [ array (
+  0 => 'classuri',
+  1 => 'types',
+  2 => 'goods',
+  3 => 'amount',
+  4 => 'carts',
+  5 => 'cart_num',
+  6 => 'title',
+) ]
+[ info ] [ BEHAVIOR ] Run hook\FilterView @view_filter [ RunTime:0.000907s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-10-22T16:10:49+08:00 ] 112.97.63.85 GET /index/user/index.html
+[ info ] wx.p-city.cn/index/user/index.html [运行时间：0.088098s][吞吐率：11.35req/s] [内存消耗：3,168.60kb] [文件加载：56]
+[ info ] [ LANG ] D:\Program Files\web\pengcheng\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'user',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => '',
+  'content-length' => '0',
+  'x-original-url' => '/index/user/index.html',
+  'x-forwarded-for-pound' => '112.97.63.85',
+  'x-forwarded-for' => '112.97.63.85',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 8.0; BKL-AL00 Build/HUAWEIBKL-AL00; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/57.0.2987.132 MQQBrowser/6.2 TBS/044306 Mobile Safari/537.36 MicroMessenger/6.7.3.1360(0x26070336) NetType/4G Language/zh_CN Process/tools',
+  'referer' => 'http://wx.p-city.cn/index/index/index.html?code=081d45OR15VpC81tkKLR17RaOR1d45Od&state=',
+  'host' => 'wx.p-city.cn',
+  'cookie' => 'PHPSESSID=h6o7ea9lvi3sqce85bilrdbkv0',
+  'accept-language' => 'zh-CN,zh-CN;q=0.8,en-US;q=0.6',
+  'accept-encoding' => 'gzip',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,image/wxpic,image/sharpp,image/apng,image/tpg,*/*;q=0.8',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ BEHAVIOR ] Run hook\AccessAuth @action_begin [ RunTime:0.000739s ]
+[ info ] [ RUN ] app\index\controller\User->index[ D:\Program Files\web\pengcheng\application\index\controller\User.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] D:\Program Files\web\pengcheng\public/frontEnd/mobile/user\index.html [ array (
+  0 => 'classuri',
+  1 => 'userInfo',
+  2 => 'title',
+) ]
+[ info ] [ BEHAVIOR ] Run hook\FilterView @view_filter [ RunTime:0.001063s ]
+[ info ] [ LOG ] INIT File

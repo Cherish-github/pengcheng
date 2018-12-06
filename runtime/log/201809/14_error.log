@@ -1,0 +1,6 @@
+---------------------------------------------------------------
+[ 2018-09-14T11:44:07+08:00 ] 101.91.60.104 GET /index/room/index.html
+[ error ] [0]模板文件不存在:D:\Program Files\web\pengcheng\public/frontEnd/pc/room\index.html[D:\Program Files\web\pengcheng\thinkphp\library\think\view\driver\Think.php:80]
+---------------------------------------------------------------
+[ 2018-09-14T11:48:20+08:00 ] 101.89.239.232 GET /index/room/detail.html?id=18
+[ error ] [0]模板文件不存在:D:\Program Files\web\pengcheng\public/frontEnd/pc/room\detail.html[D:\Program Files\web\pengcheng\thinkphp\library\think\view\driver\Think.php:80]

@@ -1,0 +1,170 @@
+<style>
+    .count div label{
+        padding-left: 0px;
+    }
+</style>
+<form class="layui-form layui-box" style='padding:25px 30px 20px 0;height: 800px;' action="__SELF__" data-auto="true" method="post">
+    <div class="layui-form-item">
+        <label class="layui-form-label">活动标题</label>
+        <div class="layui-input-block">
+            <input type="text" name="title" maxlength="30" value='{$vo.title|default=""}' required="required" title="请输入标题" placeholder="请输入标题" class="layui-input">
+        </div>
+    </div>
+
+    <div class="layui-form-item active-type-1">
+        <label class="layui-form-label label-required">课程</label>
+        <div class="layui-input-block">
+            <select name="c_id"  lay-filter="course"  lay-search>
+                <option value="">请选择</option>
+                {foreach $courses as $c}
+                <option {if isset($vo.c_id) && $vo.c_id eq $c.id}selected{/if} class="course-option-{$c.id}" origin_price="{$c.origin_price}" thumb="{$c.thumb}" value="{$c.id}">{$c.title}</option>
+                {/foreach}
+            </select>
+        </div>
+    </div>
+
+    <div class="layui-form-item active-type-1">
+        <label class="layui-form-label label-required">活动类型</label>
+        <div class="layui-input-block">
+            <select name="type"  lay-filter="activity"  lay-search>
+                <option value="1" {if isset($vo.type) && $vo.type == 1}selected{/if}>限时特价</option>
+                <option value="2" {if isset($vo.type) && $vo.type == 2}selected{/if}>低价试听</option>
+                <option value="3" {if isset($vo.type) && $vo.type == 3}selected{/if}>好友砍价</option>
+            </select>
+        </div>
+    </div>
+
+    <div class="layui-form-item">
+        <label class="layui-form-label label-required">缩略图</label>
+        <div class="layui-input-block">
+            <img id="thumb-img" data-tips-image style="height:157.5px;width:345px;"  src="{$vo.thumb|default=''}"/>
+            <input type="text" name="thumb" placeholder="支持手动输入url" onchange="$(this).prev('img').attr('src', this.value)" value="{$vo.thumb|default=''}" class="layui-input input-thumb">
+            <button type="button" class="layui-btn" data-crop data-elem=".input-thumb">
+                <i class="layui-icon">&#xe67c;</i>上传图片(png,jpg,jpeg)
+            </button>
+            <p style="color: red">推荐尺寸：690*315&nbsp;&nbsp;&nbsp;建议格式：png或jpg</p>
+        </div>
+    </div>
+
+    <div class="layui-form-item">
+        <label class="layui-form-label label-required">活动价/最低价</label>
+        <div class="layui-input-block">
+            <input required type="number" class="layui-input" name="discount_price" value="{$vo.discount_price|default=''}" pattern="[0-9]*">
+        </div>
+    </div>
+    <div class="cut_at {if (request()->action()) eq 'add'}layui-hide{/if}">
+        <!-- <div class="layui-form-item">
+            <label class="layui-form-label">最低价</label>
+            <div class="layui-input-block">
+                <input required type="number" class="layui-input" name="lowest_price" value="{$vo.lowest_price|default=''}" pattern="[0-9]*">
+            </div>
+        </div> -->
+
+        <div class="layui-form-item">
+            <label class="layui-form-label label-required">每次砍价上限</label>
+            <div class="layui-input-inline" style="width: 135px;">
+                <input required type="number" placeholder="一次最多砍多少金额" class="layui-input" name="cut_max" value="{$vo.cut_max|default=''}" pattern="[0-9]*">
+            </div>
+
+            <label class="layui-form-label label-required">每次砍价下限</label>
+            <div class="layui-input-inline" style="width: 135px;">
+                <input required type="number" placeholder="一次最少砍多少金额" class="layui-input" name="cut_min" value="{$vo.cut_min|default=''}" pattern="[0-9]*">
+            </div>
+
+            <!--<label class="layui-form-label">参与人数</label>-->
+            <!--<div class="layui-input-inline" style="width: 100px;">-->
+                <!--<input required type="number" class="layui-input"  name="join_num" value="{$vo.join_num|default=0}" pattern="[0-9]*">-->
+            <!--</div>-->
+        </div>
+       <!--  <div class="layui-form-item">
+
+        </div>
+        <div class="layui-form-item">
+
+        </div> -->
+    </div>
+
+    <div class="count {if (request()->action()) eq 'add'}layui-hide{/if}">
+
+        <div class="layui-form-item">
+            <label class="layui-form-label">浏览人数</label>
+            <div class="layui-input-inline" style="width: 80px;">
+                <input disabled type="number"  class="layui-input" name="view_num" value="{$vo.view_num|default=0}" pattern="[0-9]*">
+            </div>
+
+            <label class="layui-form-label">预约人数</label>
+            <div class="layui-input-inline" style="width: 80px;">
+                <input disabled type="number" class="layui-input" name="appoint_num" value="{$vo.appoint_num|default=0}" pattern="[0-9]*">
+            </div>
+
+            <label class="layui-form-label">报名人数</label>
+            <div class="layui-input-inline" style="width: 80px;">
+            <input disabled type="number" class="layui-input"  name="apply_num" value="{$vo.apply_num|default=0}" pattern="[0-9]*">
+            </div>
+
+            <div class="cut_at {if (request()->action()) eq 'add' || $vo.type != 3}layui-hide{/if}">
+                <label class="layui-form-label                                                                                                                                    ">砍价人数</label>
+                <div class="layui-input-inline" style="width: 80px;">
+                    <input disabled type="number" class="layui-input" name="cut_num" value="{$vo.cut_num|default=0}" pattern="[0-9]*">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="layui-form-item">
+        <label class="layui-form-label">活动开始时间</label>
+        <div class="layui-input-block">
+            <input required type="text" class="layui-input" value="{$vo.start_time|default=''}" name="start_time" id="start">
+        </div>
+    </div>
+    <div class="layui-form-item">
+        <label class="layui-form-label">活动结束时间</label>
+        <div class="layui-input-block">
+            <input type="text" required value="{$vo.end_time|default=''}" class="layui-input" name="end_time"  id="end">
+        </div>
+    </div>
+    <div class="hr-line-dashed"></div>
+    <div class="layui-form-item text-center">
+        {if isset($vo['id'])}<input type='hidden' value='{$vo.id}' name='id'/>{/if}
+        <button class="layui-btn" type='submit'>保存数据</button>
+        <button class="layui-btn layui-btn-danger" type='button' data-confirm="确定要取消编辑吗？" data-close>取消编辑</button>
+    </div>
+</form>
+{block name='script'}
+<script>
+    form.render();
+   form.on('select(activity)', function(data){
+       if(data.value==3){
+           $('.cut_at').removeClass('layui-hide');
+       }else{
+            $('.cut_at').addClass('layui-hide');
+       }
+       form.render('select');
+   });
+    form.on("select(course)",function(data){
+        // if($('input[name=type]:checked').val()==1){
+            var classname = 'course-option-';
+        // }else{
+        //     var classname = 'goods-option-';
+        // }
+        if(!data.value) return ;
+        var origin_price = $("."+classname+data.value).attr('origin_price');
+        var thumb = $("."+classname+data.value).attr('thumb');
+        $('input[name=origin_price]').val(origin_price)
+        $('input[name=thumb]').val(thumb)
+        $('#thumb-img').attr('src',thumb)
+    });
+    layui.use('laydate', function(){
+        var laydate = layui.laydate;
+        laydate.render({
+            elem: '#start',
+            type: 'datetime'
+        });
+        laydate.render({
+            elem: '#end',
+            type: 'datetime'
+        });
+    });
+</script>
+{/block}

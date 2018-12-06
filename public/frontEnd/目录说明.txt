@@ -1,0 +1,9 @@
+﻿在html页面中，
+    __STATIC__  => 等价于 /static
+    __CSS__=>  pc: "/frontEnd/pc/css", mobile:"/frontEnd/mobile/css"
+    __IMAGES__=>pc: "/frontEnd/pc/images", mobile:"/frontEnd/mobile/images"
+    __JS__=>pc:"/frontEnd/pc/js",mobile:"/frontEnd/mobile/js"
+    __PLUGS__=>"/static/plugs",
+
+   为了方便填写路径在输出HTML时，后台会将上面的字符替换。
+	js 目录不要放公用js，只放业务逻辑的Js代码。比如jq还是要放在/static/plugs下，以插件形式存在		

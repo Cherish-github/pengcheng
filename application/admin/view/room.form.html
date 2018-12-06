@@ -1,0 +1,259 @@
+{block name="style"}
+<style>
+    .upload-option-button {
+        float: right;
+        background: rgba(0, 0, 0, 0.5);
+        color: #fff;
+        width: 20px;
+        height: 20px;
+        line-height: 20px;
+        text-align: center;
+        display: none
+    }
+    .upload-option-button:hover {
+        text-decoration: none;
+        color: #fff
+    }
+    .uploadimagemtl:hover a {
+        display: inline-block
+    }
+    .background-item {
+        padding: 15px;
+        background: #efefef;
+    }
+    .background-item thead tr {
+        background: #e0e0e0
+    }
+    .price-input-td input {
+        height: 30px;
+        padding-left: 50px;
+        border: none !important;
+    }
+    .uploadimagemtl a {
+        color: #fff;
+        width: 20px;
+        height: 20px;
+        float: right;
+        display: none;
+        line-height: 22px;
+        text-align: center;
+        background: rgba(0, 0, 0, 0.5)
+    }
+</style>
+{/block}
+<form class="layui-form layui-box" style='padding:25px 30px 20px 0;height:740px' action="__SELF__" data-auto="true" method="post">
+
+    <div class="layui-tab">
+        <ul class="layui-tab-title">
+            <li class="layui-this">基本信息</li>
+            <li>房间详情</li>
+        </ul>
+        <div class="layui-tab-content">
+            <div class="layui-tab-item layui-show">
+                <div class="layui-form-item">
+                    <label class="layui-form-label">分类</label>
+                    <div class="layui-input-inline">
+                        {if $ptypes}
+                        <select name="people_type_id" required >
+                            {foreach $ptypes as $ptype}
+                            <option {if isset($vo.people_type_id) && $ptype.id==$vo.people_type_id}selected{/if} value="{$ptype.id}">{$ptype.type}</option>
+                            {/foreach}
+                        </select>
+                        {/if}
+                    </div>
+                </div>
+
+                <div class="layui-form-item">
+                    <label class="layui-form-label">缩略图</label>
+                    <div class="layui-input-block">
+                        <img data-tips-image style="height:130px;width:195px;"  src="{$vo.thumb|default=''}"/>
+                        <input type="text" name="thumb" placeholder="支持手动输入url" onchange="$(this).prev('img').attr('src', this.value)"
+                               value="{$vo.thumb|default=''}" class="layui-input">
+                        <button type="button" class="layui-btn" data-file="one" data-type="jpeg,jpg,png" data-field="thumb">
+                            <i class="layui-icon">&#xe67c;</i>上传图片(png,jpg,jpeg)
+                        </button>
+                        <p style="color: red">推荐尺寸：195*130</p>
+                    </div>
+                </div>
+
+                <div class="layui-form-item">
+                    <label class="layui-form-label">详情页banner图片</label>
+                    <div class='col-sm-8'>
+                        <table class="layui-table background-item margin-none" lay-size="sm" lay-skin="nob">
+                            <thead>
+                            <tr>
+                                <td>详情图片</td>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td class="text-top img-content">
+                                    {if isset($vo.detail_img)}
+                                    {foreach $vo.detail_img as $k=>$img}
+
+                                    <div class="uploadimage uploadimagemtl"  data-idx="{$k}" data-crop data-elem=".detail_img_{$k}" style="background-image: url({$img})">
+                                        <input type="hidden" class="detail_img_{$k}" name="detail_img[]" onchange="appendImg(this)" value="{$img|default=''}" autocomplete="off">
+                                        <a class="layui-icon">ဆ</a>
+                                    </div>
+                                    {/foreach}
+                                    {/if}
+                                    {if isset($vo.detail_img) && count($vo.detail_img)<5}
+                                    <div  class="uploadimage uploadimagemtl" data-crop data-idx="{:count($vo.detail_img)}" data-elem=".detail_img_{:count($vo.detail_img)}">
+                                    </div>
+                                    {elseif !isset($vo.detail_img)}
+                                    <div  class="uploadimage uploadimagemtl" data-crop data-idx="0" data-elem=".detail_img_0">
+                                    </div>
+                                    {/if}
+
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                        <p style="color: red">推荐尺寸690*385</p>
+                    </div>
+                </div>
+
+                <div class="layui-form-item">
+                    <label class="layui-form-label">是否显示</label>
+                    <div class="layui-input-block">
+                        <input type="checkbox" name="is_show" value="1" {if isset($vo.is_show) && $vo.is_show===0}{else}checked{/if} lay-skin="switch" lay-filter="status" lay-text="是|否">
+                    </div>
+                </div>
+
+                <div class="layui-form-item">
+                    <label class="layui-form-label">排序</label>
+                    <div class="layui-input-inline">
+                        <input type="number" name="sort" max="1000" value='{$vo.sort|default="100"}' title="排序" placeholder="排序" class="layui-input">
+                    </div>
+                </div>
+
+                <div class="layui-form-item">
+                    <label class="layui-form-label">价格</label>
+                    <div class="layui-input-inline" title="价格">
+                        <input  class="layui-input" type="text" pattern="[1-9]*" name="price" value="{$vo.price|default=''}" title="请输入房间价格" required placeholder="请输入房间价格">
+                    </div>
+                </div>
+
+                <div class="layui-form-item">
+                    <label class="layui-form-label">房间数量</label>
+                    <div class="layui-input-inline">
+                        <input type="number" name="num" value='{$vo.num|default=""}' required title="请输入房间数量" placeholder="请输入房间数量" class="layui-input">
+                    </div>
+                </div>
+            </div>
+
+            <div class="layui-tab-item">
+                <div class="layui-form-item">
+                    <label class="layui-form-label">房间详情</label>
+                    <div class="layui-input-block">
+                        <textarea type="text" name="intro" id="content" required="required" title="请输入房间详情" placeholder="请输入房间详情" class="layui-textarea">{$vo.intro|default=""}</textarea>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="hr-line-dashed"></div>
+    <div class="layui-form-item text-center">
+        {if isset($vo['id'])}<input type='hidden' value='{$vo.id}' name='id'/>{/if}
+        <button class="layui-btn" type='submit'>保存数据</button>
+        <button class="layui-btn layui-btn-danger" type='button' data-confirm="确定要取消编辑吗？" data-close>取消编辑</button>
+    </div>
+</form>
+{block name='script'}
+<script>
+    form.render();
+    require(['ueditor'], function () {  
+        /*! 实例富文本编辑器  */
+        var editor1, $item, editor2;
+        /*! 默认编辑第一篇图文 */
+        editor1 = window.createEditor('[name="intro"]', 'basic');
+    })
+    layui.use('element', function(){
+        var element = layui.element;
+    });
+
+    $('.uploadimage').on('click','a',function (e) {
+        e.stopPropagation();
+        var len = $(this).parent().attr('data-idx');
+        var html = ' <div  class="uploadimage uploadimagemtl" data-idx="'+len+'" data-crop data-elem=".detail_img_'+len+'"></div>';
+        $(this).parent().replaceWith(html);
+    });
+
+    $('.img-content').on('click','.uploadimage',function(e){
+      var len =  $(this).children().length;
+      var idx   = $(this).attr('data-idx');
+      if(!len){
+          $(this).append('<input type="hidden" class="detail_img_'+idx+'" name="detail_img[]" onchange="appendImg(this)" value="" autocomplete="off">')
+      }
+    });
+    function appendImg(obj) {
+        $(obj).parent().append('<a class="layui-icon">ဆ</a>');
+        $(obj).parent().css('background-image','url('+obj.value+')');
+        var len = $(obj).parent().siblings().length+1;
+        if(len>=5){
+            return layer.msg('最多添加5张图~');
+        }
+        var html = ' <div  class="uploadimage uploadimagemtl" data-idx="'+len+'" data-crop data-elem=".detail_img_'+len+'">\n' +
+            '<input type="hidden" class="detail_img_'+len+'" name="detail_img[]" onchange="appendImg(this)" value="" autocomplete="off"></div>\n';
+        $('.img-content').append(html);
+    }
+
+    // showDetailImg();
+    // function showDetailImg(){
+    //     var detail_img  = $('input[name=detail_img]').val();
+    //     if(!detail_img){
+    //         return ;
+    //     }
+    //     var detailArr = detail_img.split('|');
+    //     var html = '';
+    //     for(var i in detailArr){
+    //         html +='<div class="uploadimage transition uploadimagemtl"  style="background-image:url('+detailArr[i]+')" data-tips-image="'+detailArr[i]+'"><a href="javascript:void(0)" data-index="" class="layui-icon upload-option-button">ဆ</a>\n' +
+    //             '</div>';
+    //     }
+    //     $("#detail-content").html(html);
+    //     if (detailArr.length>=5) {
+    //         $('#upfile').attr('disabled',true);
+    //     }else{
+    //         $('#upfile').removeAttr('disabled');
+    //     }
+    //     $('#upfile').data('limit',5-detailArr.length); 
+    // }
+    // $("input[name=detail_temp]").change(function () {
+    //     var detail_img  = $('input[name=detail_img]').val();
+    //     var detail_temp  = $('input[name=detail_temp]').val();
+    //     var imgArr = detail_img.split('|');
+    //     var imgTemp = detail_temp.split('|');
+    //     imgArr = filterArr(imgArr);
+    //     var arr = mergeArray(imgArr,imgTemp);
+    //     detail_img = arr.join("|");
+    //     $('input[name=detail_img]').val(detail_img);
+    //     showDetailImg()
+    // });
+    //  $('#detail-content').on('click','a',function(e){
+    //      e.stopPropagation();
+    //      var filename = $(this).parent().attr('data-tips-image');
+    //      deleteFile(filename);
+    //      var detail_img  = $('input[name=detail_img]').val();
+    //      var imgArr = detail_img.split('|');
+    //      if (imgArr.length>=5) {
+    //         $('#upfile').attr('disabled',true);
+    //     }else{
+    //         $('#upfile').removeAttr('disabled');
+    //     }
+    //     $('#upfile').data('limit',5-imgArr.length);
+    //      imgArr = filterArr(imgArr);
+    //      array_splice(filename,imgArr);
+    //      detail_img = imgArr.join("|");
+    //      $('input[name=detail_img]').val(detail_img);
+    //      $(this).parent().remove();
+    //  });
+     function deleteFile(filename){
+        $.post("{:url('admin/plugs/delFile')}","filename="+filename,function(response){
+            console.log(response);
+        })
+    }
+</script>
+{/block}
+

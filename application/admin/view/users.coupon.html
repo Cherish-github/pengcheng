@@ -1,0 +1,50 @@
+{extend name='extra@admin/content'}
+{block name="content"}
+<form onsubmit="return false;" data-auto="" method="POST">
+    <input type="hidden" value="resort" name="action"/>
+    <table class="table table-hover">
+        <thead>
+            <tr>
+                <th class='text-center'>标题</th>
+                <th class='text-center'>优惠金额</th>
+                <th class='text-center'>失效日期</th>
+                <th class='text-center'>状态</th>
+            </tr>
+        </thead>
+        <tbody>
+            {foreach $list as $key=>$vo}
+            <tr>
+                <td class='text-center'>{$vo.title}</td>
+                <td class='text-center'>{$vo.cut_price | fmtPrice}</td>
+                <th class='text-center'>{$vo.deadline_date}</th>
+                <td class='text-center'>
+                {if strtotime($vo.deadline_date) < time()}
+                    <span style="color: #f1820c;">已失效</span>
+                {elseif $vo.is_used==1}
+                    <span style="color: #12998d;">已使用</span>
+                {else}
+                    <span>已领取</span>
+                {/if}
+                </td>
+            </tr>
+            {/foreach}
+
+            {foreach $couponList as $key=>$vo}
+            <tr>
+                <td class='text-center'>{$vo.title}</td>
+                <td class='text-center'>{$vo.cut_price | fmtPrice}</td>
+                <th class='text-center'>{$vo.deadline_date}</th>
+                <td class='text-center'>
+                    {if strtotime($vo.deadline_date) < time()}
+                    <span style="color: #f1820c;">已失效</span>
+                    {else}
+                    <span style="color: #072ced;">未领取</span>
+                    {/if}
+                </td>
+            </tr>
+            {/foreach}
+        </tbody>
+    </table>
+    {if isset($page)}<p>{$page}</p>{/if}
+</form>
+{/block}

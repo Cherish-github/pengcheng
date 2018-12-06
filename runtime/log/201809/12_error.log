@@ -1,0 +1,45 @@
+---------------------------------------------------------------
+[ 2018-09-12T10:47:19+08:00 ] 119.137.55.180 GET /index/order/mydinnerorder.html
+[ error ] [0]模板文件不存在:D:\Program Files\web\pengcheng\public/frontEnd/mobile/order\dinner_order.html[D:\Program Files\web\pengcheng\thinkphp\library\think\view\driver\Think.php:80]
+---------------------------------------------------------------
+[ 2018-09-12T10:47:25+08:00 ] 119.137.55.180 GET /index/order/mydinnerorder.html
+[ error ] [0]模板文件不存在:D:\Program Files\web\pengcheng\public/frontEnd/mobile/order\dinner_order.html[D:\Program Files\web\pengcheng\thinkphp\library\think\view\driver\Think.php:80]
+---------------------------------------------------------------
+[ 2018-09-12T10:49:49+08:00 ] 119.137.55.180 GET /index/user/dinnerorder.html
+[ error ] [0]模板文件不存在:D:\Program Files\web\pengcheng\public/frontEnd/mobile/user\dinner_order.html[D:\Program Files\web\pengcheng\thinkphp\library\think\view\driver\Think.php:80]
+---------------------------------------------------------------
+[ 2018-09-12T10:50:42+08:00 ] 119.137.55.180 GET /index/user/eatorder.html
+[ error ] [0]模板文件不存在:D:\Program Files\web\pengcheng\public/frontEnd/mobile/user\dinner_order.html[D:\Program Files\web\pengcheng\thinkphp\library\think\view\driver\Think.php:80]
+---------------------------------------------------------------
+[ 2018-09-12T13:46:00+08:00 ] 61.151.179.84 GET /index/user/roomorder.html
+[ error ] [0]模板文件不存在:D:\Program Files\web\pengcheng\public/frontEnd/pc/user\room_order.html[D:\Program Files\web\pengcheng\thinkphp\library\think\view\driver\Think.php:80]
+---------------------------------------------------------------
+[ 2018-09-12T13:46:05+08:00 ] 101.89.29.78 GET /index/user/eatorder.html
+[ error ] [0]模板文件不存在:D:\Program Files\web\pengcheng\public/frontEnd/pc/user\eat_order.html[D:\Program Files\web\pengcheng\thinkphp\library\think\view\driver\Think.php:80]
+---------------------------------------------------------------
+[ 2018-09-12T13:46:07+08:00 ] 61.151.178.177 GET /index/dinner/detail.html
+[ error ] [0]模板文件不存在:D:\Program Files\web\pengcheng\public/frontEnd/pc/dinner\detail.html[D:\Program Files\web\pengcheng\thinkphp\library\think\view\driver\Think.php:80]
+---------------------------------------------------------------
+[ 2018-09-12T13:46:13+08:00 ] 61.151.178.163 GET /index/user/modify.html
+[ error ] [0]模板文件不存在:D:\Program Files\web\pengcheng\public/frontEnd/pc/user\modify.html[D:\Program Files\web\pengcheng\thinkphp\library\think\view\driver\Think.php:80]
+---------------------------------------------------------------
+[ 2018-09-12T13:46:35+08:00 ] 61.129.6.251 GET /index/room/index.html
+[ error ] [0]模板文件不存在:D:\Program Files\web\pengcheng\public/frontEnd/pc/room\index.html[D:\Program Files\web\pengcheng\thinkphp\library\think\view\driver\Think.php:80]
+---------------------------------------------------------------
+[ 2018-09-12T13:46:46+08:00 ] 101.227.139.164 GET /index/room/detail.html?id=18
+[ error ] [0]模板文件不存在:D:\Program Files\web\pengcheng\public/frontEnd/pc/room\detail.html[D:\Program Files\web\pengcheng\thinkphp\library\think\view\driver\Think.php:80]
+---------------------------------------------------------------
+[ 2018-09-12T15:22:52+08:00 ] 119.137.55.180 GET /index/room/index.html
+[ error ] [0]模板文件不存在:D:\Program Files\web\pengcheng\public/frontEnd/pc/room\index.html[D:\Program Files\web\pengcheng\thinkphp\library\think\view\driver\Think.php:80]
+---------------------------------------------------------------
+[ 2018-09-12T15:23:52+08:00 ] 101.227.139.172 GET /index/room/index.html
+[ error ] [0]模板文件不存在:D:\Program Files\web\pengcheng\public/frontEnd/pc/room\index.html[D:\Program Files\web\pengcheng\thinkphp\library\think\view\driver\Think.php:80]
+---------------------------------------------------------------
+[ 2018-09-12T15:24:05+08:00 ] 101.89.239.238 GET /index/room/detail.html
+[ error ] [0]variable type error： array[D:\Program Files\web\pengcheng\thinkphp\library\think\Response.php:318]
+---------------------------------------------------------------
+[ 2018-09-12T16:35:48+08:00 ] 61.151.179.83 GET /index/room/index.html
+[ error ] [0]模板文件不存在:D:\Program Files\web\pengcheng\public/frontEnd/pc/room\index.html[D:\Program Files\web\pengcheng\thinkphp\library\think\view\driver\Think.php:80]
+---------------------------------------------------------------
+[ 2018-09-12T18:07:13+08:00 ] 119.137.53.223 GET /index/user/roomorder.html?type=0
+[ error ] [8]未定义变量: type[D:\Program Files\web\pengcheng\runtime\temp\b067dab20bd77b4130a2ae901eefe8c2.php:28]

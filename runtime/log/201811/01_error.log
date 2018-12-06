@@ -1,0 +1,63 @@
+---------------------------------------------------------------
+[ 2018-11-01T10:52:33+08:00 ] 113.89.42.152 POST /admin/room/edit.html?id=21&spm=m-87-113&open_type=modal
+[ error ] [8]未定义数组索引: detail_img[D:\Program Files\web\pengcheng\application\admin\controller\Room.php:85]
+---------------------------------------------------------------
+[ 2018-11-01T10:52:37+08:00 ] 113.89.42.152 POST /admin/room/edit.html?id=21&spm=m-87-113&open_type=modal
+[ error ] [8]未定义数组索引: detail_img[D:\Program Files\web\pengcheng\application\admin\controller\Room.php:85]
+---------------------------------------------------------------
+[ 2018-11-01T10:52:41+08:00 ] 113.89.42.152 POST /admin/room/edit.html?id=21&spm=m-87-113&open_type=modal
+[ error ] [8]未定义数组索引: detail_img[D:\Program Files\web\pengcheng\application\admin\controller\Room.php:85]
+---------------------------------------------------------------
+[ 2018-11-01T10:55:49+08:00 ] 113.89.42.152 POST /admin/room/edit.html?id=21&spm=m-87-113&open_type=modal
+[ error ] [8]未定义数组索引: detail_img[D:\Program Files\web\pengcheng\application\admin\controller\Room.php:85]
+---------------------------------------------------------------
+[ 2018-11-01T11:15:08+08:00 ] 113.89.42.152 POST /admin/room/edit.html?id=21&spm=m-87-113&open_type=modal
+[ error ] [8]未定义数组索引: detail_img[D:\Program Files\web\pengcheng\application\admin\controller\Room.php:85]
+---------------------------------------------------------------
+[ 2018-11-01T11:26:00+08:00 ] 113.89.42.152 POST /admin/room/edit.html?id=21&spm=m-87-113&open_type=modal
+[ error ] [8]未定义数组索引: detail_img[D:\Program Files\web\pengcheng\application\admin\controller\Room.php:85]
+---------------------------------------------------------------
+[ 2018-11-01T11:26:04+08:00 ] 113.89.42.152 POST /admin/room/edit.html?id=21&spm=m-87-113&open_type=modal
+[ error ] [8]未定义数组索引: detail_img[D:\Program Files\web\pengcheng\application\admin\controller\Room.php:85]
+---------------------------------------------------------------
+[ 2018-11-01T11:31:53+08:00 ] 113.89.42.152 POST /admin/room/edit.html?id=21&spm=m-87-113&open_type=modal
+[ error ] [8]未定义数组索引: detail_img[D:\Program Files\web\pengcheng\application\admin\controller\Room.php:85]
+---------------------------------------------------------------
+[ 2018-11-01T11:32:19+08:00 ] 113.89.42.152 POST /admin/room/del.html?spm=m-87-113
+[ error ] [2]unlink(D:\Program Files\web\pengcheng\public\/static/upload/201809/a68431f5e3042d24467375a08634dfcf.png|/static/upload/201809/0d05ebb45890f18b8995a9de9df2a82a.png|/static/upload/201809/4d4087638ec4dd9069347d553ac977fc.png|/static/upload/201809/acaca48da78a46456543c23eecc1640e.png|/static/upload/201809/4b8c818728a56341506d97a227c043d6.png): No such file or directory[D:\Program Files\web\pengcheng\application\admin\controller\Room.php:106]
+---------------------------------------------------------------
+[ 2018-11-01T11:32:41+08:00 ] 113.89.42.152 POST /admin/room/del.html?spm=m-87-113
+[ error ] [2]unlink(D:\Program Files\web\pengcheng\public\/static/upload/201809/19b8ad9c4c86dd395d0107e86776b79f.png|/static/upload/201809/ecd34cc81282a92321271a2d8ad73285.png): Invalid argument[D:\Program Files\web\pengcheng\application\admin\controller\Room.php:106]
+---------------------------------------------------------------
+[ 2018-11-01T11:32:48+08:00 ] 113.89.42.152 POST /admin/room/del.html?spm=m-87-113
+[ error ] [2]unlink(D:\Program Files\web\pengcheng\public\/static/upload/201809/86904cefaeaaeabb2b30a3b7ad24ed3c.png): No such file or directory[D:\Program Files\web\pengcheng\application\admin\controller\Room.php:105]
+[ error ] [2]unlink(D:\Program Files\web\pengcheng\public\http://wx.p-city.cn/static/upload/201811/4013e777fc8b81d195c11d45f9ec79bf.jpg): Invalid argument[D:\Program Files\web\pengcheng\application\admin\controller\Room.php:105]
+[ error ] [2]unlink(D:\Program Files\web\pengcheng\public\http://wx.p-city.cn/static/upload/201811/cc5113cb4d00e8eeca2b5db7e0bbab85.jpg): Invalid argument[D:\Program Files\web\pengcheng\application\admin\controller\Room.php:105]
+---------------------------------------------------------------
+[ 2018-11-01T11:46:50+08:00 ] 113.89.42.152 POST /admin/room/add.html?spm=m-87-113&open_type=modal
+[ error ] [8]未定义数组索引: detail_img[D:\Program Files\web\pengcheng\application\admin\controller\Room.php:85]
+---------------------------------------------------------------
+[ 2018-11-01T11:46:59+08:00 ] 113.89.42.152 POST /admin/room/add.html?spm=m-87-113&open_type=modal
+[ error ] [8]未定义数组索引: detail_img[D:\Program Files\web\pengcheng\application\admin\controller\Room.php:85]
+---------------------------------------------------------------
+[ 2018-11-01T14:15:09+08:00 ] 119.137.55.28 POST /admin/room/add.html?spm=m-87-113&open_type=modal
+[ error ] [8]未定义数组索引: detail_img[D:\Program Files\web\pengcheng\application\admin\controller\Room.php:85]
+---------------------------------------------------------------
+[ 2018-11-01T14:15:18+08:00 ] 119.137.55.28 POST /admin/room/add.html?spm=m-87-113&open_type=modal
+[ error ] [8]未定义数组索引: detail_img[D:\Program Files\web\pengcheng\application\admin\controller\Room.php:85]
+---------------------------------------------------------------
+[ 2018-11-01T14:23:01+08:00 ] 119.137.55.28 GET /admin/room/index.html?spm=m-87-113
+[ error ] [10501]SQLSTATE[42S22]: Column not found: 1054 Unknown column 'ft.type' in 'field list'[D:\Program Files\web\pengcheng\thinkphp\library\think\db\Connection.php:388]
+---------------------------------------------------------------
+[ 2018-11-01T14:40:08+08:00 ] 119.137.55.28 POST /admin/room/del.html?spm=m-87-113
+[ error ] [2]unlink(D:\Program Files\web\pengcheng\public\http://wx.p-city.cn/static/upload/201811/599dadd4d145f83d7cf6af67d4bf0bc9.jpg): Invalid argument[D:\Program Files\web\pengcheng\application\admin\controller\Room.php:95]
+[ error ] [2]unlink(D:\Program Files\web\pengcheng\public\/static/upload/201811/a82bbf3e701e5f9076a1522ae529801a.png|/static/upload/201811/963f53a969b8c02a9cc738940942d2aa.png): Invalid argument[D:\Program Files\web\pengcheng\application\admin\controller\Room.php:96]
+---------------------------------------------------------------
+[ 2018-11-01T15:23:24+08:00 ] 113.89.42.152 POST /admin/banner/del.html?spm=m-87-108
+[ error ] [2]unlink(/static/upload/201809/ecb088006131b25423a894a2b4efd4c1.png): No such file or directory[D:\Program Files\web\pengcheng\application\admin\controller\Banner.php:52]
+---------------------------------------------------------------
+[ 2018-11-01T15:23:30+08:00 ] 113.89.42.152 POST /admin/banner/del.html?spm=m-87-108
+[ error ] [2]unlink(/static/upload/201809/6810b01dd34dd4178b5c70892d1e9080.png): No such file or directory[D:\Program Files\web\pengcheng\application\admin\controller\Banner.php:52]
+---------------------------------------------------------------
+[ 2018-11-01T15:23:35+08:00 ] 113.89.42.152 POST /admin/banner/del.html?spm=m-87-108
+[ error ] [2]unlink(/static/upload/201809/4de3a09c5d7e0247439d547154e5b6d7.png): No such file or directory[D:\Program Files\web\pengcheng\application\admin\controller\Banner.php:52]

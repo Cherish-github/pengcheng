@@ -1,0 +1,206 @@
+{extend name='extra@admin/content'}
+
+{block name="button"}
+<div class="nowrap pull-right" style="margin-top:10px">
+
+    <a href="javascript:history.go(-1)" class='layui-btn layui-btn-small layui-btn-danger'>返回列表</a>
+</div>
+{/block}
+{block name="content"}
+<form class="layui-form layui-box " style='padding:25px 30px 20px 0;height: 600px;'  action="__SELF__" data-auto="true" method="post">
+    {if isset($vo.id)}
+    <div class="layui-form-item">
+        <label class="layui-form-label">小程序链接</label>
+        <div class="layui-input-block">
+            <input type="text" disabled value="/pages/index/teacher/articalDetail/articalDetail?id={$vo.id}" class="layui-input">
+        </div>
+    </div>
+    {/if}
+    <div class="layui-form-item">
+        <label class="layui-form-label">文章标题</label>
+        <div class="layui-input-block">
+
+            <input type="text" name="title" value='{$vo.title|default=""}' required="required" title="请输入文章标题" placeholder="文章标题" class="layui-input">
+
+        </div>
+    </div>
+    <div class="layui-form-item">
+        <label class="layui-form-label">文章作者</label>
+        <div class="layui-input-block">
+            <select name="teacher_id" required id=""  lay-search>
+                <option value="">请选择</option>
+                {foreach $teachers as $teacher}
+                <option {if isset($vo.teacher_id) && $vo.teacher_id eq $teacher.id}selected{/if} value="{$teacher.id}">{$teacher.name}</option>
+                {/foreach}
+            </select>
+        </div>
+    </div>
+    
+
+    <div class="layui-form-item">
+        <label class="layui-form-label">是否发布</label>
+        <div class="layui-input-block">
+            <input class="layui-input"  name="is_show" title="发布" {if !(isset($vo.is_show) && $vo.is_show===0)}checked{/if} type="radio" value="1">
+            <input class="layui-input"  name="is_show" title="隐藏" {if (isset($vo.is_show) && $vo.is_show===0)}checked{/if} type="radio" value="0">
+        </div>
+    </div>
+
+    <div class="layui-form-item">
+        <label class="layui-form-label">
+            热门
+        </label>
+        <div class="layui-input-block">
+            <input class="layui-input"  name="is_hot" title="热门" {if !(isset($vo.is_hot) && $vo.is_hot===0)}checked{/if} type="radio" value="1">
+            <input class="layui-input"  name="is_hot" title="不热门" {if (isset($vo.is_hot) && $vo.is_hot===0)}checked{/if} type="radio" value="0">
+        </div>
+        <p style="color:red">ps:设置热门后,该文章可能会出现在【首页】的【热门文章】，【排序】值越小，越容易出现在【首页】</p>
+    </div>
+
+    <div class="layui-form-item">
+        <label class="layui-form-label">
+            推荐
+        </label>
+
+        <div class="layui-input-block">
+            <input class="layui-input"  name="is_best" title="推荐" {if !(isset($vo.is_best) && $vo.is_best===0)}checked{/if} type="radio" value="1">
+            <input class="layui-input"  name="is_best" title="不推荐" {if (isset($vo.is_best) && $vo.is_best===0)}checked{/if} type="radio" value="0">
+        </div>
+        <p style="color:red">ps:设置推荐后,该文章会出现在【文章详情】底部【相关推荐】</p>
+    </div>
+
+
+    <div class="layui-form-item">
+        <label class="layui-form-label label-required">封面类型</label>
+        <div class="layui-input-block">
+            <input class="layui-input" {if !isset($vo.type) || (isset($vo.type) && $vo.type===0)}checked{/if}  name="type" lay-filter="type" title="单图"  type="radio" value="0">
+            <input class="layui-input" {if isset($vo.type) && $vo.type===1}checked{/if}  name="type" lay-filter="type" title="多图"  type="radio" value="1">
+            <input class="layui-input" {if (isset($vo.type) && $vo.type===2)}checked{/if}  name="type" lay-filter="type" title="视频"  type="radio" value="2">
+            <p style="color:red">单图标准尺寸:143*93(3:2),多图标准尺寸:121*81(3:2),视频标准尺寸为:382*165(4:3)</p>
+        </div>
+        <div class="layui-input-block">
+            <input type="hidden" value="{$vo.thumb[0]|default=''}" class="thumb-i-0" name="thumb[0]" onchange="$('.thumb0').attr('src',this.value)">
+            <input type="hidden" value="{$vo.thumb[1]|default=''}" class="thumb-i-1" name="thumb[1]" onchange="$('.thumb1').attr('src',this.value)">
+            <input type="hidden" value="{$vo.thumb[2]|default=''}" class="thumb-i-2" name="thumb[2]" onchange="$('.thumb2').attr('src',this.value)">
+            <div id="resource">
+                {if isset($vo.type) && $vo.type===1}
+                <a href="javascript:void(0)" data-crop data-elem=".thumb-i-0">
+                <img class="thumb0" style="height:100px;width:100px;"  src="{$vo['thumb'][0]|default=''}" onerror="this.src='__PUBLIC__/static/theme/default/img/uploadfile.png'"/>
+                </a>
+                <a href="javascript:void(0)" data-crop data-elem=".thumb-i-1">
+                    <img class="thumb1" style="height:100px;width:100px;"   src="{$vo['thumb'][0]|default=''}" onerror="this.src='__PUBLIC__/static/theme/default/img/uploadfile.png'"/>
+                </a>
+                <a href="javascript:void(0)" data-crop data-elem=".thumb-i-2">
+                    <img class="thumb2" style="height:100px;width:100px;"   src="{$vo['thumb'][0]|default=''}" onerror="this.src='__PUBLIC__/static/theme/default/img/uploadfile.png'"/>
+                </a>
+                {else}
+                <a href="javascript:void(0)" data-crop data-elem=".thumb-i-0">
+                    <img class="thumb0" style="height:100px;width:100px;"   src="{$vo.thumb[0]|default=''}" onerror="this.src='__PUBLIC__/static/theme/default/img/uploadfile.png'"/>
+                </a>
+                {/if}
+            </div>
+        </div>
+    </div>
+
+    <div class="layui-form-item">
+        <label class="layui-form-label">分享图</label>
+        <div class="layui-input-block">
+        <img src="{$vo.share_img|default=''}" controls style="height:300px;width:375px;"/>
+        <input type="text" name="share_img" placeholder="支持手动输入url" pattern="^http|https" onchange="$(this).prev().attr('src', this.value)" value="{$vo.share_img|default=''}" class="layui-input">
+        <button type="button" class="layui-btn" data-crop data-elem="[name=share_img]">
+        <i class="layui-icon">&#xe67c;</i>上传(jpg,png)
+        </button>
+            <p style="color:red;">自定义分享图片，可以是本地文件路径、代码包文件路径或者网络图片路径，支持PNG及JPG，不上传则使用默认截图。显示图片长宽比是 5:4</p>
+        </div>
+    </div>
+
+    <!--<div class="layui-form-item js-resource {if !(isset($vo.type) && $vo.type===2)}layui-hide{/if} ">-->
+        <!--<label class="layui-form-label label-required">视频资源</label>-->
+        <!--<div class="layui-input-block">-->
+            <!--<video src="{$vo.resource|default=''}" controls style="height:200px;width:375px;"></video>-->
+            <!--<input type="text" name="resource" placeholder="支持手动输入url" pattern="^http|https" title="请上传封面资源" onchange="$('#resource').children().attr('src', this.value)"-->
+                   <!--value="{$vo.resource|default=''}" class="layui-input">-->
+            <!--<button type="button" class="layui-btn" data-file="one" data-type="mp4,avi,rmvb,rm" data-field="resource">-->
+                <!--<i class="layui-icon">&#xe67c;</i>上传(mp4,avi,rmvb,rm)-->
+            <!--</button>-->
+        <!--</div>-->
+    <!--</div>-->
+
+    <div class="layui-form-item">
+        <label class="layui-form-label">文章描述</label>
+        <div class="layui-input-block">
+            <textarea placeholder="请输入文章描述" maxlength="254" title="请输入文章描述" class="layui-textarea" name="intro">{$vo.intro|default=""}</textarea>
+        </div>
+    </div>
+
+    <div class="layui-form-item">
+        <label class="layui-form-label">文章详情</label>
+        <div class="layui-input-block">
+            <textarea placeholder="此处布局显示与小程序布局显示略有差异。" id="content" title="请输入文章详情" class="layui-textarea" name="content">{$vo.content|default=""}</textarea>
+        </div>
+    </div>
+
+    <!--<div class="layui-form-item">-->
+        <!--<label class="layui-form-label ">嵌入音频</label>-->
+        <!--<div class="layui-input-block">-->
+            <!--<select name="audio_id"  lay-search>-->
+                <!--<option value="">非必填</option>-->
+                <!--{foreach $audio as $a}-->
+                <!--<option {if isset($vo.audio_id)&&$a.id eq $vo.audio_id}selected{/if} value="{$a.id}"  thumb="{$a.thumb}" title="{$a.title}" resource="{$a.resource}">{$a.title}</option>-->
+                <!--{/foreach}-->
+            <!--</select>-->
+        <!--</div>-->
+    <!--</div>-->
+
+    <!--<div class="layui-form-item">-->
+        <!--<label class="layui-form-label ">嵌入商品</label>-->
+        <!--<div class="layui-input-block">-->
+            <!--<select name="goods_id"  lay-search>-->
+                <!--<option value="">非必填</option>-->
+                <!--{foreach goods as $g}-->
+                <!--<option {if isset($vo.goods_id)&&$g.id eq $vo.goods_id}selected{/if} value="{$g.id}"  title="{$g.title}">{$g.title}</option>-->
+                <!--{/foreach}-->
+            <!--</select>-->
+        <!--</div>-->
+    <!--</div>-->
+
+
+    <div class="hr-line-dashed"></div>
+    <div class="layui-form-item text-center">
+        {if isset($vo['id'])}<input type='hidden' value='{$vo.id}' name='id'/>{/if}
+        <button class="layui-btn" lay-submit lay-filter="subForm" type='submit'>保存数据</button>
+    </div>
+
+    <script>window.form.render();</script>
+</form>
+<script src="http://g.tbcdn.cn/mtb/lib-flexible/0.3.4/??flexible_css.js,flexible.js"></script>
+<script>
+    require(['ckeditor'], function () {
+        var editor = window.createEditor('#content');
+        form.on('submit(subForm)', function(data){
+            $("#content").val(editor.getData());
+            return true;
+        });
+    });
+    form.on('radio(type)', function(data){
+        var html= '<a href="javascript:void(0)" data-crop data-elem=".thumb-i-0">\n' +
+            '<img class="thumb0" src="'+$('.thumb-i-0').val()+'" style="height:100px;width:100px;"  onerror="this.src=\'__PUBLIC__/static/theme/default/img/uploadfile.png\'"/>\n' +
+            '</a>';
+        if(data.value==1){
+            for(var i=1;i<3;i++) {
+
+                html+= '<a href="javascript:void(0)" data-crop data-elem=".thumb-i-'+i+'">\n' +
+                    '<img class="thumb'+i+'"  src="'+$('.thumb-i-'+i).val()+'" style="height:100px;width:100px;"   onerror="this.src=\'__PUBLIC__/static/theme/default/img/uploadfile.png\'"/>\n' +
+                    '</a>';
+            }
+        }
+        if(data.value==2){
+            $('.js-resource').removeClass('layui-hide')
+        }else{
+            $('.js-resource').addClass('layui-hide')
+        }
+        $('#resource').html(html);
+    });
+
+
+</script>
+{/block}

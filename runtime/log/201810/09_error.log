@@ -1,0 +1,6 @@
+---------------------------------------------------------------
+[ 2018-10-09T09:13:36+08:00 ] 119.137.53.137 GET /index/goods/detail.html?id=19
+[ error ] [8]未定义数组索引: sum[D:\Program Files\web\pengcheng\application\index\controller\Goods.php:140]
+---------------------------------------------------------------
+[ 2018-10-09T09:13:36+08:00 ] 119.137.53.137 GET /index/goods/detail.html?id=19
+[ error ] [8]未定义数组索引: sum[D:\Program Files\web\pengcheng\application\index\controller\Goods.php:140]

@@ -1,0 +1,28 @@
+<form class="layui-form layui-box" style='padding:25px 30px 20px 0;height:600px' action="__SELF__" data-auto="true" method="post">
+    <div class="layui-form-item">
+        <label class="layui-form-label">发布标题</label>
+        <div class="layui-input-block">
+            <input type="text" name="title" maxlength="30" value='{$vo.title|default=""}' required="required" title="发布标题" placeholder="发布标题" class="layui-input">
+        </div>
+    </div>
+
+    <div class="layui-form-item ">
+        <label class="layui-form-label label-required">商品</label>
+        <div class="layui-input-block">
+
+            {foreach $goods as $g}
+            <input {if isset($vo.goods_id) &&  in_array($g.id,$vo.goods_id)}checked{/if} type="checkbox" name="goods_id[]" title='{$g.title}' lay-skin="primary" value='{$g.id}'>
+            {/foreach}
+
+        </div>
+    </div>
+    <div class="hr-line-dashed"></div>
+    <div class="layui-form-item text-center">
+        {if isset($vo['id'])}<input type='hidden' value='{$vo.id}' name='id'/>{/if}
+        <button class="layui-btn" type='submit'>保存数据</button>
+        <button class="layui-btn layui-btn-danger" type='button' data-confirm="确定要取消编辑吗？" data-close>取消编辑</button>
+    </div>
+</form>
+<script>
+    form.render();
+</script>

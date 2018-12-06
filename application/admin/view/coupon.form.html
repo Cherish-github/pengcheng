@@ -1,0 +1,42 @@
+{extend name='extra@admin/content'}
+{block name='content'}
+<form class="layui-form layui-box" style='padding:25px 30px 20px 0;' action="__SELF__" data-auto="true" method="post">
+    <div class="layui-form-item">
+        <label class="layui-form-label label-required">标题</label>
+        <div class="layui-input-inline">
+            <input type="text" name="title" value='{$vo.title|default=""}' required="required" title="请输标题" placeholder="请输入标题" class="layui-input">
+        </div>
+    </div>
+
+    <div class="layui-form-item">
+        <label class="layui-form-label">优惠金额</label>
+        <div class="layui-input-inline">
+            <input type="text" name="cut_price" value="{$vo.cut_price|default=''}" required title="请输入减免金额"  placeholder="请输入减免金额" class="layui-input">
+        </div>
+    </div>
+
+    <div class="layui-form-item">
+        <label class="layui-form-label">失效日期</label>
+        <div class="layui-input-inline">
+            <input type="text" name="deadline_date" id="deadline_date" value="{$vo.deadline_date|default=''}" required title="请输入失效日期"  placeholder="请输入失效日期" class="layui-input">
+        </div>
+    </div>
+
+    <div class="hr-line-dashed"></div>
+    <div class="layui-form-item text-center">
+        {if isset($vo['id'])}<input type='hidden' value='{$vo.id}' name='id'/>{/if}
+        <button class="layui-btn" type='submit'>保存数据</button>
+    </div>
+
+    <script>
+        window.form.render();
+        layui.use('laydate', function(){
+            var laydate = layui.laydate;
+            //执行一个laydate实例
+            laydate.render({
+                elem: '#deadline_date' //指定元素
+            });
+        });
+    </script>
+</form>
+{/block}
